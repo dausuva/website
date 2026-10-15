@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <h1>{{ .Params.heading }}</h1>
+    <p class="lead">{{ .Params.lead }}</p>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2>{{ .Params.productsHeading }}</h2>
+  {{ with site.GetPage "/school" }}
+  <a class="card product" href="{{ .RelPermalink }}">
+    <span class="card-title">{{ $.Site.Params.product }}</span>
+    <span>{{ $.Params.productLine }}</span>
+    <span class="more">{{ $.Params.productMore }} →</span>
+  </a>
+  {{ end }}
+</section>
+
+<section class="wrap section" id="contact">
+  <h2>{{ T "contact" }}</h2>
+  <dl class="details">
+    <dt>{{ T "email" }}</dt><dd><a href="mailto:{{ site.Language.Params.email }}">{{ site.Language.Params.email }}</a></dd>
+    <dt>{{ T "phone" }}</dt><dd><a href="tel:{{ site.Params.phoneLink }}">{{ site.Params.phone }}</a></dd>
+    <dt>{{ T "company" }}</dt><dd>{{ site.Params.company }}</dd>
+    <dt>{{ T "companyCode" }}</dt><dd>{{ site.Params.companyCode }}</dd>
+    <dt>{{ T "founded" }}</dt><dd>{{ site.Params.founded }}</dd>
+    <dt>{{ T "address" }}</dt><dd>{{ site.Params.address }}</dd>
+  </dl>
+</section>
+{{ end }}

@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ site.Home.RelPermalink }}">Dausuva</a>
+    <nav aria-label="{{ T "home" }}">
+      {{ with site.GetPage "/school" }}<a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ T "school" }}</a>{{ end }}
+      <a href="{{ site.Home.RelPermalink }}#contact">{{ T "contact" }}</a>
+      {{ $other := "" }}
+      {{ range .Translations }}{{ $other = . }}{{ end }}
+      {{ if not $other }}{{ range site.Home.Translations }}{{ $other = . }}{{ end }}{{ end }}
+      {{ with $other }}<a class="lang" href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}">{{ T "language" }}</a>{{ end }}
+    </nav>
+  </div>
+</header>

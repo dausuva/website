@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ $p := .Params }}
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ $p.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ $p.lead }}</p>
+    <p class="actions">
+      <a class="button primary" href="{{ partial "mailto.html" (T "mailTestSubject") }}">{{ T "requestTest" }}</a>
+      <a class="button" href="#pricing">{{ $p.pricingButton }}</a>
+    </p>
+    <ul class="facts">
+      {{ range $p.facts }}<li>{{ . }}</li>{{ end }}
+    </ul>
+  </div>
+</section>
+
+<section class="wrap shot-section">
+  {{ partial "shot.html" (dict "src" $p.shot.src "alt" $p.shot.alt "caption" $p.shot.caption) }}
+</section>
+
+<section class="wrap section">
+  <h2>{{ $p.featuresHeading }}</h2>
+  <div class="grid">
+    {{ range $p.features }}
+    <div class="card">
+      <h3>{{ .title }}</h3>
+      <ul>{{ range .items }}<li>{{ . | markdownify }}</li>{{ end }}</ul>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<section class="wrap section prose">
+  {{ .Content }}
+</section>
+
+<section class="wrap section" id="pricing">
+  <h2>{{ $p.pricingHeading }}</h2>
+  <div class="grid">
+    {{ range $p.plans }}
+    <div class="card plan{{ if .featured }} featured{{ end }}">
+      <h3>{{ .name }}</h3>
+      <p class="price">{{ .price }}{{ with .per }} <span>{{ . }}</span>{{ end }}</p>
+      <ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+      {{ with .cta }}<a class="button" href="{{ partial "mailto.html" (T .subject) }}">{{ T .label }}</a>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+  <p class="note">{{ $p.pricingNote }}</p>
+</section>
+
+<section class="wrap section" id="contact">
+  <h2>{{ T "contact" }}</h2>
+  <p>{{ $p.contactLine }}</p>
+  <p class="contact-line">
+    <a href="mailto:{{ site.Language.Params.email }}">{{ site.Language.Params.email }}</a>
+    · <a href="tel:{{ site.Params.phoneLink }}">{{ site.Params.phone }}</a>
+  </p>
+</section>
+{{ end }}

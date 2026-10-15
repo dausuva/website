@@ -1,0 +1,12 @@
+{{- /* Context: dict "src" (path under assets) "alt" "caption" */ -}}
+{{- with resources.Get .src -}}
+{{- $webp := .Process "webp q82" -}}
+{{- $png := . -}}
+<figure class="shot">
+  <picture>
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+    <img src="{{ $png.RelPermalink }}" width="{{ $png.Width }}" height="{{ $png.Height }}" alt="{{ $.alt }}" loading="lazy" decoding="async">
+  </picture>
+  {{- with $.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{- end -}}
