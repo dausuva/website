@@ -34,6 +34,20 @@
 </section>
 {{ end }}
 
+{{ with $p.upkeep }}
+<section class="wrap section">
+  <h2>{{ $p.upkeepHeading }}</h2>
+  <div class="grid">
+    {{ range . }}
+    <div class="card">
+      <h3>{{ .title }}</h3>
+      <p class="card-text">{{ .text | markdownify }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
 <section class="wrap section">
   <h2>{{ $p.featuresHeading }}</h2>
   <div class="grid">
