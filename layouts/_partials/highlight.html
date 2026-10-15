@@ -1,0 +1,8 @@
+{{- /* Context: one feature card: title, text, optional src and alt of its screenshot, wide to span the whole row */ -}}
+<div class="card highlight{{ if .wide }} wide{{ end }}">
+  <h3>{{ .title }}</h3>
+  <p>{{ .text | markdownify }}</p>
+  {{- with .src }}
+  {{ partial "shot.html" (dict "src" . "alt" $.alt) }}
+  {{- end }}
+</div>
