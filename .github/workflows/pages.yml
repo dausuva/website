@@ -28,6 +28,11 @@ jobs:
           sudo dpkg -i hugo.deb
       - name: Build
         run: hugo --minify --panicOnWarning
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check pages, translations, links and content
+        run: node scripts/test-site.mjs public https://dausuva.com/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

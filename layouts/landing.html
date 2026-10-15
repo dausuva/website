@@ -1,83 +1,40 @@
 {{ define "main" }}
 {{ $p := .Params }}
 <section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">{{ $p.eyebrow }}</p>
-    <h1>{{ .Title }}</h1>
-    <p class="lead">{{ $p.lead }}</p>
-    <p class="actions">
-      <a class="button primary" href="{{ partial "mailto.html" (T "mailTestSubject") }}">{{ T "requestTest" }}</a>
-      <a class="button" href="#pricing">{{ $p.pricingButton }}</a>
-    </p>
-    <ul class="facts">
-      {{ range $p.facts }}<li>{{ . }}</li>{{ end }}
-    </ul>
-  </div>
-</section>
-
-<section class="wrap shot-section">
-  {{ partial "shot.html" (dict "src" $p.shot.src "alt" $p.shot.alt "caption" $p.shot.caption) }}
-</section>
-
-{{ with $p.highlights }}
-<section class="wrap section">
-  <h2>{{ $p.highlightsHeading }}</h2>
-  <div class="highlights">
-    {{ range . }}
-    {{ partial "highlight.html" . }}
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-
-{{ with $p.upkeep }}
-<section class="wrap section">
-  <h2>{{ $p.upkeepHeading }}</h2>
-  <div class="highlights">
-    {{ range . }}
-    {{ partial "highlight.html" . }}
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-
-<section class="wrap section">
-  <h2>{{ $p.featuresHeading }}</h2>
-  <div class="grid">
-    {{ range $p.features }}
-    <div class="card">
-      <h3>{{ .title }}</h3>
-      <ul>{{ range .items }}<li>{{ . | markdownify }}</li>{{ end }}</ul>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><span class="status-dot"></span> {{ $p.eyebrow }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ $p.lead }}</p>
+      <div class="actions">
+        <a class="button primary" href="{{ "school/request/" | relLangURL }}">{{ T "requestTest" }} <span aria-hidden="true">↗</span></a>
+        <a class="button" href="{{ "school/pricing/" | relLangURL }}">{{ T "pricing" }}</a>
+      </div>
+      <p class="note">{{ $p.heroNote }}</p>
     </div>
-    {{ end }}
-  </div>
-</section>
-
-<section class="wrap section prose">
-  {{ .Content }}
-</section>
-
-<section class="wrap section" id="pricing">
-  <h2>{{ $p.pricingHeading }}</h2>
-  <div class="grid">
-    {{ range $p.plans }}
-    <div class="card plan{{ if .featured }} featured{{ end }}">
-      <h3>{{ .name }}</h3>
-      <p class="price">{{ .price }}{{ with .per }} <span>{{ . }}</span>{{ end }}</p>
-      <ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
-      {{ with .cta }}<a class="button" href="{{ partial "mailto.html" (T .subject) }}">{{ T .label }}</a>{{ end }}
+    <div class="product-stage">
+      <div class="stage-label"><span>CLASSROOM MANAGER</span><span>WINDOWS · LAN</span></div>
+      {{ partial "shot.html" (dict "src" $p.shot.src "alt" $p.shot.alt "caption" $p.shot.caption "eager" true) }}
     </div>
-    {{ end }}
   </div>
-  <p class="note">{{ $p.pricingNote }}</p>
+  <ul class="wrap facts">{{ range $p.facts }}<li>{{ . }}</li>{{ end }}</ul>
 </section>
-
-<section class="wrap section" id="contact">
-  <h2>{{ T "contact" }}</h2>
-  <p>{{ $p.contactLine }}</p>
-  <p class="contact-line">
-    <a href="mailto:{{ site.Language.Params.email }}">{{ site.Language.Params.email }}</a>
-    · <a href="tel:{{ site.Params.phoneLink }}">{{ site.Params.phone }}</a>
-  </p>
+<section class="wrap section">
+  <p class="eyebrow">{{ $p.workflowLabel }}</p>
+  <div class="section-heading"><h2>{{ $p.workflowHeading }}</h2><a href="{{ "school/features/" | relLangURL }}">{{ T "allFeatures" }} →</a></div>
+  <div class="workflows">{{ range $i, $item := $p.workflows }}<article><span class="step">0{{ add $i 1 }}</span><h3>{{ .title }}</h3><p>{{ .text }}</p><ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul></article>{{ end }}</div>
 </section>
+<section class="architecture">
+  <div class="wrap architecture-grid">
+    <div><p class="eyebrow">{{ $p.archLabel }}</p><h2>{{ $p.archHeading }}</h2><p>{{ $p.archLead }}</p><a href="{{ "school/security/" | relLangURL }}">{{ T "security" }} →</a></div>
+    <div class="network" role="img" aria-label="{{ $p.archAlt }}"><div class="network-host"><span class="device" aria-hidden="true">▣</span><strong>{{ $p.hostLabel }}</strong></div><div class="network-line">{{ $p.networkLabel }}</div><div class="network-clients"><span>PC 01</span><span>PC 02</span><span>PC 03</span></div></div>
+  </div>
+</section>
+<section class="wrap section">
+  <p class="eyebrow">{{ $p.detailLabel }}</p><h2>{{ $p.detailHeading }}</h2>
+  {{ range $p.showcases }}<article class="showcase"><div><h3>{{ .title }}</h3><p>{{ .text }}</p><p class="note">{{ .note }}</p></div><div>{{ partial "shot.html" (dict "src" .src "alt" .alt) }}</div></article>{{ end }}
+</section>
+<section class="trust-section"><div class="wrap section"><p class="eyebrow">{{ $p.trustLabel }}</p><h2>{{ $p.trustHeading }}</h2><div class="workflows">{{ range $p.trust }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p><a href="{{ .path | relLangURL }}">{{ .link }} →</a></article>{{ end }}</div></div></section>
+<section class="wrap section" id="pricing"><p class="eyebrow">{{ T "pricing" }}</p><h2>{{ $p.pricingHeading }}</h2><p class="section-lead">{{ $p.pricingLead }}</p>{{ partial "plans.html" . }}</section>
+<section class="wrap section next-step"><div><p class="eyebrow">{{ $p.nextLabel }}</p><h2>{{ $p.nextHeading }}</h2><p>{{ $p.nextText }}</p></div><a class="button primary" href="{{ "school/getting-started/" | relLangURL }}">{{ T "gettingStarted" }} →</a></section>
 {{ end }}

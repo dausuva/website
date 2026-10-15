@@ -1,0 +1,92 @@
+// Read-only checks of built Hugo output. No dependencies or browser automation.
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { resolve, join, relative, sep } from 'node:path';
+import assert from 'node:assert/strict';
+
+const root = resolve(process.argv[2] || 'public');
+const origin = new URL(process.argv[3] || 'https://dausuva.com/');
+const preview = process.argv.includes('--preview');
+let checks = 0;
+function check(condition, message) { checks++; assert.ok(condition, message); }
+function walk(dir) {
+  return readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]);
+}
+function decode(s) { return s.replaceAll('&amp;', '&').replaceAll('&#39;', "'").replaceAll('&#34;', '"'); }
+function attrs(tag) {
+  return Object.fromEntries([...tag.matchAll(/([\w:-]+)=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)].map(m => [m[1], decode(m[2] ?? m[3] ?? m[4])]));
+}
+function tags(html, name) { return [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, 'gi'))].map(m => attrs(m[0])); }
+function page(path) { return readFileSync(join(root, path, 'index.html'), 'utf8'); }
+const slugs = ['', 'features/', 'security/', 'privacy/', 'getting-started/', 'pricing/', 'faq/', 'request/'];
+for (const lang of ['en', 'lt']) {
+  const prefix = lang === 'lt' ? 'lt/' : '';
+  const other = lang === 'lt' ? '' : 'lt/';
+  for (const slug of slugs) {
+    const path = `${prefix}school/${slug}`;
+    const html = page(path);
+    check(tags(html, 'h1').length === 1, `${path}: one H1`);
+    check(/<title>[^<]+<\/title>/.test(html), `${path}: title`);
+    check(tags(html, 'html')[0].lang === lang, `${path}: language`);
+    check(tags(html, 'meta').some(t => t.name === 'description' && t.content?.length > 30), `${path}: description`);
+    const links = tags(html, 'link');
+    check(links.some(t => t.rel === 'canonical' && t.href === new URL(path, origin).href), `${path}: canonical`);
+    check(links.some(t => t.rel === 'alternate' && t.hreflang === (lang === 'lt' ? 'en' : 'lt') && t.href === new URL(`${other}school/${slug}`, origin).href), `${path}: translation`);
+    check(html.includes('href=') && html.includes(`${other}school/${slug}`), `${path}: translated navigation`);
+    check(!/<script\b|<form\b|<iframe\b/i.test(html), `${path}: no scripts, forms or embeds`);
+    check(!/[lab]|[pc]|[pc]|[pc]|[lab]|BEGIN (?:RSA |EC )?PRIVATE KEY/i.test(html), `${path}: no internal lab identifiers or secrets`);
+    if (preview) check(tags(html, 'meta').some(t => t.name === 'robots' && t.content.includes('noindex')), `${path}: private preview noindex`);
+    else check(!tags(html, 'meta').some(t => t.name === 'robots' && t.content.includes('noindex')), `${path}: public indexing`);
+    if (slug === '' || slug === 'pricing/') {
+      check(html.includes('€499') && html.includes('€299'), `${path}: approved prices`);
+    }
+    if (slug === '') {
+      check(tags(html, 'img').length === 3, `${path}: three genuine demo screenshots`);
+      check(tags(html, 'img')[0].loading === 'eager', `${path}: hero loads eagerly`);
+    }
+    if (slug === 'request/') {
+      const drafts = tags(html, 'a').filter(t => t.href?.startsWith('mailto:') && t.href.includes('?'));
+      check(drafts.length === 2, `${path}: demo and deployment draft`);
+      for (const draft of drafts) {
+        const url = new URL(draft.href);
+        check(url.pathname === `support@dausuva.${lang === 'lt' ? 'lt' : 'com'}`, `${path}: localized recipient`);
+        check(url.searchParams.get('subject')?.includes('Classroom Manager'), `${path}: subject`);
+        check(url.searchParams.get('body')?.includes(lang === 'lt' ? 'Kontaktinis asmuo:' : 'Contact name:'), `${path}: draft context`);
+      }
+    }
+    if (slug === 'faq/') check(tags(html, 'details').length === 9, `${path}: accessible FAQ questions`);
+    const alias = page(`${prefix}classroom-manager/${slug}`);
+    check(alias.includes(new URL(path, origin).href), `${path}: legacy alias`);
+  }
+}
+let checkedLinks = 0;
+for (const file of walk(root).filter(f => f.endsWith('.html'))) {
+  const html = readFileSync(file, 'utf8');
+  const filePath = relative(root, file).split(sep).join('/');
+  const base = new URL(filePath.replace(/index\.html$/, ''), origin);
+  for (const tag of tags(html, '(?:a|link|img|source)')) {
+    for (const value of [tag.href, tag.src, tag.srcset?.split(/\s|,/)[0]].filter(Boolean)) {
+      if (/^(mailto:|tel:|data:)/.test(value)) continue;
+      const url = new URL(value, base);
+      // Other-site links are not fetched; this test is deliberately offline.
+      if (url.origin !== origin.origin) continue;
+      const local = join(root, decodeURIComponent(url.pathname));
+      const target = url.pathname.endsWith('/') ? join(local, 'index.html') : local;
+      check(existsSync(target), `${filePath}: missing ${url.pathname}`);
+      checkedLinks++;
+      if (url.hash && target.endsWith('.html')) {
+        const targetHtml = readFileSync(target, 'utf8');
+        const id = decodeURIComponent(url.hash.slice(1));
+        check([...targetHtml.matchAll(/\bid=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)].some(m => (m[1] ?? m[2] ?? m[3]) === id), `${filePath}: missing anchor ${url.hash}`);
+      }
+    }
+  }
+  for (const image of tags(html, 'img')) check(image.alt && Number(image.width) > 0 && Number(image.height) > 0, `${filePath}: image alt and dimensions`);
+}
+for (const lang of ['en', 'lt']) {
+  const prefix = lang === 'lt' ? 'lt/' : '';
+  const privacy = page(`${prefix}school/privacy/`);
+  check(privacy.includes(lang === 'lt' ? 'naršyklėse atidarytas svetaines' : 'websites open in browsers'), `${lang}: browser-data disclosure`);
+  const security = page(`${prefix}school/security/`);
+  check(security.includes(lang === 'lt' ? 'neįgyvendintas' : 'not implemented'), `${lang}: rollback limitation`);
+}
+console.log(`PASS: ${checks} checks; 16 product pages; ${checkedLinks} local links/assets; both languages and legacy aliases.`);

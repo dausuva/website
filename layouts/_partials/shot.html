@@ -5,8 +5,8 @@
 <figure class="shot">
   <picture>
     <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
-    <img src="{{ $png.RelPermalink }}" width="{{ $png.Width }}" height="{{ $png.Height }}" alt="{{ $.alt }}" loading="lazy" decoding="async">
+    <img src="{{ $png.RelPermalink }}" width="{{ $png.Width }}" height="{{ $png.Height }}" alt="{{ $.alt }}" loading="{{ if $.eager }}eager{{ else }}lazy{{ end }}"{{ if $.eager }} fetchpriority="high"{{ end }} decoding="async">
   </picture>
   {{- with $.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>
-{{- end -}}
+{{- else -}}{{- errorf "Missing product screenshot: %s" .src -}}{{- end -}}
