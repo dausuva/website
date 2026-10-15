@@ -19,6 +19,21 @@
   {{ partial "shot.html" (dict "src" $p.shot.src "alt" $p.shot.alt "caption" $p.shot.caption) }}
 </section>
 
+{{ with $p.highlights }}
+<section class="wrap section">
+  <h2>{{ $p.highlightsHeading }}</h2>
+  <div class="highlights">
+    {{ range . }}
+    <div class="card highlight">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text | markdownify }}</p>
+      {{ partial "shot.html" (dict "src" .src "alt" .alt) }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
 <section class="wrap section">
   <h2>{{ $p.featuresHeading }}</h2>
   <div class="grid">
