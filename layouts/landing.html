@@ -24,11 +24,7 @@
   <h2>{{ $p.highlightsHeading }}</h2>
   <div class="highlights">
     {{ range . }}
-    <div class="card highlight">
-      <h3>{{ .title }}</h3>
-      <p>{{ .text | markdownify }}</p>
-      {{ partial "shot.html" (dict "src" .src "alt" .alt) }}
-    </div>
+    {{ partial "highlight.html" . }}
     {{ end }}
   </div>
 </section>
@@ -37,12 +33,9 @@
 {{ with $p.upkeep }}
 <section class="wrap section">
   <h2>{{ $p.upkeepHeading }}</h2>
-  <div class="grid">
+  <div class="highlights">
     {{ range . }}
-    <div class="card">
-      <h3>{{ .title }}</h3>
-      <p class="card-text">{{ .text | markdownify }}</p>
-    </div>
+    {{ partial "highlight.html" . }}
     {{ end }}
   </div>
 </section>

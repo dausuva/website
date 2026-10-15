@@ -40,11 +40,20 @@ highlights:
 upkeepHeading: "Kad visi kompiuteriai būtų vienodi"
 upkeep:
   - title: "Windows naujinimai nuo jūsų stalo"
+    wide: true
     text: "Matykite, kokių naujinimų laukia kiekvienas kompiuteris, įdiekite visus arba tik pasirinktus, sustabdykite naujinimus prieš egzaminų savaitę ir vėl įjunkite po jos, o po pamokos perkraukite kompiuterius naujinimams."
+    src: "images/features/windows-update-lt.png"
+    alt: "Keturių klasės kompiuterių „Windows Update“ langas: du „Windows 11“ ir du „Windows 10“ kompiuteriai, kiekvieno „Windows“ versija, laukiantys naujinimai (nauja „Windows“ versija, saugos ir .NET naujinimai, „Defender“ ir tvarkyklių naujinimai) ir mygtukai tikrinti, atnaujinti, pristabdyti ir tęsti."
   - title: "Tikslus laikas visuose kompiuteriuose"
+    wide: true
     text: "Vienu veiksmu nustatykite visų kompiuterių laikrodžius pagal savo kompiuterį, net be interneto, ir suvienodinkite laiko juostą. Neteisingas laikas trikdo prisijungimą, svetaines ir egzamino laiką."
+    src: "images/features/time-lt.png"
+    alt: "Laiko sinchronizavimo langas: trys pažymėti kompiuteriai, laikrodis nustatomas pagal šio kompiuterio laikrodį, ir parinktis suvienodinti laiko juostą."
   - title: "Vienodi klaviatūros išdėstymai"
+    wide: true
     text: "Iš karto matykite, kuriems kompiuteriams trūksta išdėstymo ar kurie pradeda ne nuo to, pridėkite ar pašalinkite išdėstymus ir pasirinkite numatytąjį. Klasės rinkinį išsaugokite kartą ir grąžinkite į jį visus kompiuterius."
+    src: "images/features/keyboard-lt.png"
+    alt: "Keturių klasės kompiuterių klaviatūros išdėstymų langas: lietuviškas ir US išdėstymai įdiegti 4 iš 4, du kompiuteriai pradeda nuo lietuviško, du – nuo US, ir mygtukai pridėti, pašalinti, padaryti numatytuoju ir pritaikyti klasės numatytąjį."
 featuresHeading: "Ką dar galite daryti"
 features:
   - title: "Prieš pamoką"

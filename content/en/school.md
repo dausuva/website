@@ -40,11 +40,20 @@ highlights:
 upkeepHeading: "Keeping every PC the same"
 upkeep:
   - title: "Windows Update from your desk"
+    wide: true
     text: "See which updates each PC is waiting for, install all of them or only the ones you pick, pause updates before an exam week and resume them after, and restart for updates when the lesson is over."
+    src: "images/features/windows-update-en.png"
+    alt: "Windows Update window for four lab computers: two Windows 11 and two Windows 10 PCs, each with its Windows version, the updates it is waiting for (a new Windows version, security and .NET updates, Defender and driver updates) and buttons to check, update, pause and resume."
   - title: "The right time on every PC"
+    wide: true
     text: "Set every clock from your own computer in one step, even without internet, and match the time zone too. Wrong clocks break sign-in, websites and exam timing."
+    src: "images/features/time-en.png"
+    alt: "Sync time window: three selected computers, setting the clock from this computer's clock, and an option to match the time zone."
   - title: "Keyboard layouts that match"
+    wide: true
     text: "See at a glance which PCs miss a layout or start in the wrong one, add or remove layouts and choose the default. Save the room's set once and bring every PC back to it."
+    src: "images/features/keyboard-en.png"
+    alt: "Keyboard layouts window for four lab computers: Lithuanian and US layouts installed on 4 of 4, with two PCs starting in Lithuanian and two in US, and buttons to add, remove, make default and apply the room default."
 featuresHeading: "Everything else you can do"
 features:
   - title: "Before the lesson"
