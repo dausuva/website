@@ -37,6 +37,14 @@ highlights:
     text: "Gather matching files from every student PC into one folder on your computer, one subfolder per student. The originals stay where they are."
     src: "images/features/collect-en.png"
     alt: "Collect files from students window: three selected computers, the folder on the student PC, a file name pattern and the folder to save into."
+upkeepHeading: "Keeping every PC the same"
+upkeep:
+  - title: "Windows Update from your desk"
+    text: "See which updates each PC is waiting for, install all of them or only the ones you pick, pause updates before an exam week and resume them after, and restart for updates when the lesson is over."
+  - title: "The right time on every PC"
+    text: "Set every clock from your own computer in one step, even without internet, and match the time zone too. Wrong clocks break sign-in, websites and exam timing."
+  - title: "Keyboard layouts that match"
+    text: "See at a glance which PCs miss a layout or start in the wrong one, add or remove layouts and choose the default. Save the room's set once and bring every PC back to it."
 featuresHeading: "Everything else you can do"
 features:
   - title: "Before the lesson"

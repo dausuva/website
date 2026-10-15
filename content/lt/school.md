@@ -37,6 +37,14 @@ highlights:
     text: "Surinkite atitinkančius failus iš visų mokinių kompiuterių į vieną aplanką savo kompiuteryje – po poaplankį kiekvienam mokiniui. Originalai lieka savo vietose."
     src: "images/features/collect-lt.png"
     alt: "Failų surinkimo iš mokinių langas: trys pažymėti kompiuteriai, aplankas mokinio kompiuteryje, failų vardų šablonas ir aplankas, į kurį išsaugoma."
+upkeepHeading: "Kad visi kompiuteriai būtų vienodi"
+upkeep:
+  - title: "Windows naujinimai nuo jūsų stalo"
+    text: "Matykite, kokių naujinimų laukia kiekvienas kompiuteris, įdiekite visus arba tik pasirinktus, sustabdykite naujinimus prieš egzaminų savaitę ir vėl įjunkite po jos, o po pamokos perkraukite kompiuterius naujinimams."
+  - title: "Tikslus laikas visuose kompiuteriuose"
+    text: "Vienu veiksmu nustatykite visų kompiuterių laikrodžius pagal savo kompiuterį, net be interneto, ir suvienodinkite laiko juostą. Neteisingas laikas trikdo prisijungimą, svetaines ir egzamino laiką."
+  - title: "Vienodi klaviatūros išdėstymai"
+    text: "Iš karto matykite, kuriems kompiuteriams trūksta išdėstymo ar kurie pradeda ne nuo to, pridėkite ar pašalinkite išdėstymus ir pasirinkite numatytąjį. Klasės rinkinį išsaugokite kartą ir grąžinkite į jį visus kompiuterius."
 featuresHeading: "Ką dar galite daryti"
 features:
   - title: "Prieš pamoką"
