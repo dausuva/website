@@ -41,12 +41,12 @@ features:
       - "Update the client on every PC from the console"
 pricingHeading: "Pricing"
 plans:
-  - name: "Test package"
+  - name: "Demo and test package"
     price: "Free"
     items:
-      - "A package prepared for your school, on request"
+      - "A demo with questions and answers: on site in Vilnius County, or a short Zoom call anywhere"
+      - "Then a test package prepared for your school"
       - "Try it on one PC, then on a lab"
-      - "Answers by e-mail"
     cta:
       label: "requestTest"
       subject: "mailTestSubject"
@@ -71,7 +71,7 @@ plans:
       - "Support and help with upgrades"
       - "Your installation keeps working if you do not renew"
 pricingNote: "Existing installations do not stop working if support is not renewed. Renewal keeps updates and support active."
-contactLine: "Write or call to request a test package, ask a question or arrange a deployment."
+contactLine: "We are based in Vilnius, Lithuania. Write or call to arrange a demo (on site in Vilnius County, or by Zoom with questions and answers), ask a question or plan a deployment."
 ---
 
 ## How it works
@@ -94,7 +94,8 @@ responsible for its own policies and for informing students and parents.
 
 ## Getting started
 
-1. **Request a test package** by e-mail. We prepare it for your school.
+1. **Request a demo** by e-mail or phone: on site in Vilnius County, or a short Zoom call with questions
+   and answers. Afterwards we prepare a test package for your school.
 2. **Install it on one student PC and the teacher's PC**, and try the actions you need.
 3. **Roll it out to the lab** with the setup kit: one window on each PC, or a silent install.
 4. **Manage the lab** from the console. Updates for the client are pushed from there.

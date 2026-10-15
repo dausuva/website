@@ -41,12 +41,12 @@ features:
       - "Kliento atnaujinimas visuose kompiuteriuose iš pulto"
 pricingHeading: "Kainos"
 plans:
-  - name: "Bandomasis paketas"
+  - name: "Demonstracija ir bandomasis paketas"
     price: "Nemokamai"
     items:
-      - "Paketas, paruoštas jūsų mokyklai pagal užklausą"
+      - "Demonstracija su klausimais ir atsakymais: vietoje Vilniaus apskrityje arba trumpu Zoom skambučiu iš bet kur"
+      - "Po jos – jūsų mokyklai paruoštas bandomasis paketas"
       - "Išbandykite viename kompiuteryje, tada klasėje"
-      - "Atsakymai el. paštu"
     cta:
       label: "requestTest"
       subject: "mailTestSubject"
@@ -71,7 +71,7 @@ plans:
       - "Pagalba, taip pat atnaujinant"
       - "Nepratęsus įdiegta programa toliau veikia"
 pricingNote: "Nepratęsus priežiūros įdiegta programa neišsijungia. Pratęsimas suteikia atnaujinimus ir pagalbą."
-contactLine: "Parašykite ar paskambinkite: užsakykite bandomąjį paketą, užduokite klausimą ar susitarkite dėl įdiegimo."
+contactLine: "Esame Vilniuje. Parašykite ar paskambinkite: susitarkime dėl demonstracijos (vietoje Vilniaus apskrityje arba Zoom skambučiu su klausimais ir atsakymais), užduokite klausimą ar suplanuokime įdiegimą."
 ---
 
 ## Kaip tai veikia
@@ -95,7 +95,8 @@ Už savo tvarką ir mokinių bei tėvų informavimą atsako kiekviena mokykla.
 
 ## Kaip pradėti
 
-1. **Užsakykite bandomąjį paketą** el. paštu. Paruošime jį jūsų mokyklai.
+1. **Užsisakykite demonstraciją** el. paštu ar telefonu: vietoje Vilniaus apskrityje arba trumpu Zoom
+   skambučiu su klausimais ir atsakymais. Po jos paruošime bandomąjį paketą jūsų mokyklai.
 2. **Įdiekite jį viename mokinio ir mokytojo kompiuteryje** ir išbandykite reikalingus veiksmus.
 3. **Įdiekite visoje klasėje** su diegimo rinkiniu: vienas langas kiekviename kompiuteryje arba tylusis
    diegimas.

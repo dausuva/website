@@ -2,8 +2,9 @@
   <div class="wrap footer-grid">
     <div>
       <strong>{{ site.Params.company }}</strong><br>
+      {{ T "based" }}: {{ site.Params.based }}<br>
       {{ T "companyCode" }}: {{ site.Params.companyCode }}<br>
-      {{ site.Params.address }}
+      {{ T "address" }}: {{ site.Params.address }}
     </div>
     <div>
       <a href="mailto:{{ site.Language.Params.email }}">{{ site.Language.Params.email }}</a><br>
