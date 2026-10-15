@@ -33,7 +33,7 @@ enableRobotsTXT = true
   phone = "+370 648 45767"
   phoneLink = "+37064845767"
   product = "Classroom Manager"
-  version = "1.2"
+  version = "1.2.0"
   priceFirstYear = "€499"
   priceRenewal = "€299"
 
