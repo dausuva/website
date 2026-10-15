@@ -1,0 +1,41 @@
+baseURL = "https://dausuva.com/"
+title = "Dausuva"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+disableKinds = ["taxonomy", "term", "rss", "section"]
+enableRobotsTXT = true
+
+[languages.en]
+  label = "English"
+  locale = "en"
+  contentDir = "content/en"
+  weight = 1
+  [languages.en.params]
+    email = "support@dausuva.com"
+
+[languages.lt]
+  label = "Lietuvių"
+  locale = "lt"
+  contentDir = "content/lt"
+  weight = 2
+  [languages.lt.params]
+    email = "support@dausuva.lt"
+
+# Product and company values: change them here only.
+[params]
+  company = "Dausuva MB"
+  companyCode = "307580523"
+  founded = "2026"
+  address = "Vytauto g. 22-22A, LT-90123 Plungė, Lithuania"
+  phone = "+370 648 45767"
+  phoneLink = "+37064845767"
+  product = "Classroom Manager"
+  version = "1.2"
+  priceFirstYear = "€499"
+  priceRenewal = "€299"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[minify]
+  minifyOutput = true

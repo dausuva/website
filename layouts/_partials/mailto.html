@@ -1,0 +1,4 @@
+{{- /* The href of a mailto: link with a prepared subject and body. Context: the subject text. */ -}}
+{{- $subject := urlquery . | replaceRE `\+` "%20" -}}
+{{- $body := urlquery (T "mailBody") | replaceRE `\+` "%20" -}}
+{{- printf "mailto:%s?subject=%s&body=%s" site.Language.Params.email $subject $body | safeURL -}}
