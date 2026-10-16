@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: '24'
       - name: Test deployment helpers
-        run: node --test scripts/domains.test.mjs
+        run: node --test scripts/domains.test.mjs scripts/contacts.test.mjs
       - name: Build and check both language domains
         run: |
           hugo --config hugo.toml,config/domains/hugo.toml --minify --panicOnWarning --destination public/domains

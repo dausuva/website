@@ -40,4 +40,4 @@ Vietinio tarnybos ir pagalbinės programos kanalo tapatybės stiprinimas, automa
 
 Paprašykite tikslios paketo versijos, vaidmenų ir atšaukimo testų rezultatų, serverio tapatybės tikrinimo procedūros, ugniasienės rekomendacijų, žurnalų laukų, naujinimo patikrų bei atkūrimo bandymo. Priėmimo kriterijus sutarkite su mokyklos IT atsakingu asmeniu.
 
-[Pradėkite nuo kontroliuojamo bandymo]({{< relref "/school/getting-started" >}}). Apie saugumo klausimus rašykite [support@dausuva.lt](mailto:support@dausuva.lt). Nesiųskite privačių raktų, prisijungimo duomenų ar mokinių įrašų.
+[Pradėkite nuo kontroliuojamo bandymo]({{< relref "/school/getting-started" >}}). Apie saugumo klausimus rašykite {{< contact >}}. Nesiųskite privačių raktų, prisijungimo duomenų ar mokinių įrašų.

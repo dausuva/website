@@ -1,0 +1,16 @@
+{{- $kind := .kind -}}
+{{- $value := site.Language.Params.email -}}
+{{- $label := T "revealEmail" -}}
+{{- $display := $value -}}
+{{- if eq $kind "phone" -}}
+  {{- $value = site.Params.phoneLink -}}
+  {{- $display = site.Params.phone -}}
+  {{- $label = T "revealPhone" -}}
+{{- end -}}
+{{- $payload := dict "kind" $kind "value" $value "label" $display -}}
+{{- if eq $kind "compose" -}}
+  {{- $payload = merge $payload (dict "subject" .subject "body" (T "mailBody")) -}}
+  {{- $label = .label -}}
+{{- end -}}
+<button type="button" class="{{ .class | default "contact-link" }}" data-contact="{{ $payload | jsonify | encoding.Base64Encode }}" data-contact-error="{{ T "contactUnavailable" }}">{{ $label }}</button>
+<noscript><span class="contact-fallback">{{ if eq $kind "phone" }}{{ replace site.Params.phone " " " · " }}{{ else }}{{ replace (replace site.Language.Params.email "@" " [at] ") "." " [dot] " }}{{ end }}</span></noscript>

@@ -28,6 +28,26 @@ a {
 a:hover {
   text-decoration-thickness:2px
 }
+.contact-link {
+  border:0;
+  padding:0;
+  background:none;
+  color:var(--green);
+  font:inherit;
+  text-align:left;
+  text-decoration:underline;
+  text-underline-offset:4px;
+  cursor:pointer
+}
+button.button {
+  font-family:inherit;
+  font-size:inherit;
+  line-height:inherit;
+  cursor:pointer
+}
+.contact-fallback {
+  overflow-wrap:anywhere
+}
 :focus-visible {
   outline:3px solid var(--focus);
   outline-offset:4px

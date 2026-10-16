@@ -7,8 +7,8 @@
       {{ T "address" }}: {{ site.Params.address }}
     </div>
     <div>
-      <a href="mailto:{{ site.Language.Params.email }}">{{ site.Language.Params.email }}</a><br>
-      <a href="tel:{{ site.Params.phoneLink }}">{{ site.Params.phone }}</a>
+      {{ partial "contact.html" (dict "kind" "email") }}<br>
+      {{ partial "contact.html" (dict "kind" "phone") }}
     </div>
     <div>
       <a href="{{ partial "page-url.html" "/school/security/" }}">{{ T "security" }}</a><br>
@@ -19,3 +19,4 @@
   </div>
   <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">Dausuva MB</a><a href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }}</a><span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span></div>
 </footer>
+<noscript><p class="wrap note">{{ T "contactNoScript" }}</p></noscript>
