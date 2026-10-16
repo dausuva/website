@@ -2,7 +2,6 @@
 title: "Mokyklai pritaikyta pagalba."
 description: "Fiksuota pirmų metų diegimo kaina ir pasirenkamas metinis priežiūros pratęsimas. Be mokesčio už kompiuterį. Pradėkite nuo nemokamos demonstracijos."
 showPricing: true
-url: "/lt/school/pricing/"
 translationKey: "school-pricing"
 schoolPage: true
 aliases: ["/classroom-manager/pricing/"]

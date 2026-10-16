@@ -1,7 +1,6 @@
 ---
 title: "Informacija mokyklos IT specialistui."
 description: "Architektūra, prieigos teisės, naujinimas ir ankstyvosios prieigos ribos, kurias reikia įvertinti prieš bandymą mokykloje."
-url: "/lt/school/security/"
 translationKey: "school-security"
 schoolPage: true
 aliases: ["/classroom-manager/security/"]

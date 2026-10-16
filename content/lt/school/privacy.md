@@ -1,7 +1,6 @@
 ---
 title: "Privatumas klasėje."
 description: "Mokinių ekranai neperžiūrimi ir neįrašomi. Aiškiai apie administracinius duomenis, kuriuos programa vis tiek tvarko."
-url: "/lt/school/privacy/"
 translationKey: "school-privacy"
 schoolPage: true
 aliases: ["/classroom-manager/privacy/"]

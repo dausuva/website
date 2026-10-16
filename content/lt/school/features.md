@@ -1,7 +1,6 @@
 ---
 title: "Priemonės visai klasei."
 description: "Mokymo veiksmai mokytojui, administravimo įrankiai IT specialistui ir aiškios programos galimybių ribos."
-url: "/lt/school/features/"
 translationKey: "school-features"
 schoolPage: true
 aliases: ["/classroom-manager/features/"]

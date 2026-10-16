@@ -1,7 +1,6 @@
 ---
 title: "Pirmiausia vienas kompiuteris. Tada klasė."
 description: "Demonstracija, mokyklai paruoštas bandomasis paketas ir sutartas bandymas prieš platesnį diegimą."
-url: "/lt/school/getting-started/"
 translationKey: "school-getting-started"
 schoolPage: true
 aliases: ["/classroom-manager/getting-started/"]

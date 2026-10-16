@@ -2,7 +2,6 @@
 title: "Kompiuterių klasė — vienoje vietoje."
 htmlTitle: "Classroom Manager — Windows kompiuterių klasės valdymas | Dausuva"
 description: "Paruoškite Windows kompiuterius pamokai, surinkite darbus ir prižiūrėkite klasę iš vienos programos mokyklos tinkle. Dausuva ankstyvoji prieiga."
-url: "/lt/school/"
 layout: "landing"
 aliases: ["/classroom-manager/"]
 translationKey: "school"
