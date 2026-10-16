@@ -28,12 +28,14 @@ enableRobotsTXT = true
 # Product and company values: change them here only.
 [params]
   company = "Dausuva MB"
+  companyUrl = "https://dausuva.com/"
   companyCode = "307580523"
   founded = "2026"
   phone = "+370 648 45767"
   phoneLink = "+37064845767"
   product = "Classroom Manager"
   version = "1.2.0"
+  operatingSystems = ["Windows 10", "Windows 11"]
   priceFirstYear = "€499"
   priceRenewal = "€299"
 

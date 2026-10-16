@@ -19,6 +19,7 @@
   </div>
   <ul class="wrap facts">{{ range $p.facts }}<li>{{ . }}</li>{{ end }}</ul>
 </section>
+{{ partial "product-summary.html" . }}
 <section class="wrap section">
   <p class="eyebrow">{{ $p.workflowLabel }}</p>
   <div class="section-heading"><h2>{{ $p.workflowHeading }}</h2><a href="{{ "school/features/" | relLangURL }}">{{ T "allFeatures" }} →</a></div>

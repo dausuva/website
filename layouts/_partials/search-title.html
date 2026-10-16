@@ -1,0 +1,12 @@
+{{- $title := .Title -}}
+{{- $copy := index hugo.Data.search site.Language.Lang -}}
+{{- if .IsHome -}}
+  {{- $title = $copy.titles.home -}}
+{{- else if .Params.htmlTitle -}}
+  {{- $title = .Params.htmlTitle -}}
+{{- else if index $copy.titles .TranslationKey -}}
+  {{- $title = index $copy.titles .TranslationKey -}}
+{{- else -}}
+  {{- $title = printf "%s | %s" .Title site.Title -}}
+{{- end -}}
+{{- return $title -}}
