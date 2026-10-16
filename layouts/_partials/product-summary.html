@@ -1,0 +1,12 @@
+{{ $copy := (index hugo.Data.search site.Language.Lang).summary }}
+<section class="wrap section" aria-labelledby="product-summary" id="product-facts">
+  <h2 id="product-summary">{{ $copy.heading }}</h2>
+  <p class="section-lead">{{ $copy.description }}</p>
+  <dl class="details">
+    <dt>{{ $copy.systemsLabel }}</dt><dd>{{ delimit site.Params.operatingSystems ", " }}. {{ $copy.systemsNote }}</dd>
+    <dt>{{ $copy.networkLabel }}</dt><dd>{{ $copy.network }}</dd>
+    <dt>{{ $copy.privacyLabel }}</dt><dd>{{ $copy.privacy }} <a href="{{ "school/privacy/" | relLangURL }}">{{ T "productPrivacy" }}</a></dd>
+    <dt>{{ $copy.statusLabel }}</dt><dd>{{ $copy.status }} <a href="{{ "school/getting-started/" | relLangURL }}">{{ T "gettingStarted" }}</a></dd>
+    <dt>{{ $copy.priceLabel }}</dt><dd>{{ site.Params.priceFirstYear }} {{ $copy.firstYear }}; {{ site.Params.priceRenewal }} {{ $copy.renewal }}. {{ $copy.priceNote }} <a href="{{ "school/pricing/" | relLangURL }}">{{ T "pricing" }}</a></dd>
+  </dl>
+</section>

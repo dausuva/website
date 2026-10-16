@@ -75,6 +75,9 @@ source tree; keep maintaining this Hugo repository.
 
 ## Publishing (once)
 
+For the small search-visibility feature set and owner-side verification/sitemap
+steps, see [Search visibility](docs/SEARCH-VISIBILITY.md).
+
 1. Repository Settings > Pages > Source: **GitHub Actions**.
 2. DNS for `dausuva.com` at the registrar: `A` records to `185.199.108.153`, `185.199.109.153`,
    `185.199.110.153`, `185.199.111.153` (and `AAAA` to `2606:50c0:8000::153`, `2606:50c0:8001::153`,
