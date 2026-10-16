@@ -7,6 +7,12 @@ every push to `main`.
 
 ## Build locally
 
+On Windows, double-click **`run.bat`**. It finds Hugo on PATH or in the WinGet installation,
+starts a localhost-only preview and opens `/school/` in your default browser once ready.
+Keep the terminal open; press Ctrl+C to stop. Nothing is published.
+Use `run.bat -Port 1314` for another port, `run.bat -NoBrowser` to skip opening a browser,
+or `run.bat -Check` to build without starting the preview.
+
 Hugo Extended **0.168.0** (the same version as the workflow):
 
 ```powershell
