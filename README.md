@@ -53,6 +53,7 @@ Lithuanian URLs use `/mokykloms/` and localized subpaths; see the
 [URL map and bookmark compatibility](docs/LITHUANIAN-URLS.md).
 Public contact links use [lightweight click-to-reveal protection](docs/CONTACT-PROTECTION.md),
 with one-click email drafts and a written fallback when JavaScript is disabled.
+For the next evidence/offer improvements, see [Launch conversion priorities](docs/LAUNCH-CONVERSION-PRIORITIES.md).
 Pricing is rendered from `hugo.toml`; edit the first-year and renewal values there, not in copy.
 
 Hugo generates the pages and styles. Node 24 runs dependency-free output checks and domain-deployment

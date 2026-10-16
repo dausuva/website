@@ -7,7 +7,7 @@ by this change. Keep the switch below disabled until the Lithuanian HTTPS site i
 | --- | --- |
 | Edit all source, content and automation here | `dausuva/website` |
 | English native site | `https://dausuva.com/school/` |
-| Lithuanian native site | `https://dausuva.lt/school/` |
+| Lithuanian native site | `https://dausuva.lt/mokykloms/` |
 | Generated Lithuanian files only, never edit manually | `dausuva/website-lt`, branch `gh-pages` |
 
 The Hugo domain overlay builds `public/domains/en` and `public/domains/lt`. Each has its own canonical
@@ -116,7 +116,7 @@ must stay `.lt` in the address bar; the optional `www` name may redirect to its 
 ## 6. Verify Lithuanian hosting before activating the switch
 
 Check [website-lt Actions](https://github.com/dausuva/website-lt/actions) for a successful Pages deployment.
-Visit `https://dausuva.lt/school/`, `/school/features/`, `/school/request/` and `/privacy/`. Confirm:
+Visit `https://dausuva.lt/mokykloms/`, `/mokykloms/funkcijos/`, `/mokykloms/kontaktai/` and `/privatumas/`. Confirm:
 
 - Lithuanian text; the address remains `dausuva.lt` without `/lt/`.
 - CSS and screenshots load, LT email buttons use `support@dausuva.lt`.
@@ -168,7 +168,7 @@ node scripts/test-site.mjs public/legacy https://dausuva.com/
 hugo --config hugo.toml,config/domains/hugo.toml --minify --panicOnWarning --destination public/domains
 node scripts/prepare-domains.mjs public/domains
 node scripts/test-site.mjs public/domains --domains
-node --test scripts/domains.test.mjs
+node --test scripts/domains.test.mjs scripts/contacts.test.mjs
 ```
 
 Use fresh output directories for release checks. `run.bat` deliberately keeps the simple single-host
