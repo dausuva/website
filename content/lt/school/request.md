@@ -2,7 +2,6 @@
 title: "Pasikalbėkime apie jūsų klasę."
 description: "Sutarkime demonstraciją, aptarkime diegimą ar pasirinkime saugų pirmą bandymą."
 showRequest: true
-url: "/lt/school/request/"
 translationKey: "school-request"
 schoolPage: true
 aliases: ["/classroom-manager/request/"]

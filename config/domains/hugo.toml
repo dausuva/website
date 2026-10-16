@@ -1,0 +1,5 @@
+# Opt-in production multihost build. Default hugo.toml remains a single-host/local preview.
+[languages.en]
+  baseURL = "https://dausuva.com/"
+[languages.lt]
+  baseURL = "https://dausuva.lt/"

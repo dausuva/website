@@ -1,9 +1,14 @@
 # dausuva.com
 
-The Dausuva website: company details and the Classroom Manager product page, in English
-(`dausuva.com/`, `dausuva.com/school/`) and Lithuanian (`dausuva.com/lt/`, `dausuva.com/lt/school/`).
+The Dausuva website: company details and the Classroom Manager product pages, in English and Lithuanian.
+Domain-per-language deployment is prepared: English on `dausuva.com`, Lithuanian on `dausuva.lt`.
+Until the activation switch is enabled, production and local preview retain Lithuanian under `/lt/`.
 Built with [Hugo](https://gohugo.io/) and published to GitHub Pages by `.github/workflows/pages.yml` on
 every push to `main`.
+
+For the one-time repository/key/DNS setup and safe activation order, follow
+[Two language domains, one source repository](docs/LANGUAGE-DOMAINS.md). The second repository
+(`dausuva/website-lt`) stores generated pages only; keep all source changes in `dausuva/website`.
 
 ## Build locally
 
@@ -42,7 +47,8 @@ Both languages have the same eight-page product journey: overview, features, sch
 product privacy, getting started, pricing, FAQ and request. Website privacy is a separate page.
 Pricing is rendered from `hugo.toml`; edit the first-year and renewal values there, not in copy.
 
-Node 24 is used only for dependency-free, read-only output checks, not to build the website.
+Hugo generates the pages and styles. Node 24 runs dependency-free output checks and domain-deployment
+helpers; no npm packages, frontend framework or Node server are required.
 The checks cover all 16 product pages, localized contact drafts, canonical/hreflang pairs, legacy
 aliases, local links and anchors, screenshot dimensions/alt text, approved prices and key disclosures.
 They do not replace visual mobile/desktop review, Lighthouse, accessibility testing or an owner copy review.
@@ -76,4 +82,6 @@ source tree; keep maintaining this Hugo repository.
 3. Settings > Pages > Custom domain: `dausuva.com` (the `static/CNAME` file says the same), then
    **Enforce HTTPS** once the certificate is issued. Verifying the domain for the `dausuva` organisation
    (organisation Settings > Pages) protects it from being claimed by another repository.
-4. `dausuva.lt`: URL forwarding at its registrar to `https://dausuva.com/lt/school/`.
+4. For native Lithuanian hosting, replace the old `.lt` forwarding only after following
+   [the staged domain setup](docs/LANGUAGE-DOMAINS.md). Do not enable the cutover variable before the
+   Lithuanian Pages repository, deploy key and HTTPS domain are ready.

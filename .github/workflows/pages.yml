@@ -3,12 +3,16 @@ name: Publish site
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
+    inputs:
+      prepare_lithuanian:
+        description: 'Seed/update Lithuanian repository only; do not deploy English'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -16,33 +20,95 @@ concurrency:
 
 env:
   HUGO_VERSION: 0.168.0
+  LT_PAGES_REPOSITORY: dausuva/website-lt
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Install Hugo
         run: |
           curl -fsSL -o hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
           sudo dpkg -i hugo.deb
-      - name: Build
-        run: hugo --minify --panicOnWarning
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Check pages, translations, links and content
-        run: node scripts/test-site.mjs public https://dausuva.com/
+      - name: Test deployment helpers
+        run: node --test scripts/domains.test.mjs
+      - name: Build and check both language domains
+        run: |
+          hugo --config hugo.toml,config/domains/hugo.toml --minify --panicOnWarning --destination public/domains
+          node scripts/prepare-domains.mjs public/domains
+          node scripts/test-site.mjs public/domains --domains
+      - name: Preserve current single-host site until cutover is enabled
+        if: vars.LANGUAGE_DOMAINS_ENABLED != 'true'
+        run: |
+          hugo --minify --panicOnWarning --destination public/legacy
+          node scripts/test-site.mjs public/legacy https://dausuva.com/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lithuanian-pages
+          path: public/domains/lt
+          include-hidden-files: true
+          retention-days: 7
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: ${{ vars.LANGUAGE_DOMAINS_ENABLED == 'true' && 'public/domains/en' || 'public/legacy' }}
 
   deploy:
-    needs: build
+    if: ${{ !cancelled() && needs.build.result == 'success' && (needs.deploy-lithuanian.result == 'success' || needs.deploy-lithuanian.result == 'skipped') && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && !inputs.prepare_lithuanian }}
+    needs: [build, deploy-lithuanian]
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-lithuanian:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && (vars.LANGUAGE_DOMAINS_ENABLED == 'true' || inputs.prepare_lithuanian)
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/download-artifact@v4
+        with:
+          name: lithuanian-pages
+          path: lt-pages
+      - name: Push generated Lithuanian pages with a repository-only deploy key
+        shell: bash
+        env:
+          LT_PAGES_DEPLOY_KEY: ${{ secrets.LT_PAGES_DEPLOY_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "$LT_PAGES_DEPLOY_KEY" ]; then
+            echo 'Add LT_PAGES_DEPLOY_KEY in the source repository Actions secrets first.' >&2
+            exit 1
+          fi
+          known_hosts="$RUNNER_TEMP/website-known-hosts"
+          curl --proto '=https' -fsSL https://api.github.com/meta | node --input-type=module -e '
+            let input = "";
+            for await (const chunk of process.stdin) input += chunk;
+            const keys = JSON.parse(input).ssh_keys;
+            if (!Array.isArray(keys) || !keys.length) throw new Error("Missing GitHub SSH host keys");
+            console.log(keys.map(key => `github.com ${key}`).join("\n"));
+          ' > "$known_hosts"
+          eval "$(ssh-agent -s)" >/dev/null
+          trap 'ssh-agent -k >/dev/null' EXIT
+          printf '%s\n' "$LT_PAGES_DEPLOY_KEY" | tr -d '\r' | ssh-add -
+          unset LT_PAGES_DEPLOY_KEY
+          export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$known_hosts"
+          node scripts/publish-lt.mjs lt-pages "$LT_PAGES_REPOSITORY" "$GITHUB_SHA"

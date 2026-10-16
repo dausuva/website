@@ -1,7 +1,6 @@
 ---
 title: "Trumpi atsakymai į svarbius klausimus."
 description: "Dažniausi klausimai apie Windows, internetą, ekranų privatumą, prieigos raktus ir bandomąjį paketą."
-url: "/lt/school/faq/"
 translationKey: "school-faq"
 schoolPage: true
 aliases: ["/classroom-manager/faq/"]

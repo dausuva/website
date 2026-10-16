@@ -1,7 +1,6 @@
 ---
 title: "Privatumas"
 description: "Kaip Dausuva svetainė tvarko jūsų duomenis."
-url: "/lt/privacy/"
 translationKey: "privacy"
 ---
 
@@ -16,5 +15,5 @@ Duomenų valdytojas: Dausuva MB, įmonės kodas 307580523, Vytauto g. 22-22A, LT
 [support@dausuva.lt](mailto:support@dausuva.lt). Galite prašyti susipažinti su savo duomenimis, juos
 ištaisyti ar ištrinti, taip pat pateikti skundą Valstybinei duomenų apsaugos inspekcijai (vdai.lrv.lt).
 
-Apie pačios Classroom Manager programos privatumą skaitykite [produkto privatumo](/lt/school/privacy/)
+Apie pačios Classroom Manager programos privatumą skaitykite [produkto privatumo]({{< relref "/school/privacy" >}})
 puslapyje.
