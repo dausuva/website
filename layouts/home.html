@@ -8,7 +8,7 @@
 
 <section class="wrap section">
   <h2>{{ .Params.productsHeading }}</h2>
-  {{ with site.GetPage "/school" }}
+  {{ with partial "product-page.html" . }}
   <a class="card product" href="{{ .RelPermalink }}">
     <span class="card-title">{{ $.Site.Params.product }}</span>
     <span>{{ $.Params.productLine }}</span>

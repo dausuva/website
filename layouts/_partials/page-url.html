@@ -1,0 +1,10 @@
+{{- /* Resolve a content identity, not a hard-coded public URL. */ -}}
+{{- $page := site.GetPage . -}}
+{{- if eq (strings.TrimPrefix "/" (strings.TrimSuffix "/" .)) "school" -}}
+  {{- $page = partial "product-page.html" . -}}
+{{- end -}}
+{{- with $page -}}
+  {{- return .RelPermalink -}}
+{{- else -}}
+  {{- errorf "Missing linked content page: %s" . -}}
+{{- end -}}

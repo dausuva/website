@@ -2,8 +2,9 @@
 title: "Trumpi atsakymai į svarbius klausimus."
 description: "Dažniausi klausimai apie Windows, internetą, ekranų privatumą, prieigos raktus ir bandomąjį paketą."
 translationKey: "school-faq"
+slug: "duk"
 schoolPage: true
-aliases: ["/classroom-manager/faq/"]
+aliases: ["/classroom-manager/faq/", "/school/faq/"]
 ---
 <details><summary>Ar reikia debesijos paskyros ir interneto?</summary><p>Debesijos paskyros ar valdymo serverio nereikia. Host ir Client valdymo ryšiui naudojamas mokyklos tinklas. Pasirinktinėms versijų patikroms, programų diegikliams, Windows Update ir vykdymo aplinkos atsisiuntimams gali reikėti interneto.</p></details>
 <details><summary>Ar mokytojas gali stebėti mokinių ekranus?</summary><p>Ne. Produktas neperžiūri, nefiksuoja ir neįrašo mokinių ekranų. Jis tvarko administracinę informaciją ir failus, kuriuos pasirenkate siųsti ar surinkti.</p></details>
@@ -15,4 +16,4 @@ aliases: ["/classroom-manager/faq/"]
 <details><summary>Ar nepratęsus priežiūros programa nustos veikti?</summary><p>Ne. Esama įdiegta programa veikia toliau. Pratęsimas apmoka naujinimus ir pagalbą.</p></details>
 <details><summary>Kur atsisiųsti bandomąją versiją?</summary><p>Viešo atsisiuntimo nėra. Pirmiausia užsisakykite demonstraciją; po jos paruošime mokyklai bandomąjį paketą.</p></details>
 
-[Užduokite kitą klausimą](../request/) · [Peržiūrėkite saugumo ribas](../security/)
+[Užduokite kitą klausimą]({{< relref "/school/request" >}}) · [Peržiūrėkite saugumo ribas]({{< relref "/school/security" >}})

@@ -2,8 +2,9 @@
 title: "Pirmiausia vienas kompiuteris. Tada klasė."
 description: "Demonstracija, mokyklai paruoštas bandomasis paketas ir sutartas bandymas prieš platesnį diegimą."
 translationKey: "school-getting-started"
+slug: "pradzia"
 schoolPage: true
-aliases: ["/classroom-manager/getting-started/"]
+aliases: ["/classroom-manager/getting-started/", "/school/getting-started/"]
 ---
 ## 1. Papasakokite apie mokyklą
 
@@ -27,4 +28,4 @@ Turėkite nepriklausomą prieigos būdą ir žinomą veikiantį diegiklį. Clien
 
 Užfiksuokite išbandytą versiją, priėmimo rezultatus, atsakingą asmenį, pagalbos apimtį, raktų saugojimą, duomenų laikymą ir atkūrimo veiksmus. Diekite mažomis grupėmis naudodami sutartą paketą.
 
-Sėkminga demonstracija nėra visos mokyklos saugumo patvirtinimas. [Peržiūrėkite IT informaciją](../security/) ir [kainas](../pricing/), tada [užsisakykite demonstraciją](../request/).
+Sėkminga demonstracija nėra visos mokyklos saugumo patvirtinimas. [Peržiūrėkite IT informaciją]({{< relref "/school/security" >}}) ir [kainas]({{< relref "/school/pricing" >}}), tada [užsisakykite demonstraciją]({{< relref "/school/request" >}}).

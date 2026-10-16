@@ -3,8 +3,9 @@ title: "Pasikalbėkime apie jūsų klasę."
 description: "Sutarkime demonstraciją, aptarkime diegimą ar pasirinkime saugų pirmą bandymą."
 showRequest: true
 translationKey: "school-request"
+slug: "kontaktai"
 schoolPage: true
-aliases: ["/classroom-manager/request/"]
+aliases: ["/classroom-manager/request/", "/school/request/"]
 ---
 Classroom Manager galime pademonstruoti **vietoje Vilniaus apskrityje** arba surengti **Zoom pokalbį su atsakymais į klausimus** bet kur. Po demonstracijos galime paruošti mokyklai bandomąjį paketą.
 

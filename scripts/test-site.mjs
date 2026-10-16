@@ -2,6 +2,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, join, relative, sep } from 'node:path';
 import assert from 'node:assert/strict';
+import { productSlugs, productPath, privacyPath } from './routes.mjs';
 
 const root = resolve(process.argv[2] || 'public');
 const origin = new URL(process.argv[3] && !process.argv[3].startsWith('--') ? process.argv[3] : 'https://dausuva.com/');
@@ -23,7 +24,7 @@ function attrs(tag) {
 }
 function tags(html, name) { return [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, 'gi'))].map(m => attrs(m[0])); }
 function page(path, lang) { return readFileSync(join(contexts.get(lang).root, path, 'index.html'), 'utf8'); }
-const slugs = ['', 'features/', 'security/', 'privacy/', 'getting-started/', 'pricing/', 'faq/', 'request/'];
+const slugs = productSlugs;
 for (const lang of ['en', 'lt']) {
   const searchTitles = new Set();
   const current = contexts.get(lang);
@@ -33,20 +34,22 @@ for (const lang of ['en', 'lt']) {
   if (domains) {
     check(readFileSync(join(current.root, 'CNAME'), 'utf8').trim() === current.origin.hostname, `${lang}: domain binding`);
     check(existsSync(join(current.root, '.nojekyll')), `${lang}: static Pages output`);
-    check(!existsSync(join(current.root, lang, 'school/index.html')), `${lang}: no language prefix on native pages`);
+    check(!existsSync(join(current.root, lang, productPath(lang), 'index.html')), `${lang}: no language prefix on native pages`);
     const sitemap = readFileSync(join(current.root, 'sitemap.xml'), 'utf8');
     for (const match of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) {
       check(new URL(match[1]).origin === current.origin.origin && !new URL(match[1]).pathname.startsWith('/lt/'), `${lang}: domain-specific sitemap`);
     }
-    for (const path of ['', 'privacy/']) {
+    for (const kind of ['home', 'privacy']) {
+      const path = kind === 'home' ? '' : privacyPath(lang);
+      const peerPath = kind === 'home' ? '' : privacyPath(lang === 'lt' ? 'en' : 'lt');
       const html = page(path, lang);
       check(tags(html, 'html')[0].lang === lang, `${lang}/${path}: company/privacy language`);
       check(tags(html, 'link').some(t => t.rel === 'canonical' && t.href === new URL(path, current.origin).href), `${lang}/${path}: company/privacy canonical`);
-      check(tags(html, 'link').some(t => t.rel === 'alternate' && t.href === new URL(path, peer.origin).href), `${lang}/${path}: company/privacy alternate`);
+      check(tags(html, 'link').some(t => t.rel === 'alternate' && t.href === new URL(peerPath, peer.origin).href), `${lang}/${path}: company/privacy alternate`);
     }
   }
   for (const slug of slugs) {
-    const path = `${prefix}school/${slug}`;
+    const path = `${prefix}${productPath(lang, slug)}`;
     const html = page(path, lang);
     check(tags(html, 'h1').length === 1, `${path}: one H1`);
     const searchTitle = decode(html.match(/<title>([^<]+)<\/title>/)?.[1] || '');
@@ -65,8 +68,9 @@ for (const lang of ['en', 'lt']) {
     check(faviconSvg.includes('viewBox="0 0 64 64"') && faviconSvg.includes('#226456'), `${path}: Dausuva brand favicon`);
     check(!/<(?:script|text|image|foreignObject)\b|(?:href|onload)=/i.test(faviconSvg), `${path}: self-contained, font-independent icon`);
     check(links.some(t => t.rel === 'canonical' && t.href === new URL(path, current.origin).href), `${path}: canonical`);
-    check(links.some(t => t.rel === 'alternate' && t.hreflang === (lang === 'lt' ? 'en' : 'lt') && t.href === new URL(`${other}school/${slug}`, peer.origin).href), `${path}: translation`);
-    check(tags(html, 'a').some(t => t.class === 'lang' && new URL(t.href, current.origin).href === new URL(`${other}school/${slug}`, peer.origin).href), `${path}: translated navigation`);
+    const peerProduct = `${other}${productPath(lang === 'lt' ? 'en' : 'lt', slug)}`;
+    check(links.some(t => t.rel === 'alternate' && t.hreflang === (lang === 'lt' ? 'en' : 'lt') && t.href === new URL(peerProduct, peer.origin).href), `${path}: translation`);
+    check(tags(html, 'a').some(t => t.class === 'lang' && new URL(t.href, current.origin).href === new URL(peerProduct, peer.origin).href), `${path}: translated navigation`);
     check(!/<form\b|<iframe\b/i.test(html), `${path}: no forms or embeds`);
     const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
     const visibleHtml = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
@@ -83,12 +87,12 @@ for (const lang of ['en', 'lt']) {
     check(organization['@id'] === 'https://dausuva.com/#organization', `${path}: same company across languages`);
     check(website?.url === new URL(prefix, current.origin).href && website.inLanguage === lang, `${path}: localized website`);
     check(webpage?.url === new URL(path, current.origin).href && webpage.name === searchTitle && webpage.inLanguage === lang, `${path}: schema matches canonical, title and language`);
-    check(webpage.about?.['@id'] === new URL(`${prefix}school/#software`, current.origin).href, `${path}: localized product reference`);
+    check(webpage.about?.['@id'] === new URL(`${prefix}${productPath(lang)}#software`, current.origin).href, `${path}: localized product reference`);
     check(!/"(?:aggregateRating|review|offers|downloadUrl)"/.test(JSON.stringify(schema)), `${path}: no fabricated ratings, offers or downloads`);
     if (slug !== '') {
       const crumbs = node('BreadcrumbList')?.itemListElement;
       check(crumbs?.length === 2 && crumbs[0].position === 1 && crumbs[1].position === 2, `${path}: breadcrumb ordering`);
-      check(crumbs[0].item === new URL(`${prefix}school/`, current.origin).href && crumbs[1].item === webpage.url, `${path}: breadcrumb destinations`);
+      check(crumbs[0].item === new URL(`${prefix}${productPath(lang)}`, current.origin).href && crumbs[1].item === webpage.url, `${path}: breadcrumb destinations`);
       check(crumbs[1].name === decode(html.match(/<h1>([^<]+)<\/h1>/)?.[1] || ''), `${path}: breadcrumb matches visible heading`);
       check(!node('SoftwareApplication'), `${path}: software definition stays on overview`);
     }
@@ -121,9 +125,10 @@ for (const lang of ['en', 'lt']) {
     if (slug === 'faq/') check(tags(html, 'details').length === 9, `${path}: accessible FAQ questions`);
     const alias = page(`${prefix}classroom-manager/${slug}`, lang);
     check(alias.includes(new URL(path, current.origin).href), `${path}: legacy alias`);
+    if (lang === 'lt') check(page(`${prefix}school/${slug}`, lang).includes(new URL(path, current.origin).href), `${path}: old English-slug bookmark`);
     if (domains && lang === 'lt') {
       const old = page(`lt/school/${slug}`, 'en');
-      check(tags(old, 'link').some(t => t.rel === 'canonical' && t.href === new URL(`school/${slug}`, current.origin).href), `${path}: old .com/lt/ bookmark destination`);
+      check(tags(old, 'link').some(t => t.rel === 'canonical' && t.href === new URL(productPath('lt', slug), current.origin).href), `${path}: old .com/lt/ bookmark destination`);
     }
   }
 }
@@ -156,9 +161,9 @@ for (const current of (domains ? [...contexts.values()] : [contexts.get('en')]))
 }
 for (const lang of ['en', 'lt']) {
   const prefix = contexts.get(lang).prefix;
-  const privacy = page(`${prefix}school/privacy/`, lang);
+  const privacy = page(`${prefix}${productPath(lang, 'privacy/')}`, lang);
   check(privacy.includes(lang === 'lt' ? 'naršyklėse atidarytas svetaines' : 'websites open in browsers'), `${lang}: browser-data disclosure`);
-  const security = page(`${prefix}school/security/`, lang);
+  const security = page(`${prefix}${productPath(lang, 'security/')}`, lang);
   check(security.includes(lang === 'lt' ? 'neįgyvendintas' : 'not implemented'), `${lang}: rollback limitation`);
 }
 console.log(`PASS: ${checks} checks; 16 product pages; ${checkedLinks} local/peer links and assets; ${domains ? 'two domains' : 'single host'} and legacy aliases.`);

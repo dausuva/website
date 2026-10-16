@@ -20,6 +20,8 @@ enableRobotsTXT = true
   locale = "lt"
   contentDir = "content/lt"
   weight = 2
+  [languages.lt.permalinks.page]
+    school = "/mokykloms/:slug/"
   [languages.lt.params]
     email = "support@dausuva.lt"
     based = "Vilnius, Lietuva"

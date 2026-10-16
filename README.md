@@ -49,6 +49,8 @@ includes it on both language sites. Edit this SVG to update the tab icon.
 
 Both languages have the same eight-page product journey: overview, features, school IT/security,
 product privacy, getting started, pricing, FAQ and request. Website privacy is a separate page.
+Lithuanian URLs use `/mokykloms/` and localized subpaths; see the
+[URL map and bookmark compatibility](docs/LITHUANIAN-URLS.md).
 Pricing is rendered from `hugo.toml`; edit the first-year and renewal values there, not in copy.
 
 Hugo generates the pages and styles. Node 24 runs dependency-free output checks and domain-deployment

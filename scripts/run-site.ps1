@@ -36,7 +36,7 @@ try {
     else {
         $url = "http://localhost:$Port/school/"
         Write-Host "Local website: $url"
-        Write-Host "Lithuanian: http://localhost:$Port/lt/school/"
+        Write-Host "Lithuanian: http://localhost:$Port/lt/mokykloms/"
         Write-Host 'Keep this window open. Press Ctrl+C to stop. Changes reload automatically.'
         if (-not $NoBrowser) {
             $browserJob = Start-Job -ArgumentList $url -ScriptBlock {

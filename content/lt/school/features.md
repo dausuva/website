@@ -2,8 +2,9 @@
 title: "Priemonės visai klasei."
 description: "Mokymo veiksmai mokytojui, administravimo įrankiai IT specialistui ir aiškios programos galimybių ribos."
 translationKey: "school-features"
+slug: "funkcijos"
 schoolPage: true
-aliases: ["/classroom-manager/features/"]
+aliases: ["/classroom-manager/features/", "/school/features/"]
 ---
 ## Paruoškite Windows klasę
 
@@ -32,4 +33,4 @@ Teacher raktas leidžia siauresnį veiksmų rinkinį; teises tikrina Client. Adm
 
 Classroom Manager nesiūlo mokinių ekranų peržiūros, fiksavimo ar įrašymo. Tai nėra vienos programos kioskas ar sertifikuota egzaminų aplinka.
 
-[Peržiūrėkite saugumo ribas](../security/) arba [suplanuokite pirmą bandymą](../getting-started/).
+[Peržiūrėkite saugumo ribas]({{< relref "/school/security" >}}) arba [suplanuokite pirmą bandymą]({{< relref "/school/getting-started" >}}).
