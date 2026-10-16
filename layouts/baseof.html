@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <noscript><style>button[data-contact]{display:none}</style></noscript>
   {{ if eq hugo.Environment "preview" }}<meta name="robots" content="noindex, nofollow">{{ end }}
   <title>{{ partial "search-title.html" . }}</title>
   {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
@@ -28,5 +29,7 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  {{ $contacts := resources.Get "js/contacts.mjs" | fingerprint }}
+  <script type="module" src="{{ $contacts.RelPermalink }}" integrity="{{ $contacts.Data.Integrity }}"></script>
 </body>
 </html>

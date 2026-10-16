@@ -3,6 +3,7 @@ import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, join, relative, sep } from 'node:path';
 import assert from 'node:assert/strict';
 import { productSlugs, productPath, privacyPath } from './routes.mjs';
+import { decodeContact, contactHref } from '../assets/js/contacts.mjs';
 
 const root = resolve(process.argv[2] || 'public');
 const origin = new URL(process.argv[3] && !process.argv[3].startsWith('--') ? process.argv[3] : 'https://dausuva.com/');
@@ -74,10 +75,17 @@ for (const lang of ['en', 'lt']) {
     check(!/<form\b|<iframe\b/i.test(html), `${path}: no forms or embeds`);
     const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
     const visibleHtml = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
-    check(scripts.length === 1, `${path}: one metadata block only`);
-    const scriptAttrs = attrs(scripts[0][1]);
-    check(Object.keys(scriptAttrs).length === 1 && scriptAttrs.type === 'application/ld+json', `${path}: inert JSON-LD only, no executable scripts`);
-    const schema = JSON.parse(scripts[0][2]);
+    check(scripts.length === 2, `${path}: metadata and first-party contact helper only`);
+    const metadata = scripts.find(script => attrs(script[1]).type === 'application/ld+json');
+    check(metadata && Object.keys(attrs(metadata[1])).length === 1, `${path}: inert JSON-LD`);
+    const contactScript = scripts.find(script => attrs(script[1]).type === 'module');
+    const scriptAttrs = attrs(contactScript?.[1] || '');
+    check(contactScript && !contactScript[2].trim() && /^\/js\/contacts\.[a-f0-9]+\.mjs$/.test(scriptAttrs.src) && scriptAttrs.integrity?.startsWith('sha256-'), `${path}: local fingerprinted contact module, no inline execution`);
+    check(existsSync(join(current.root, scriptAttrs.src)), `${path}: contact module exists`);
+    check(!html.includes('support@dausuva.') && !html.includes('+370 648 45767') && !html.includes('+37064845767'), `${path}: no plain contact values in HTML or metadata`);
+    check(!tags(html, 'a').some(link => /^(?:mailto:|tel:)/.test(link.href)), `${path}: no scrape-ready contact hrefs`);
+    check(html.includes('<noscript>') && html.includes('[at]') && html.includes('[dot]'), `${path}: manual contact fallback without JavaScript`);
+    const schema = JSON.parse(metadata[2]);
     check(schema['@context'] === 'https://schema.org' && Array.isArray(schema['@graph']), `${path}: valid JSON-LD graph`);
     const node = type => schema['@graph'].find(item => item['@type'] === type);
     const organization = node('Organization');
@@ -113,10 +121,10 @@ for (const lang of ['en', 'lt']) {
       check(tags(html, 'img')[0].loading === 'eager', `${path}: hero loads eagerly`);
     }
     if (slug === 'request/') {
-      const drafts = tags(html, 'a').filter(t => t.href?.startsWith('mailto:') && t.href.includes('?'));
+      const drafts = tags(html, 'button').filter(t => t['data-contact']).map(t => decodeContact(t['data-contact'])).filter(payload => payload.kind === 'compose');
       check(drafts.length === 2, `${path}: demo and deployment draft`);
       for (const draft of drafts) {
-        const url = new URL(draft.href);
+        const url = new URL(contactHref(draft));
         check(url.pathname === `support@dausuva.${lang === 'lt' ? 'lt' : 'com'}`, `${path}: localized recipient`);
         check(url.searchParams.get('subject')?.includes('Classroom Manager'), `${path}: subject`);
         check(url.searchParams.get('body')?.includes(lang === 'lt' ? 'Kontaktinis asmuo:' : 'Contact name:'), `${path}: draft context`);
@@ -136,9 +144,13 @@ let checkedLinks = 0;
 for (const current of (domains ? [...contexts.values()] : [contexts.get('en')])) {
   for (const file of walk(current.root).filter(f => f.endsWith('.html'))) {
     const html = readFileSync(file, 'utf8');
+    check(!/support@dausuva\.(?:com|lt)|\+370(?: 648 45767|64845767)/.test(html), `${file}: contact details not left plain in any HTML`);
+    for (const button of tags(html, 'button').filter(tag => tag['data-contact'])) {
+      check(button.type === 'button' && ['email', 'phone', 'compose'].includes(decodeContact(button['data-contact']).kind), `${file}: valid keyboard-accessible contact control`);
+    }
     const filePath = relative(current.root, file).split(sep).join('/');
     const base = new URL(filePath.replace(/index\.html$/, ''), current.origin);
-    for (const tag of tags(html, '(?:a|link|img|source)')) {
+    for (const tag of tags(html, '(?:a|link|img|source|script)')) {
       for (const value of [tag.href, tag.src, tag.srcset?.split(/\s|,/)[0]].filter(Boolean)) {
         if (/^(mailto:|tel:|data:)/.test(value)) continue;
         const url = new URL(value, base);

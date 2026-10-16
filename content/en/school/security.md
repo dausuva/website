@@ -40,4 +40,4 @@ These limits mean this early-access product should not be presented as security-
 
 Request the exact package version, role and revocation test results, endpoint-trust procedure, firewall guidance, available log fields, update verification results and a recovery drill. Agree acceptance criteria with your school's IT owner.
 
-[Start with a controlled pilot](../getting-started/). For a security concern, contact [support@dausuva.com](mailto:support@dausuva.com). Do not send private keys, credentials or student records.
+[Start with a controlled pilot](../getting-started/). For a security concern, contact {{< contact >}}. Do not send private keys, credentials or student records.

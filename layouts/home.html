@@ -20,8 +20,8 @@
 <section class="wrap section" id="contact">
   <h2>{{ T "contact" }}</h2>
   <dl class="details">
-    <dt>{{ T "email" }}</dt><dd><a href="mailto:{{ site.Language.Params.email }}">{{ site.Language.Params.email }}</a></dd>
-    <dt>{{ T "phone" }}</dt><dd><a href="tel:{{ site.Params.phoneLink }}">{{ site.Params.phone }}</a></dd>
+    <dt>{{ T "email" }}</dt><dd>{{ partial "contact.html" (dict "kind" "email") }}</dd>
+    <dt>{{ T "phone" }}</dt><dd>{{ partial "contact.html" (dict "kind" "phone") }}</dd>
     <dt>{{ T "company" }}</dt><dd>{{ site.Params.company }}</dd>
     <dt>{{ T "companyCode" }}</dt><dd>{{ site.Params.companyCode }}</dd>
     <dt>{{ T "founded" }}</dt><dd>{{ site.Params.founded }}</dd>

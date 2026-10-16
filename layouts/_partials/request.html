@@ -1,1 +1,8 @@
-<div class="request-panel"><div class="actions"><a class="button primary" href="{{ partial "mailto.html" (T "mailTestSubject") }}">{{ T "requestTest" }} ↗</a><a class="button" href="{{ partial "mailto.html" (T "mailDeploymentSubject") }}">{{ T "requestDeployment" }}</a></div><p><a href="mailto:{{ site.Language.Params.email }}">{{ site.Language.Params.email }}</a><br><a href="tel:{{ site.Params.phoneLink }}">{{ site.Params.phone }}</a></p><p class="note">{{ T "mailFallback" }}</p></div>
+<div class="request-panel">
+  <div class="actions">
+    {{ partial "contact.html" (dict "kind" "compose" "class" "button primary" "label" (T "requestTest") "subject" (T "mailTestSubject")) }}
+    {{ partial "contact.html" (dict "kind" "compose" "class" "button" "label" (T "requestDeployment") "subject" (T "mailDeploymentSubject")) }}
+  </div>
+  <p>{{ partial "contact.html" (dict "kind" "email") }}<br>{{ partial "contact.html" (dict "kind" "phone") }}</p>
+  <p class="note">{{ T "mailFallback" }}</p>
+</div>
