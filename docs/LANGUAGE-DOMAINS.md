@@ -144,6 +144,12 @@ bookmark. Never edit generated files in `website-lt` to fix content; edit `conte
 
 ## Rollback / troubleshooting
 
+- A Node.js 20 deprecation warning concerns JavaScript actions' own runtime, not
+  the `node-version: '24'` used by the website checks. The source workflow uses
+  Node 24-compatible checkout/setup-node v6, artifact upload/download v7, and
+  Pages upload/deploy v5 (including the Pages uploader's nested artifact action).
+  Push the workflow update, then run a new build; rerunning an older commit still
+  uses its older workflow. GitHub-hosted `ubuntu-latest` runners are used here.
 - Set `LANGUAGE_DOMAINS_ENABLED` to `false` or delete it, then run Publish site normally. English hosting
   returns to the original bilingual `.com` layout. This does not delete the LT repository, revoke its key,
   or automatically restore registrar forwarding; do those separately only if desired.
