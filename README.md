@@ -43,6 +43,10 @@ node scripts/test-site.mjs public https://dausuva.com/
 
 ## Product pages and review
 
+The green-and-white `d.` favicon is a font-independent vector in
+`assets/icons/favicon.svg`. Hugo fingerprints its URL for cache updates and
+includes it on both language sites. Edit this SVG to update the tab icon.
+
 Both languages have the same eight-page product journey: overview, features, school IT/security,
 product privacy, getting started, pricing, FAQ and request. Website privacy is a separate page.
 Pricing is rendered from `hugo.toml`; edit the first-year and renewal values there, not in copy.

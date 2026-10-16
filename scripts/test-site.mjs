@@ -57,6 +57,13 @@ for (const lang of ['en', 'lt']) {
     check(tags(html, 'html')[0].lang === lang, `${path}: language`);
     check(tags(html, 'meta').some(t => t.name === 'description' && t.content?.length > 30), `${path}: description`);
     const links = tags(html, 'link');
+    const favicon = links.find(t => t.rel === 'icon');
+    check(favicon?.type === 'image/svg+xml' && favicon.sizes === 'any', `${path}: scalable favicon`);
+    const faviconUrl = new URL(favicon.href, current.origin);
+    check(faviconUrl.origin === current.origin.origin && /\/icons\/favicon\.[a-f0-9]+\.svg$/.test(faviconUrl.pathname), `${path}: local versioned favicon`);
+    const faviconSvg = readFileSync(join(current.root, decodeURIComponent(faviconUrl.pathname)), 'utf8');
+    check(faviconSvg.includes('viewBox="0 0 64 64"') && faviconSvg.includes('#226456'), `${path}: Dausuva brand favicon`);
+    check(!/<(?:script|text|image|foreignObject)\b|(?:href|onload)=/i.test(faviconSvg), `${path}: self-contained, font-independent icon`);
     check(links.some(t => t.rel === 'canonical' && t.href === new URL(path, current.origin).href), `${path}: canonical`);
     check(links.some(t => t.rel === 'alternate' && t.hreflang === (lang === 'lt' ? 'en' : 'lt') && t.href === new URL(`${other}school/${slug}`, peer.origin).href), `${path}: translation`);
     check(tags(html, 'a').some(t => t.class === 'lang' && new URL(t.href, current.origin).href === new URL(`${other}school/${slug}`, peer.origin).href), `${path}: translated navigation`);
