@@ -4,7 +4,8 @@ The site already has crawlable HTML, canonicals, language alternates, domain-spe
 sitemaps and localized page descriptions. This update adds descriptive search/share
 titles without replacing the visible marketing headings, a visible product-facts
 summary, and JSON-LD company/website/page/software/breadcrumb metadata. It adds no
-JavaScript execution, tracking pixels, analytics cookies or external dependencies.
+tracking pixels, analytics cookies or external dependencies. Contact protection
+uses one first-party JavaScript module; JSON-LD itself remains inert metadata.
 
 Maintain localized titles and summary copy in `data/search/en.toml` and `lt.toml`.
 Company identity, version, Windows configurations and displayed prices come from
@@ -31,7 +32,7 @@ requirements. Do not manufacture those fields to remove validator warnings.
    credentials or private verification material to this repository.
 4. Complete verification, then submit `https://dausuva.com/sitemap.xml` and
    `https://dausuva.lt/sitemap.xml` in their respective properties.
-5. Use URL Inspection on each `/school/` page and one detail page per language.
+5. Use URL Inspection on `.com/school/`, `.lt/mokykloms/` and one detail page per language.
    Confirm the canonical is on that page's own domain and the page can be indexed.
    Request indexing once after the changes are deployed, not repeatedly.
 
@@ -44,7 +45,7 @@ Only production sites should be submitted; private preview builds remain noindex
 2. Import the verified Search Console sites if offered, or add and verify both
    domains using Bing's current ownership-verification instructions.
 3. Check that both domain-specific sitemaps are listed and fetch successfully.
-4. Inspect each `/school/` URL. Keep verification access with the site owner.
+4. Inspect `.com/school/` and `.lt/mokykloms/`. Keep verification access with the site owner.
 
 No IndexNow key or automated indexing pings are necessary for this small static
 site's first pass. Never treat sitemap submission as an indexing guarantee.
@@ -67,9 +68,10 @@ content is the baseline; this is not a promise of measurable ranking gains.
 ## Verification
 
 Run the existing builds and `scripts/test-site.mjs` checks in both single-host and
-split-domain modes, plus `node --test scripts/domains.test.mjs`. Output checks parse
+split-domain modes, plus `node --test scripts/domains.test.mjs scripts/contacts.test.mjs`. Output checks parse
 the JSON-LD, check language/domain references and visible fact consistency, reject
-executable scripts and invented reviews/offers, and retain all prior link, price,
+unexpected executable scripts and invented reviews/offers, allow only the local
+fingerprinted contact module, and retain all prior link, price,
 privacy and disclosure checks. Validate production pages with the
 [Schema.org validator](https://validator.schema.org/) after publication; Google's
 [Rich Results Test](https://search.google.com/test/rich-results) checks a narrower
