@@ -11,11 +11,11 @@
       <a href="tel:{{ site.Params.phoneLink }}">{{ site.Params.phone }}</a>
     </div>
     <div>
-      <a href="{{ "school/security/" | relLangURL }}">{{ T "security" }}</a><br>
-      <a href="{{ "school/privacy/" | relLangURL }}">{{ T "productPrivacy" }}</a><br>
+      <a href="{{ partial "page-url.html" "/school/security/" }}">{{ T "security" }}</a><br>
+      <a href="{{ partial "page-url.html" "/school/privacy/" }}">{{ T "productPrivacy" }}</a><br>
       {{ with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ T "privacy" }}</a><br>{{ end }}
       © {{ now.Year }} {{ site.Params.company }}
     </div>
   </div>
-  <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">Dausuva MB</a><a href="{{ "school/getting-started/" | relLangURL }}">{{ T "gettingStarted" }}</a><span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span></div>
+  <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">Dausuva MB</a><a href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }}</a><span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span></div>
 </footer>

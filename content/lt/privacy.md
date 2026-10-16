@@ -2,6 +2,8 @@
 title: "Privatumas"
 description: "Kaip Dausuva svetainė tvarko jūsų duomenis."
 translationKey: "privacy"
+slug: "privatumas"
+aliases: ["/privacy/"]
 ---
 
 Pačiuose svetainės puslapiuose nėra analitikos scenarijų, reklaminių sekiklių, išorinių šriftų ar kontaktų formų. Nuorodos atidaro el. pašto arba telefono programą; niekas nesiunčiama, kol patys nepasirenkate siųsti.

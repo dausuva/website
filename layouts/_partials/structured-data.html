@@ -1,6 +1,6 @@
 {{- $organizationID := printf "%s#organization" site.Params.companyUrl -}}
 {{- $websiteID := printf "%s#website" site.Home.Permalink -}}
-{{- $product := site.GetPage "/school" -}}
+{{- $product := partial "product-page.html" . -}}
 {{- $softwareID := printf "%s#software" $product.Permalink -}}
 {{- $organization := dict "@type" "Organization" "@id" $organizationID "name" site.Params.company "legalName" site.Params.company "identifier" site.Params.companyCode "url" site.Params.companyUrl "email" site.Language.Params.email "telephone" site.Params.phone "address" site.Params.address -}}
 {{- $website := dict "@type" "WebSite" "@id" $websiteID "url" site.Home.Permalink "name" site.Title "inLanguage" site.Language.Locale "publisher" (dict "@id" $organizationID) -}}

@@ -2,8 +2,9 @@
 title: "Informacija mokyklos IT specialistui."
 description: "Architektūra, prieigos teisės, naujinimas ir ankstyvosios prieigos ribos, kurias reikia įvertinti prieš bandymą mokykloje."
 translationKey: "school-security"
+slug: "saugumas"
 schoolPage: true
-aliases: ["/classroom-manager/security/"]
+aliases: ["/classroom-manager/security/", "/school/security/"]
 ---
 ## Tiesioginis ryšys ir plačios administravimo teisės
 
@@ -39,4 +40,4 @@ Vietinio tarnybos ir pagalbinės programos kanalo tapatybės stiprinimas, automa
 
 Paprašykite tikslios paketo versijos, vaidmenų ir atšaukimo testų rezultatų, serverio tapatybės tikrinimo procedūros, ugniasienės rekomendacijų, žurnalų laukų, naujinimo patikrų bei atkūrimo bandymo. Priėmimo kriterijus sutarkite su mokyklos IT atsakingu asmeniu.
 
-[Pradėkite nuo kontroliuojamo bandymo](../getting-started/). Apie saugumo klausimus rašykite [support@dausuva.lt](mailto:support@dausuva.lt). Nesiųskite privačių raktų, prisijungimo duomenų ar mokinių įrašų.
+[Pradėkite nuo kontroliuojamo bandymo]({{< relref "/school/getting-started" >}}). Apie saugumo klausimus rašykite [support@dausuva.lt](mailto:support@dausuva.lt). Nesiųskite privačių raktų, prisijungimo duomenų ar mokinių įrašų.

@@ -6,6 +6,7 @@ import { join, resolve, dirname, basename } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { prepareDomains } from './prepare-domains.mjs';
 import { publishLithuanian } from './publish-lt.mjs';
+import { productSlugs, productPath } from './routes.mjs';
 
 function git(cwd, ...args) {
   const result = spawnSync('git', ['-C', cwd, ...args], { encoding: 'utf8', windowsHide: true });
@@ -14,9 +15,9 @@ function git(cwd, ...args) {
 }
 function output(root) {
   for (const lang of ['en', 'lt']) {
-    mkdirSync(join(root, lang, 'school'), { recursive: true });
+    mkdirSync(join(root, lang, productPath(lang)), { recursive: true });
     writeFileSync(join(root, lang, 'index.html'), `<html lang="${lang}"><h1>Fixture</h1></html>`);
-    writeFileSync(join(root, lang, 'school/index.html'), `<html lang="${lang}"><h1>Fixture</h1></html>`);
+    writeFileSync(join(root, lang, productPath(lang), 'index.html'), `<html lang="${lang}"><h1>Fixture</h1></html>`);
   }
   prepareDomains(root);
 }
@@ -34,8 +35,12 @@ test('one source produces two native domain bindings and preserves only old-path
     assert.equal(readFileSync(join(root, 'lt/CNAME'), 'utf8'), 'dausuva.lt\n');
     assert.equal(readFileSync(join(root, 'en/CNAME'), 'utf8'), 'dausuva.com\n');
     assert.ok(existsSync(join(root, 'lt/.nojekyll')));
-    assert.match(readFileSync(join(root, 'en/lt/school/features/index.html'), 'utf8'), /https:\/\/dausuva.lt\/school\/features\//);
-    assert.doesNotMatch(readFileSync(join(root, 'lt/school/index.html'), 'utf8'), /http-equiv/);
+    assert.equal(productPath('lt', 'features/'), 'mokykloms/funkcijos/');
+    for (const slug of productSlugs) {
+      const redirect = readFileSync(join(root, 'en/lt/school', slug, 'index.html'), 'utf8');
+      assert.ok(redirect.includes(`https://dausuva.lt/${productPath('lt', slug)}`));
+    }
+    assert.doesNotMatch(readFileSync(join(root, 'lt/mokykloms/index.html'), 'utf8'), /http-equiv/);
     assert.throws(() => prepareDomains(join(root, 'missing')), /Missing multihost output/);
   } finally { cleanup(root); }
 });

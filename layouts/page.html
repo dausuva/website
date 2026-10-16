@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="wrap section prose">
-  {{ if .Params.schoolPage }}<p class="breadcrumbs"><a href="{{ "school/" | relLangURL }}">Classroom Manager</a> / {{ .Title }}</p>{{ end }}
+  {{ if .Params.schoolPage }}<p class="breadcrumbs"><a href="{{ partial "page-url.html" "/school/" }}">Classroom Manager</a> / {{ .Title }}</p>{{ end }}
   <h1>{{ .Title }}</h1>
   {{ if .Params.schoolPage }}<p class="lead">{{ .Description }}</p>{{ end }}
   {{ .Content }}

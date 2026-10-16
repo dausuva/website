@@ -2,8 +2,9 @@
 title: "Privatumas klasėje."
 description: "Mokinių ekranai neperžiūrimi ir neįrašomi. Aiškiai apie administracinius duomenis, kuriuos programa vis tiek tvarko."
 translationKey: "school-privacy"
+slug: "privatumas"
 schoolPage: true
-aliases: ["/classroom-manager/privacy/"]
+aliases: ["/classroom-manager/privacy/", "/school/privacy/"]
 ---
 ## Ko Classroom Manager nedaro
 
@@ -27,4 +28,4 @@ Pagalbai siųskite tik būtiną informaciją. Pašalinkite asmens duomenis iš e
 
 Apsilankymai svetainėje ir demonstracijos užklausos yra atskiri nuo produkto veikimo. Kontaktų ir prieglobos informaciją rasite [svetainės privatumo pranešime]({{< relref "/privacy" >}}).
 
-[Pasitarkime apie mokyklos poreikius](../request/).
+[Pasitarkime apie mokyklos poreikius]({{< relref "/school/request" >}}).
