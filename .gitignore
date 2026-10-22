@@ -1,3 +1,6 @@
 public/
 resources/
 .hugo_build.lock
+.idea/
+# Private names the site test looks for; never committed.
+.private-terms

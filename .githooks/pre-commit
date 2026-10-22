@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocks a commit that adds a file not listed in PUBLIC-FILES.txt. Enable once per clone:
+#   git config core.hooksPath .githooks
+exec node scripts/check-public-files.mjs

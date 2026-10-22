@@ -15,6 +15,13 @@ const contexts = new Map(['en', 'lt'].map(lang => [lang, {
   prefix: !domains && lang === 'lt' ? 'lt/' : ''
 }]));
 let checks = 0;
+// Names that must never appear on the site (lab PCs, internal hosts). The list itself is private:
+// it comes from the SITE_PRIVATE_TERMS secret in CI, or from an uncommitted .private-terms file locally,
+// one term per line or comma-separated.
+const privateTermsFile = resolve(import.meta.dirname, '..', '.private-terms');
+const privateTerms = [process.env.SITE_PRIVATE_TERMS || '', existsSync(privateTermsFile) ? readFileSync(privateTermsFile, 'utf8') : '']
+  .join('\n').split(/[\r\n,]/).map(t => t.trim().toLowerCase()).filter(t => t && !t.startsWith('#'));
+if (!privateTerms.length) console.warn(process.env.GITHUB_ACTIONS ? '::warning::SITE_PRIVATE_TERMS is not set; private-name check skipped' : 'No .private-terms file; private-name check skipped');
 function check(condition, message) { checks++; assert.ok(condition, message); }
 function walk(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]);
@@ -104,7 +111,9 @@ for (const lang of ['en', 'lt']) {
       check(crumbs[1].name === decode(html.match(/<h1>([^<]+)<\/h1>/)?.[1] || ''), `${path}: breadcrumb matches visible heading`);
       check(!node('SoftwareApplication'), `${path}: software definition stays on overview`);
     }
-    check(!/[lab]|[pc]|[pc]|[pc]|[lab]|BEGIN (?:RSA |EC )?PRIVATE KEY/i.test(html), `${path}: no internal lab identifiers or secrets`);
+    check(!/BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY/.test(html), `${path}: no private keys`);
+    const leaked = privateTerms.find(term => html.toLowerCase().includes(term));
+    check(!leaked, `${path}: contains a private term from SITE_PRIVATE_TERMS or .private-terms`);
     if (preview) check(tags(html, 'meta').some(t => t.name === 'robots' && t.content.includes('noindex')), `${path}: private preview noindex`);
     else check(!tags(html, 'meta').some(t => t.name === 'robots' && t.content.includes('noindex')), `${path}: public indexing`);
     if (slug === '' || slug === 'pricing/') {

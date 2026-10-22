@@ -1,14 +1,29 @@
 # dausuva.com
 
 The Dausuva website: company details and the Classroom Manager product pages, in English and Lithuanian.
-Domain-per-language deployment is prepared: English on `dausuva.com`, Lithuanian on `dausuva.lt`.
-Until the activation switch is enabled, production and local preview retain Lithuanian under `/lt/`.
+English is served on `dausuva.com` and Lithuanian on `dausuva.lt`; old `dausuva.com/lt/…` addresses
+redirect there. A local preview keeps Lithuanian under `/lt/`.
 Built with [Hugo](https://gohugo.io/) and published to GitHub Pages by `.github/workflows/pages.yml` on
 every push to `main`.
 
-For the one-time repository/key/DNS setup and safe activation order, follow
-[Two language domains, one source repository](docs/LANGUAGE-DOMAINS.md). The second repository
-(`dausuva/website-lt`) stores generated pages only; keep all source changes in `dausuva/website`.
+The second repository (`dausuva/website-lt`) stores the generated Lithuanian pages only; keep all
+source changes in `dausuva/website`.
+
+## What may be in this repository
+
+This repository is public, so it holds only the site and what builds and tests it. Plans, notes and
+setup runbooks belong in the private product repository. `PUBLIC-FILES.txt` lists every file; a commit
+or push that adds anything else fails `scripts/check-public-files.mjs` until the file is added to the
+list, which is the deliberate decision to publish it. The check runs first in CI, so nothing deploys
+while it fails, and as a pre-commit hook once enabled per clone:
+
+```powershell
+git config core.hooksPath .githooks
+```
+
+Names that must never appear on the pages (lab PCs, internal hosts) are checked by
+`scripts/test-site.mjs` from the `SITE_PRIVATE_TERMS` Actions secret, or locally from an uncommitted
+`.private-terms` file, one term per line. The list itself is never committed.
 
 ## Build locally
 
@@ -37,7 +52,7 @@ node scripts/test-site.mjs public https://dausuva.com/
   nothing loaded from other sites.
 - `assets/images/demo-*.png`: reviewed app screenshots with synthetic demo data, copied from the
   product's help screenshot suite. The page captions identify them as illustrative, not a capture of
-  the latest release. Older [lab] assets remain in source history but are not referenced by the site.
+  the latest release.
 - `/classroom-manager/` redirects to `/school/` through Hugo `aliases` (GitHub Pages has no server
   redirects).
 
@@ -93,6 +108,6 @@ steps, see [Search visibility](docs/SEARCH-VISIBILITY.md).
 3. Settings > Pages > Custom domain: `dausuva.com` (the `static/CNAME` file says the same), then
    **Enforce HTTPS** once the certificate is issued. Verifying the domain for the `dausuva` organisation
    (organisation Settings > Pages) protects it from being claimed by another repository.
-4. For native Lithuanian hosting, replace the old `.lt` forwarding only after following
-   [the staged domain setup](docs/LANGUAGE-DOMAINS.md). Do not enable the cutover variable before the
-   Lithuanian Pages repository, deploy key and HTTPS domain are ready.
+4. `dausuva.lt` is served from `dausuva/website-lt` (GitHub Pages, branch `gh-pages`), which the
+   workflow fills using the `LT_PAGES_DEPLOY_KEY` secret while the `LANGUAGE_DOMAINS_ENABLED` variable
+   is `true`.
