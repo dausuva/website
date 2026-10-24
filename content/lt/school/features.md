@@ -11,11 +11,11 @@ aliases: ["/classroom-manager/features/", "/school/features/"]
 - Nusiųskite failus į pasirinktus kompiuterius, atidarykite svetainę ar programą.
 - Įdiekite ar pašalinkite programas naudodami diegiklius arba winget su Admin raktu.
 - Naudokite Wake-on-LAN, jei palaiko įranga ir tinklas; paleiskite kompiuterius iš naujo ar išjunkite.
-- Suplanuokite palaikomus užrakinimo, žinučių, pažadinimo, paleidimo iš naujo ir išjungimo veiksmus. **Tvarkaraščiai vykdomi tik kol atidaryta Host programa.**
+- Suplanuokite užrakinimą, žinutes, pažadinimą, paleidimą iš naujo, išjungimą, laiko sinchronizavimą, Windows naujinimų patikrą ir mėnesinę mokinių darbų kopiją visiems kompiuteriams, klasei ar pasirinktiems. Tvarkaraščiai vykdomi, kol Host atidarytas, o įjungus — ir jį uždarius (Windows užduočių planuoklis, kol esate prisijungę). Laiko sinchronizavimas, naujinimų patikra ir kopijos **pasiveja**: tuo metu išjungtas kompiuteris jas gauna, kai tik prisijungia.
 
 ## Pamokos metu
 
-Siųskite žinutes, parodykite užrakto pranešimą arba surinkite pagal šabloną atrinktus failus. Egzamino režimas sujungia pasirenkamus programų, svetainių, garso, kamerų ir USB laikmenų apribojimus.
+Siųskite žinutes, parodykite užrakto pranešimą arba surinkite pagal šabloną atrinktus failus. **Naujausi failai** parodo, ką mokiniai pakeitė per paskutinį pusvalandį (ar bet kurį laikotarpį) darbalaukyje ir dokumentuose, pagal tipą (dokumentai, paveikslėliai, programinis kodas, aplankai), ir nukopijuoja tai į atskirą kiekvieno kompiuterio aplanką jūsų kompiuteryje. Egzamino režimas sujungia pasirenkamus programų, svetainių, garso, kamerų ir USB laikmenų apribojimus.
 
 Tai praktinės klasės valdymo priemonės, ne saugaus egzamino aplinka. Išbandykite apribojimų įjungimą ir pašalinimą būtent savo Windows konfigūracijoje.
 

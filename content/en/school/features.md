@@ -11,17 +11,17 @@ aliases: ["/classroom-manager/features/"]
 - Send files to selected PCs and open a website or application.
 - Install or uninstall software using installers or winget with an Admin key.
 - Wake PCs using Wake-on-LAN where the hardware and network support it; restart or shut down selected machines.
-- Schedule supported lock, message, wake, restart and shutdown actions. **Schedules run only while the Host application is open.**
+- Schedule lock, message, wake, restart, shutdown, clock sync, Windows update checks and a monthly backup of student work, for all computers, a room or chosen PCs. Schedules run while the Host is open and, if you switch it on, while it is closed (Windows Task Scheduler, while you are signed in). Clock sync, update checks and backups **catch up**: a PC that was off at the time gets it as soon as it is online.
 
 ## During a lesson
 
-Send messages, display a lock-screen message, or collect files matching a chosen pattern. Exam mode groups configurable program, website, audio, camera and USB-storage restrictions.
+Send messages, display a lock-screen message, or collect files matching a chosen pattern. **Recent files** lists what students changed in the last half hour (or any period) on their Desktop and in Documents, by type (documents, images, source code, folders), and copies it to a folder per computer on your PC. Exam mode groups configurable program, website, audio, camera and USB-storage restrictions.
 
 Restrictions are practical classroom controls, not a secure-exam environment. Test both applying and removing them on the exact Windows configuration you plan to use.
 
 ## Maintain the computers
 
-Inspect hardware and installed-software inventory, export inventory to CSV, manage Windows Update, inspect processes and scheduled tasks, and manage time and keyboard layouts. Administrative tools also include commands, registry and local-account operations.
+Inspect hardware and installed-software inventory, export inventory to CSV, manage Windows Update, inspect processes and scheduled tasks, and manage time and keyboard layouts. Administrative tools also include commands, registry and local-account operations. Every error ends with a documented code, and two health checkers test the connection and every action on a real PC.
 
 Admin access is powerful: command execution and software deployment can change the whole computer. Keep it separate from classroom teaching access.
 

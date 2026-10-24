@@ -13,6 +13,8 @@
     <div>
       <a href="{{ partial "page-url.html" "/school/security/" }}">{{ T "security" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/privacy/" }}">{{ T "productPrivacy" }}</a><br>
+      <a href="{{ partial "page-url.html" "/school/proof/" }}">{{ T "proof" }}</a><br>
+      <a href="{{ partial "page-url.html" "/school/market/" }}">{{ T "market" }}</a><br>
       {{ with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ T "privacy" }}</a><br>{{ end }}
       © {{ now.Year }} {{ site.Params.company }}
     </div>

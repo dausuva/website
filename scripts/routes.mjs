@@ -1,6 +1,6 @@
 // Stable content keys mapped to public URLs; checked against Hugo's built output.
-export const productSlugs = ['', 'features/', 'security/', 'privacy/', 'getting-started/', 'pricing/', 'faq/', 'request/'];
-const lithuanian = ['', 'funkcijos/', 'saugumas/', 'privatumas/', 'pradzia/', 'kainos/', 'duk/', 'kontaktai/'];
+export const productSlugs = ['', 'features/', 'security/', 'privacy/', 'getting-started/', 'pricing/', 'faq/', 'request/', 'compare/', 'proof/', 'market/'];
+const lithuanian = ['', 'funkcijos/', 'saugumas/', 'privatumas/', 'pradzia/', 'kainos/', 'duk/', 'kontaktai/', 'palyginimas/', 'faktai/', 'rinka/'];
 export function productPath(lang, slug = '') {
   const index = productSlugs.indexOf(slug);
   if (index < 0 || !['en', 'lt'].includes(lang)) throw new Error('Unknown product route');

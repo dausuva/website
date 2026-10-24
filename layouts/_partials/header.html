@@ -2,7 +2,7 @@
   <a class="brand" href="{{ partial "page-url.html" "/school/" }}"><span class="brand-mark" aria-hidden="true">d.</span><span>Dausuva<small>Classroom Manager</small></span></a>
   <nav aria-label="{{ T "navigation" }}">
     {{ $current := . }}
-    {{ range slice (dict "path" "school/features/" "key" "features") (dict "path" "school/security/" "key" "security") (dict "path" "school/pricing/" "key" "pricing") (dict "path" "school/faq/" "key" "faq") }}<a href="{{ partial "page-url.html" .path }}"{{ if eq $current.RelPermalink (partial "page-url.html" .path) }} aria-current="page"{{ end }}>{{ T .key }}</a>{{ end }}
+    {{ range slice (dict "path" "school/features/" "key" "features") (dict "path" "school/security/" "key" "security") (dict "path" "school/compare/" "key" "compare") (dict "path" "school/pricing/" "key" "pricing") (dict "path" "school/faq/" "key" "faq") }}<a href="{{ partial "page-url.html" .path }}"{{ if eq $current.RelPermalink (partial "page-url.html" .path) }} aria-current="page"{{ end }}>{{ T .key }}</a>{{ end }}
     {{ range .Translations }}<a class="lang" href="{{ if hugo.IsMultihost }}{{ .Permalink }}{{ else }}{{ .RelPermalink }}{{ end }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}">{{ upper .Language.Lang }}</a>{{ end }}
     <a class="nav-cta" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "contact" }} ↗</a>
   </nav>
