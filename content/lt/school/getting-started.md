@@ -22,7 +22,7 @@ Išbandykite reikalingus veiksmus su sintetiniais failais. Patikrinkite Teacher 
 
 ## 4. Prieš plėtrą išbandykite atkūrimą
 
-Turėkite nepriklausomą prieigos būdą ir žinomą veikiantį diegiklį. Client savinaujinimas dar automatiškai negrįžta į ankstesnę versiją nepavykus pasileisti. Prieš atnaujindami klasę išbandykite naujinimo patikras ir rankinį atkūrimą.
+Turėkite nepriklausomą prieigos būdą ir žinomą veikiantį diegiklį. Nepasileidus Client, ankstesnė versija atkuriama įdiegiant ją rankiniu būdu. Prieš atnaujindami klasę išbandykite naujinimo patikras ir šią atkūrimo procedūrą.
 
 ## 5. Sutarkite diegimo planą
 

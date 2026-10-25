@@ -22,7 +22,7 @@ Try the actions your school needs with synthetic files. Check Teacher denials, k
 
 ## 4. Rehearse recovery before expansion
 
-Keep an independent way to reach the machines and a known-good installer. Client self-update does not yet automatically roll back after a failed start. Test update verification and the manual recovery procedure before applying an update to a room.
+Keep an independent way to reach the machines and a known-good installer. Recovery after a failed Client start uses a manual reinstall. Test update verification and that recovery procedure before applying an update to a room.
 
 ## 5. Agree the rollout
 

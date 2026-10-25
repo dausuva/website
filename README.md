@@ -87,10 +87,10 @@ node scripts/test-site.mjs PATH_TO_OUTPUT https://YOUR_PREVIEW_ORIGIN/ --preview
 Hugo prefixes aliases with the language directory: Lithuanian content uses `/classroom-manager/`
 as its alias value, not `/lt/classroom-manager/` (which would create `/lt/lt/…`).
 
-Do not call the product security-audited or deployment-ready based on this site. The school IT page
-records current early-access limits, including older Hosts' certificate validation, source-only CLI
-pinning, unfinished helper-pipe identity hardening and the lack of automatic post-start rollback.
-Re-check those statements against the actual package before a public launch.
+Do not call the product independently security-audited or certified based on this site. The school IT
+page records current controls, the checks to repeat on the supplied build and the remaining boundaries:
+manual recovery after a failed Client start, file roots that are not a hardened junction sandbox, and
+privileged Admin commands. Re-check those statements against the actual package before a public launch.
 
 Pushing `main` triggers public GitHub Pages publication. A private Sites preview does not authorize
 that push or a DNS change. The private preview is a sanitized build-output copy, not a second canonical

@@ -1,6 +1,6 @@
 ---
 title: "Information for school IT."
-description: "Architecture, access control, update behavior and the early-access limits to review before a school pilot."
+description: "Architecture, access control, update recovery and the checks to complete before a school rollout."
 url: "/school/security/"
 translationKey: "school-security"
 schoolPage: true
@@ -18,26 +18,26 @@ Connections use shared-key authentication. Use separate, named Teacher and Admin
 
 Teacher permissions are enforced by the Client. A UI mode alone does not restrict the privileges of an Admin credential. Revocation and log checks must be repeated for the supplied build and deployment, not inferred from a demo.
 
-## TLS is not the same as endpoint trust
+## Encrypted transport with endpoint trust
 
-TLS encrypts the transport, but the Host must also establish that it is connecting to the intended Client. **Older Host builds do not validate the Client certificate**, so encryption alone must not be described as protection against an active intermediary.
+Every connection uses TLS 1.2 or 1.3. The Host also keeps an approved Client certificate for each computer, so it can reject a different endpoint even when that endpoint can establish an encrypted connection.
 
-New source work adds exact TLS certificate pins and independent enrollment for the command-line Host. This is not yet a completed graphical enrollment or installed-fleet migration. Ask which trust controls are present in the actual package you receive, and verify them before a wider rollout.
+Certificates can be approved in the Host, imported from a Client Health enrolment file, or enrolled when a new Client announces itself under the lab key. Existing-fleet migration has been completed in the working lab. Package and installation state still matter: check the certificate status in **Secure this lab** for the actual computers before a wider rollout.
 
 ## Updates and recovery
 
-Client self-updates check a checksum and code signature before installation. **Automatic rollback after a failed application start is not implemented.** Keep a known-good package, a recovery route independent of Classroom Manager, and a tested reinstall procedure.
+Client self-updates check a checksum and code signature before installation. Recovery after a version fails to start is currently a supported manual reinstall from a known-good package, so keep a route to the PCs that does not depend on Classroom Manager and test that procedure during the pilot.
 
 Windows Update and application installers have their own network, privilege and restart requirements. Review these separately from the app's own update process.
 
-## Remaining hardening work
+## Security boundaries to verify
 
-Local service/helper-pipe identity hardening, automatic update rollback, and broader security logging and revocation coverage remain unfinished. File-path restrictions are not a hardened boundary against filesystem junctions. Admin command execution is intentionally privileged.
+The current source includes identity checks on the local service/helper connection, hash-chained Client security events, certificate status, and access-key removal that catches up computers which were offline. Repeat the role, revocation, logging and helper-identity checks on the supplied build and your Windows configuration rather than inferring them from a demo.
 
-These limits mean this early-access product should not be presented as security-audited, compliance-certified, a student-proof lockdown tool, or ready for an unattended broad rollout.
+Allowed file roots reduce accidental reach; they are not a hardened sandbox against filesystem junctions. Admin command execution is intentionally privileged. Recovery after a failed Client start is manual. Classroom Manager has not had an independent security audit and is not compliance-certified or a student-proof lockdown tool. Start on a test PC and expand in stages.
 
 ## What to ask for before a pilot
 
-Request the exact package version, role and revocation test results, endpoint-trust procedure, firewall guidance, available log fields, update verification results and a recovery drill. Agree acceptance criteria with your school's IT owner.
+Request the exact package version, a Classroom Health report, the **Secure this lab** report, the endpoint-trust procedure, firewall guidance, role and revocation test results, a refused unsigned update, and the manual recovery steps. Agree acceptance criteria with your school's IT owner.
 
 [Start with a controlled pilot](../getting-started/). For a security concern, contact {{< contact >}}. Do not send private keys, credentials or student records.

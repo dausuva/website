@@ -185,6 +185,6 @@ for (const lang of ['en', 'lt']) {
   const privacy = page(`${prefix}${productPath(lang, 'privacy/')}`, lang);
   check(privacy.includes(lang === 'lt' ? 'naršyklėse atidarytas svetaines' : 'websites open in browsers'), `${lang}: browser-data disclosure`);
   const security = page(`${prefix}${productPath(lang, 'security/')}`, lang);
-  check(security.includes(lang === 'lt' ? 'neįgyvendintas' : 'not implemented'), `${lang}: rollback limitation`);
+  check(security.includes(lang === 'lt' ? 'atkūrimas atliekamas rankiniu būdu' : 'Recovery after a failed Client start is manual'), `${lang}: manual recovery boundary`);
 }
 console.log(`PASS: ${checks} checks; 16 product pages; ${checkedLinks} local/peer links and assets; ${domains ? 'two domains' : 'single host'} and legacy aliases.`);
