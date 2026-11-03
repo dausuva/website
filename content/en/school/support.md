@@ -4,9 +4,8 @@ description: "How to ask for help with Classroom Manager, what to send, and wher
 url: "/school/support/"
 translationKey: "school-support"
 schoolPage: true
-draft: true
 ---
-**Email:** [support@dausuva.com](mailto:support@dausuva.com). Dausuva MB, registration code 307580523.
+**Email:** {{< contact >}}. Dausuva MB, registration code 307580523.
 
 ## What helps us answer
 

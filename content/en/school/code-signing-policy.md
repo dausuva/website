@@ -4,7 +4,6 @@ description: "How Classroom Manager releases are built, who approves them, what 
 url: "/school/code-signing-policy/"
 translationKey: "school-code-signing-policy"
 schoolPage: true
-draft: true
 ---
 <!-- When the SignPath Foundation has accepted the project, add here, in this order: the sentence
 "Free code signing provided by SignPath.io, certificate by SignPath Foundation." with the two names linked to https://about.signpath.io/ and https://signpath.org/ .
@@ -38,4 +37,4 @@ Both programs have an uninstaller in Settings > Apps. The Host also removes the 
 
 ## Reporting a problem
 
-A weakness in the programs or the release process: write to [support@dausuva.com](mailto:support@dausuva.com) (see [Security]({{< relref "/school/security" >}})). Do not open a public issue for it.
+A weakness in the programs or the release process: write to {{< contact >}} (see [Security]({{< relref "/school/security" >}})). Do not open a public issue for it.

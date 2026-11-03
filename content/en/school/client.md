@@ -4,7 +4,6 @@ description: "What the school's administrator does: the lab key, the installer, 
 url: "/school/client/"
 translationKey: "school-client"
 schoolPage: true
-draft: true
 ---
 The **Client** is a small Windows service with a helper that shows a notification-area icon. The teacher's Host connects to it over the school network. It is installed once on each student computer by someone with administrator rights, and it is not in the Microsoft Store (a Store app is installed per user, and a student could remove it).
 

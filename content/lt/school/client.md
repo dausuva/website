@@ -4,7 +4,6 @@ description: "Ką daro mokyklos administratorius: laboratorijos raktas, diegimo 
 translationKey: "school-client"
 slug: "klientas"
 schoolPage: true
-draft: true
 ---
 **Client** yra nedidelė „Windows“ paslauga su pagalbine programa, rodančia piktogramą pranešimų srityje. Mokytojo Host prisijungia prie jo mokyklos tinklu. Jį vieną kartą kiekviename mokinio kompiuteryje įdiegia asmuo su administratoriaus teisėmis. Jo nėra „Microsoft Store“ (parduotuvės programa diegiama kiekvienam naudotojui atskirai, o mokinys galėtų ją pašalinti).
 

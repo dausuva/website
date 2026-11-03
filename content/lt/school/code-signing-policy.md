@@ -4,7 +4,6 @@ description: "Kaip kuriami ir tvirtinami Classroom Manager leidimai, kas pasira�
 translationKey: "school-code-signing-policy"
 slug: "kodo-pasirasymo-politika"
 schoolPage: true
-draft: true
 ---
 <!-- Kai SignPath Foundation projektą patvirtins, čia pridėkite (šia tvarka) sakinį
 "Free code signing provided by SignPath.io, certificate by SignPath Foundation." su dviem pavadinimais, nurodančiais https://about.signpath.io/ ir https://signpath.org/ .
@@ -38,4 +37,4 @@ Abi programos turi pašalinimo programą skiltyje Nustatymai > Programos. Host t
 
 ## Pranešti apie problemą
 
-Apie programų ar leidimų proceso silpnybę rašykite [support@dausuva.com](mailto:support@dausuva.com) (žr. [Saugumas]({{< relref "/school/security" >}})). Dėl jos neatidarykite viešo pranešimo.
+Apie programų ar leidimų proceso silpnybę rašykite {{< contact >}} (žr. [Saugumas]({{< relref "/school/security" >}})). Dėl jos neatidarykite viešo pranešimo.

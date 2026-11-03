@@ -4,7 +4,6 @@ description: "The teacher console and the student-PC Client for Windows 10 and 1
 url: "/school/download/"
 translationKey: "school-download"
 schoolPage: true
-draft: true
 ---
 Classroom Manager has two programs: the **Host**, which the teacher runs, and the **Client**, which a school administrator installs once on each student computer. Both are free, open source (Apache License 2.0) and have no limit on the number of computers.
 

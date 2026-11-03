@@ -4,7 +4,6 @@ description: "Mokytojo valdymo programa ir mokinių kompiuterių Client, skirti 
 translationKey: "school-download"
 slug: "atsisiuntimas"
 schoolPage: true
-draft: true
 ---
 Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir **Client**, kurį mokyklos administratorius vieną kartą įdiegia kiekviename mokinių kompiuteryje. Abi nemokamos, atvirojo kodo (Apache License 2.0) ir be kompiuterių skaičiaus ribos.
 

@@ -4,9 +4,8 @@ description: "Kaip paprašyti pagalbos dėl Classroom Manager, ką atsiųsti ir 
 translationKey: "school-support"
 slug: "pagalba"
 schoolPage: true
-draft: true
 ---
-**El. paštas:** [support@dausuva.com](mailto:support@dausuva.com). Dausuva MB, įmonės kodas 307580523.
+**El. paštas:** {{< contact >}}. Dausuva MB, įmonės kodas 307580523.
 
 ## Kas padeda mums atsakyti
 
