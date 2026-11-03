@@ -17,6 +17,9 @@ config/domains/hugo.toml
 content/en/_index.md
 content/en/privacy.md
 content/en/school.md
+content/en/school/client.md
+content/en/school/code-signing-policy.md
+content/en/school/download.md
 content/en/school/faq.md
 content/en/school/compare.md
 content/en/school/features.md
@@ -27,9 +30,13 @@ content/en/school/privacy.md
 content/en/school/proof.md
 content/en/school/request.md
 content/en/school/security.md
+content/en/school/support.md
 content/lt/_index.md
 content/lt/overview.md
 content/lt/privacy.md
+content/lt/school/client.md
+content/lt/school/code-signing-policy.md
+content/lt/school/download.md
 content/lt/school/faq.md
 content/lt/school/compare.md
 content/lt/school/features.md
@@ -40,6 +47,7 @@ content/lt/school/privacy.md
 content/lt/school/proof.md
 content/lt/school/request.md
 content/lt/school/security.md
+content/lt/school/support.md
 data/search/en.toml
 data/search/lt.toml
 docs/CONTACT-PROTECTION.md
