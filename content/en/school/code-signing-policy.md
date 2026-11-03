@@ -15,7 +15,7 @@ This page says how Classroom Manager releases are made and approved. The same te
 ## What is built and signed
 
 - Two programs: the **Host** (`ClassroomHost.exe`, the teacher console) and the **Client** (`ClassroomClient.exe`, the service and helper on student computers), and the installers that contain them.
-- Every release is built by GitHub Actions from a tagged commit in the public repository, [github.com/dausuva/classroom-manager](https://github.com/dausuva/classroom-manager). The build scripts and the workflow are in the repository and are reviewed like the code.
+- Every release is built by GitHub Actions from a tagged commit in the public repository, <span class="soon" title="available once the public repository is open">github.com/dausuva/classroom-manager</span>. The build scripts and the workflow are in the repository and are reviewed like the code.
 - Only programs built from this repository's own source are signed. Packages the programs use are listed, with their versions and hashes, in the software bill of materials of each release.
 
 ## Who decides
@@ -30,7 +30,7 @@ A release that is not signed is named "(unsigned)" on its page, and Windows will
 
 ## What the programs send
 
-The programs send no information to other networked systems unless the person using them asks for it. There is no cloud service. The teacher's Host can look once a day at github.com to see whether a newer version exists (nothing is downloaded); it asks the first time it starts and the choice can be changed in the settings. See [Privacy](/school/privacy/).
+The programs send no information to other networked systems unless the person using them asks for it. There is no cloud service. The teacher's Host can look once a day at github.com to see whether a newer version exists (nothing is downloaded); it asks the first time it starts and the choice can be changed in the settings. See [Privacy]({{< relref "/school/privacy" >}}).
 
 ## Removing the programs
 
@@ -38,4 +38,4 @@ Both programs have an uninstaller in Settings > Apps. The Host also removes the 
 
 ## Reporting a problem
 
-A weakness in the programs or the release process: write to [support@dausuva.com](mailto:support@dausuva.com) (see [Security](/school/security/)). Do not open a public issue for it.
+A weakness in the programs or the release process: write to [support@dausuva.com](mailto:support@dausuva.com) (see [Security]({{< relref "/school/security" >}})). Do not open a public issue for it.

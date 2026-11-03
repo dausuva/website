@@ -22,7 +22,7 @@ The file may also name the ports, the folders the Client may reach and named key
 
 ## 2. Install
 
-Download the [Client installer](/school/download/) and run it as an administrator, with the kit file beside it, or give the file's path:
+Download the [Client installer]({{< relref "/school/download" >}}) and run it as an administrator, with the kit file beside it, or give the file's path:
 
 ```
 Dausuva-Classroom-Client-Setup-win-x64.exe /VERYSILENT /KIT=C:\path\to\classroom-kit.json
@@ -43,4 +43,4 @@ In the Host, find the computers (**Scan network**) or add them by address, and p
 
 The Host can update the Client on a room of computers, with a signed build the Client checks for its signature and hash first, and can remove it from one computer at a time. Or run the installer or uninstaller on the computer itself.
 
-More: [Download](/school/download/), [Privacy](/school/privacy/), [Security](/school/security/), [Support](/school/support/).
+More: [Download]({{< relref "/school/download" >}}), [Privacy]({{< relref "/school/privacy" >}}), [Security]({{< relref "/school/security" >}}), [Support]({{< relref "/school/support" >}}).

@@ -10,15 +10,15 @@ Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir *
 
 ## Mokytojo kompiuteris: Host
 
-- **Tiesioginis atsisiuntimas:** [Host diegimo programa](https://github.com/dausuva/classroom-manager/releases/latest/download/Dausuva-Classroom-Host-Setup-win-x64.exe) arba [viena programa, kurią galima paleisti bet kur](https://github.com/dausuva/classroom-manager/releases/latest/download/Dausuva-Classroom-Host-win-x64.exe). Vieno failo programa turi komandą **Žinynas > Įdiegti šiame kompiuteryje**: ji įtraukia programą į Pradžios meniu be administratoriaus teisių.
+- **Tiesioginis atsisiuntimas:** <span class="soon" title="bus prieinama su pirmuoju leidimu">Host diegimo programa</span> arba <span class="soon" title="bus prieinama su pirmuoju leidimu">viena programa, kurią galima paleisti bet kur</span> (bus prieinama su pirmuoju leidimu). Vieno failo programa turi komandą **Žinynas > Įdiegti šiame kompiuteryje**: ji įtraukia programą į Pradžios meniu be administratoriaus teisių.
 - **winget:** `winget install Dausuva.ClassroomHost`
-- **Visos versijos, kontrolinės sumos ir programinės įrangos sudėties sąrašas:** [GitHub leidimai](https://github.com/dausuva/classroom-manager/releases)
+- **Visos versijos, kontrolinės sumos ir programinės įrangos sudėties sąrašas:** <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">GitHub leidimai</span>
 
 ## Mokinių kompiuteriai: Client
 
-Administratorius Client įdiegia vieną kartą kiekviename kompiuteryje, su administratoriaus teisėmis. Jo nėra „Microsoft Store“: parduotuvės programa diegiama kiekvienam naudotojui atskirai, o mokinys galėtų ją pašalinti. Apie laboratorijos raktą, tylųjį diegimą ir „Windows“ įrankius, kuriais galima diegti, žr. [Client diegimas](/mokykloms/klientas/).
+Administratorius Client įdiegia vieną kartą kiekviename kompiuteryje, su administratoriaus teisėmis. Jo nėra „Microsoft Store“: parduotuvės programa diegiama kiekvienam naudotojui atskirai, o mokinys galėtų ją pašalinti. Apie laboratorijos raktą, tylųjį diegimą ir „Windows“ įrankius, kuriais galima diegti, žr. [Client diegimas]({{< relref "/school/client" >}}).
 
-- [Client diegimo programa](https://github.com/dausuva/classroom-manager/releases/latest/download/Dausuva-Classroom-Client-Setup-win-x64.exe)
+- <span class="soon" title="bus prieinama su pirmuoju leidimu">Client diegimo programa</span> (bus prieinama su pirmuoju leidimu)
 - **winget:** `winget install Dausuva.ClassroomClient --custom "/KIT=C:\kelias\iki\classroom-kit.json"`
 
 ## Patikrinkite, ką atsisiuntėte
@@ -27,10 +27,10 @@ Kiekvienas leidimas turi `SHA256SUMS.txt`. „PowerShell“ komanda: `Get-FileHa
 
 ## Parašai
 
-Leidimus sukuria „GitHub Actions“ iš pažymėtos viešos versijos. Pasirašytas leidimas tai nurodo savo puslapyje; nepasirašytas pavadintas „(unsigned)“, ir prieš jį paleidžiant „Windows“ perspės. Kaip leidimai pasirašomi ir kas juos tvirtina, rašoma [kodo pasirašymo politikoje](/mokykloms/kodo-pasirasymo-politika/).
+Leidimus sukuria „GitHub Actions“ iš pažymėtos viešos versijos. Pasirašytas leidimas tai nurodo savo puslapyje; nepasirašytas pavadintas „(unsigned)“, ir prieš jį paleidžiant „Windows“ perspės. Kaip leidimai pasirašomi ir kas juos tvirtina, rašoma [kodo pasirašymo politikoje]({{< relref "/school/code-signing-policy" >}}).
 
 ## Windows ir privatumas
 
-Windows 10 ir Windows 11. Programos nieko nesiunčia Dausuva: debesijos paslaugos nėra. Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija; pirmą kartą paleidus jis paklausia, ir tai galima išjungti. Žr. [Privatumas](/mokykloms/privatumas/).
+Windows 10 ir Windows 11. Programos nieko nesiunčia Dausuva: debesijos paslaugos nėra. Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija; pirmą kartą paleidus jis paklausia, ir tai galima išjungti. Žr. [Privatumas]({{< relref "/school/privacy" >}}).
 
-Kažkas negerai su atsisiuntimu? [Pagalba](/mokykloms/pagalba/).
+Kažkas negerai su atsisiuntimu? [Pagalba]({{< relref "/school/support" >}}).

@@ -18,7 +18,7 @@ A school buying software for its lab should not have to take our word for it. Th
 
 | Fact | How it was shown | Check it yourself |
 |---|---|---|
-| More than 2,100 automated tests run on every change | The test suite in the source code; the build fails when one fails | Read the tests in the [source code](https://github.com/dausuva/classroom-manager) |
+| More than 2,100 automated tests run on every change | The test suite in the source code; the build fails when one fails | Read the tests in the <span class="soon" title="available once the public repository is open">source code</span> |
 | 89 health checks test every action between the teacher's PC and a student PC | Classroom Health runs them against a real PC | Ask to see a health report in the demo |
 | Every client command is either health-checked or listed as never sent, with the reason | A test fails the build otherwise | The list is in the source code |
 | 25 documented error codes, each with its cause and the fix | Every error message ends with its code | Error codes are explained in the guide |

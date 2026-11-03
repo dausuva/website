@@ -706,3 +706,5 @@ details p {
     scroll-behavior:auto
   }
 }
+
+.soon{color:var(--muted,#667);cursor:not-allowed;text-decoration:underline dotted}

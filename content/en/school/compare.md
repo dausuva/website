@@ -69,6 +69,6 @@ Some schools could use both: Veyon for screen work in the lesson, Classroom Mana
 
 - [Veyon](https://veyon.io/en/), [its features](https://veyon.io/en/features/) and [add-ons](https://veyon.io/en/addons/)
 - [Veyon 4.11.0 announcement](https://veyon.io/blog/2026/07/10/veyon-4-11-0-released/) and [release notes](https://docs.veyon.io/en/latest/admin/release-notes.html)
-- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you](../proof/)
+- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you](../proof/)
 
 [Request a demo](../request/) · [See the pricing](../pricing/) · [What it costs per computer](../market/)

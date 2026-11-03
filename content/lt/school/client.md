@@ -22,7 +22,7 @@ Faile galima nurodyti ir prievadus, aplankus, kuriuos Client gali pasiekti, ir m
 
 ## 2. Įdiekite
 
-Atsisiųskite [Client diegimo programą](/mokykloms/atsisiuntimas/) ir paleiskite kaip administratorius, šalia turėdami rinkinio failą, arba nurodykite failo kelią:
+Atsisiųskite [Client diegimo programą]({{< relref "/school/download" >}}) ir paleiskite kaip administratorius, šalia turėdami rinkinio failą, arba nurodykite failo kelią:
 
 ```
 Dausuva-Classroom-Client-Setup-win-x64.exe /VERYSILENT /KIT=C:\kelias\iki\classroom-kit.json
@@ -43,4 +43,4 @@ Host programoje suraskite kompiuterius (**Ieškoti tinkle**) arba pridėkite pag
 
 Host gali atnaujinti Client visos klasės kompiuteriuose pasirašyta versija, kurios parašą ir maišą Client pirmiausia patikrina, ir gali jį pašalinti iš vieno kompiuterio vienu metu. Arba paleiskite diegimo ar šalinimo programą pačiame kompiuteryje.
 
-Daugiau: [Atsisiuntimas](/mokykloms/atsisiuntimas/), [Privatumas](/mokykloms/privatumas/), [Saugumas](/mokykloms/saugumas/), [Pagalba](/mokykloms/pagalba/).
+Daugiau: [Atsisiuntimas]({{< relref "/school/download" >}}), [Privatumas]({{< relref "/school/privacy" >}}), [Saugumas]({{< relref "/school/security" >}}), [Pagalba]({{< relref "/school/support" >}}).

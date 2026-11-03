@@ -15,7 +15,7 @@ Anksčiau neįrašykite: kol kas leidimai taip nepasirašomi. -->
 ## Kas kuriama ir pasirašoma
 
 - Dvi programos: **Host** (`ClassroomHost.exe`, mokytojo valdymo programa) ir **Client** (`ClassroomClient.exe`, paslauga ir pagalbinė programa mokinių kompiuteriuose), taip pat jas talpinančios diegimo programos.
-- Kiekvieną leidimą „GitHub Actions“ sukuria iš pažymėtos versijos viešoje saugykloje [github.com/dausuva/classroom-manager](https://github.com/dausuva/classroom-manager). Kūrimo scenarijai ir darbo eiga yra saugykloje ir tikrinami kaip kodas.
+- Kiekvieną leidimą „GitHub Actions“ sukuria iš pažymėtos versijos viešoje saugykloje <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">github.com/dausuva/classroom-manager</span>. Kūrimo scenarijai ir darbo eiga yra saugykloje ir tikrinami kaip kodas.
 - Pasirašomos tik iš šios saugyklos šaltinio sukurtos programos. Programų naudojami paketai su versijomis ir maišos reikšmėmis išvardyti kiekvieno leidimo programinės įrangos sudėties sąraše.
 
 ## Kas sprendžia
@@ -30,7 +30,7 @@ Nepasirašytas leidimas savo puslapyje pavadintas „(unsigned)“, ir prieš j�
 
 ## Ką programos siunčia
 
-Programos nesiunčia informacijos kitoms tinklo sistemoms, nebent to paprašo jas naudojantis asmuo. Debesijos paslaugos nėra. Mokytojo Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija (nieko nesiunčiama atgal ir nieko neatsisiunčiama); pirmą kartą paleistas jis paklausia, ir pasirinkimą galima keisti nustatymuose. Žr. [Privatumas](/mokykloms/privatumas/).
+Programos nesiunčia informacijos kitoms tinklo sistemoms, nebent to paprašo jas naudojantis asmuo. Debesijos paslaugos nėra. Mokytojo Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija (nieko nesiunčiama atgal ir nieko neatsisiunčiama); pirmą kartą paleistas jis paklausia, ir pasirinkimą galima keisti nustatymuose. Žr. [Privatumas]({{< relref "/school/privacy" >}}).
 
 ## Programų šalinimas
 
@@ -38,4 +38,4 @@ Abi programos turi pašalinimo programą skiltyje Nustatymai > Programos. Host t
 
 ## Pranešti apie problemą
 
-Apie programų ar leidimų proceso silpnybę rašykite [support@dausuva.com](mailto:support@dausuva.com) (žr. [Saugumas](/mokykloms/saugumas/)). Dėl jos neatidarykite viešo pranešimo.
+Apie programų ar leidimų proceso silpnybę rašykite [support@dausuva.com](mailto:support@dausuva.com) (žr. [Saugumas]({{< relref "/school/security" >}})). Dėl jos neatidarykite viešo pranešimo.
