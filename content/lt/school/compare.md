@@ -17,7 +17,7 @@ Palyginta 2026 m. spalio 24 d. su Veyon 4.11.4 (išleista 2026 m. spalio 15 d.),
 | Skirta | Ekranams matyti ir valdyti per pamoką | Windows klasei paruošti, nustatyti ir prižiūrėti |
 | Mokinių ekranai | Gyvos miniatiūros, nuotolinis peržiūrėjimas ir valdymas, ekrano transliavimas | Sąmoningai jokių: nei peržiūros, nei įrašymo |
 | Kompiuteriai | Windows 10/11 ir Linux | Windows 10/11, 64 ir 32 bitų |
-| Kaina | Nemokamas pagrindas (GPLv2); mokami priedai, kaina pagal užklausą | €499 pirmiems metams mokyklai, vėliau €299 per metus; be mokesčio už kompiuterį |
+| Kaina | Nemokamas pagrindas (GPLv2); mokami priedai, kaina pagal užklausą | Nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus; be mokesčio už kompiuterį |
 | Pagalba | Bendruomenė arba mokama sutartis | Paruošimas, įvadinė pagalba ir metai naujinimų bei pagalbos įskaičiuoti |
 | Kalbos | Daug | Anglų ir lietuvių, kiekvienas tekstas |
 

@@ -17,7 +17,7 @@ Checked on 24 October 2026 against Veyon 4.11.4 (released 15 October 2026), its 
 | Built for | Watching and steering screens during a lesson | Preparing, configuring and maintaining a Windows lab |
 | Student screens | Live thumbnails, remote view and control, screen broadcast | Deliberately none: no viewing, capture or recording |
 | Computers | Windows 10/11 and Linux | Windows 10/11, 64-bit and 32-bit |
-| Price | Free core (GPLv2); paid add-ons, priced on request | €499 the first year per school, then €299 a year; no per-PC charge |
+| Price | Free core (GPLv2); paid add-ons, priced on request | Free for up to 3 computers online at once; for a school, €499 the first year, then €299 a year; no per-PC charge |
 | Support | Community, or a paid contract | Setup, onboarding and a year of updates and support included |
 | Languages | Many | English and Lithuanian, every text |
 
