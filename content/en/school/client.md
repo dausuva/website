@@ -9,6 +9,17 @@ The **Client** is a small Windows service with a helper that shows a notificatio
 
 Students see the icon in the notification area; opening it shows that the computer is managed and what is active. The programs do not view, capture or record student screens.
 
+## Try it on two computers in ten minutes
+
+You need a teacher computer and one other Windows computer to play the student computer. Both must be on the same network, and you need administrator rights on the second one. The Host is free for up to 3 computers online at the same time, and the Client has no limit, so a trial costs nothing.
+
+1. **Install the Host** on the teacher computer (the [download page]({{< relref "/school/download" >}}) lists the Microsoft Store, winget and a direct download).
+2. **Make a key file** on the second computer. In PowerShell, this makes a random key and writes the file: `$k = -join ((48..57 + 65..90 + 97..122) | Get-Random -Count 20 | ForEach-Object { [char]$_ }); Set-Content classroom-kit.json ('{ "key": "' + $k + '" }')`. Keep the key to type into the Host.
+3. **Install the Client** on the second computer with that file beside the installer (step 2 below).
+4. **Connect:** in the Host, run the Setup assistant, enter the same key, press **Scan network**, approve the computer's certificate, and put it in a room.
+5. **Try:** send a message, lock and unlock the screen, open a website on it. Nothing in the trial views or records the screen.
+6. **Remove it afterwards:** on the second computer, uninstall **Classroom Manager Client** in Settings > Apps, and delete `classroom-kit.json`.
+
 ## 1. Make the lab key
 
 One key for a whole lab: at least 12 characters, the same on every computer and in the teacher's Host. Keep it secret. Put it in a text file named `classroom-kit.json`:

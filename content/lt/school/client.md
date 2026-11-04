@@ -9,6 +9,17 @@ schoolPage: true
 
 Mokiniai mato piktogramą pranešimų srityje; ją atidarius matoma, kad kompiuteris valdomas ir kas šiuo metu aktyvu. Programos neperžiūri, nefiksuoja ir neįrašo mokinių ekranų.
 
+## Išbandykite per dešimt minučių dviejuose kompiuteriuose
+
+Reikia mokytojo kompiuterio ir dar vieno „Windows“ kompiuterio, kuris vaidins mokinio kompiuterį. Abu turi būti viename tinkle, o antrame reikia administratoriaus teisių. Host nemokamas iki 3 vienu metu prisijungusių kompiuterių, o Client neturi apribojimų, todėl bandymas nieko nekainuoja.
+
+1. **Įdiekite Host** mokytojo kompiuteryje ([atsisiuntimo puslapyje]({{< relref "/school/download" >}}) rasite „Microsoft Store“, winget ir tiesioginį atsisiuntimą).
+2. **Sukurkite rakto failą** antrame kompiuteryje. „PowerShell“ komanda sukuria atsitiktinį raktą ir įrašo failą: `$k = -join ((48..57 + 65..90 + 97..122) | Get-Random -Count 20 | ForEach-Object { [char]$_ }); Set-Content classroom-kit.json ('{ "key": "' + $k + '" }')`. Raktą pasilikite įvesti Host.
+3. **Įdiekite Client** antrame kompiuteryje, šalia diegimo programos padėję tą failą (toliau 2 žingsnis).
+4. **Prisijunkite:** Host paleiskite Sąrankos vedlį, įveskite tą patį raktą, spauskite **Ieškoti tinkle**, patvirtinkite kompiuterio sertifikatą ir priskirkite jį klasei.
+5. **Išbandykite:** išsiųskite žinutę, užrakinkite ir atrakinkite ekraną, atidarykite jame svetainę. Bandymo metu ekranas neperžiūrimas ir neįrašomas.
+6. **Po to pašalinkite:** antrame kompiuteryje pašalinkite **Classroom Manager Client** skiltyje Nustatymai > Programos ir ištrinkite `classroom-kit.json`.
+
 ## 1. Sukurkite laboratorijos raktą
 
 Vienas raktas visai laboratorijai: bent 12 ženklų, tas pats kiekviename kompiuteryje ir mokytojo Host. Laikykite jį paslaptyje. Įrašykite jį tekstiniame faile `classroom-kit.json`:
