@@ -19,7 +19,7 @@ This page says how Classroom Manager releases are made and approved. The same te
 
 ## Who decides
 
-- **Authors and reviewers:** the maintainers of Dausuva MB. Every change to the repository is reviewed by a maintainer before it is merged.
+- **Authors and reviewers:** the maintainers of Dausuva Labs. Every change to the repository is reviewed by a maintainer before it is merged.
 - **Approver:** a maintainer approves each signing request by hand for each release. Nothing is signed automatically.
 - Everyone with a role uses two-factor authentication on GitHub and on the signing service.
 

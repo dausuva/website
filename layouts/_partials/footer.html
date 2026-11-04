@@ -20,9 +20,9 @@
       <a href="{{ partial "page-url.html" "/school/code-signing-policy/" }}">{{ T "codeSigning" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/support/" }}">{{ T "supportPage" }}</a><br>
       {{ with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ T "privacy" }}</a><br>{{ end }}
-      © {{ now.Year }} {{ site.Params.company }}
+      © {{ now.Year }} {{ site.Params.brand }}
     </div>
   </div>
-  <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">Dausuva MB</a><a href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }}</a><span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span></div>
+  <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">{{ site.Params.brand }}</a><a href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }}</a><span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span></div>
 </footer>
 <noscript><p class="wrap note">{{ T "contactNoScript" }}</p></noscript>

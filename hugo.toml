@@ -29,6 +29,7 @@ enableRobotsTXT = true
 
 # Product and company values: change them here only.
 [params]
+  brand = "Dausuva Labs"
   company = "Dausuva MB"
   companyUrl = "https://dausuva.com/"
   companyCode = "307580523"

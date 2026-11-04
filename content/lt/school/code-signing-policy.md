@@ -19,7 +19,7 @@ Anksčiau neįrašykite: kol kas leidimai taip nepasirašomi. -->
 
 ## Kas sprendžia
 
-- **Autoriai ir peržiūrėtojai:** Dausuva MB prižiūrėtojai. Kiekvieną saugyklos pakeitimą prieš sujungiant peržiūri prižiūrėtojas.
+- **Autoriai ir peržiūrėtojai:** Dausuva Labs prižiūrėtojai. Kiekvieną saugyklos pakeitimą prieš sujungiant peržiūri prižiūrėtojas.
 - **Tvirtintojas:** prižiūrėtojas kiekvieno leidimo pasirašymo užklausą patvirtina rankiniu būdu. Niekas nepasirašoma automatiškai.
 - Kiekvienas, turintis vaidmenį, naudoja dviejų veiksnių autentifikaciją „GitHub“ ir pasirašymo paslaugoje.
 

@@ -98,7 +98,7 @@ for (const lang of ['en', 'lt']) {
     const organization = node('Organization');
     const website = node('WebSite');
     const webpage = node('WebPage');
-    check(organization?.name === 'Dausuva MB' && organization.identifier === '307580523', `${path}: real company identity`);
+    check(organization?.name === 'Dausuva Labs' && organization.legalName === 'Dausuva MB' && organization.identifier === '307580523', `${path}: real company identity`);
     check(organization['@id'] === 'https://dausuva.com/#organization', `${path}: same company across languages`);
     check(website?.url === new URL(prefix, current.origin).href && website.inLanguage === lang, `${path}: localized website`);
     check(webpage?.url === new URL(path, current.origin).href && webpage.name === searchTitle && webpage.inLanguage === lang, `${path}: schema matches canonical, title and language`);
