@@ -30,6 +30,6 @@ Leidimus sukuria „GitHub Actions“ iš pažymėtos viešos versijos. Pasiraš
 
 ## Windows ir privatumas
 
-Windows 10 ir Windows 11. Programos nieko nesiunčia Dausuva: debesijos paslaugos nėra. Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija; pirmą kartą paleidus jis paklausia, ir tai galima išjungti. Žr. [Privatumas]({{< relref "/school/privacy" >}}).
+Windows 10 ir Windows 11, 64 arba 32 bitų. Diegimo programos išbandytos su Windows 10 1903 ir 22H2 versijomis bei Windows 11. Client, pateiktas kaip MSIX paketas (Intune ar Configuration Manager), reikalauja Windows 10 2004 (darinys 19041) ar naujesnės versijos, 64 bitų; senesniame Windows 10 naudokite diegimo programą. Programos nieko nesiunčia Dausuva: debesijos paslaugos nėra. Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija; pirmą kartą paleidus jis paklausia, ir tai galima išjungti. Žr. [Privatumas]({{< relref "/school/privacy" >}}).
 
 Kažkas negerai su atsisiuntimu? [Pagalba]({{< relref "/school/support" >}}).

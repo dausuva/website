@@ -30,6 +30,6 @@ Releases are built by GitHub Actions from a tagged, public commit. A release tha
 
 ## Windows and privacy
 
-Windows 10 and Windows 11. The programs send nothing to Dausuva: there is no cloud service. The Host can look once a day at github.com to see whether a newer version exists, and asks you the first time it starts; you can switch it off. See [Privacy]({{< relref "/school/privacy" >}}).
+Windows 10 and Windows 11, 64-bit or 32-bit. The installers have been run on Windows 10 version 1903 and 22H2 and on Windows 11. A Client delivered as an MSIX package (for Intune or Configuration Manager) needs Windows 10 version 2004 (build 19041) or later, 64-bit; on older Windows 10 use the installer. The programs send nothing to Dausuva: there is no cloud service. The Host can look once a day at github.com to see whether a newer version exists, and asks you the first time it starts; you can switch it off. See [Privacy]({{< relref "/school/privacy" >}}).
 
 Something wrong with a download? [Support]({{< relref "/school/support" >}}).
