@@ -16,6 +16,19 @@ Priklausomai nuo veiksmo, Host ir Client tvarko kompiuterių bei naudotojų vard
 
 Valdymo duomenys ir surinkti failai tvarkomi mokyklos kompiuteriuose, ne per Dausuva Labs debesijos valdymo paslaugą. Tai **nereiškia**, kad visi veiksmai vyksta be interneto: pasirinktinės versijų patikros, programų šaltiniai, Windows Update ir vykdymo aplinkos atsisiuntimai gali jungtis į išorines paslaugas.
 
+## Classroom Manager programų privatumo politika
+
+Tai **Host** (mokytojo programos, taip pat „Microsoft Store“ versijos) ir **Client** (programos mokinių kompiuteriuose) privatumo politika. Paskutinį kartą atnaujinta 2026 m. lapkričio 4 d.
+
+- **Kas jas skelbia:** Dausuva Labs – pavadinimas, kuriuo Dausuva MB (įmonės kodas 307580523, Vytauto g. 22-22A, LT-90123 Plungė, Lietuva) skelbia programinę įrangą. Kontaktai: {{< contact >}}.
+- **Ką programos siunčia mums:** nieko. Jos neturi paskyros, reklamos, analitikos ar telemetrijos ir nesikreipia į jokį mūsų serverį.
+- **Kas palieka kompiuterius:** Host kalba tik su mokytojo pridėtais kompiuteriais mokyklos tinkle, užšifruotai ir patvirtintai raktu, kuris lieka jūsų kompiuteriuose. Kartą per parą Host gali pažiūrėti github.com, ar yra naujesnė versija; pirmą kartą paleidus jis paklausia, ir tai galima išjungti. Tai paprasta žiniatinklio užklausa, todėl „GitHub“ mato kompiuterio interneto adresą. „Windows“, „Microsoft Store“ ir jūsų pasirinkti programų šaltiniai turi savo politikas.
+- **Kas saugoma ir kur:** mokytojo kompiuteryje – Host nustatymai, kompiuterių sąrašas, raktai, žurnalai ir surinkti failai; mokinio kompiuteryje – Client konfigūracija, raktai ir žurnalai. Mokyklos licencijos failas saugomas mokytojo kompiuteryje ir niekur nesiunčiamas. „Microsoft Store“ versija nustatymus laiko savo programos saugykloje, kurią „Windows“ pašalina ištrynus programą; kitų versijų elgesį lemia šalinimo programos pasirinkimas.
+- **Ką programos mato valdomame kompiuteryje:** aukščiau išvardytus duomenis, pavyzdžiui, vardus, inventorių, procesus, langų pavadinimus, paskyras ir failus, kuriuos nusprendžiate surinkti. Jos neperžiūri, nefiksuoja ir neįrašo ekranų.
+- **Vaikai:** programos nėra skirtos vaikams naudoti. Jas naudoja mokyklos ir administratoriai, kurie nusprendžia, kas apie mokinius renkama, kodėl, kiek laiko laikoma ir kas informuojamas; už tuos duomenis atsako mokykla.
+- **Jūsų teisės:** dėl duomenų, kuriuos apie jus turime (pavyzdžiui, kai mums rašote), kreipkitės {{< contact >}}. Galite prašyti juos pamatyti, ištaisyti ar ištrinti ir pateikti skundą Valstybinei duomenų apsaugos inspekcijai (vdai.lrv.lt).
+- **Pakeitimai:** šiame puslapyje nurodoma paskutinio pakeitimo data.
+
 ## Taisykles nustato mokykla
 
 Nuspręskite, kas gali administruoti kompiuterius, kokius failus galima surinkti, kur saugomi rezultatai ir žurnalai, kiek laiko jie laikomi ir kaip informuojami darbuotojai, mokiniai bei tėvai. Programa nenustato vieno universalaus saugojimo termino ar mokyklos teisinio duomenų tvarkymo pagrindo.
