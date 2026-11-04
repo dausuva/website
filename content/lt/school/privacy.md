@@ -14,7 +14,7 @@ Produktas neperžiūri, nefiksuoja ir neįrašo mokinių ekranų. Tai kompiuteri
 
 Priklausomai nuo veiksmo, Host ir Client tvarko kompiuterių bei naudotojų vardus, ryšio būseną, įrangos ir programų inventorių, procesus bei langų pavadinimus, vietines ir programose prisijungusias paskyras, naršyklėse atidarytas svetaines, komandas bei jų išvestį, užduočių rezultatus, konfigūraciją, žurnalus ir siunčiamus ar surenkamus failus. Naudotojų vardai, naršyklės informacija bei mokinių darbai gali leisti atpažinti asmenis.
 
-Valdymo duomenys ir surinkti failai tvarkomi mokyklos kompiuteriuose, ne per Dausuva debesijos valdymo paslaugą. Tai **nereiškia**, kad visi veiksmai vyksta be interneto: pasirinktinės versijų patikros, programų šaltiniai, Windows Update ir vykdymo aplinkos atsisiuntimai gali jungtis į išorines paslaugas.
+Valdymo duomenys ir surinkti failai tvarkomi mokyklos kompiuteriuose, ne per Dausuva Labs debesijos valdymo paslaugą. Tai **nereiškia**, kad visi veiksmai vyksta be interneto: pasirinktinės versijų patikros, programų šaltiniai, Windows Update ir vykdymo aplinkos atsisiuntimai gali jungtis į išorines paslaugas.
 
 ## Taisykles nustato mokykla
 

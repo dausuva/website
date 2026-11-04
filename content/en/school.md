@@ -1,7 +1,7 @@
 ---
 title: "A calmer way to run your computer lab."
 htmlTitle: "Classroom Manager — Windows school lab management | Dausuva"
-description: "Prepare Windows classroom PCs, support lessons and maintain the lab from one console on your school network. Early access from Dausuva."
+description: "Prepare Windows classroom PCs, support lessons and maintain the lab from one console on your school network. Early access from Dausuva Labs."
 url: "/school/"
 layout: "landing"
 aliases: ["/classroom-manager/"]

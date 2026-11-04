@@ -14,7 +14,7 @@ The product does not view, capture or record student screens. It is a PC-managem
 
 Depending on the action used, the Host and Clients handle computer and user names, connection status, hardware and software inventory, processes and window titles, local and signed-in application accounts, websites open in browsers, commands and their output, task results, configuration, logs and files you send or collect. User names, browser information and collected work may identify people.
 
-Control traffic and collected files are handled on the school's computers, not through a Dausuva cloud control service. This does **not** mean every action is offline: optional release checks, software sources, Windows Update and runtime downloads can contact external services.
+Control traffic and collected files are handled on the school's computers, not through a Dausuva Labs cloud control service. This does **not** mean every action is offline: optional release checks, software sources, Windows Update and runtime downloads can contact external services.
 
 ## Your school makes the policy
 

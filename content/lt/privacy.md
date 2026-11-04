@@ -1,6 +1,6 @@
 ---
 title: "Privatumas"
-description: "Kaip Dausuva svetainė tvarko jūsų duomenis."
+description: "Kaip Dausuva Labs svetainė tvarko jūsų duomenis."
 translationKey: "privacy"
 slug: "privatumas"
 aliases: ["/privacy/"]
@@ -8,7 +8,7 @@ aliases: ["/privacy/"]
 
 Pačiuose svetainės puslapiuose nėra analitikos scenarijų, reklaminių sekiklių, išorinių šriftų ar kontaktų formų. Nedidelis vietinis scenarijus paprašius parodo kontaktus ir atidaro paruoštą laiško juodraštį. Jis neatlieka tinklo užklausų ir nesaugo duomenų naršyklėje. Išjungus JavaScript, kontaktai lieka pateikti raštu. Niekas nesiunčiama, kol patys nepasirenkate siųsti el. pašto ar telefono programoje.
 
-Vieša svetainė paruošta GitHub Pages prieglobai. Privati peržiūra gali naudoti kitą platformą, įskaitant Sites. Prieglobos ir prieigos platformos gali tvarkyti techninius užklausų duomenis, pavyzdžiui, IP adresus ir autentifikavimo informaciją, kad pateiktų ir apsaugotų svetainę. Tai atskira nuo Dausuva pridedamos analitikos; privačios peržiūros prieigos kontrolė gali naudoti savo slapukus.
+Vieša svetainė paruošta GitHub Pages prieglobai. Privati peržiūra gali naudoti kitą platformą, įskaitant Sites. Prieglobos ir prieigos platformos gali tvarkyti techninius užklausų duomenis, pavyzdžiui, IP adresus ir autentifikavimo informaciją, kad pateiktų ir apsaugotų svetainę. Tai atskira nuo Dausuva Labs pridedamos analitikos; privačios peržiūros prieigos kontrolė gali naudoti savo slapukus.
 
 Kai parašote ar paskambinate, jūsų žinutę ir kontaktus naudojame tik tam, kad atsakytume ir paruoštume, ko
 prašėte, ir saugome juos ne ilgiau, nei reikia tam ir mūsų teisinėms pareigoms vykdyti.
