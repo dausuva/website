@@ -19,7 +19,7 @@ Classroom Manager started in a school computer lab, where one person teaches inf
 | **Cloud device management** (Intune, school MDM) | Licences per user or device; IT skills; internet for every action | Built for IT departments, not for the teacher in the room |
 | **Classroom Manager** | €499 the first year per school, then €299 a year | No student-screen features by design; Windows only |
 
-[See the full comparison with Veyon](../compare/).
+[See the full comparison with Veyon](../compare-veyon/) or [all comparisons](../compare/).
 
 ## Who it is for
 

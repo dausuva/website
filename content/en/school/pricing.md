@@ -27,6 +27,6 @@ The Client on student computers is free and has no limit; the limit is in the te
 
 ## What it costs per computer
 
-The price is per school, for fewer than 50 PCs (larger schools, ask us). In a 20-PC lab that is **€25 per PC the first year and €15 per PC after**; in a 30-PC lab, €17 and €10. Our example lab saves about 80 hours of setup and maintenance a year. [Work out your own numbers](../market/) or [compare with Veyon](../compare/).
+The price is per school, for fewer than 50 PCs (larger schools, ask us). In a 20-PC lab that is **€25 per PC the first year and €15 per PC after**; in a 30-PC lab, €17 and €10. Our example lab saves about 80 hours of setup and maintenance a year. [Work out your own numbers](../market/) or [compare with Veyon](../compare-veyon/) or [the others](../compare/).
 
 [Discuss your deployment](../request/) or [read how a pilot works](../getting-started/).

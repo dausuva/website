@@ -27,6 +27,6 @@ Client mokinių kompiuteriuose nemokamas ir be apribojimų; riba yra mokytojo pr
 
 ## Kiek kainuoja vienam kompiuteriui
 
-Kaina — mokyklai, iki 50 kompiuterių (didesnėms mokykloms — susisiekite). 20 kompiuterių klasėje tai **€25 kompiuteriui pirmais metais ir €15 vėliau**; 30 kompiuterių klasėje — €17 ir €10. Mūsų pavyzdinė klasė per metus sutaupo apie 80 valandų paruošimo ir priežiūros darbo. [Apskaičiuokite savo skaičius](../rinka/) arba [palyginkite su Veyon](../palyginimas/).
+Kaina — mokyklai, iki 50 kompiuterių (didesnėms mokykloms — susisiekite). 20 kompiuterių klasėje tai **€25 kompiuteriui pirmais metais ir €15 vėliau**; 30 kompiuterių klasėje — €17 ir €10. Mūsų pavyzdinė klasė per metus sutaupo apie 80 valandų paruošimo ir priežiūros darbo. [Apskaičiuokite savo skaičius](../rinka/) arba [palyginkite su Veyon](../palyginimas-veyon/) arba [su kitais](../palyginimas/).
 
 [Aptarkime diegimą]({{< relref "/school/request" >}}) arba [sužinokite apie bandomąjį diegimą]({{< relref "/school/getting-started" >}}).

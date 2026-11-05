@@ -93,3 +93,7 @@ content/lt/school/demo.md
 layouts/_shortcodes/video.html
 content/en/school/compare-tactical-rmm.md
 content/lt/school/compare-tactical-rmm.md
+content/en/school/compare-netsupport-school.md
+content/lt/school/compare-netsupport-school.md
+content/en/school/compare-veyon.md
+content/lt/school/compare-veyon.md

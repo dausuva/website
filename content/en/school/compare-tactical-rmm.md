@@ -63,7 +63,7 @@ Checked on 5 November 2026 against the Tactical RMM documentation (home page, se
 
 **Choose Classroom Manager** if the people using it are teachers and a small school IT team who want to lock, message, hand out and collect files and run exams from the teacher's PC, with no server to build, the maintenance tools beside them, a flat yearly price, help with the rollout, and no screen capture of minors to justify under GDPR.
 
-Some schools could use both: Tactical RMM for the district's fleet and alerts, Classroom Manager for the lab in front of the class. Ask us whether that fits your setup. See also the [comparison with Veyon]({{< relref "/school/compare" >}}).
+Some schools could use both: Tactical RMM for the district's fleet and alerts, Classroom Manager for the lab in front of the class. Ask us whether that fits your setup. See also the [comparison with Veyon]({{< relref "/school/compare-veyon" >}}) and [all comparisons]({{< relref "/school/compare" >}}).
 
 ## Sources
 

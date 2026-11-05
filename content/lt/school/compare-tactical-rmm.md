@@ -63,7 +63,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis Tactical RMM dokumentacija (pagrind
 
 **Rinkitės Classroom Manager**, jei juo naudosis mokytojai ir nedidelė mokyklos IT komanda, norintys iš mokytojo kompiuterio užrakinti, siųsti pranešimus, dalinti ir rinkti failus bei vesti egzaminus, be serverio, šalia turėdami priežiūros įrankius, už fiksuotą metinę kainą, su pagalba diegiant ir be nepilnamečių ekranų fiksavimo, kurį reikėtų pagrįsti pagal BDAR.
 
-Kai kurios mokyklos galėtų naudoti abi: Tactical RMM — savivaldybės kompiuterių parkui ir įspėjimams, Classroom Manager — klasei prieš mokinius. Paklauskite, ar tai tiktų jūsų aplinkai. Taip pat žr. [palyginimą su Veyon]({{< relref "/school/compare" >}}).
+Kai kurios mokyklos galėtų naudoti abi: Tactical RMM — savivaldybės kompiuterių parkui ir įspėjimams, Classroom Manager — klasei prieš mokinius. Paklauskite, ar tai tiktų jūsų aplinkai. Taip pat žr. [palyginimą su Veyon]({{< relref "/school/compare-veyon" >}}) ir [visus palyginimus]({{< relref "/school/compare" >}}).
 
 ## Šaltiniai
 

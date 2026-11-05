@@ -19,7 +19,7 @@ Classroom Manager atsirado mokyklos kompiuterių klasėje, kur vienas žmogus mo
 | **Debesijos įrenginių valdymas** (Intune, mokyklos MDM) | Licencijos naudotojui ar įrenginiui; IT žinios; internetas kiekvienam veiksmui | Skirta IT skyriams, ne mokytojui klasėje |
 | **Classroom Manager** | €499 pirmiems metams mokyklai, vėliau €299 per metus | Sąmoningai be mokinių ekranų funkcijų; tik Windows |
 
-[Visas palyginimas su Veyon](../palyginimas/).
+[Visas palyginimas su Veyon](../palyginimas-veyon/) arba [visi palyginimai](../palyginimas/).
 
 ## Kam skirta
 

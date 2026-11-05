@@ -1,76 +1,32 @@
 ---
-title: "Classroom Manager ir Veyon greta."
-description: "Sąžiningas palyginimas su Veyon, nemokama atvirojo kodo klasės programa: kur kuri pranašesnė, kas kainuoja papildomai ir kuri tinka jūsų mokyklai."
+title: "Classroom Manager palyginimai."
+description: "Sąžiningi palyginimai greta: Classroom Manager su Veyon, Tactical RMM ir NetSupport School — kam kuri skirta, kiek kainuoja ir kuri tinka mokyklos kompiuterių klasei."
 translationKey: "school-compare"
 slug: "palyginimas"
 schoolPage: true
 aliases: ["/classroom-manager/compare/", "/school/compare/"]
 ---
-Veyon — žinomiausia nemokama klasės programa Windows ir Linux kompiuterių klasėms, ją pažįsta daug mokyklų. Abi programos atlieka tuos pačius kasdienius pamokos veiksmus, tačiau sukurtos skirtingiems tikslams: **Veyon skirta mokinių ekranams matyti ir valdyti, o Classroom Manager — Windows klasei paruošti, nustatyti ir prižiūrėti, niekieno ekrano nestebint.**
+Su Classroom Manager sutampa trys įrankių rūšys, ir mokyklos dažnai sutinka visas: **klasės įrankiai**, rodantys ir valdantys mokinių ekranus (Veyon, NetSupport School), ir **nuotolinio valdymo įrankiai**, prižiūrintys kompiuterių parką (Tactical RMM). Classroom Manager yra tarp jų: mokytojo įrankiai „Windows“ klasei, šalia — administratoriaus įrankiai, ir sąmoningai jokio mokinių ekranų stebėjimo ar įrašymo.
 
-Palyginta 2026 m. spalio 24 d. su Veyon 4.11.4 (išleista 2026 m. spalio 15 d.), remiantis jos svetaine, tinklaraščiu ir dokumentacija. Veyon šiam palyginimui nebuvo diegta. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.
+| | Įrankio rūšis | Kuo grindžiama | Mokinių ekranai | Kaip kainuoja |
+|---|---|---|---|---|
+| [**Veyon**]({{< relref "/school/compare-veyon" >}}) | Klasės įrankis, atvirasis kodas | Ekranų stebėjimas ir valdymas per pamoką | Miniatiūros, nuotolinė peržiūra ir valdymas, ekrano transliacija | Nemokamas pagrindas; priedų kaina pagal užklausą |
+| [**NetSupport School**]({{< relref "/school/compare-netsupport-school" >}}) | Komercinis klasės paketas | Mokymas su ekranais: stebėjimas, bendrinimas, testai; Technician's Console IT specialistams | Gyvi vaizdai su programų, svetainių ir klaviatūros veikla | Kainos pasiūlymas pagal įrenginių skaičių; „nusipirk vieną kartą“ galimybė; kainoraščio nėra |
+| [**Tactical RMM**]({{< relref "/school/compare-tactical-rmm" >}}) | Nuotolinis stebėjimas ir valdymas, diegiamas savo serveryje | Administratorius, stebintis ir taisantis kompiuterių parką | Nuotolinis darbalaukis viename kompiuteryje; klasės vaizdo nėra | Nemokama savo sistemoms; komercinėms paslaugoms reikia tiekėjo sutikimo |
+| **Classroom Manager** | Mokytojo ir klasės įrankis „Windows“ | „Windows“ klasės paruošimas, pamokos vedimas joje ir priežiūra | Sąmoningai jokių | Nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus |
 
-## Trumpai
+## Palyginimai
 
-| | Veyon | Classroom Manager |
-|---|---|---|
-| Skirta | Ekranams matyti ir valdyti per pamoką | Windows klasei paruošti, nustatyti ir prižiūrėti |
-| Mokinių ekranai | Gyvos miniatiūros, nuotolinis peržiūrėjimas ir valdymas, ekrano transliavimas | Sąmoningai jokių: nei peržiūros, nei įrašymo |
-| Kompiuteriai | Windows 10/11 ir Linux | Windows 10/11, 64 ir 32 bitų |
-| Kaina | Nemokamas pagrindas (GPLv2); mokami priedai, kaina pagal užklausą | Nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus; be mokesčio už kompiuterį |
-| Pagalba | Bendruomenė arba mokama sutartis | Paruošimas, įvadinė pagalba ir metai naujinimų bei pagalbos įskaičiuoti |
-| Kalbos | Daug | Anglų ir lietuvių, kiekvienas tekstas |
+- **[Classroom Manager ir Veyon]({{< relref "/school/compare-veyon" >}})**: žinomiausia nemokama klasės programa. Veyon skirta ekranams matyti ir valdyti; Classroom Manager — klasei paruošti ir prižiūrėti.
+- **[Classroom Manager ir NetSupport School]({{< relref "/school/compare-netsupport-school" >}})**: komercinis klasės paketas. NetSupport School skirta mokyti su ekranais, testais ir bendrinimu; Classroom Manager — „Windows“ klasei ir paskelbtai fiksuotai kainai.
+- **[Classroom Manager ir Tactical RMM]({{< relref "/school/compare-tactical-rmm" >}})**: nemokama savo serveryje diegiama valdymo programa. Tactical RMM skirta administratoriui su serveriu ir įspėjimais; Classroom Manager — mokytojui su klase.
 
-## Per pamoką
+## Kaip tai rašome
 
-| Užduotis | Veyon | Classroom Manager |
-|---|---|---|
-| Užrakinti ekranus su pranešimu | Taip | Taip |
-| Siųsti pranešimą | Taip | Taip |
-| Atidaryti svetainę ar programą visuose kompiuteriuose | Taip | Taip |
-| Išdalinti failus | Taip | Taip, į darbalaukį, dokumentus ar bet kurį aplanką, su atšaukimu |
-| Surinkti failus | Taip (nuo 4.10) | Taip, pagal pavadinimo šabloną, kiekvienam mokiniui atskirai |
-| Matyti, ką mokiniai pakeitė per pusvalandį, ir tai nukopijuoti | Ne | Taip: naujausi failai pagal laiką ir tipą, vienu paspaudimu |
-| Prijungti mokinį nuotoliu | Taip | Taip |
-| Įjungti, perkrauti, išjungti | Taip | Taip, su atšaukimu |
-| Egzamino režimas: svetainės, programos, garsas, kamera, USB laikmenos | Svetainių blokavimas — mokamas priedas; įrenginių valdymas — mokamas priedas | Įskaičiuota |
+- Kiekvienas palyginimas nurodo šaltinius ir patikrinimo datą. Skaitome paties tiekėjo puslapius, versijų pastabas ir dokumentaciją.
+- Kitų produktų nediegėme. Kai ko neradome perskaitytuose puslapiuose, lentelėje rašome **„Nėra galimybių sąraše“** arba **„Perskaitytuose puslapiuose nenurodyta“**. Tai reiškia, kad to neradome, o ne kad to nėra.
+- Kainos — tokios, kokias skelbia tiekėjas. Kur tiekėjas jų neskelbia, taip ir sakome ir nespėliojame.
+- Classroom Manager stulpelis aprašo dabartinę versiją. Paprašykite demonstracijos ir pamatysite patys.
+- Produktai keičiasi. Jei kas nors čia pasenę ar klaidinga, [pasakykite mums]({{< relref "/school/request" >}}) ir pataisysime.
 
-## Klasės priežiūra
-
-| Užduotis | Veyon | Classroom Manager |
-|---|---|---|
-| Diegti ar šalinti programas daugelyje kompiuterių | Ne | Taip: diegikliai, MSI, winget, registro failai |
-| Windows naujinimai: patikrinti, pasirinkti, įdiegti, pristabdyti | Tik išjungiant | Taip |
-| Paskyros, procesai, suplanuotos užduotys, paleisties programos, registras | Ne | Taip |
-| Darbalaukio fonas, prisijungimo paveikslėlis, ekrano užsklanda, temos, klaviatūros išdėstymai | Ne | Taip |
-| Pervardyti kompiuterius, nustatyti laiką visuose kompiuteriuose | Ne | Taip |
-| Tvarkaraščiai, kurie pasiveja išjungtus kompiuterius | Ne | Taip: laiko sinchronizavimas, naujinimų patikra, mėnesinė mokinių darbų kopija |
-| Komandinė eilutė scenarijams ir užduočių planuokliui | Taip, ir žiniatinklio API | Taip, be žiniatinklio API |
-| Diagnostika, kai neprisijungia | Žurnalai | Du sveikatos tikrintojai ir aprašyti klaidų kodai |
-
-## Prieiga ir saugumas
-
-| | Veyon | Classroom Manager |
-|---|---|---|
-| Kas gali valdyti | Windows ar Linux prisijungimas arba raktų failai; grupių taisyklės | Klasės raktai su stebėtojo, mokytojo ar administratoriaus vaidmeniu, kurį tikrina kiekvienas kompiuteris; raktus galima apriboti klasėmis |
-| Katalogas | Įtaisytas sąrašas arba LDAP/Active Directory; Entra ID — mokamas priedas | Įtaisytas sąrašas su klasėmis |
-| Šifravimas | Pagrindiniam kanalui iš perskaitytų puslapių nenustatyta | TLS 1.2/1.3 visada įjungtas, patvirtintas kiekvieno kompiuterio sertifikatas, pasirašyti ir tikrinami kadrai |
-| Kompiuterių paieška | Mokamas priedas | Įtaisyta, autentifikuota paieška tinkle |
-
-## Kuri tinka
-
-**Rinkitės Veyon**, jei svarbiausia matyti ir valdyti mokinių ekranus: gyvos miniatiūros, demonstravimas iš mokytojo ekrano, nuotolinis valdymas, Linux klasės ar nemokama programa su bendruomenės pagalba.
-
-**Rinkitės Classroom Manager**, jei darbas — palaikyti Windows klasę paruoštą: programos, naujinimai, nustatymai, paskyros ir egzamino apribojimai, failai pirmyn ir atgal, su fiksuota metine kaina, pagalba diegiant ir be nepilnamečių ekranų įrašymo, kurį reikėtų pagrįsti pagal BDAR.
-
-Kai kurios mokyklos galėtų naudoti abi: Veyon — ekranų darbui per pamoką, Classroom Manager — pačiai klasei. Paklauskite mūsų, ar tai tinka jūsų sąrankai.
-
-## Šaltiniai
-
-- [Veyon](https://veyon.io/en/), [jos galimybės](https://veyon.io/en/features/) ir [priedai](https://veyon.io/en/addons/)
-- [Veyon 4.11.0 pranešimas](https://veyon.io/blog/2026/07/10/veyon-4-11-0-released/) ir [versijų pastabos](https://docs.veyon.io/en/latest/admin/release-notes.html)
-- <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti](../faktai/)
-
-Taip pat palyginta: [Classroom Manager ir Tactical RMM]({{< relref "/school/compare-tactical-rmm" >}}), savo serveryje diegiama nuotolinio valdymo programa.
-
-[Užsisakyti demonstraciją](../kontaktai/) · [Kainos](../kainos/) · [Kiek kainuoja vienam kompiuteriui](../rinka/)
+[Užsisakyti demonstraciją]({{< relref "/school/request" >}}) · [Žiūrėti kainas]({{< relref "/school/pricing" >}}) · [Kiek kainuoja kompiuteriui]({{< relref "/school/market" >}})
