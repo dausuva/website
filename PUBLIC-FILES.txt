@@ -87,3 +87,7 @@ scripts/test-site.mjs
 static/CNAME
 .gitattributes
 PUBLIC-FILES.txt
+assets/js/video.mjs
+content/en/school/demo.md
+content/lt/school/demo.md
+layouts/_shortcodes/video.html

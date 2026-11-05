@@ -19,3 +19,5 @@ ištaisyti ar ištrinti, taip pat pateikti skundą Valstybinei duomenų apsaugos
 
 Apie pačios Classroom Manager programos privatumą skaitykite [produkto privatumo]({{< relref "/school/privacy" >}})
 puslapyje.
+
+Demonstracinio vaizdo įrašo puslapyje (`/mokykloms/demonstracija/`) yra antras vietinis scenarijus. Jis neatlieka jokių užklausų, kol nepaspaudžiate paleidimo mygtuko ar skyriaus nuorodos; tik tada naršyklė įkelia vaizdo įrašą iš „YouTube“ privatumą gerinančio grotuvo (`youtube-nocookie.com`, kurį valdo „Google“), kuris gauna jūsų IP adresą ir naršyklės duomenis, kaip ir bet kuri vaizdo įrašų svetainė. Išjungus JavaScript, nuorodos atidaro vaizdo įrašą „YouTube“. Poraštėje taip pat yra nuoroda į Dausuva Labs „YouTube“ kanalą; tai paprasta nuoroda, kuri nieko neįkelia, kol jos nepasirenkate.

@@ -17,3 +17,5 @@ Lithuania, {{< contact >}}. You may ask to see, correct or delete your
 data, and you may complain to the State Data Protection Inspectorate of Lithuania (vdai.lrv.lt).
 
 For the privacy of the Classroom Manager program itself, see [product privacy](/school/privacy/).
+
+The demo video page (`/school/demo/`) has a second first-party script. It makes no request until you press the play button or a chapter link; only then does your browser load the video from YouTube's privacy-enhanced player (`youtube-nocookie.com`, run by Google), which receives your IP address and browser details as any video host does. Without JavaScript, the links open the video on YouTube. The footer also links to the Dausuva Labs YouTube channel; that is an ordinary link and loads nothing until you follow it.

@@ -8,13 +8,15 @@
     </div>
     <div>
       {{ partial "contact.html" (dict "kind" "email") }}<br>
-      {{ partial "contact.html" (dict "kind" "phone") }}
+      {{ partial "contact.html" (dict "kind" "phone") }}<br>
+      <a href="https://www.youtube.com/@dausuva" rel="noopener">{{ T "youtube" }}</a>
     </div>
     <div>
       <a href="{{ partial "page-url.html" "/school/security/" }}">{{ T "security" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/privacy/" }}">{{ T "productPrivacy" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/proof/" }}">{{ T "proof" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/market/" }}">{{ T "market" }}</a><br>
+      <a href="{{ partial "page-url.html" "/school/demo/" }}">{{ T "demoVideo" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/download/" }}">{{ T "download" }}</a><br>
       {{ if site.Params.storeLive }}<a href="{{ site.Params.storeUrl }}" rel="noopener">{{ T "microsoftStore" }}</a>{{ else }}<span class="soon" title="{{ T "storeSoon" }}">{{ T "microsoftStore" }}</span>{{ end }}<br>
       <a href="{{ partial "page-url.html" "/school/client/" }}">{{ T "clientInstall" }}</a><br>

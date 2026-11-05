@@ -1,0 +1,10 @@
+{{- /* {{< video id="YouTubeId" title="..." >}}: a play button; the YouTube player is only created when it is pressed (assets/js/video.mjs). */ -}}
+{{- $id := .Get "id" -}}
+{{- if not (findRE `^[A-Za-z0-9_-]{11}$` $id) }}{{ errorf "video: not a YouTube id: %q" $id }}{{ end -}}
+<div class="video" data-video-id="{{ $id }}" data-video-title="{{ .Get "title" }}">
+  <button type="button" class="video-play" aria-label="{{ T "playVideo" }}: {{ .Get "title" }}"><span class="video-icon" aria-hidden="true">▶</span><span>{{ T "playVideo" }}</span></button>
+  <noscript><a class="video-play" href="https://youtu.be/{{ $id }}" rel="noopener">{{ T "watchOnYoutube" }}</a></noscript>
+</div>
+<p class="note">{{ T "videoNote" }} <a href="https://youtu.be/{{ $id }}" rel="noopener">{{ T "watchOnYoutube" }}</a></p>
+{{ $video := resources.Get "js/video.mjs" | fingerprint -}}
+<script type="module" src="{{ $video.RelPermalink }}" integrity="{{ $video.Data.Integrity }}"></script>

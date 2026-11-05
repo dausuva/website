@@ -82,13 +82,21 @@ for (const lang of ['en', 'lt']) {
     check(!/<form\b|<iframe\b/i.test(html), `${path}: no forms or embeds`);
     const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
     const visibleHtml = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
-    check(scripts.length === 2, `${path}: metadata and first-party contact helper only`);
+    const videoPage = slug === 'demo/';
+    check(scripts.length === (videoPage ? 3 : 2), `${path}: metadata and first-party scripts only (contact helper${videoPage ? ', click-to-play video' : ''})`);
     const metadata = scripts.find(script => attrs(script[1]).type === 'application/ld+json');
     check(metadata && Object.keys(attrs(metadata[1])).length === 1, `${path}: inert JSON-LD`);
-    const contactScript = scripts.find(script => attrs(script[1]).type === 'module');
+    const contactScript = scripts.find(script => /\/js\/contacts\./.test(attrs(script[1]).src || ''));
     const scriptAttrs = attrs(contactScript?.[1] || '');
     check(contactScript && !contactScript[2].trim() && /^\/js\/contacts\.[a-f0-9]+\.mjs$/.test(scriptAttrs.src) && scriptAttrs.integrity?.startsWith('sha256-'), `${path}: local fingerprinted contact module, no inline execution`);
     check(existsSync(join(current.root, scriptAttrs.src)), `${path}: contact module exists`);
+    if (videoPage) {
+      const video = scripts.find(script => /\/js\/video\./.test(attrs(script[1]).src || ''));
+      const videoAttrs = attrs(video?.[1] || '');
+      check(video && attrs(video[1]).type === 'module' && !video[2].trim() && /^\/js\/video\.[a-f0-9]+\.mjs$/.test(videoAttrs.src) && videoAttrs.integrity?.startsWith('sha256-'), `${path}: local fingerprinted video module, no inline execution`);
+      check(existsSync(join(current.root, videoAttrs.src)), `${path}: video module exists`);
+      check(/data-video-id="?OU81pvKxGTA/.test(html) && !/youtube(?:-nocookie)?\.com\/embed|ytimg|googlevideo/.test(html), `${path}: video is a button, nothing is loaded from YouTube before play`);
+    }
     check(!html.includes('support@dausuva.') && !html.includes('+370 648 45767') && !html.includes('+37064845767'), `${path}: no plain contact values in HTML or metadata`);
     check(!tags(html, 'a').some(link => /^(?:mailto:|tel:)/.test(link.href)), `${path}: no scrape-ready contact hrefs`);
     check(html.includes('<noscript>') && html.includes('[at]') && html.includes('[dot]'), `${path}: manual contact fallback without JavaScript`);
