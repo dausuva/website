@@ -1,4 +1,12 @@
+# Search, answer-engine and AI crawlers are welcome: they are how people find this site (owner decision, 2026-11-05).
+# The Cloudflare AI Crawl Control setting must allow them as well; this file cannot override it.
+{{ range slice "Googlebot" "Bingbot" "Applebot" "DuckAssistBot" "OAI-SearchBot" "ChatGPT-User" "GPTBot" "Claude-SearchBot" "Claude-User" "ClaudeBot" "anthropic-ai" "PerplexityBot" "Perplexity-User" "Google-Extended" "Applebot-Extended" "CCBot" "meta-externalagent" "Bytespider" "Amazonbot" "cohere-ai" -}}
+User-agent: {{ . }}
+{{ end -}}
+Allow: /
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: {{ "sitemap.xml" | absURL }}
