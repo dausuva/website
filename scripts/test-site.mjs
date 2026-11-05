@@ -132,6 +132,7 @@ for (const lang of ['en', 'lt']) {
     check(organization.sameAs?.includes('https://www.youtube.com/@dausuva'), `${path}: organization sameAs`);
     if (slug === '' || slug === 'demo/') check(node('VideoObject')?.contentUrl === 'https://youtu.be/OU81pvKxGTA' && !JSON.stringify(schema).includes('ytimg'), `${path}: VideoObject with a local thumbnail`);
     if (slug === 'faq/') check(node('FAQPage')?.mainEntity?.length === 9, `${path}: FAQPage with every question`);
+    if (slug === 'feature-requests/') check(node('FAQPage')?.mainEntity?.length === 7, `${path}: FAQPage with every question`);
     if (slug === '') check(node('FAQPage')?.mainEntity?.length === 4, `${path}: FAQPage for the quick answers`);
     if (slug.startsWith('compare-')) check(visibleHtml.includes('class=verdict'), `${path}: one-sentence verdict`);
     check(!/BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY/.test(html), `${path}: no private keys`);

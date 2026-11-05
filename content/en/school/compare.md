@@ -42,6 +42,7 @@ Several kinds of tools overlap with Classroom Manager, and schools often meet al
 - Prices are those the vendor publishes. Where a vendor publishes none, we say so and do not guess.
 - Links to the vendors' pages are marked nofollow: we cite them as sources, we do not vouch for them.
 - Classroom Manager's column describes the current build. Ask for a demo to see it.
+- What Classroom Manager does not do today is listed on the [feature requests page]({{< relref "/school/feature-requests" >}}).
 - Products change. If something here is out of date or wrong, [tell us]({{< relref "/school/request" >}}) and we will correct it.
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

@@ -9,7 +9,7 @@
 {{- end -}}
 {{- $payload := dict "kind" $kind "value" $value "label" $display -}}
 {{- if eq $kind "compose" -}}
-  {{- $payload = merge $payload (dict "subject" .subject "body" (T "mailBody")) -}}
+  {{- $payload = merge $payload (dict "subject" .subject "body" (.body | default (T "mailBody"))) -}}
   {{- $label = .label -}}
 {{- end -}}
 <button type="button" class="{{ .class | default "contact-link" }}" data-contact="{{ $payload | jsonify | encoding.Base64Encode }}" data-contact-error="{{ T "contactUnavailable" }}">{{ $label }}</button>

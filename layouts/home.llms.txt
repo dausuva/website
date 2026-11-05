@@ -16,7 +16,7 @@
 - {{ if $lt }}Kaip pradėti{{ else }}How to start{{ end }}: {{ if $lt }}užsisakykite demonstraciją, tada gaukite mokyklai paruoštą individualų paketą{{ else }}arrange a demo, then get an individual package prepared for your school{{ end }}
 
 ## {{ if $lt }}Svarbiausi puslapiai{{ else }}Main pages{{ end }}
-{{ range (slice "/school/" "/school/features/" "/school/security/" "/school/privacy/" "/school/pricing/" "/school/faq/" "/school/proof/" "/school/getting-started/" "/school/demo/" "/school/request/") -}}
+{{ range (slice "/school/" "/school/features/" "/school/security/" "/school/privacy/" "/school/pricing/" "/school/faq/" "/school/proof/" "/school/getting-started/" "/school/demo/" "/school/feature-requests/" "/school/request/") -}}
 {{ with site.GetPage . }}- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
 {{ end -}}
 {{ end }}

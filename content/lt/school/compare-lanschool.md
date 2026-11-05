@@ -32,13 +32,13 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties LanSchool puslapiais: pagrin
 | Rodyti mokytojo ar mokinio ekraną klasei | Taip (viso ekrano vaizdas užrakina mokinių įrenginius; lange jie gali dirbti kartu) | Ne |
 | Užtemdyti ar užrakinti ekranus | Taip | Taip, su jūsų pranešimu |
 | Pranešimai, pokalbis vienas su vienu, grupės pokalbis, „pakelti ranką“ | Taip (pakelti ranką — Air) | Pranešimas mokiniams; pokalbio lango nėra |
-| Riboti žiniatinklį iki patvirtintų svetainių ar išjungti internetą per testus | Taip | Svetainių ir programų blokavimo sąrašai egzamino režime |
+| Riboti žiniatinklį iki patvirtintų svetainių ar išjungti internetą per testus | Taip | Svetainių ir programų blokavimo sąrašai egzamino režime; leidžiamųjų sąrašo šiandien nėra |
 | Riboti programas; matyti žiniatinklio, programų ir klavišų istoriją (Classic) | Taip | Programas galima blokuoti egzamino režime; žiniatinklio, programų ar klavišų istorijos nėra |
 | Raktinių žodžių įspėjimai, siunčiami į centrinį ataskaitų serverį (Classic) | Taip | Ne |
 | Nuotolinis valdymas: prisijungti prie mokinių įrenginių įdiegti programų ar naujinimų, kol mokiniai dirba (Classic) | Taip | Nuotolinio vaizdo ar valdymo nėra; programos diegiamos iš Host |
 | Testai ir viktorinos (iki 100 klausimų, vertinasi patys), balsavimas su eksportu į CSV | Taip | Ne |
 | Siųsti ir rinkti failus; atverti svetainę; paleisti programą; nutildyti garsą | Taip | Taip, failai su atšaukimu, renkami pagal šabloną į atskirą aplanką kiekvienam mokiniui; garsą galima apriboti egzamino režime |
-| Riboti spausdinimą; baterijos būsena (Air); bendras mokymas (Air) | Taip | Nėra mūsų galimybių sąraše |
+| Riboti spausdinimą; mokinių įrenginių baterijos būsena (Air) | Taip | Ne: šiandien neteikiama (žr. [funkcijų pageidavimus]({{< relref "/school/feature-requests" >}})) |
 
 ## Kompiuterių priežiūra
 

@@ -51,3 +51,6 @@ videoName = "Classroom Manager: run a Windows computer lab from one console (dem
 videoDescription = "A four-minute narrated demo: the teacher's Host and three student computers, with messages, locking, a web page, files, and Exam mode."
 quickAnswers = "Quick answers"
 allQuestions = "All questions"
+sendFeatureRequest = "Send a feature request"
+mailFeatureSubject = "Classroom Manager feature request"
+mailFeatureBody = "The job you are trying to do:\nWhat you do today without it:\nSchool or organization:\nCountry:\nNumber of Windows PCs and labs:\nContact name:\n"

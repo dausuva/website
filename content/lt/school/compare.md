@@ -42,6 +42,7 @@ Su Classroom Manager sutampa kelių rūšių įrankiai, ir mokyklos dažnai suti
 - Kainos — tokios, kokias skelbia tiekėjas. Kur tiekėjas jų neskelbia, taip ir sakome ir nespėliojame.
 - Nuorodos į tiekėjų puslapius pažymėtos „nofollow“: jais remiamės kaip šaltiniais, bet už juos neporuojame.
 - Classroom Manager stulpelis aprašo dabartinę versiją. Paprašykite demonstracijos ir pamatysite patys.
+- Ko Classroom Manager šiandien nedaro, išvardyta [funkcijų pageidavimų puslapyje]({{< relref "/school/feature-requests" >}}).
 - Produktai keičiasi. Jei kas nors čia pasenę ar klaidinga, [pasakykite mums]({{< relref "/school/request" >}}) ir pataisysime.
 
 [Užsisakyti demonstraciją]({{< relref "/school/request" >}}) · [Žiūrėti kainas]({{< relref "/school/pricing" >}}) · [Kiek kainuoja kompiuteriui]({{< relref "/school/market" >}})

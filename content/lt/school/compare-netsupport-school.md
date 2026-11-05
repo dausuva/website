@@ -34,7 +34,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties NetSupport School svetaine (
 | Siųsti pranešimą | Taip, su spaudžiamomis nuorodomis | Taip |
 | Atidaryti svetainę ar programą mokinių kompiuteriuose | Taip | Taip |
 | Siųsti failus ir aplankus, rinkti darbus atgal | Taip | Taip: į darbalaukį, dokumentus ar bet kurį aplanką, su atšaukimu; renkama pagal pavadinimo šabloną, kiekvienam mokiniui atskirai |
-| Leisti tik patvirtintas programas ir svetaines arba kai kurias blokuoti | Taip | Taip: programų ir svetainių blokavimo sąrašai egzamino režime, su garsu, kamera ir USB laikmenomis |
+| Leisti tik patvirtintas programas ir svetaines arba kai kurias blokuoti | Taip | Programų ir svetainių blokavimo sąrašai egzamino režime, su garsu, kamera ir USB laikmenomis; leidžiamųjų sąrašo šiandien nėra |
 | Testai, viktorinos ir apklausos, tikrinami automatiškai | Taip, įskaitant paveikslėlių, garso ir vaizdo klausimus | Ne |
 | Virtuali lenta, kalbų laboratorija | Taip | Ne |
 | Įjungti ar išjungti, įskaitant kompiuterius, kuriuose niekas neprisijungęs; prijungti ir atjungti naudotojus | Taip | Taip: Wake-on-LAN, perkrauti, išjungti, nuotolinis prisijungimas, su atšaukimu |

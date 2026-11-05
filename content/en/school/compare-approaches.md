@@ -57,7 +57,7 @@ Almost every product on our [comparison pages]({{< relref "/school/compare" >}})
 
 | Product | Approach |
 |---|---|
-| Classroom Manager | Exam mode: block lists for programs and websites, plus sound, camera and USB storage; "practical classroom controls, not a secure-exam environment" |
+| Classroom Manager | Exam mode: block lists for programs and websites (no allow-only list today), plus sound, camera and USB storage; "practical classroom controls, not a secure-exam environment" |
 | Faronics Insight | Allow or block websites and apps, see history, disable InPrivate/Incognito, stop running apps |
 | Impero Education Pro | Keyword detection and flags; web filtering is a separate product (ContentKeeper) |
 | LanSchool | Limit the web to approved sites and disable internet during tests; limit apps; keyword alerts to a central server (Classic) |

@@ -119,3 +119,6 @@ assets/images/social-en.png
 assets/images/social-lt.png
 layouts/home.llms.txt
 layouts/robots.txt
+content/en/school/feature-requests.md
+content/lt/school/feature-requests.md
+layouts/_shortcodes/featurerequest.html

@@ -33,7 +33,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties „Faronics“ Insight pusla
 | Užtemdyti ar užrakinti ekranus | Taip, su pasirinktu tekstu ar paveikslėliais | Taip, su jūsų pranešimu |
 | Pokalbis ir garsas | Pavienis ar grupės pokalbis, pasirenkamas mokinių tarpusavio pokalbis, vienpusis ar dvipusis garsas | Pranešimas mokiniams; pokalbio lango nėra |
 | Perimti mokinio kompiuterį | Taip, tuo metu jo klaviatūra ir pelė išjungtos | Ne |
-| Leisti ar blokuoti svetaines ir programas, matyti istoriją, uždaryti veikiančias | Taip, įskaitant „InPrivate/Incognito“ naršymo išjungimą | Programų ir svetainių blokavimo sąrašai egzamino režime, su garsu, kamera ir USB laikmenomis |
+| Leisti ar blokuoti svetaines ir programas, matyti istoriją, uždaryti veikiančias | Taip, įskaitant „InPrivate/Incognito“ naršymo išjungimą | Programų ir svetainių blokavimo sąrašai egzamino režime, su garsu, kamera ir USB laikmenomis; leidžiamųjų sąrašo šiandien nėra |
 | Testai ir apklausos | Tiesa/netiesa, pasirinkimo, trumpo atsakymo ir esė klausimai su rezultatais realiu laiku; taip/ne ir pasirinkimo apklausos | Ne |
 | „Focus Mode“ vertinimams | Nurodyta jos puslapyje; ką ji riboja, ten neaprašyta | Artimiausias atitikmuo — egzamino režimas: programų, svetainių, garso, kameros ir USB laikmenų apribojimai |
 | SSID baltasis sąrašas | Taip | Nėra mūsų galimybių sąraše |

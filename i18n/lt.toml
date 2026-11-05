@@ -51,3 +51,6 @@ videoName = "Classroom Manager: kompiuterių klasė iš vieno lango (demonstraci
 videoDescription = "Keturių minučių demonstracija su pasakojimu anglų kalba: mokytojo Host ir trys mokinių kompiuteriai, pranešimai, užrakinimas, tinklalapis, failai ir egzamino režimas."
 quickAnswers = "Trumpi atsakymai"
 allQuestions = "Visi klausimai"
+sendFeatureRequest = "Pateikti funkcijos pageidavimą"
+mailFeatureSubject = "Classroom Manager funkcijos pageidavimas"
+mailFeatureBody = "Darbas, kurį bandote atlikti:\nKą darote šiandien be šios funkcijos:\nMokykla ar organizacija:\nŠalis:\nWindows kompiuterių ir klasių skaičius:\nKontaktinis asmuo:\n"

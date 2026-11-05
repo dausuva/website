@@ -34,7 +34,7 @@ Checked on 5 November 2026 against Faronics' own Insight page. Insight was not i
 | Blank or lock screens | Yes, with custom text or images | Yes, with your message |
 | Chat and audio | Individual or group chat, optional student-to-student chat, one-way or two-way audio | A message to the students; no chat window |
 | Take control of a student's computer | Yes, with their keyboard and mouse disabled meanwhile | No |
-| Allow or block websites and apps, see history, stop running apps | Yes, including disabling InPrivate/Incognito browsing | Block lists for programs and websites in Exam mode, with sound, camera and USB storage |
+| Allow or block websites and apps, see history, stop running apps | Yes, including disabling InPrivate/Incognito browsing | Block lists for programs and websites in Exam mode, with sound, camera and USB storage; no allow-only list today |
 | Tests and polls | True/false, multiple choice, short answer and essay questions with real-time results; yes/no and multiple-choice polls | No |
 | Focus Mode for assessments | Listed on its page; what it restricts is not described there | Exam mode is the nearest counterpart: program, website, sound, camera and USB-storage restrictions |
 | SSID whitelisting | Yes | Not in our feature list |

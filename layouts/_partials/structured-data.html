@@ -25,7 +25,7 @@
   {{- $graph = $graph | append $video -}}
 {{- end -}}
 {{- $questions := slice -}}
-{{- if eq .TranslationKey "school-faq" -}}
+{{- if or (eq .TranslationKey "school-faq") (eq .TranslationKey "school-feature-requests") -}}
   {{- range findRESubmatch `(?s)<details><summary>(.*?)</summary><p>(.*?)</p></details>` .RawContent -}}
     {{- $questions = $questions | append (dict "@type" "Question" "name" (plainify (index . 1)) "acceptedAnswer" (dict "@type" "Answer" "text" (plainify (index . 2)))) -}}
   {{- end -}}

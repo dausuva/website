@@ -35,7 +35,7 @@ Checked on 5 November 2026 against NetSupport School's own website (home page, f
 | Send a message | Yes, with clickable links | Yes |
 | Open a website or a program on student computers | Yes | Yes |
 | Send files and folders out, collect work back | Yes | Yes: to Desktop, Documents or any folder, with an undo; collected by name pattern, a folder per student |
-| Allow only approved programs and websites, or block some | Yes | Yes: block lists for programs and websites in Exam mode, with sound, camera and USB storage |
+| Allow only approved programs and websites, or block some | Yes | Block lists for programs and websites in Exam mode, with sound, camera and USB storage; no allow-only list today |
 | Tests, quizzes and surveys, marked automatically | Yes, including picture, audio and video questions | No |
 | Virtual whiteboard, language lab | Yes | No |
 | Power on or off, including PCs nobody is signed in to; sign users in and out | Yes | Yes: Wake-on-LAN, restart, shut down, remote sign-in, with a cancel |

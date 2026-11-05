@@ -56,7 +56,7 @@ Beveik kiekvienas mūsų [palyginimų puslapiuose]({{< relref "/school/compare" 
 
 | Produktas | Būdas |
 |---|---|
-| Classroom Manager | Egzamino režimas: programų ir svetainių blokavimo sąrašai, be to garsas, kamera ir USB laikmenos; „praktinės klasės kontrolės priemonės, o ne saugi egzamino aplinka“ |
+| Classroom Manager | Egzamino režimas: programų ir svetainių blokavimo sąrašai (leidžiamųjų sąrašo šiandien nėra), be to garsas, kamera ir USB laikmenos; „praktinės klasės kontrolės priemonės, o ne saugi egzamino aplinka“ |
 | Faronics Insight | Leisti ar blokuoti svetaines ir programas, matyti istoriją, išjungti „InPrivate/Incognito“, uždaryti veikiančias |
 | Impero Education Pro | Raktinių žodžių aptikimas ir žymos; žiniatinklio filtravimas — atskiras produktas (ContentKeeper) |
 | LanSchool | Riboti žiniatinklį iki patvirtintų svetainių ir išjungti internetą per testus; riboti programas; raktinių žodžių įspėjimai į centrinį serverį (Classic) |

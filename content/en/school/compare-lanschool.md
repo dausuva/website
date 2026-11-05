@@ -33,13 +33,13 @@ Checked on 5 November 2026 against LanSchool's own pages: the home page, the Cla
 | Show the teacher's screen, or a student's, to the class | Yes (a full-screen view locks student devices; a windowed view lets them work along) | No |
 | Blank or lock screens | Yes | Yes, with your message |
 | Messages, one-to-one chat, group chat, "raise hand" | Yes (raise hand in Air) | A message to the students; no chat window |
-| Limit the web to approved sites, or block internet during tests | Yes | Block lists for websites and programs in Exam mode |
+| Limit the web to approved sites, or block internet during tests | Yes | Block lists for websites and programs in Exam mode; no allow-only list today |
 | Limit apps; see web, app and keystroke history (Classic) | Yes | Programs can be blocked in Exam mode; no web, app or keystroke history |
 | Keyword alerts sent to a central reporting server (Classic) | Yes | No |
 | Remote control: log in to student devices to install apps or updates while students work (Classic) | Yes | No remote view or control; software is installed from the Host |
 | Tests and quizzes (up to 100 questions, self-grading), voting with CSV export | Yes | No |
 | Send and collect files; push a website; launch an app; mute audio | Yes | Yes, files with an undo, collected by pattern into a folder per student; sound can be restricted in Exam mode |
-| Limit printing; battery status (Air); co-teaching (Air) | Yes | Not in our feature list |
+| Limit printing; battery status of student devices (Air) | Yes | No: not offered today (see [feature requests]({{< relref "/school/feature-requests" >}})) |
 
 ## Looking after the computers
 
