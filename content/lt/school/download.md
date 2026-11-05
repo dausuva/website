@@ -9,6 +9,7 @@ Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir *
 
 ## Mokytojo kompiuteris: Host
 
+- **„Microsoft Store“:** [Gaukite Host iš „Microsoft Store“](https://apps.microsoft.com/detail/9P5BW5W79G41), kad pamatytumėte, kaip jis atrodo ir veikia. Programa nemokama, paskyros nereikia; jei tinkle nėra Client, ji paleidžiama su tuščiu kompiuterių sąrašu, todėl galima atidaryti ir apžiūrėti visus langus.
 - **Tiesioginis atsisiuntimas:** <span class="soon" title="bus prieinama su pirmuoju leidimu">Host diegimo programa</span> arba <span class="soon" title="bus prieinama su pirmuoju leidimu">viena programa, kurią galima paleisti bet kur</span> (bus prieinama su pirmuoju leidimu). Vieno failo programa turi komandą **Žinynas > Įdiegti šiame kompiuteryje**: ji įtraukia programą į Pradžios meniu be administratoriaus teisių.
 - **winget:** `winget install Dausuva.ClassroomHost`
 - **Visos versijos, kontrolinės sumos ir programinės įrangos sudėties sąrašas:** <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">GitHub leidimai</span>

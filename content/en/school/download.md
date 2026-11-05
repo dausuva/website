@@ -10,6 +10,7 @@ Classroom Manager has two programs: the **Host**, which the teacher runs, and th
 
 ## Teacher computer: the Host
 
+- **Microsoft Store:** [Get the Host from the Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it looks and works. It is free and needs no account; with no Client on your network it starts with an empty computer list, so every window can be opened and looked at.
 - **Direct download:** <span class="soon" title="available with the first release">the Host installer</span>, or <span class="soon" title="available with the first release">one program you can run from anywhere</span> (available with the first release). The one-file program offers **Help > Install on this computer**, which adds it to your Start menu without administrator rights.
 - **winget:** `winget install Dausuva.ClassroomHost`
 - **All versions, checksums and the software bill of materials:** <span class="soon" title="available once the public repository is open">GitHub releases</span>

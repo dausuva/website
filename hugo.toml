@@ -31,9 +31,9 @@ enableGitInfo = true      # real lastmod dates in the sitemap (the workflow chec
 # Product and company values: change them here only.
 [params]
   brand = "Dausuva Labs"
-  # The Microsoft Store listing (Store ID 9P5BW5W79G41). Set storeLive = true on the day the listing is published; until then the footer shows it dimmed, not as a link.
-  storeUrl = "https://apps.microsoft.com/detail/9p5bw5w79g41"
-  storeLive = false
+  # The Microsoft Store listing (Store ID 9P5BW5W79G41). storeLive = true: the listing is published and the footer links to it (set false to show it dimmed instead).
+  storeUrl = "https://apps.microsoft.com/detail/9P5BW5W79G41"
+  storeLive = true
   company = "Dausuva MB"
   companyUrl = "https://dausuva.com/"
   companyCode = "307580523"
