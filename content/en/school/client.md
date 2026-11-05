@@ -1,6 +1,6 @@
 ---
 title: "Installing the Client on student computers"
-description: "What the school's administrator does: the lab key, the installer, silent installation, winget, and deploying it with Intune or Configuration Manager."
+description: "What the school's administrator does: the lab key, the installer, silent installation, and deploying it with Intune or Configuration Manager."
 url: "/classroom-manager/client/"
 aliases: ["/school/client/"]
 translationKey: "school-client"
@@ -16,7 +16,7 @@ Students see the icon in the notification area; opening it shows that the comput
 
 You need a teacher computer and one other Windows computer to play the student computer. Both must be on the same network, and you need administrator rights on the second one. The Host is free for up to 3 computers online at the same time, and the Client has no limit, so a trial costs nothing.
 
-1. **Install the Host** on the teacher computer (the [download page]({{< relref "/school/download" >}}) lists the Microsoft Store, winget and a direct download).
+1. **Install the Host** on the teacher computer (the [download page]({{< relref "/school/download" >}}) links the Host in the Microsoft Store).
 2. **Make a key file** on the second computer. In PowerShell, this makes a random key and writes the file: `$k = -join ((48..57 + 65..90 + 97..122) | Get-Random -Count 20 | ForEach-Object { [char]$_ }); Set-Content classroom-kit.json ('{ "key": "' + $k + '" }')`. Keep the key to type into the Host.
 3. **Install the Client** on the second computer with that file beside the installer (step 2 below).
 4. **Connect:** in the Host, run the Setup assistant, enter the same key, press **Scan network**, approve the computer's certificate, and put it in a room.
@@ -41,7 +41,6 @@ Download the [Client installer]({{< relref "/school/download" >}}) and run it as
 Dausuva-Classroom-Client-Setup-win-x64.exe /VERYSILENT /KIT=C:\path\to\classroom-kit.json
 ```
 
-With winget: `winget install Dausuva.ClassroomClient --custom "/KIT=C:\path\to\classroom-kit.json"`. Only the path of the file is on the command line, never the key.
 Setup adds three firewall rules (TCP 5050 for the Host, UDP 5051 for discovery, and ping, on Domain and Private networks), registers the service and an entry in Settings > Apps.
 
 ## 3. Deploy to many computers

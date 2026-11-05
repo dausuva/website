@@ -1,6 +1,6 @@
 ---
 title: "Client diegimas mokinių kompiuteriuose"
-description: "Ką daro mokyklos administratorius: laboratorijos raktas, diegimo programa, tylusis diegimas, winget ir diegimas per Intune ar Configuration Manager."
+description: "Ką daro mokyklos administratorius: laboratorijos raktas, diegimo programa, tylusis diegimas ir diegimas per Intune ar Configuration Manager."
 translationKey: "school-client"
 slug: "klientas"
 schoolPage: true
@@ -15,7 +15,7 @@ Mokiniai mato piktogramą pranešimų srityje; ją atidarius matoma, kad kompiut
 
 Reikia mokytojo kompiuterio ir dar vieno „Windows“ kompiuterio, kuris vaidins mokinio kompiuterį. Abu turi būti viename tinkle, o antrame reikia administratoriaus teisių. Host nemokamas iki 3 vienu metu prisijungusių kompiuterių, o Client neturi apribojimų, todėl bandymas nieko nekainuoja.
 
-1. **Įdiekite Host** mokytojo kompiuteryje ([atsisiuntimo puslapyje]({{< relref "/school/download" >}}) rasite „Microsoft Store“, winget ir tiesioginį atsisiuntimą).
+1. **Įdiekite Host** mokytojo kompiuteryje ([atsisiuntimo puslapyje]({{< relref "/school/download" >}}) rasite „Microsoft Store“ nuorodą į Host).
 2. **Sukurkite rakto failą** antrame kompiuteryje. „PowerShell“ komanda sukuria atsitiktinį raktą ir įrašo failą: `$k = -join ((48..57 + 65..90 + 97..122) | Get-Random -Count 20 | ForEach-Object { [char]$_ }); Set-Content classroom-kit.json ('{ "key": "' + $k + '" }')`. Raktą pasilikite įvesti Host.
 3. **Įdiekite Client** antrame kompiuteryje, šalia diegimo programos padėję tą failą (toliau 2 žingsnis).
 4. **Prisijunkite:** Host paleiskite Sąrankos vedlį, įveskite tą patį raktą, spauskite **Ieškoti tinkle**, patvirtinkite kompiuterio sertifikatą ir priskirkite jį klasei.
@@ -40,7 +40,6 @@ Atsisiųskite [Client diegimo programą]({{< relref "/school/download" >}}) ir p
 Dausuva-Classroom-Client-Setup-win-x64.exe /VERYSILENT /KIT=C:\kelias\iki\classroom-kit.json
 ```
 
-Su winget: `winget install Dausuva.ClassroomClient --custom "/KIT=C:\kelias\iki\classroom-kit.json"`. Komandų eilutėje nurodomas tik failo kelias, niekada pats raktas.
 Diegimas prideda tris užkardos taisykles (TCP 5050 Host ryšiui, UDP 5051 aptikimui ir ping, domeno ir privačiuose tinkluose), užregistruoja paslaugą ir įrašą skiltyje Nustatymai > Programos.
 
 ## 3. Diekite daugeliui kompiuterių
