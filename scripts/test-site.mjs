@@ -87,7 +87,7 @@ for (const lang of ['en', 'lt']) {
     check(!/<form\b|<iframe\b/i.test(html), `${path}: no forms or embeds`);
     const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
     const visibleHtml = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
-    const videoPage = slug === 'demo/';
+    const videoPage = slug === 'demo/' || slug === '';   // the demo page and the landing page hold the click-to-play video
     check(scripts.length === (videoPage ? 3 : 2), `${path}: metadata and first-party scripts only (contact helper${videoPage ? ', click-to-play video' : ''})`);
     const metadata = scripts.find(script => attrs(script[1]).type === 'application/ld+json');
     check(metadata && Object.keys(attrs(metadata[1])).length === 1, `${path}: inert JSON-LD`);

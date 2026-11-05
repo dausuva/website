@@ -1,0 +1,10 @@
+{{- /* Context: dict "heading" "text" "primary" (dict "label" "url") "secondary" (dict "label" "url") (optional) */ -}}
+<section class="wrap cta-band">
+  <div class="cta-inner">
+    <div><h2>{{ .heading }}</h2>{{ with .text }}<p>{{ . }}</p>{{ end }}</div>
+    <div class="actions">
+      <a class="button primary" href="{{ .primary.url }}">{{ .primary.label }} <span aria-hidden="true">↗</span></a>
+      {{ with .secondary }}<a class="button" href="{{ .url }}">{{ .label }}</a>{{ end }}
+    </div>
+  </div>
+</section>
