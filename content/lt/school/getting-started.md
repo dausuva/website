@@ -1,6 +1,6 @@
 ---
 title: "Pirmiausia vienas kompiuteris. Tada klasė."
-description: "Demonstracija, mokyklai paruoštas bandomasis paketas ir sutartas bandymas prieš platesnį diegimą."
+description: "Demonstracija, mokyklai paruoštas individualus paketas ir sutartas bandymas prieš platesnį diegimą."
 translationKey: "school-getting-started"
 slug: "pradzia"
 schoolPage: true
@@ -10,7 +10,7 @@ aliases: ["/classroom-manager/getting-started/", "/school/getting-started/"]
 
 Užsisakykite demonstraciją vietoje Vilniaus apskrityje arba Zoom pokalbį su atsakymais į klausimus kitur. Parašykite apie Windows kompiuterius, tinklą, klasių skaičių ir reikalingus veiksmus.
 
-## 2. Gaukite bandomąjį paketą
+## 2. Gaukite individualų paketą
 
 Viešo atsisiuntimo nėra. Po demonstracijos sutarkite dėl mokyklai paruošto paketo ir užfiksuokite tikslią bandomą versiją. Bandymuose naudotos Windows 10 ir 11 konfigūracijos; suderinamumas priklauso nuo leidimo, pataisų, politikų ir reikalingų veiksmų. Tai nėra pažadas, kad operacinės sistemos gamintojas toliau palaikys senesnę sistemą.
 

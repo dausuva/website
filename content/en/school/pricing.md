@@ -1,13 +1,13 @@
 ---
 title: "Support that fits a school."
-description: "A flat first-year deployment price, optional annual support renewal, and no per-PC pricing. Start with a free demo."
+description: "A flat first-year deployment price, optional annual support renewal, and no per-PC pricing. Start by arranging a demo."
 showPricing: true
 url: "/classroom-manager/pricing/"
 aliases: ["/school/pricing/"]
 translationKey: "school-pricing"
 schoolPage: true
 ---
-Start with a free demonstration and, afterwards, a school-specific test package. Supported deployment includes a signed package, setup and rollout help, onboarding, and one year of updates and email/phone support.
+Start by arranging a demonstration and, afterwards, an individual package for your school. Supported deployment includes a signed package, setup and rollout help, onboarding, and one year of updates and email/phone support.
 
 The first-year price is **{{< product "priceFirstYear" >}} flat**, not per computer. Renewal is **{{< product "priceRenewal" >}} per year**. Confirm the school, sites, labs and deployment scope before starting; this page is not a promise of an unlimited multi-site service or a response-time SLA.
 

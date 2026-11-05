@@ -1,6 +1,6 @@
 ---
 title: "Start with one PC. Then a room."
-description: "A demo, a school-specific test package and an agreed pilot before a wider deployment."
+description: "A demo, an individual package for your school and an agreed pilot before a wider deployment."
 url: "/classroom-manager/getting-started/"
 aliases: ["/school/getting-started/"]
 translationKey: "school-getting-started"
@@ -10,7 +10,7 @@ schoolPage: true
 
 Request a demonstration on site in Vilnius County, or a Zoom call with questions and answers elsewhere. Tell us about your Windows PCs, network, number of labs and the actions you need.
 
-## 2. Receive a test package
+## 2. Receive your individual package
 
 There is no public download. After the demo, arrange a package for your school and identify the exact version being tested. Windows 10 and 11 configurations have been used in testing; compatibility depends on edition, patch level, policy and the actions required. This is not a promise of continuing vendor support for an older operating system.
 

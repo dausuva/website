@@ -24,4 +24,4 @@ Taip pamoka atrodo mokytojo pusėje. Paveikslo kairėje – mokytojo kompiuteris
 
 Jis įrašytas trijuose bandomuosiuose kompiuteriuose namų tinkle, o Host veikė mokytojo kompiuteryje. Oranžiniai žiedai rodo, kur paspaudžiama. Pasakojimas – sintetinis (dirbtinio intelekto sukurtas) balsas anglų kalba; „YouTube“ yra anglų ir lietuvių kalbų subtitrai. Programos neperžiūri, nefiksuoja ir neįrašo mokinių ekranų, ir nieko tokio vaizdo įraše nėra.
 
-Classroom Manager yra ankstyvosios prieigos etape: pradedama nuo demonstracijos ir mokyklai skirto bandomojo paketo, viešo atsisiuntimo nėra. Norėdami pamatyti jį savo kompiuteriuose, [užsisakykite demonstraciją]({{< relref "/school/request" >}}) arba perskaitykite, kaip vyksta [bandomasis diegimas]({{< relref "/school/getting-started" >}}).
+Classroom Manager yra ankstyvosios prieigos etape: pradedama nuo demonstracijos ir mokyklai skirto individualaus paketo, viešo atsisiuntimo nėra. Norėdami pamatyti jį savo kompiuteriuose, [užsisakykite demonstraciją]({{< relref "/school/request" >}}) arba perskaitykite, kaip vyksta [bandomasis diegimas]({{< relref "/school/getting-started" >}}).

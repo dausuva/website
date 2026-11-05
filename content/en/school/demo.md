@@ -25,4 +25,4 @@ This is what a lesson looks like from the teacher's side. On the left of the pic
 
 It was recorded on three test computers on a home network, with the Host on the teacher's PC. The orange rings show where each click happens. The narration is a synthetic (AI-generated) voice, in English; subtitles are available in English and Lithuanian on YouTube. The programs do not view, capture or record student screens, and nothing in the video does.
 
-Classroom Manager is in early access: you start with a demo and a school-specific test package, and there is no public download. To see it on your own computers, [request a demo]({{< relref "/school/request" >}}) or read how a [pilot]({{< relref "/school/getting-started" >}}) works.
+Classroom Manager is in early access: you start with a demo and an individual package prepared for your school, and there is no public download. To see it on your own computers, [request a demo]({{< relref "/school/request" >}}) or read how a [pilot]({{< relref "/school/getting-started" >}}) works.

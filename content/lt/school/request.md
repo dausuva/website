@@ -7,7 +7,7 @@ slug: "kontaktai"
 schoolPage: true
 aliases: ["/classroom-manager/request/", "/school/request/"]
 ---
-Classroom Manager galime pademonstruoti **vietoje Vilniaus apskrityje** arba surengti **Zoom pokalbį su atsakymais į klausimus** bet kur. Po demonstracijos galime paruošti mokyklai bandomąjį paketą.
+Classroom Manager galime pademonstruoti **vietoje Vilniaus apskrityje** arba surengti **Zoom pokalbį su atsakymais į klausimus** bet kur. Po demonstracijos galime paruošti mokyklai individualų paketą.
 
 Parašykite mokyklą ar organizaciją, šalį, pageidaujamą demonstracijos būdą, kontaktinį asmenį, Windows kompiuterių ir klasių skaičių bei darbus, kuriuos norite supaprastinti. Paskyros nereikia.
 

@@ -38,6 +38,6 @@ Mokykla, perkanti programą savo kompiuterių klasei, neturėtų tikėti vien m�
 
 ## Paprašykite įrodymų
 
-Per demonstraciją galite paprašyti parodyti bet kurią šio puslapio eilutę: sveikatos ataskaitą tikrame kompiuteryje, klaidų kodų sąrašą, testų paleidimą ar lietuvišką sąsają. Po to paruošiame bandomąjį paketą vienam jūsų kompiuteriui, kad patikrintumėte savo tinkle dar nieko nemokėję.
+Per demonstraciją galite paprašyti parodyti bet kurią šio puslapio eilutę: sveikatos ataskaitą tikrame kompiuteryje, klaidų kodų sąrašą, testų paleidimą ar lietuvišką sąsają. Po to paruošiame individualų paketą vienam jūsų kompiuteriui, kad patikrintumėte savo tinkle dar nieko nemokėję.
 
 [Užsisakyti demonstraciją](../kontaktai/) · [Kaip vyksta bandymas](../pradzia/) · [Palyginimai](../palyginimas/)

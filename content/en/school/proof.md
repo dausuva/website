@@ -38,6 +38,6 @@ A school buying software for its lab should not have to take our word for it. Th
 
 ## Ask for proof
 
-In the demo you can ask to see any line on this page: a health report against a real PC, the error code catalogue, the test run, or the Lithuanian interface. Afterwards we prepare a test package for one of your PCs, so you check it on your own network before you pay anything.
+In the demo you can ask to see any line on this page: a health report against a real PC, the error code catalogue, the test run, or the Lithuanian interface. Afterwards we prepare an individual package for one of your PCs, so you check it on your own network before you pay anything.
 
 [Request a demo](../request/) · [How a pilot works](../getting-started/) · [Comparisons](../compare/)
