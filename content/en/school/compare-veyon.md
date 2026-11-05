@@ -4,6 +4,7 @@ description: "An honest feature comparison with Veyon, the free open-source clas
 url: "/school/compare-veyon/"
 translationKey: "school-compare-veyon"
 schoolPage: true
+nofollowExternal: true
 ---
 Veyon is the best-known free classroom tool for Windows and Linux labs, and many schools already know it. The two programs overlap on the everyday classroom actions but are built around different centres: **Veyon is about seeing and steering student screens; Classroom Manager is about preparing, configuring and looking after the Windows lab, without watching anyone's screen.**
 

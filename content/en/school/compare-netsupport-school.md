@@ -4,6 +4,7 @@ description: "An honest comparison with NetSupport School, the commercial classr
 url: "/school/compare-netsupport-school/"
 translationKey: "school-compare-netsupport"
 schoolPage: true
+nofollowExternal: true
 ---
 NetSupport School is a commercial classroom management suite from NetSupport, which calls it "the market-leading classroom management software". It is built around teaching with the students' screens in front of the teacher: monitoring, sharing, tests, and a **Technician's Console** for IT staff. Classroom Manager shares the everyday lesson actions but is built around the Windows lab itself, **without watching anyone's screen**.
 

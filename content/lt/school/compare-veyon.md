@@ -4,6 +4,7 @@ description: "Sąžiningas palyginimas su Veyon, nemokama atvirojo kodo klasės 
 translationKey: "school-compare-veyon"
 slug: "palyginimas-veyon"
 schoolPage: true
+nofollowExternal: true
 ---
 Veyon — žinomiausia nemokama klasės programa Windows ir Linux kompiuterių klasėms, ją pažįsta daug mokyklų. Abi programos atlieka tuos pačius kasdienius pamokos veiksmus, tačiau sukurtos skirtingiems tikslams: **Veyon skirta mokinių ekranams matyti ir valdyti, o Classroom Manager — Windows klasei paruošti, nustatyti ir prižiūrėti, niekieno ekrano nestebint.**
 

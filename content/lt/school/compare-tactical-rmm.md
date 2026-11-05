@@ -4,6 +4,7 @@ description: "Sąžiningas palyginimas su Tactical RMM, nemokama savo serveryje 
 translationKey: "school-compare-rmm"
 slug: "palyginimas-tactical-rmm"
 schoolPage: true
+nofollowExternal: true
 ---
 Tactical RMM — populiari nemokama, savo serveryje diegiama programa IT skyriams ir paslaugų teikėjams, kurie iš vieno interneto valdymo lango prižiūri daug „Windows“ (ir kai kurių „Linux“ bei „Mac“) kompiuterių. Mokyklos IT komanda ją gali pažinoti. Priežiūros srityje ji dalinai sutampa su Classroom Manager, bet sukurtos jos skirtingiems žmonėms: **Tactical RMM skirta administratoriui, kuris stebi ir taiso kompiuterių parką; Classroom Manager — mokytojui prieš klasę, o šalia jo — administratoriaus įrankiai.**
 

@@ -4,6 +4,7 @@ description: "Sąžiningas palyginimas su NetSupport School, komerciniu klasės 
 translationKey: "school-compare-netsupport"
 slug: "palyginimas-netsupport-school"
 schoolPage: true
+nofollowExternal: true
 ---
 NetSupport School — komercinis klasės valdymo paketas iš „NetSupport“, kurį ji vadina „market-leading classroom management software“ (rinkos lyderiu). Jis sukurtas mokyti, kai mokinių ekranai mokytojo akyse: stebėjimas, bendrinimas, testai, o IT darbuotojams — **Technician's Console**. Classroom Manager turi tuos pačius kasdienius pamokos veiksmus, bet sukurtas pačiai „Windows“ klasei, **niekieno ekrano nestebint**.
 

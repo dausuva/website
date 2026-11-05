@@ -4,6 +4,7 @@ description: "An honest comparison with Tactical RMM, the free self-hosted remot
 url: "/school/compare-tactical-rmm/"
 translationKey: "school-compare-rmm"
 schoolPage: true
+nofollowExternal: true
 ---
 Tactical RMM is a popular free, self-hosted tool for IT departments and service providers who look after many Windows (and some Linux and Mac) computers from one web console. A school IT team may well know it. It overlaps with Classroom Manager on the maintenance side, but the two are built around different people: **Tactical RMM is for the administrator who watches and repairs a fleet; Classroom Manager is for the teacher in front of a lab, with the administrator's tools beside it.**
 

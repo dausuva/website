@@ -97,3 +97,4 @@ content/en/school/compare-netsupport-school.md
 content/lt/school/compare-netsupport-school.md
 content/en/school/compare-veyon.md
 content/lt/school/compare-veyon.md
+layouts/_markup/render-link.html

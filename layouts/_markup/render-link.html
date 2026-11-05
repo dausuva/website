@@ -1,0 +1,3 @@
+{{- /* Markdown links. A page with `nofollowExternal: true` in its front matter (the comparison pages) marks links to other sites rel="nofollow noopener": we cite the vendors' pages as sources, we do not vouch for them. */ -}}
+{{- $external := or (hasPrefix .Destination "http://") (hasPrefix .Destination "https://") -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if and $external .Page.Params.nofollowExternal }} rel="nofollow noopener"{{ end }}>{{ .Text | safeHTML }}</a>
