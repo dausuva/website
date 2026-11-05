@@ -1,0 +1,28 @@
+{{- $lt := eq site.Language.Lang "lt" -}}
+{{- $p := partial "product-page.html" . -}}
+# {{ site.Params.product }}, by {{ site.Params.brand }}
+
+{{ if $lt -}}
+> Windows kompiuterių klasių valdymo programa mokykloms: mokytojas iš savo kompiuterio užrakina ekranus, siunčia pranešimus, dalija ir renka failus, vykdo egzamino režimą ir prižiūri klasės programas bei naujinimus, mokyklos tinkle, be serverio ir debesies paskyros. Programa neperžiūri ir neįrašo mokinių ekranų. Ankstyvoji prieiga; viešo atsisiuntimo nėra.
+{{- else -}}
+> Windows classroom management software for schools: from the teacher's PC, lock screens, send messages, hand out and collect files, run Exam mode, and look after the lab's software and updates, over the school network, with no server and no cloud account. It does not view or record student screens. Early access; there is no public download.
+{{- end }}
+
+## {{ if $lt }}Pagrindiniai faktai{{ else }}Key facts{{ end }}
+- {{ if $lt }}Gamintojas{{ else }}Publisher{{ end }}: {{ site.Params.brand }} ({{ site.Params.company }}, {{ site.Params.based }})
+- {{ if $lt }}Palaikomos sistemos{{ else }}Supported systems{{ end }}: {{ delimit site.Params.operatingSystems ", " }}
+- {{ if $lt }}Kaina mokyklai{{ else }}Price for a school{{ end }}: {{ site.Params.priceFirstYear }} {{ if $lt }}pirmiems metams, vėliau{{ else }}the first year, then{{ end }} {{ site.Params.priceRenewal }} {{ if $lt }}per metus; be mokesčio už kompiuterį{{ else }}a year; no per-PC charge{{ end }}
+- {{ if $lt }}Kalbos{{ else }}Languages{{ end }}: {{ if $lt }}anglų ir lietuvių{{ else }}English and Lithuanian{{ end }}
+- {{ if $lt }}Kaip pradėti{{ else }}How to start{{ end }}: {{ if $lt }}užsisakykite demonstraciją, tada gaukite mokyklai paruoštą individualų paketą{{ else }}arrange a demo, then get an individual package prepared for your school{{ end }}
+
+## {{ if $lt }}Svarbiausi puslapiai{{ else }}Main pages{{ end }}
+{{ range (slice "/school/" "/school/features/" "/school/security/" "/school/privacy/" "/school/pricing/" "/school/faq/" "/school/proof/" "/school/getting-started/" "/school/demo/" "/school/request/") -}}
+{{ with site.GetPage . }}- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
+{{ end -}}
+{{ end }}
+## {{ if $lt }}Palyginimai su kitais produktais{{ else }}Comparisons with other products{{ end }}
+{{ range (slice "/school/compare/" "/school/compare-approaches/" "/school/compare-faronics-insight/" "/school/compare-impero-education-pro/" "/school/compare-lanschool/" "/school/compare-windows-take-a-test/" "/school/compare-netsupport-school/" "/school/compare-remote-tools/" "/school/compare-tactical-rmm/" "/school/compare-veyon/") -}}
+{{ with site.GetPage . }}- [{{ .Title }}]({{ .Permalink }})
+{{ end -}}
+{{ end }}
+{{ if $lt }}Kiekvienas palyginimas nurodo šaltinius ir jų perskaitymo datą.{{ else }}Every comparison names its sources and the date they were read.{{ end }}

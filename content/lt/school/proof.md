@@ -18,11 +18,11 @@ Mokykla, perkanti programą savo kompiuterių klasei, neturėtų tikėti vien m�
 
 | Faktas | Kaip parodyta | Patikrinkite patys |
 |---|---|---|
-| Daugiau nei 2 100 automatinių testų po kiekvieno pakeitimo | Testai pirminiame kode; versija nesukuriama, jei bent vienas nepavyksta | Testus rasite <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">pirminiame kode</span> |
+| Daugiau nei 3 800 automatinių testų po kiekvieno pakeitimo | Testai pirminiame kode; versija nesukuriama, jei bent vienas nepavyksta | Testus rasite <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">pirminiame kode</span> |
 | 89 sveikatos patikros išbando kiekvieną veiksmą tarp mokytojo ir mokinio kompiuterio | Classroom Health jas vykdo tikrame kompiuteryje | Paprašykite parodyti sveikatos ataskaitą per demonstraciją |
 | Kiekviena kliento komanda arba patikrinta, arba įrašyta į niekada nesiunčiamų sąrašą su priežastimi | Kitaip testas sustabdo versijos kūrimą | Sąrašas yra pirminiame kode |
 | 25 aprašyti klaidų kodai su priežastimi ir sprendimu | Kiekvienas klaidos pranešimas baigiasi kodu | Klaidų kodai paaiškinti vadove |
-| Kiekvienas langas anglų ir lietuvių kalba, daugiau nei 3 500 tekstų | Testas nepraeina, jei tekstas neišverstas | Perjunkite kalbą per demonstraciją |
+| Kiekvienas langas anglų ir lietuvių kalba, daugiau nei 3 700 tekstų | Testas nepraeina, jei tekstas neišverstas | Perjunkite kalbą per demonstraciją |
 | Visada šifruojama: TLS 1.2/1.3, patvirtintas kiekvieno kompiuterio sertifikatas, pasirašyti kadrai | Saugumo testai, tarp jų su pakeistais ir pakartotais pranešimais | Žr. [Mokyklos IT specialistui](../saugumas/) |
 | Vaidmenys, kuriuos tikrina mokinio kompiuteris: stebėtojas, mokytojas, administratorius, pasirinktinai tik tam tikrose klasėse | Testai su kiekvienu vaidmeniu; patikrinta tikruose kompiuteriuose | Bandymo metu paprašykite mokytojo rakto |
 | Mokinio programos naujinimai turi būti pasirašyti jūsų sertifikatu | Klientas atsisako nepasirašytos ar nežinomos versijos | Išbandykite bandymo metu |

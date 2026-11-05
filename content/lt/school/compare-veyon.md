@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir Veyon greta."
-description: "Sąžiningas palyginimas su Veyon, nemokama atvirojo kodo klasės programa: kur kuri pranašesnė, kas kainuoja papildomai ir kuri tinka jūsų mokyklai."
+description: "Classroom Manager ir Veyon, nemokama atvirojo kodo klasės programa: ką daro kiekviena, kas kainuoja papildomai ir kuri tinka."
 translationKey: "school-compare-veyon"
 slug: "palyginimas-veyon"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> Veyon — nemokama atvirojo kodo klasės programa mokinių ekranams matyti ir valdyti; Classroom Manager paruošia ir prižiūri Windows klasę, ekranų nestebėdama.</p>
+
 Veyon — žinomiausia nemokama klasės programa Windows ir Linux kompiuterių klasėms, ją pažįsta daug mokyklų. Abi programos atlieka tuos pačius kasdienius pamokos veiksmus, tačiau sukurtos skirtingiems tikslams: **Veyon skirta mokinių ekranams matyti ir valdyti, o Classroom Manager — Windows klasei paruošti, nustatyti ir prižiūrėti, niekieno ekrano nestebint.**
 
 Dar kartą palyginta 2026 m. lapkričio 5 d. su Veyon 4.11.4 (išleista 2026 m. spalio 15 d., tebėra naujausia), remiantis jos galimybių ir priedų puslapiais, versijų pastabomis ir naujienų puslapiu. Veyon šiam palyginimui nebuvo diegta. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.

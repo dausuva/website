@@ -1,7 +1,8 @@
 {{- /* Context: dict "id" (YouTube id) "title". A play button; the YouTube player is only created when it is pressed (assets/js/video.mjs). */ -}}
 {{- $id := .id -}}
 {{- if not (findRE `^[A-Za-z0-9_-]{11}$` $id) }}{{ errorf "video: not a YouTube id: %q" $id }}{{ end -}}
-<div class="video" data-video-id="{{ $id }}" data-video-title="{{ .title }}">
+{{ $poster := "" }}{{ with resources.Get "images/demo-poster.jpg" }}{{ $poster = (.Resize "1280x webp q72").RelPermalink }}{{ end }}
+<div class="video" data-video-id="{{ $id }}" data-video-title="{{ .title }}"{{ with $poster }} style="background-image:linear-gradient(rgba(14,44,38,.42),rgba(14,44,38,.68)),url({{ . }})"{{ end }}>
   <button type="button" class="video-play" aria-label="{{ T "playVideo" }}: {{ .title }}"><span class="video-icon" aria-hidden="true">▶</span><span>{{ T "playVideo" }}</span></button>
   <noscript><a class="video-play" href="https://youtu.be/{{ $id }}" rel="noopener">{{ T "watchOnYoutube" }}</a></noscript>
 </div>

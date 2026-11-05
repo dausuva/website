@@ -1,12 +1,14 @@
 ---
 title: "The same job, done differently."
-description: "How classroom management products approach the same everyday jobs: watching screens, getting attention, sharing files, restricting the web, testing, hosting and price. Which combination of features a school lab needs, from the vendors' own pages."
+description: "How classroom tools approach the same jobs: screens, attention, files, web limits, tests, hosting and price, with sources."
 url: "/classroom-manager/compare-approaches/"
 aliases: ["/school/compare-approaches/"]
 translationKey: "school-compare-approaches"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> The classroom products agree on lesson control and differ on screens, tests, safeguarding, hosting and lab upkeep; only Classroom Manager combines lesson control with upkeep and gives up screen viewing on purpose.</p>
+
 Almost every product on our [comparison pages]({{< relref "/school/compare" >}}) can "lock the screens" or "send a file". The useful question is **how** each does it, because the approach decides who the product suits. This page lines the products up job by job, using only what each vendor says on its own pages (read on 5 November 2026; each product's page lists its sources). Where a vendor does not say, we write "not stated". Classroom Manager's entries describe the current build.
 
 **The products, in alphabetical order:** Classroom Manager, [Faronics Insight]({{< relref "/school/compare-faronics-insight" >}}), [Impero Education Pro]({{< relref "/school/compare-impero-education-pro" >}}), [LanSchool]({{< relref "/school/compare-lanschool" >}}), [Microsoft's Take a Test and Set up School PCs]({{< relref "/school/compare-windows-take-a-test" >}}), [NetSupport School]({{< relref "/school/compare-netsupport-school" >}}), [remote desktop tools]({{< relref "/school/compare-remote-tools" >}}), [Tactical RMM]({{< relref "/school/compare-tactical-rmm" >}}) and [Veyon]({{< relref "/school/compare-veyon" >}}). The first five are classroom products built around the students' screens; Tactical RMM and the remote tools are built around reaching a computer; Microsoft's tools prepare PCs and lock them down for a test.

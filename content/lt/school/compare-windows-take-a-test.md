@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir Microsoft mokyklos kompiuterių įrankiai greta."
-description: "Sąžiningas palyginimas su Microsoft programa Set up School PCs ir saugaus vertinimo programa Take a Test sistemai Windows: ką daro kiekviena, ko reikia ir kuo užrakinimo būdas skiriasi nuo blokavimo sąrašų."
+description: "„Classroom Manager“ ir „Microsoft“ Set up School PCs bei Take a Test: ką daro kiekviena ir kuo užrakinimas skiriasi nuo blokavimo sąrašų."
 translationKey: "school-compare-microsoft"
 slug: "palyginimas-microsoft-take-a-test"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> „Microsoft“ įrankiai kompiuterius vieną kartą nustato ir užrakina testui; Classroom Manager valdo klasę kasdien, ir jie dera kartu.</p>
+
 Mokyklos, naudojančios „Windows“, jau turi du „Microsoft“ įrankius: **Set up School PCs** — programą naujiems kompiuteriams paruošti mokyklai, ir **Take a Test** — įtaisytą saugią naršyklę vertinimams. Tai nėra klasės valdymo programos, bet mokyklos IT specialistas klaus, kuo jie skiriasi nuo tokios, ir jie rodo skirtingą **požiūrį** į tuos pačius darbus: „Microsoft“ kompiuterį vieną kartą nustato ir užrakina testui; Classroom Manager klasės kompiuterius valdo visą dieną.
 
 Palyginta 2026 m. lapkričio 5 d., remiantis „Microsoft Learn“ puslapiais apie Set up School PCs ir Take a Test (paskutinio atnaujinimo datos nurodytos šaltiniuose žemiau; „Microsoft“ taip pat įspėja, kad „Windows 11 SE“ palaikymas baigsis 2026 m. spalį). Nei vieno įrankio šiam palyginimui nenustatinėjome. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.

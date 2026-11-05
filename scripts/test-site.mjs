@@ -100,7 +100,7 @@ for (const lang of ['en', 'lt']) {
       const videoAttrs = attrs(video?.[1] || '');
       check(video && attrs(video[1]).type === 'module' && !video[2].trim() && /^\/js\/video\.[a-f0-9]+\.mjs$/.test(videoAttrs.src) && videoAttrs.integrity?.startsWith('sha256-'), `${path}: local fingerprinted video module, no inline execution`);
       check(existsSync(join(current.root, videoAttrs.src)), `${path}: video module exists`);
-      check(/data-video-id="?OU81pvKxGTA/.test(html) && !/youtube(?:-nocookie)?\.com\/embed|ytimg|googlevideo/.test(html), `${path}: video is a button, nothing is loaded from YouTube before play`);
+      check(/data-video-id="?OU81pvKxGTA/.test(html) && !/youtube(?:-nocookie)?\.com\/embed|ytimg|googlevideo/.test(visibleHtml), `${path}: video is a button, nothing is loaded from YouTube before play`);
     }
     check(!html.includes('support@dausuva.') && !html.includes('+370 648 45767') && !html.includes('+37064845767'), `${path}: no plain contact values in HTML or metadata`);
     check(!tags(html, 'a').some(link => /^(?:mailto:|tel:)/.test(link.href)), `${path}: no scrape-ready contact hrefs`);
@@ -124,6 +124,16 @@ for (const lang of ['en', 'lt']) {
       check(crumbs[1].name === decode(html.match(/<h1>([^<]+)<\/h1>/)?.[1] || ''), `${path}: breadcrumb matches visible heading`);
       check(!node('SoftwareApplication'), `${path}: software definition stays on overview`);
     }
+    // sharing, language and answer-engine markup
+    check(tags(html, 'meta').some(t => t.property === 'og:image' && /\.png$/.test(t.content)), `${path}: share image is a PNG`);
+    check(tags(html, 'meta').some(t => t.name === 'twitter:card' && t.content === 'summary_large_image'), `${path}: twitter card`);
+    check(links.some(t => t.rel === 'alternate' && t.hreflang === 'x-default'), `${path}: x-default language`);
+    check(links.some(t => t.rel === 'apple-touch-icon'), `${path}: apple touch icon`);
+    check(organization.sameAs?.includes('https://www.youtube.com/@dausuva'), `${path}: organization sameAs`);
+    if (slug === '' || slug === 'demo/') check(node('VideoObject')?.contentUrl === 'https://youtu.be/OU81pvKxGTA' && !JSON.stringify(schema).includes('ytimg'), `${path}: VideoObject with a local thumbnail`);
+    if (slug === 'faq/') check(node('FAQPage')?.mainEntity?.length === 9, `${path}: FAQPage with every question`);
+    if (slug === '') check(node('FAQPage')?.mainEntity?.length === 4, `${path}: FAQPage for the quick answers`);
+    if (slug.startsWith('compare-')) check(visibleHtml.includes('class=verdict'), `${path}: one-sentence verdict`);
     check(!/BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY/.test(html), `${path}: no private keys`);
     const leaked = privateTerms.find(term => html.toLowerCase().includes(term));
     check(!leaked, `${path}: contains a private term from SITE_PRIVATE_TERMS or .private-terms`);
@@ -165,6 +175,15 @@ for (const lang of ['en', 'lt']) {
       }
     }
   }
+}
+// robots.txt names the sitemap; llms.txt exists for every language
+for (const [lang, ctx] of contexts) {
+  if (domains || lang === 'en') {   // the single-host preview has one robots.txt, at the root
+    const robots = readFileSync(join(ctx.root, 'robots.txt'), 'utf8');
+    check(/^Sitemap: https:\/\/dausuva\.(com|lt)\/sitemap\.xml$/m.test(robots), `${lang}: robots.txt names the sitemap`);
+  }
+  const llms = readFileSync(join(ctx.root, domains ? 'llms.txt' : (lang === 'lt' ? 'lt/llms.txt' : 'llms.txt')), 'utf8');
+  check(llms.startsWith('# Classroom Manager') && llms.includes('Dausuva Labs') && llms.includes(ctx.origin.hostname), `${lang}: llms.txt`);
 }
 let checkedLinks = 0;
 for (const current of (domains ? [...contexts.values()] : [contexts.get('en')])) {

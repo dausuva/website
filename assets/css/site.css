@@ -781,3 +781,19 @@ table.compare{width:100%;min-width:calc(var(--cols,3) * 9.5rem);border-collapse:
 /* the Classroom Manager row of a table stands out (layouts/_markup/render-table.html) */
 .compare tbody tr.ours-row > *{background:#e4f1ea !important;font-weight:600}
 .compare tbody tr.ours-row > th{box-shadow:inset 5px 0 0 var(--green);color:var(--green)}
+
+/* a one-sentence verdict at the top of a comparison page */
+.verdict{margin:0 0 1.6rem;padding:14px 18px;background:#eef6f2;border-left:4px solid var(--green);border-radius:0 8px 8px 0;font-size:1.02rem;line-height:1.55}
+/* the line under the hero text that says who it is for */
+.audience{margin:-4px 0 6px;color:var(--green);font-weight:600;font-size:.95rem}
+/* the video player shows a poster picture when it has one */
+.video[style]{background-size:cover;background-position:center}
+.video[style] .video-play{background:none}
+/* quick answers on the landing page */
+.faq-list{max-width:880px;margin-top:18px;border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line);padding:14px 4px}
+.faq-list summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";color:var(--green);font-size:1.3rem;line-height:1}
+.faq-list details[open] summary::after{content:"\2212"}
+.faq-list p{margin:.7rem 0 .2rem;color:var(--muted);max-width:46rem}

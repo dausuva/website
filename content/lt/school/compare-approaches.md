@@ -1,11 +1,13 @@
 ---
 title: "Tas pats darbas, skirtingi būdai."
-description: "Kaip klasės valdymo produktai atlieka tuos pačius kasdienius darbus: ekranų stebėjimas, dėmesio atkreipimas, failų dalijimas, žiniatinklio ribojimas, testai, prieglobos būdas ir kaina. Kokio funkcijų derinio reikia mokyklos klasei, pagal pačių tiekėjų puslapius."
+description: "Kaip klasės įrankiai atlieka tuos pačius darbus: ekranai, dėmesys, failai, žiniatinklio ribos, testai, prieglobos būdas ir kaina."
 translationKey: "school-compare-approaches"
 slug: "palyginimas-skirtingi-budai"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> Klasės produktai sutaria dėl pamokos valdymo ir skiriasi ekranais, testais, vaikų apsauga, prieglobos būdu ir klasės priežiūra; tik Classroom Manager sujungia pamokos valdymą su priežiūra ir sąmoningai atsisako ekranų peržiūros.</p>
+
 Beveik kiekvienas mūsų [palyginimų puslapiuose]({{< relref "/school/compare" >}}) esantis produktas gali „užrakinti ekranus“ ar „išsiųsti failą“. Naudingas klausimas — **kaip** kiekvienas tai daro, nes būtent tai lemia, kam produktas tinka. Šis puslapis darbas po darbo sulygina produktus, naudodamas tik tai, ką kiekvienas tiekėjas sako savo puslapiuose (perskaityti 2026 m. lapkričio 5 d.; kiekvieno produkto puslapyje išvardyti šaltiniai). Kur tiekėjas nesako, rašome „nenurodyta“. Classroom Manager įrašai aprašo dabartinę versiją.
 
 **Produktai abėcėlės tvarka:** Classroom Manager, [Faronics Insight]({{< relref "/school/compare-faronics-insight" >}}), [Impero Education Pro]({{< relref "/school/compare-impero-education-pro" >}}), [LanSchool]({{< relref "/school/compare-lanschool" >}}), [„Microsoft“ Take a Test ir Set up School PCs]({{< relref "/school/compare-windows-take-a-test" >}}), [NetSupport School]({{< relref "/school/compare-netsupport-school" >}}), [nuotolinio darbalaukio įrankiai]({{< relref "/school/compare-remote-tools" >}}), [Tactical RMM]({{< relref "/school/compare-tactical-rmm" >}}) ir [Veyon]({{< relref "/school/compare-veyon" >}}). Pirmi penki — klasės produktai, sukurti aplink mokinių ekranus; Tactical RMM ir nuotolinio darbalaukio įrankiai sukurti aplink kompiuterio pasiekimą; „Microsoft“ įrankiai paruošia kompiuterius ir užrakina juos testui.

@@ -16,7 +16,7 @@ Classroom Manager started in a school computer lab, where one person teaches inf
 | **Remote desktop**, one PC at a time | Free or low cost | Still one computer at a time; nothing for the whole room |
 | **Free classroom tool** (Veyon) | Free; paid add-ons for website blocking, devices and discovery | Screen-focused; little lab administration; community support |
 | **Commercial classroom suite** | Usually priced per device, per year | Often screen monitoring first; cost grows with every PC |
-| **Cloud device management** (Intune, school MDM) | Licences per user or device; IT skills; internet for every action | Built for IT departments, not for the teacher in the room |
+| **Cloud device management** (Intune, school MDM) | Licenses per user or device; IT skills; internet for every action | Built for IT departments, not for the teacher in the room |
 | **Classroom Manager** | €499 the first year per school, then €299 a year | No student-screen features by design; Windows only |
 
 [See the full comparison with Veyon](../compare-veyon/) or [all comparisons](../compare/).
@@ -47,7 +47,7 @@ At an estimated €12 an hour of teacher or technician time, that is close to **
 
 ## What it costs per computer
 
-The price is per school, not per PC (one licence covers fewer than 50 computers; larger schools, ask us).
+The price is per school, not per PC (one license covers fewer than 50 computers; larger schools, ask us).
 
 | Computers | First year | Each following year |
 |---|---|---|

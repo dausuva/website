@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir LanSchool greta."
-description: "Sąžiningas palyginimas su LanSchool, „Lenovo“ remiama klasės valdymo programa: jos vietinė Classic ir debesies Air versijos, kas yra galimybių sąraše, kaip kainuoja ir kuri tinka jūsų mokyklai."
+description: "Classroom Manager ir LanSchool („Lenovo“): Classic ir Air versijos, galimybės, kaina ir kuri tinka jūsų mokyklai."
 translationKey: "school-compare-lanschool"
 slug: "palyginimas-lanschool"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> LanSchool — „Lenovo“ remiamas klasės paketas su vietine ir debesies versija, sukurtas aplink mokinių ekranus; Classroom Manager palaiko Windows klasę paruoštą, be ekranų stebėjimo ir su skelbiama kaina.</p>
+
 LanSchool — klasės valdymo programa K-12 mokykloms. Jos svetainėje rašoma, kad ją remia „Lenovo“, o pati LanSchool vadinama „klasės valdymo programų pradininke ir novatore“. Ji siūloma dviem versijomis už vieną kainą: **LanSchool Classic**, talpinama vietoje mokyklos ar apskrities serveriuose, ir **LanSchool Air**, talpinama debesyje. Abi sukurtos **mokyti, kai mokinių ekranai mokytojo akyse**; Classroom Manager turi tuos pačius kasdienius pamokos veiksmus, bet sukurtas pačiai „Windows“ klasei, **niekieno ekrano nestebint**.
 
 Palyginta 2026 m. lapkričio 5 d., remiantis paties LanSchool puslapiais: pagrindiniu, Classic, Air ir pirkimo. LanSchool šiam palyginimui nebuvo diegta ar bandyta. Kainų, programos kalbų ir sistemos reikalavimų perskaitytuose puslapiuose nenurodyta. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.

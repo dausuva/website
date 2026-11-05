@@ -44,7 +44,7 @@ Setup adds three firewall rules (TCP 5050 for the Host, UDP 5051 for discovery, 
 
 ## 3. Deploy to many computers
 
-Use the silent command above from Microsoft Intune (as a Win32 app) or Configuration Manager, or from a Group Policy startup script, with the kit file delivered to each computer by the way your organisation delivers secrets.
+Use the silent command above from Microsoft Intune (as a Win32 app) or Configuration Manager, or from a Group Policy startup script, with the kit file delivered to each computer by the way your organization delivers secrets.
 
 ## 4. Connect from the teacher's computer
 

@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir Tactical RMM greta."
-description: "Sąžiningas palyginimas su Tactical RMM, nemokama savo serveryje diegiama nuotolinio stebėjimo ir valdymo programa: kam kuri skirta, ko reikia jai paleisti, kas kainuoja papildomai ir kuri tinka mokyklos klasei."
+description: "Classroom Manager ir Tactical RMM, nemokama savo serveryje diegiama programa: kam kuri skirta, ko reikia paleisti ir kaina."
 translationKey: "school-compare-rmm"
 slug: "palyginimas-tactical-rmm"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> Tactical RMM — savo serveryje diegiama priemonė administratoriaus kompiuterių parkui, su įspėjimais ir scenarijais; Classroom Manager skirta mokytojui su klase ir serverio nereikalauja.</p>
+
 Tactical RMM — populiari nemokama, savo serveryje diegiama programa IT skyriams ir paslaugų teikėjams, kurie iš vieno interneto valdymo lango prižiūri daug „Windows“ (ir kai kurių „Linux“ bei „Mac“) kompiuterių. Mokyklos IT komanda ją gali pažinoti. Priežiūros srityje ji dalinai sutampa su Classroom Manager, bet sukurtos jos skirtingiems žmonėms: **Tactical RMM skirta administratoriui, kuris stebi ir taiso kompiuterių parką; Classroom Manager — mokytojui prieš klasę, o šalia jo — administratoriaus įrankiai.**
 
 Palyginta 2026 m. lapkričio 5 d., remiantis Tactical RMM dokumentacija (pagrindinis puslapis, serverio diegimo vadovas ir licencijos puslapis) bei jos GitHub saugykla. Tactical RMM šiam palyginimui nebuvo diegta, o jos dokumentacija keičiasi; viską, kuo remiatės, patikrinkite. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.

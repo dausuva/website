@@ -11,19 +11,19 @@ Start by arranging a demonstration and, afterwards, an individual package for yo
 
 The first-year price is **{{< product "priceFirstYear" >}} flat**, not per computer. Renewal is **{{< product "priceRenewal" >}} per year**. Confirm the school, sites, labs and deployment scope before starting; this page is not a promise of an unlimited multi-site service or a response-time SLA.
 
-If you do not renew, existing installations keep working. Renewal is for updates and support, not a switch that disables the software. Each school's installation package is signed for its licence year; after it ends, new installs and updates show Windows' unknown-publisher prompt until the renewal brings a new trust update and Client update.
+If you do not renew, existing installations keep working. Renewal is for updates and support, not a switch that disables the software. Each school's installation package is signed for its license year; after it ends, new installs and updates show Windows' unknown-publisher prompt until the renewal brings a new trust update and Client update.
 
 ## Free use and the three ways to run it
 
-| | Build it yourself | Official, free | School licence |
+| | Build it yourself | Official, free | School license |
 |---|---|---|---|
-| What it is | You build it from the public source code | The Microsoft Store and signed downloads, with no licence file | The official build with the school's licence file |
-| Computers | No limit | Up to **3 online at the same time** (for example a small lab at home) | The number in the licence (fewer than 50) |
-| Signed | No | Yes | Yes, for the school's licence year |
+| What it is | You build it from the public source code | The Microsoft Store and signed downloads, with no license file | The official build with the school's license file |
+| Computers | No limit | Up to **3 online at the same time** (for example a small lab at home) | The number in the license (fewer than 50) |
+| Signed | No | Yes | Yes, for the school's license year |
 | Support | None, no warranty; problems on GitHub, answered when someone can | None promised | Setup, onboarding, a year of updates and email and phone support |
 | Price | Free | Free | {{< product "priceFirstYear" >}} the first year, then {{< product "priceRenewal" >}} a year, per school |
 
-The Client on student computers is free and has no limit; the limit is in the teacher's program, which tells the teacher plainly which computers are waiting for a licence and never undoes a lock or an exam already running. Schools of 50 computers or more agree terms separately. Early access: the official free build and the Store listing arrive with the first release.
+The Client on student computers is free and has no limit; the limit is in the teacher's program, which tells the teacher plainly which computers are waiting for a license and never undoes a lock or an exam already running. Schools of 50 computers or more agree terms separately. Early access: the official free build and the Store listing arrive with the first release.
 
 ## What it costs per computer
 

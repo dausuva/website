@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 disableKinds = ["taxonomy", "term", "rss", "section"]
 enableRobotsTXT = true
+enableGitInfo = true      # real lastmod dates in the sitemap (the workflow checks out full history)
 
 [languages.en]
   label = "English"
@@ -37,6 +38,7 @@ enableRobotsTXT = true
   companyUrl = "https://dausuva.com/"
   companyCode = "307580523"
   founded = "2026"
+  youtubeUrl = "https://www.youtube.com/@dausuva"
   phone = "+370 648 45767"
   phoneLink = "+37064845767"
   product = "Classroom Manager"
@@ -50,3 +52,18 @@ enableRobotsTXT = true
 
 [minify]
   minifyOutput = true
+
+# The demo video (JSON-LD VideoObject on the landing and demo pages)
+[params.video]
+  id = "OU81pvKxGTA"
+  uploadDate = "2026-11-05"
+  duration = "PT4M28S"
+
+# llms.txt: a plain-text summary for AI answer engines, one per language
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+[outputs]
+  home = ["HTML", "llms"]

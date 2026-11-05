@@ -1,6 +1,6 @@
 ---
 title: "Classroom Manager palyginimai."
-description: "Sąžiningi palyginimai greta: Classroom Manager su Veyon, NetSupport School, Faronics Insight, LanSchool, Impero Education Pro, „Microsoft“ mokyklos kompiuterių įrankiais, Tactical RMM ir nuotolinio darbalaukio įrankiais: kam kuri skirta, kuo skiriasi ir kuri tinka mokyklos klasei."
+description: "Sąžiningi Classroom Manager palyginimai su Veyon, NetSupport School, Faronics Insight, LanSchool, Impero, Tactical RMM ir kitais."
 translationKey: "school-compare"
 slug: "palyginimas"
 schoolPage: true

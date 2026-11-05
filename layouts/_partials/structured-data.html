@@ -2,7 +2,7 @@
 {{- $websiteID := printf "%s#website" site.Home.Permalink -}}
 {{- $product := partial "product-page.html" . -}}
 {{- $softwareID := printf "%s#software" $product.Permalink -}}
-{{- $organization := dict "@type" "Organization" "@id" $organizationID "name" site.Params.brand "legalName" site.Params.company "identifier" site.Params.companyCode "url" site.Params.companyUrl "address" site.Params.address -}}
+{{- $organization := dict "@type" "Organization" "@id" $organizationID "name" site.Params.brand "legalName" site.Params.company "identifier" site.Params.companyCode "url" site.Params.companyUrl "address" site.Params.address "sameAs" (slice site.Params.youtubeUrl) -}}
 {{- $website := dict "@type" "WebSite" "@id" $websiteID "url" site.Home.Permalink "name" site.Title "inLanguage" site.Language.Locale "publisher" (dict "@id" $organizationID) -}}
 {{- $webpage := dict "@type" "WebPage" "@id" (printf "%s#webpage" .Permalink) "url" .Permalink "name" (partial "search-title.html" .) "description" .Description "inLanguage" site.Language.Locale "isPartOf" (dict "@id" $websiteID) -}}
 {{- $graph := slice $organization $website $webpage -}}
@@ -18,5 +18,23 @@
 {{- if .Params.schoolPage -}}
   {{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" site.Params.product "item" $product.Permalink) (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
   {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumbs" .Permalink) "itemListElement" $crumbs) -}}
+{{- end -}}
+{{- if and site.Params.video (or (eq .TranslationKey "school") (eq .TranslationKey "school-demo")) -}}
+  {{- $thumb := resources.Get (printf "images/social-%s.png" site.Language.Lang) -}}
+  {{- $video := dict "@type" "VideoObject" "@id" (printf "%s#video" .Permalink) "name" (T "videoName") "description" (T "videoDescription") "thumbnailUrl" (slice $thumb.Permalink) "uploadDate" site.Params.video.uploadDate "duration" site.Params.video.duration "contentUrl" (printf "https://youtu.be/%s" site.Params.video.id) "embedUrl" (printf "https://www.youtube.com/embed/%s" site.Params.video.id) "inLanguage" "en" "publisher" (dict "@id" $organizationID) -}}
+  {{- $graph = $graph | append $video -}}
+{{- end -}}
+{{- $questions := slice -}}
+{{- if eq .TranslationKey "school-faq" -}}
+  {{- range findRESubmatch `(?s)<details><summary>(.*?)</summary><p>(.*?)</p></details>` .RawContent -}}
+    {{- $questions = $questions | append (dict "@type" "Question" "name" (plainify (index . 1)) "acceptedAnswer" (dict "@type" "Answer" "text" (plainify (index . 2)))) -}}
+  {{- end -}}
+{{- else if and (eq .TranslationKey "school") .Params.faq -}}
+  {{- range .Params.faq -}}
+    {{- $questions = $questions | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) -}}
+  {{- end -}}
+{{- end -}}
+{{- if $questions -}}
+  {{- $graph = $graph | append (dict "@type" "FAQPage" "@id" (printf "%s#faq" .Permalink) "mainEntity" $questions "inLanguage" site.Language.Locale) -}}
 {{- end -}}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

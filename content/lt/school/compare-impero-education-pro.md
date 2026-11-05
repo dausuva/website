@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir Impero Education Pro greta."
-description: "Sąžiningas palyginimas su Impero Education Pro, klasės valdymo ir vaikų apsaugos produktu, dabar parduodamu Ativion vardu: kas nurodyta jo puslapyje, kas ne ir kuris tinka jūsų mokyklai."
+description: "Classroom Manager ir Impero Education Pro (dabar Ativion): ką sako jos puslapis, ko nesako ir kuri tinka mokyklai."
 translationKey: "school-compare-impero"
 slug: "palyginimas-impero-education-pro"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> Impero Education Pro prie klasės valdymo prideda vaikų apsaugą ir raktinių žodžių žymas; Classroom Manager nestebi, ką mokiniai žiūri, o rūpinasi klasės priežiūra.</p>
+
 Impero Education Pro jungia klasės valdymą su vaikų apsauga. Jos puslapyje rašoma, kad ji „jungia mokinių gerovę ir įrenginių valdymą, kad pagerintų skaitmeninį mokymąsi, padėtų IT administravimui ir veiksmingai stebėtų apsaugos incidentus“. Už jos stovinti įmonė „Impero Solutions Ltd“ dabar veikia **Ativion** vardu, o senas Impero adresas nukreipia į Ativion svetainę. Education Pro sukurta **matyti, ką daro mokiniai, ir pažymėti rūpesčius**; Classroom Manager — pačiai „Windows“ klasei, **niekieno ekrano nestebint**.
 
 Palyginta 2026 m. lapkričio 5 d., remiantis Ativion Education Pro puslapiu ir švietimo pagrindiniu puslapiu. Impero puslapiai trumpi: jie įvardija gebėjimus, bet neišvardija atskirų įrankių, kainų, sistemos reikalavimų ar prieglobos detalių, todėl dauguma žemiau esančių eilučių sako „Perskaitytame puslapyje nenurodyta“. Produkto nediegėme ir nebandėme. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.

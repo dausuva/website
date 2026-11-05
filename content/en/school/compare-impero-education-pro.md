@@ -1,12 +1,14 @@
 ---
 title: "Classroom Manager and Impero Education Pro, side by side."
-description: "An honest comparison with Impero Education Pro, the classroom management and safeguarding product now sold under the Ativion name: what is stated on its page, what is not, and which fits your school."
+description: "Classroom Manager vs Impero Education Pro (now Ativion): what its page states, what it does not, and which fits your school."
 url: "/classroom-manager/compare-impero-education-pro/"
 aliases: ["/school/compare-impero-education-pro/"]
 translationKey: "school-compare-impero"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> Impero Education Pro adds safeguarding and keyword flags to classroom control; Classroom Manager does not monitor what students view, and covers the lab's upkeep instead.</p>
+
 Impero Education Pro combines classroom management with safeguarding. Its page says it "combines learner well-being and device management to enhance digital learning, support IT administration, and monitor safeguarding issues effectively". The company behind it, Impero Solutions Ltd, now trades as **Ativion**, and the old Impero web address redirects to Ativion's site. Education Pro is built around **seeing what students do and flagging concerns**; Classroom Manager is built around the Windows lab itself, **without watching anyone's screen**.
 
 Checked on 5 November 2026 against Ativion's Education Pro page and its education home page. Impero's own pages are short: they name capabilities but do not list individual tools, prices, system requirements or hosting details, so most rows below say "Not stated on the page read". We did not install or trial the product. Classroom Manager's column describes the current build; ask for a demo to see it.

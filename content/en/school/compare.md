@@ -1,6 +1,6 @@
 ---
 title: "Classroom Manager compared."
-description: "Honest side-by-side comparisons of Classroom Manager with Veyon, NetSupport School, Faronics Insight, LanSchool, Impero Education Pro, Microsoft's school PC tools, Tactical RMM and remote desktop tools: what each is built for, how they differ, and which fits a school lab."
+description: "Honest comparisons of Classroom Manager with Veyon, NetSupport School, Faronics Insight, LanSchool, Impero, Tactical RMM and more."
 url: "/classroom-manager/compare/"
 aliases: ["/school/compare/"]
 translationKey: "school-compare"

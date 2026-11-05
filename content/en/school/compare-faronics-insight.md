@@ -1,12 +1,14 @@
 ---
 title: "Classroom Manager and Faronics Insight, side by side."
-description: "An honest comparison with Faronics Insight, the commercial classroom management suite: what each is built for, what is on its feature list, how it is deployed and priced, and which fits your school."
+description: "Classroom Manager vs Faronics Insight: what each is built for, how it is deployed and priced, and which fits your school."
 url: "/classroom-manager/compare-faronics-insight/"
 aliases: ["/school/compare-faronics-insight/"]
 translationKey: "school-compare-faronics"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> Faronics Insight is a commercial suite built around student screens, alerts, tests and polls; Classroom Manager keeps a Windows lab ready, with a published price and no screen viewing.</p>
+
 Faronics Insight is a commercial classroom management suite from Faronics. Its own page describes "an effective classroom management tool" that helps teachers run lessons and use real-time assessment, for schools of all sizes. Like NetSupport School and LanSchool it is built around **teaching with the students' screens in front of the teacher**. Classroom Manager shares the everyday lesson actions but is built around the Windows lab itself, **without watching anyone's screen**.
 
 Checked on 5 November 2026 against Faronics' own Insight page. Insight was not installed or trialled for this comparison. Pricing, software languages, system requirements and any lab-maintenance tools are not stated on the page we read; the tables say so rather than guess. Classroom Manager's column describes the current build; ask for a demo to see it.
@@ -34,7 +36,8 @@ Checked on 5 November 2026 against Faronics' own Insight page. Insight was not i
 | Take control of a student's computer | Yes, with their keyboard and mouse disabled meanwhile | No |
 | Allow or block websites and apps, see history, stop running apps | Yes, including disabling InPrivate/Incognito browsing | Block lists for programs and websites in Exam mode, with sound, camera and USB storage |
 | Tests and polls | True/false, multiple choice, short answer and essay questions with real-time results; yes/no and multiple-choice polls | No |
-| Focus Mode, SSID whitelisting | Yes | Not in our feature list |
+| Focus Mode for assessments | Listed on its page; what it restricts is not described there | Exam mode is the nearest counterpart: program, website, sound, camera and USB-storage restrictions |
+| SSID whitelisting | Yes | Not in our feature list |
 | Send and collect files; launch apps and websites on all devices | Yes | Yes: files to Desktop, Documents or any folder with an undo, collected by name pattern into a folder per student; saved buttons for websites and programs |
 | Power options | Shut down, reboot, log on | Wake-on-LAN, restart, shut down, remote sign-in, each with a cancel |
 | See what students changed in the last half hour and copy it | Not in its feature list | Yes: recent files by time and type |

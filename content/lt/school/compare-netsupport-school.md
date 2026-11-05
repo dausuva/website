@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir NetSupport School greta."
-description: "Sąžiningas palyginimas su NetSupport School, komerciniu klasės valdymo paketu: kam kuri skirta, kas yra jos galimybių sąraše, kaip kainuoja ir kuri tinka jūsų mokyklai."
+description: "Classroom Manager ir NetSupport School: kam kuri skirta, kas yra galimybių sąraše, kaip kainuoja ir kuri tinka mokyklai."
 translationKey: "school-compare-netsupport"
 slug: "palyginimas-netsupport-school"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> NetSupport School — komercinis paketas mokyti su mokinių ekranais, testais ir bendrinimu; Classroom Manager skirta pačiai Windows klasei, su skelbiama fiksuota kaina ir be ekranų stebėjimo.</p>
+
 NetSupport School — komercinis klasės valdymo paketas iš „NetSupport“, kurį ji vadina „market-leading classroom management software“ (rinkos lyderiu). Jis sukurtas mokyti, kai mokinių ekranai mokytojo akyse: stebėjimas, bendrinimas, testai, o IT darbuotojams — **Technician's Console**. Classroom Manager turi tuos pačius kasdienius pamokos veiksmus, bet sukurtas pačiai „Windows“ klasei, **niekieno ekrano nestebint**.
 
 Palyginta 2026 m. lapkričio 5 d., remiantis paties NetSupport School svetaine (pagrindinis, galimybių ir kainų puslapiai). NetSupport School šiam palyginimui nebuvo diegta ar bandyta. Kelių dalykų, kurių norėtų pirkėjas, pavyzdžiui, palaikomų „Windows“ versijų, saugos sandaros ir sąsajos kalbų, perskaitytuose puslapiuose nenurodyta; lentelėse taip ir rašome, o ne spėliojame. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.

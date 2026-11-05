@@ -113,3 +113,9 @@ content/lt/school/compare-approaches.md
 layouts/_markup/render-table.html
 layouts/_partials/cta-band.html
 layouts/_partials/video-player.html
+assets/icons/apple-touch-icon.png
+assets/images/demo-poster.jpg
+assets/images/social-en.png
+assets/images/social-lt.png
+layouts/home.llms.txt
+layouts/robots.txt

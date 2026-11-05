@@ -1,12 +1,14 @@
 ---
 title: "Classroom Manager and Veyon, side by side."
-description: "An honest feature comparison with Veyon, the free open-source classroom tool: where each one leads, what costs extra, and which fits your school."
+description: "Classroom Manager vs Veyon, the free open-source classroom tool: what each does, what costs extra, and which fits your school."
 url: "/classroom-manager/compare-veyon/"
 aliases: ["/school/compare-veyon/"]
 translationKey: "school-compare-veyon"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> Veyon is a free, open-source classroom tool for seeing and steering student screens; Classroom Manager prepares and maintains a Windows lab without watching screens.</p>
+
 Veyon is the best-known free classroom tool for Windows and Linux labs, and many schools already know it. The two programs overlap on the everyday classroom actions but are built around different centres: **Veyon is about seeing and steering student screens; Classroom Manager is about preparing, configuring and looking after the Windows lab, without watching anyone's screen.**
 
 Checked again on 5 November 2026 against Veyon 4.11.4 (released 15 October 2026, still the newest release), its features and add-ons pages, its release notes and its news page. Veyon was not installed for this comparison. Classroom Manager's column describes the current build; ask for a demo to see it.

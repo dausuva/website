@@ -1,12 +1,14 @@
 ---
 title: "Classroom Manager and LanSchool, side by side."
-description: "An honest comparison with LanSchool, the classroom management software backed by Lenovo: its locally hosted Classic and cloud Air editions, what is on its feature list, how it is priced, and which fits your school."
+description: "Classroom Manager vs LanSchool, backed by Lenovo: Classic and Air editions, features, pricing, and which fits your school."
 url: "/classroom-manager/compare-lanschool/"
 aliases: ["/school/compare-lanschool/"]
 translationKey: "school-compare-lanschool"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> LanSchool is a Lenovo-backed classroom suite with locally hosted and cloud editions, built around student screens; Classroom Manager keeps a Windows lab ready, with no screen viewing and a published price.</p>
+
 LanSchool is classroom management software for K-12 schools. Its website says it is "backed by Lenovo" and calls LanSchool "a pioneer and innovator of classroom management software". It comes in two editions at one price: **LanSchool Classic**, hosted locally on the school's or district's servers, and **LanSchool Air**, hosted in the cloud. Both are built around **teaching with the students' screens in front of the teacher**; Classroom Manager shares the everyday lesson actions but is built around the Windows lab itself, **without watching anyone's screen**.
 
 Checked on 5 November 2026 against LanSchool's own pages: the home page, the Classic page, the Air page and the purchasing page. LanSchool was not installed or trialled for this comparison. Prices, software languages and system requirements are not stated on the pages we read. Classroom Manager's column describes the current build; ask for a demo to see it.

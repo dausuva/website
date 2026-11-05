@@ -6,6 +6,7 @@
       <p class="eyebrow"><span class="status-dot"></span> {{ $p.eyebrow }}</p>
       <h1>{{ .Title }}</h1>
       <p class="lead">{{ $p.lead }}</p>
+      {{ with $p.audience }}<p class="audience">{{ . }}</p>{{ end }}
       <div class="actions">
         <a class="button primary" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "requestTest" }} <span aria-hidden="true">↗</span></a>
         {{ with $p.demo }}<a class="button" href="#demo"><span aria-hidden="true">▶</span> {{ $p.heroDemo }}</a>{{ end }}
@@ -58,6 +59,7 @@
 {{ with $p.ctaProof }}{{ partial "cta-band.html" (dict "heading" .heading "text" .text "primary" (dict "label" (T "requestTest") "url" (partial "page-url.html" "/school/request/")) "secondary" (dict "label" .secondary "url" (partial "page-url.html" "/school/proof/"))) }}{{ end }}
 {{ with $p.compare }}<section class="wrap section" id="compare"><p class="eyebrow">{{ $p.compareLabel }}</p><h2>{{ $p.compareHeading }}</h2><p class="section-lead">{{ $p.compareLead }}</p><div class="workflows">{{ range . }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p><a href="{{ partial "page-url.html" .path }}">{{ .link }} →</a></article>{{ end }}</div></section>{{ end }}
 <section class="trust-section"><div class="wrap section"><p class="eyebrow">{{ $p.trustLabel }}</p><h2>{{ $p.trustHeading }}</h2><div class="workflows">{{ range $p.trust }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p><a href="{{ partial "page-url.html" .path }}">{{ .link }} →</a></article>{{ end }}</div></div></section>
+{{ with $p.faq }}<section class="wrap section quick-answers" id="answers"><p class="eyebrow">{{ T "quickAnswers" }}</p><div class="section-heading"><h2>{{ $p.faqHeading }}</h2><a href="{{ partial "page-url.html" "/school/faq/" }}">{{ T "allQuestions" }} →</a></div><div class="faq-list">{{ range . }}<details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}</div></section>{{ end }}
 <section class="wrap section" id="pricing"><p class="eyebrow">{{ T "pricing" }}</p><h2>{{ $p.pricingHeading }}</h2><p class="section-lead">{{ $p.pricingLead }}</p>{{ partial "plans.html" . }}</section>
 <section class="wrap section next-step"><div><p class="eyebrow">{{ $p.nextLabel }}</p><h2>{{ $p.nextHeading }}</h2><p>{{ $p.nextText }}</p></div><div class="actions"><a class="button primary" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "requestTest" }} <span aria-hidden="true">↗</span></a><a class="button" href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }} →</a></div></section>
 <div class="sticky-cta"><a class="button primary" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "requestTest" }} <span aria-hidden="true">↗</span></a>{{ with $p.demo }}<a class="button" href="#demo"><span aria-hidden="true">▶</span> {{ T "demoShort" }}</a>{{ end }}</div>

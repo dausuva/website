@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir Faronics Insight greta."
-description: "Sąžiningas palyginimas su Faronics Insight, komerciniu klasės valdymo paketu: kam kuri skirta, kas yra jos galimybių sąraše, kaip diegiama ir kainuoja bei kuri tinka jūsų mokyklai."
+description: "Classroom Manager ir Faronics Insight: kam kuri skirta, kaip diegiama ir kainuoja bei kuri tinka jūsų mokyklai."
 translationKey: "school-compare-faronics"
 slug: "palyginimas-faronics-insight"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> Faronics Insight — komercinis paketas, sukurtas aplink mokinių ekranus, įspėjimus, testus ir apklausas; Classroom Manager palaiko Windows klasę paruoštą, su skelbiama kaina ir be ekranų stebėjimo.</p>
+
 Faronics Insight — komercinis klasės valdymo paketas iš „Faronics“. Jos pačios puslapyje rašoma apie „veiksmingą klasės valdymo įrankį“, padedantį mokytojams vesti pamokas ir vertinti realiu laiku, įvairaus dydžio mokykloms. Kaip ir NetSupport School bei LanSchool, ji sukurta **mokyti, kai mokinių ekranai mokytojo akyse**. Classroom Manager turi tuos pačius kasdienius pamokos veiksmus, bet sukurtas pačiai „Windows“ klasei, **niekieno ekrano nestebint**.
 
 Palyginta 2026 m. lapkričio 5 d., remiantis paties „Faronics“ Insight puslapiu. Insight šiam palyginimui nebuvo diegta ar bandyta. Kainos, programos kalbų, sistemos reikalavimų ir klasės priežiūros įrankių perskaitytame puslapyje nenurodyta; lentelėse taip ir rašome, o ne spėliojame. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.
@@ -33,7 +35,8 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties „Faronics“ Insight pusla
 | Perimti mokinio kompiuterį | Taip, tuo metu jo klaviatūra ir pelė išjungtos | Ne |
 | Leisti ar blokuoti svetaines ir programas, matyti istoriją, uždaryti veikiančias | Taip, įskaitant „InPrivate/Incognito“ naršymo išjungimą | Programų ir svetainių blokavimo sąrašai egzamino režime, su garsu, kamera ir USB laikmenomis |
 | Testai ir apklausos | Tiesa/netiesa, pasirinkimo, trumpo atsakymo ir esė klausimai su rezultatais realiu laiku; taip/ne ir pasirinkimo apklausos | Ne |
-| „Focus Mode“, SSID baltasis sąrašas | Taip | Nėra mūsų galimybių sąraše |
+| „Focus Mode“ vertinimams | Nurodyta jos puslapyje; ką ji riboja, ten neaprašyta | Artimiausias atitikmuo — egzamino režimas: programų, svetainių, garso, kameros ir USB laikmenų apribojimai |
+| SSID baltasis sąrašas | Taip | Nėra mūsų galimybių sąraše |
 | Siųsti ir rinkti failus; paleisti programas ir svetaines visuose įrenginiuose | Taip | Taip: failai į darbalaukį, dokumentus ar bet kurį aplanką su atšaukimu, renkami pagal pavadinimo šabloną į atskirą aplanką kiekvienam mokiniui; išsaugoti mygtukai svetainėms ir programoms |
 | Maitinimo parinktys | Išjungti, perkrauti, prisijungti | Wake-on-LAN, perkrauti, išjungti, nuotolinis prisijungimas, kiekvienas su atšaukimu |
 | Matyti, ką mokiniai pakeitė per pusvalandį, ir tai nukopijuoti | Nėra galimybių sąraše | Taip: naujausi failai pagal laiką ir tipą |

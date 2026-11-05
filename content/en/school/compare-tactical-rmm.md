@@ -1,12 +1,14 @@
 ---
 title: "Classroom Manager and Tactical RMM, side by side."
-description: "An honest comparison with Tactical RMM, the free self-hosted remote monitoring and management tool: what each is built for, what it takes to run, what costs extra, and which fits a school lab."
+description: "Classroom Manager vs Tactical RMM, the free self-hosted management tool: what each is built for, what it takes to run, and cost."
 url: "/classroom-manager/compare-tactical-rmm/"
 aliases: ["/school/compare-tactical-rmm/"]
 translationKey: "school-compare-rmm"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> Tactical RMM is a self-hosted tool for an administrator's fleet, with alerts and scripts; Classroom Manager is for the teacher with a lab, and needs no server.</p>
+
 Tactical RMM is a popular free, self-hosted tool for IT departments and service providers who look after many Windows (and some Linux and Mac) computers from one web console. A school IT team may well know it. It overlaps with Classroom Manager on the maintenance side, but the two are built around different people: **Tactical RMM is for the administrator who watches and repairs a fleet; Classroom Manager is for the teacher in front of a lab, with the administrator's tools beside it.**
 
 Checked on 5 November 2026 against the Tactical RMM documentation (home page, server installation guide and license page) and its GitHub repository. Tactical RMM was not installed for this comparison, and its documentation changes; check it for anything you rely on. Classroom Manager's column describes the current build; ask for a demo to see it.
@@ -61,7 +63,7 @@ Checked on 5 November 2026 against the Tactical RMM documentation (home page, se
 
 ## Which one fits
 
-**Choose Tactical RMM** if you are an IT department or a service provider with many computers across places, you want alerts when something fails, remote desktop and a script library, you are comfortable running and securing a Linux server and DNS names, and you only manage your own organisation's computers (or have the vendor's approval for anything commercial).
+**Choose Tactical RMM** if you are an IT department or a service provider with many computers across places, you want alerts when something fails, remote desktop and a script library, you are comfortable running and securing a Linux server and DNS names, and you only manage your own organization's computers (or have the vendor's approval for anything commercial).
 
 **Choose Classroom Manager** if the people using it are teachers and a small school IT team who want to lock, message, hand out and collect files and run exams from the teacher's PC, with no server to build, the maintenance tools beside them, a flat yearly price, help with the rollout, and no screen capture of minors to justify under GDPR.
 

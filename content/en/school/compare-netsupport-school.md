@@ -1,12 +1,14 @@
 ---
 title: "Classroom Manager and NetSupport School, side by side."
-description: "An honest comparison with NetSupport School, the commercial classroom management suite: what each is built for, what is on its feature list, how it is priced, and which fits your school."
+description: "Classroom Manager vs NetSupport School: what each is built for, what is on its feature list, how it is priced, and which fits."
 url: "/classroom-manager/compare-netsupport-school/"
 aliases: ["/school/compare-netsupport-school/"]
 translationKey: "school-compare-netsupport"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> NetSupport School is a commercial suite for teaching with students' screens, tests and sharing; Classroom Manager is for the Windows lab itself, with a published flat price and no screen viewing.</p>
+
 NetSupport School is a commercial classroom management suite from NetSupport, which calls it "the market-leading classroom management software". It is built around teaching with the students' screens in front of the teacher: monitoring, sharing, tests, and a **Technician's Console** for IT staff. Classroom Manager shares the everyday lesson actions but is built around the Windows lab itself, **without watching anyone's screen**.
 
 Checked on 5 November 2026 against NetSupport School's own website (home page, features page and pricing page). NetSupport School was not installed or trialled for this comparison. Several things a buyer would want, such as supported Windows versions, security design and interface languages, were not stated on the pages we read; the tables say so rather than guess. Classroom Manager's column describes the current build; ask for a demo to see it.

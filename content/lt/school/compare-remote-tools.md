@@ -1,11 +1,13 @@
 ---
 title: "Classroom Manager ir nuotolinio darbalaukio įrankiai greta."
-description: "Sąžiningas palyginimas su bendrosios paskirties nuotolinės prieigos įrankiais, kuriuos mokyklos jau naudoja pagalbos tarnybai: TeamViewer, AnyDesk, RustDesk ir DWService. Ką jie daro, kaip veikia ir kainuoja ir kodėl tai nėra klasės įrankiai."
+description: "Classroom Manager ir TeamViewer, AnyDesk, RustDesk, DWService: kodėl nuotolinio darbalaukio įrankiai nėra klasės valdymas."
 translationKey: "school-compare-remote"
 slug: "palyginimas-nuotolinio-darbalaukio-irankiai"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>Vienu sakiniu:</strong> Nuotolinio darbalaukio įrankiai pasiekia po vieną kompiuterį; Classroom Manager vieną veiksmą išsiunčia visiems klasės kompiuteriams.</p>
+
 Daugelis mokyklų IT komandų jau turi nuotolinio darbalaukio įrankį pagalbos tarnybos darbui ir klausia, ar juo galima valdyti klasę. Tokie įrankiai sukurti **pasiekti vieną kompiuterį iš bet kur**: pasirenkate įrenginį, matote jo ekraną ir perimate valdymą. Klasei reikia priešingo: **vieno veiksmo, išsiunčiamo visiems klasės kompiuteriams iš karto**, pavyzdžiui, užrakinti ekranus su pranešimu, išdalyti failą ar pradėti egzaminą. Šis požiūrių skirtumas ir yra priežastis, kodėl tai nėra klasės valdymo įrankiai, nors kai kurie mini švietimą.
 
 Palyginta 2026 m. lapkričio 5 d., remiantis kiekvieno tiekėjo puslapiais (išvardyti žemiau). Nė vieno iš keturių šiam palyginimui nediegėme ir nebandėme. Jų puslapiai yra rinkodaros ir projektų puslapiai, daug ką praleidžiantys; lentelėje rašome „nenurodyta“, kai nieko neradome. Classroom Manager stulpelis aprašo dabartinę versiją; paprašykite demonstracijos ir pamatysite patys.

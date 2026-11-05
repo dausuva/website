@@ -1,12 +1,14 @@
 ---
 title: "Classroom Manager and Microsoft's school PC tools, side by side."
-description: "An honest comparison with Microsoft's Set up School PCs app and the Take a Test secure assessment app for Windows: what each does, what it needs, and how a lock-down approach differs from block lists."
+description: "Classroom Manager vs Microsoft's Set up School PCs and Take a Test: what each does, and how lock-down differs from block lists."
 url: "/classroom-manager/compare-windows-take-a-test/"
 aliases: ["/school/compare-windows-take-a-test/"]
 translationKey: "school-compare-microsoft"
 schoolPage: true
 nofollowExternal: true
 ---
+<p class="verdict"><strong>In one sentence:</strong> Microsoft's tools set PCs up once and lock one down for a test; Classroom Manager runs the lab day to day, and the two work together.</p>
+
 Schools that run Windows already have two tools from Microsoft: **Set up School PCs**, an app that prepares new PCs for school use, and **Take a Test**, a built-in secure browser for assessments. They are not classroom management programs, but a school IT person will ask how they differ from one, and they show a different **approach** to the same jobs: Microsoft locks a PC down for a test, and sets it up once; Classroom Manager keeps controlling the lab's PCs during the day.
 
 Checked on 5 November 2026 against Microsoft Learn's pages on Set up School PCs and Take a Test (last-updated dates shown in the sources below; Microsoft also warns that support for Windows 11 SE ends in October 2026). We did not set up either tool for this comparison. Classroom Manager's column describes the current build; ask for a demo to see it.
