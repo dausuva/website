@@ -3,9 +3,9 @@
 # {{ site.Params.product }}, by {{ site.Params.brand }}
 
 {{ if $lt -}}
-> Windows kompiuterių klasių valdymo programa mokykloms: mokytojas iš savo kompiuterio užrakina ekranus, siunčia pranešimus, dalija ir renka failus, vykdo egzamino režimą ir prižiūri klasės programas bei naujinimus, mokyklos tinkle, be serverio ir debesies paskyros. Programa neperžiūri ir neįrašo mokinių ekranų. Ankstyvoji prieiga; viešo atsisiuntimo nėra.
+> Windows kompiuterių klasių valdymo programa mokykloms: mokytojas iš savo kompiuterio užrakina ekranus, siunčia pranešimus, dalija ir renka failus, vykdo egzamino režimą ir prižiūri klasės programas bei naujinimus, mokyklos tinkle, be serverio ir debesies paskyros. Programa neperžiūri ir neįrašo mokinių ekranų. Ankstyvoji prieiga; Host nemokamai galima gauti „Microsoft Store“, o Client pateikiamas individualiu paketu po demonstracijos.
 {{- else -}}
-> Windows classroom management software for schools: from the teacher's PC, lock screens, send messages, hand out and collect files, run Exam mode, and look after the lab's software and updates, over the school network, with no server and no cloud account. It does not view or record student screens. Early access; there is no public download.
+> Windows classroom management software for schools: from the teacher's PC, lock screens, send messages, hand out and collect files, run Exam mode, and look after the lab's software and updates, over the school network, with no server and no cloud account. It does not view or record student screens. Early access; the Host is free in the Microsoft Store to see how it works, and the Client comes as an individual package after a demo.
 {{- end }}
 
 ## {{ if $lt }}Pagrindiniai faktai{{ else }}Key facts{{ end }}

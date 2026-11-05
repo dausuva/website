@@ -12,7 +12,7 @@ Užsisakykite demonstraciją vietoje Vilniaus apskrityje arba Zoom pokalbį su a
 
 ## 2. Gaukite individualų paketą
 
-Viešo atsisiuntimo nėra. Po demonstracijos sutarkite dėl mokyklai paruošto paketo ir užfiksuokite tikslią bandomą versiją. Bandymuose naudotos Windows 10 ir 11 konfigūracijos; suderinamumas priklauso nuo leidimo, pataisų, politikų ir reikalingų veiksmų. Tai nėra pažadas, kad operacinės sistemos gamintojas toliau palaikys senesnę sistemą.
+Host galima nemokamai atsisiųsti iš [„Microsoft Store“](https://apps.microsoft.com/detail/9P5BW5W79G41), kad pamatytumėte, kaip jis veikia; mokinių kompiuterių Client dar nėra viešas. Po demonstracijos sutarkite dėl mokyklai paruošto paketo ir užfiksuokite tikslią bandomą versiją. Bandymuose naudotos Windows 10 ir 11 konfigūracijos; suderinamumas priklauso nuo leidimo, pataisų, politikų ir reikalingų veiksmų. Tai nėra pažadas, kad operacinės sistemos gamintojas toliau palaikys senesnę sistemą.
 
 ## 3. Išbandykite vieną mokytojo kompiuterį ir vieną Client
 

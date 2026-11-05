@@ -19,7 +19,7 @@ Classroom Manager has two programs: the **Host**, which the teacher runs, and th
 
 An administrator installs the Client once on each computer, with administrator rights. It is not in the Microsoft Store: a Store app is installed per user and a student could remove it. See [Installing the Client]({{< relref "/school/client" >}}) for the lab key, the silent installation and the Windows tools you can deploy it with.
 
-- <span class="soon" title="available with the first release">The Client installer</span> (available with the first release)
+- <span class="soon" title="available with the first release">The Client installer</span>: **coming soon.** [Arrange a demo]({{< relref "/school/request" >}}) and we prepare an individual package for your school, with the Client installer and your lab key.
 - **winget:** `winget install Dausuva.ClassroomClient --custom "/KIT=C:\path\to\classroom-kit.json"`
 
 ## Check what you downloaded

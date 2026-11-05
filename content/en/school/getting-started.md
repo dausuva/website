@@ -12,7 +12,7 @@ Request a demonstration on site in Vilnius County, or a Zoom call with questions
 
 ## 2. Receive your individual package
 
-There is no public download. After the demo, arrange a package for your school and identify the exact version being tested. Windows 10 and 11 configurations have been used in testing; compatibility depends on edition, patch level, policy and the actions required. This is not a promise of continuing vendor support for an older operating system.
+The Host is free to download from the [Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it works; the Client for student computers is not public yet. After the demo, arrange a package for your school and identify the exact version being tested. Windows 10 and 11 configurations have been used in testing; compatibility depends on edition, patch level, policy and the actions required. This is not a promise of continuing vendor support for an older operating system.
 
 ## 3. Pilot one teacher PC and one Client
 

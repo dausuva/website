@@ -8,6 +8,8 @@ schoolPage: true
 ---
 The **Client** is a small Windows service with a helper that shows a notification-area icon. The teacher's Host connects to it over the school network. It is installed once on each student computer by someone with administrator rights, and it is not in the Microsoft Store (a Store app is installed per user, and a student could remove it).
 
+> **The Client installer is coming soon.** Until it is public, the Client comes in an individual package prepared for your school: [arrange a demo]({{< relref "/school/request" >}}) and we send it with your lab key. The teacher's Host is already free in the [Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it looks and works.
+
 Students see the icon in the notification area; opening it shows that the computer is managed and what is active. The programs do not view, capture or record student screens.
 
 ## Try it on two computers in ten minutes

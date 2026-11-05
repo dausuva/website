@@ -18,7 +18,7 @@ Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir *
 
 Administratorius Client įdiegia vieną kartą kiekviename kompiuteryje, su administratoriaus teisėmis. Jo nėra „Microsoft Store“: parduotuvės programa diegiama kiekvienam naudotojui atskirai, o mokinys galėtų ją pašalinti. Apie laboratorijos raktą, tylųjį diegimą ir „Windows“ įrankius, kuriais galima diegti, žr. [Client diegimas]({{< relref "/school/client" >}}).
 
-- <span class="soon" title="bus prieinama su pirmuoju leidimu">Client diegimo programa</span> (bus prieinama su pirmuoju leidimu)
+- <span class="soon" title="bus prieinama su pirmuoju leidimu">Client diegimo programa</span>: **netrukus.** [Užsisakykite demonstraciją]({{< relref "/school/request" >}}) ir paruošime mokyklai individualų paketą su Client diegimo programa ir jūsų laboratorijos raktu.
 - **winget:** `winget install Dausuva.ClassroomClient --custom "/KIT=C:\kelias\iki\classroom-kit.json"`
 
 ## Patikrinkite, ką atsisiuntėte

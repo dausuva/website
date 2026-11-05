@@ -14,6 +14,6 @@ schoolPage: true
 <details><summary>Does Teacher Mode make an Admin key safe to share?</summary><p>No. Teacher Mode simplifies the interface. Use a separate Teacher key for restricted access; the Client enforces the credential's role.</p></details>
 <details><summary>Will client updates recover automatically if a new version fails?</summary><p>Recovery after a failed start is manual: keep the previous signed package and a route to the PCs that does not depend on Classroom Manager. Signature and checksum checks prevent an unapproved package, while the pilot verifies the reinstall procedure.</p></details>
 <details><summary>Does the software stop if support is not renewed?</summary><p>No. Existing installations keep working. Renewal pays for updates and support.</p></details>
-<details><summary>Where can we download a trial?</summary><p>There is no public download. Request a demo first; afterwards we prepare an individual package for your school.</p></details>
+<details><summary>Where can we download a trial?</summary><p>The teacher's Host is free in the <a href="https://apps.microsoft.com/detail/9P5BW5W79G41" rel="noopener">Microsoft Store</a>: it shows how the program looks and works, with no account. The Client for student computers is not public yet: request a demo first; afterwards we prepare an individual package for your school.</p></details>
 
 [Ask another question](../request/) · [Review current security limits](../security/)

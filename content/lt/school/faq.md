@@ -14,6 +14,6 @@ aliases: ["/classroom-manager/faq/", "/school/faq/"]
 <details><summary>Ar Teacher Mode leidžia saugiai dalytis Admin raktu?</summary><p>Ne. Teacher Mode supaprastina langą. Ribotai prieigai naudokite atskirą Teacher raktą; Client tikrina rakto vaidmenį.</p></details>
 <details><summary>Ar nepavykęs Client naujinimas bus automatiškai atšauktas?</summary><p>Nepasileidus naujai versijai, atkuriama rankiniu būdu: saugokite ankstesnį pasirašytą paketą ir nuo Classroom Manager nepriklausomą prieigos prie kompiuterių būdą. Parašo ir kontrolinės sumos patikros neleidžia diegti nepatvirtinto paketo, o bandymo metu patikrinama pakartotinio diegimo procedūra.</p></details>
 <details><summary>Ar nepratęsus priežiūros programa nustos veikti?</summary><p>Ne. Esama įdiegta programa veikia toliau. Pratęsimas apmoka naujinimus ir pagalbą.</p></details>
-<details><summary>Kur atsisiųsti bandomąją versiją?</summary><p>Viešo atsisiuntimo nėra. Pirmiausia užsisakykite demonstraciją; po jos paruošime mokyklai individualų paketą.</p></details>
+<details><summary>Kur atsisiųsti bandomąją versiją?</summary><p>Mokytojo programa Host nemokama <a href="https://apps.microsoft.com/detail/9P5BW5W79G41" rel="noopener">„Microsoft Store“</a>: joje galima pamatyti, kaip programa atrodo ir veikia, paskyros nereikia. Mokinių kompiuterių Client dar nėra viešas: pirmiausia užsisakykite demonstraciją; po jos paruošime mokyklai individualų paketą.</p></details>
 
 [Užduokite kitą klausimą]({{< relref "/school/request" >}}) · [Peržiūrėkite saugumo ribas]({{< relref "/school/security" >}})

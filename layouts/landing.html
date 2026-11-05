@@ -10,6 +10,7 @@
       <div class="actions">
         <a class="button primary" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "requestTest" }} <span aria-hidden="true">↗</span></a>
         {{ with $p.demo }}<a class="button" href="#demo"><span aria-hidden="true">▶</span> {{ $p.heroDemo }}</a>{{ end }}
+        {{ if site.Params.storeLive }}<a class="button" href="{{ site.Params.storeUrl }}" rel="noopener"><span aria-hidden="true">↓</span> {{ T "downloadHost" }}</a>{{ end }}
         <a class="button ghost" href="{{ partial "page-url.html" "/school/pricing/" }}">{{ T "pricing" }}</a>
       </div>
       <p class="note">{{ $p.heroNote }}</p>
@@ -33,6 +34,7 @@
     </div>
     <div class="actions demo-actions">
       <a class="button primary" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "requestTest" }} <span aria-hidden="true">↗</span></a>
+      {{ if site.Params.storeLive }}<a class="button" href="{{ site.Params.storeUrl }}" rel="noopener"><span aria-hidden="true">↓</span> {{ T "downloadHost" }}</a>{{ end }}
       <a class="button" href="{{ partial "page-url.html" "/school/client/" }}#{{ $p.tryAnchor }}">{{ $p.tryLabel }}</a>
     </div>
   </div>
