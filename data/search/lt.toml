@@ -15,6 +15,7 @@ school-client = "Classroom Manager Client diegimas | Dausuva"
 school-code-signing-policy = "Classroom Manager kodo pasirašymo politika | Dausuva"
 school-support = "Classroom Manager pagalba | Dausuva"
 school-demo = "Classroom Manager demonstracinis vaizdo įrašas | Dausuva"
+school-compare-rmm = "Classroom Manager ir Tactical RMM: galimybių palyginimas | Dausuva"
 privacy = "Svetainės privatumas | Dausuva"
 
 [summary]

@@ -71,4 +71,6 @@ Some schools could use both: Veyon for screen work in the lesson, Classroom Mana
 - [Veyon 4.11.0 announcement](https://veyon.io/blog/2026/07/10/veyon-4-11-0-released/) and [release notes](https://docs.veyon.io/en/latest/admin/release-notes.html)
 - <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you](../proof/)
 
+Also compared: [Classroom Manager and Tactical RMM]({{< relref "/school/compare-tactical-rmm" >}}), the self-hosted remote management tool.
+
 [Request a demo](../request/) · [See the pricing](../pricing/) · [What it costs per computer](../market/)

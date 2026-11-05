@@ -198,4 +198,4 @@ for (const lang of ['en', 'lt']) {
   const security = page(`${prefix}${productPath(lang, 'security/')}`, lang);
   check(security.includes(lang === 'lt' ? 'atkūrimas atliekamas rankiniu būdu' : 'Recovery after a failed Client start is manual'), `${lang}: manual recovery boundary`);
 }
-console.log(`PASS: ${checks} checks; 16 product pages; ${checkedLinks} local/peer links and assets; ${domains ? 'two domains' : 'single host'} and legacy aliases.`);
+console.log(`PASS: ${checks} checks; ${slugs.length} product pages; ${checkedLinks} local/peer links and assets; ${domains ? 'two domains' : 'single host'} and legacy aliases.`);

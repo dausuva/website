@@ -91,3 +91,5 @@ assets/js/video.mjs
 content/en/school/demo.md
 content/lt/school/demo.md
 layouts/_shortcodes/video.html
+content/en/school/compare-tactical-rmm.md
+content/lt/school/compare-tactical-rmm.md
