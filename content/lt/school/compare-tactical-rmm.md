@@ -66,7 +66,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis Tactical RMM dokumentacija (pagrind
 
 Kai kurios mokyklos galėtų naudoti abi: Tactical RMM — savivaldybės kompiuterių parkui ir įspėjimams, Classroom Manager — klasei prieš mokinius. Paklauskite, ar tai tiktų jūsų aplinkai. Taip pat žr. [palyginimą su Veyon]({{< relref "/school/compare-veyon" >}}) ir [visus palyginimus]({{< relref "/school/compare" >}}).
 
-## Šaltiniai
+## Šaltiniai (perskaityti 2026 m. lapkričio 5 d.)
 
 - [Tactical RMM dokumentacija](https://docs.tacticalrmm.com/), jos [serverio diegimo vadovas](https://docs.tacticalrmm.com/install_server/) ir [licencija](https://docs.tacticalrmm.com/license/)
 - [Tactical RMM „GitHub“](https://github.com/amidaware/tacticalrmm)

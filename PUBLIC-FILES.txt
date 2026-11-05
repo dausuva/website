@@ -98,3 +98,15 @@ content/lt/school/compare-netsupport-school.md
 content/en/school/compare-veyon.md
 content/lt/school/compare-veyon.md
 layouts/_markup/render-link.html
+content/en/school/compare-faronics-insight.md
+content/lt/school/compare-faronics-insight.md
+content/en/school/compare-lanschool.md
+content/lt/school/compare-lanschool.md
+content/en/school/compare-impero-education-pro.md
+content/lt/school/compare-impero-education-pro.md
+content/en/school/compare-windows-take-a-test.md
+content/lt/school/compare-windows-take-a-test.md
+content/en/school/compare-remote-tools.md
+content/lt/school/compare-remote-tools.md
+content/en/school/compare-approaches.md
+content/lt/school/compare-approaches.md

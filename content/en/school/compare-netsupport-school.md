@@ -64,7 +64,7 @@ Checked on 5 November 2026 against NetSupport School's own website (home page, f
 
 Some schools could use both: NetSupport School for screen work in the lesson, Classroom Manager for the lab itself. Ask us whether that fits your setup. See also [all comparisons]({{< relref "/school/compare" >}}).
 
-## Sources
+## Sources (read on 5 November 2026)
 
 - [NetSupport School](https://www.netsupportschool.com/), its [features page](https://www.netsupportschool.com/features.asp) and [pricing page](https://www.netsupportschool.com/pricing/)
 - <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})

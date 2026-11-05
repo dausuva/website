@@ -77,7 +77,7 @@ Veyon's add-ons today: Internet Access Control, Auvidus (audio, microphones, web
 
 Some schools could use both: Veyon for screen work in the lesson, Classroom Manager for the lab itself. Ask us whether that fits your setup.
 
-## Sources
+## Sources (read on 5 November 2026)
 
 - [Veyon](https://veyon.io/en/), [its features](https://veyon.io/en/features/) and [add-ons](https://veyon.io/en/addons/)
 - [Veyon releases on GitHub](https://github.com/veyon/veyon/releases) and [news](https://veyon.io/blog/)

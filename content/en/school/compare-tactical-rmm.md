@@ -66,7 +66,7 @@ Checked on 5 November 2026 against the Tactical RMM documentation (home page, se
 
 Some schools could use both: Tactical RMM for the district's fleet and alerts, Classroom Manager for the lab in front of the class. Ask us whether that fits your setup. See also the [comparison with Veyon]({{< relref "/school/compare-veyon" >}}) and [all comparisons]({{< relref "/school/compare" >}}).
 
-## Sources
+## Sources (read on 5 November 2026)
 
 - [Tactical RMM documentation](https://docs.tacticalrmm.com/), its [server installation guide](https://docs.tacticalrmm.com/install_server/) and [license](https://docs.tacticalrmm.com/license/)
 - [Tactical RMM on GitHub](https://github.com/amidaware/tacticalrmm)

@@ -64,7 +64,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties NetSupport School svetaine (
 
 Kai kurios mokyklos galėtų naudoti abi: NetSupport School — ekranų darbui per pamoką, Classroom Manager — pačiai klasei. Paklauskite mūsų, ar tai tinka jūsų sąrankai. Taip pat žr. [visus palyginimus]({{< relref "/school/compare" >}}).
 
-## Šaltiniai
+## Šaltiniai (perskaityti 2026 m. lapkričio 5 d.)
 
 - [NetSupport School](https://www.netsupportschool.com/), jos [galimybių puslapis](https://www.netsupportschool.com/features.asp) ir [kainų puslapis](https://www.netsupportschool.com/pricing/)
 - <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})

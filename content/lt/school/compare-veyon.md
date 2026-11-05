@@ -77,7 +77,7 @@ Veyon priedai šiandien: Internet Access Control, Auvidus (garsas, mikrofonai, i
 
 Kai kurios mokyklos galėtų naudoti abi: Veyon — ekranų darbui per pamoką, Classroom Manager — pačiai klasei. Paklauskite mūsų, ar tai tinka jūsų sąrankai.
 
-## Šaltiniai
+## Šaltiniai (perskaityti 2026 m. lapkričio 5 d.)
 
 - [Veyon](https://veyon.io/en/), [jos galimybės](https://veyon.io/en/features/) ir [priedai](https://veyon.io/en/addons/)
 - [Veyon leidimai „GitHub“](https://github.com/veyon/veyon/releases) ir [naujienos](https://veyon.io/blog/)

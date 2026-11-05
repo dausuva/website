@@ -82,7 +82,7 @@ for (const lang of ['en', 'lt']) {
     if (slug.startsWith('compare-')) {
       const content = html.slice(html.indexOf('<main'), html.indexOf('</main>'));   // the page itself: the footer's link to our own YouTube channel is not a cited source
       const outside = tags(content, 'a').filter(t => /^https?:\/\//.test(t.href || '') && !['dausuva.com', 'www.dausuva.com', 'dausuva.lt'].includes(new URL(t.href).hostname));
-      check(outside.length > 0 && outside.every(t => /\bnofollow\b/.test(t.rel || '')), `${path}: every cited outside source is rel=nofollow`);
+      check((outside.length > 0 || slug === 'compare-approaches/') && outside.every(t => /\bnofollow\b/.test(t.rel || '')), `${path}: every cited outside source is rel=nofollow`);
     }
     check(!/<form\b|<iframe\b/i.test(html), `${path}: no forms or embeds`);
     const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
