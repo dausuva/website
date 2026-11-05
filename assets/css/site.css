@@ -777,3 +777,7 @@ table.compare{width:100%;min-width:calc(var(--cols,3) * 9.5rem);border-collapse:
   .sticky-cta .button{flex:1;padding:11px 12px;min-height:44px;gap:8px}
   body:has(.sticky-cta){padding-bottom:72px}
 }
+
+/* the Classroom Manager row of a table stands out (layouts/_markup/render-table.html) */
+.compare tbody tr.ours-row > *{background:#e4f1ea !important;font-weight:600}
+.compare tbody tr.ours-row > th{box-shadow:inset 5px 0 0 var(--green);color:var(--green)}

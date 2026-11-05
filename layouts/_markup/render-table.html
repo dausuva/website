@@ -11,7 +11,7 @@
 {{- range .THead }}<tr>{{ range $i, $c := . }}<th scope="col"{{ if eq $i $ours }} class="ours"{{ end }}{{ with $c.Alignment }} style="text-align:{{ . }}"{{ end }}>{{ $c.Text }}</th>{{ end }}</tr>{{ end -}}
 </thead>
 <tbody>
-{{- range .TBody }}<tr>{{ range $i, $c := . }}
+{{- range .TBody }}{{ $first := "" }}{{ range $k, $c0 := . }}{{ if eq $k 0 }}{{ $first = trim (plainify $c0.Text) " " }}{{ end }}{{ end }}<tr{{ if hasPrefix $first "Classroom Manager" }} class="ours-row"{{ end }}>{{ range $i, $c := . }}
 {{- $t := trim (plainify $c.Text) " " -}}
 {{- $v := "" -}}
 {{- if findRE `^(Yes|Taip|Included|Įskaičiuota|Built in|Įtaisyta)([,;:.( ]|$)` $t }}{{ $v = "yes" }}
