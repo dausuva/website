@@ -1,10 +1,10 @@
 ---
 title: "Information for school IT."
 description: "Architecture, access control, update recovery and the checks to complete before a school rollout."
-url: "/school/security/"
+url: "/classroom-manager/security/"
+aliases: ["/school/security/"]
 translationKey: "school-security"
 schoolPage: true
-aliases: ["/classroom-manager/security/"]
 ---
 ## Direct connections, powerful administration
 

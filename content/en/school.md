@@ -2,9 +2,9 @@
 title: "A calmer way to run your computer lab."
 htmlTitle: "Classroom Manager — Windows school lab management | Dausuva"
 description: "Prepare Windows classroom PCs, support lessons and maintain the lab from one console on your school network. Early access from Dausuva Labs."
-url: "/school/"
+url: "/classroom-manager/"
+aliases: ["/school/"]
 layout: "landing"
-aliases: ["/classroom-manager/"]
 translationKey: "school"
 eyebrow: "Windows lab management · Early access"
 lead: "Get the room ready. Send the lesson files. Collect the work. Classroom Manager brings everyday Windows lab tasks into one console, over your school’s own network."

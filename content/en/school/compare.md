@@ -1,10 +1,10 @@
 ---
 title: "Classroom Manager compared."
 description: "Honest side-by-side comparisons of Classroom Manager with Veyon, NetSupport School, Faronics Insight, LanSchool, Impero Education Pro, Microsoft's school PC tools, Tactical RMM and remote desktop tools: what each is built for, how they differ, and which fits a school lab."
-url: "/school/compare/"
+url: "/classroom-manager/compare/"
+aliases: ["/school/compare/"]
 translationKey: "school-compare"
 schoolPage: true
-aliases: ["/classroom-manager/compare/"]
 ---
 Several kinds of tools overlap with Classroom Manager, and schools often meet all of them: **classroom products** that show and steer student screens (Veyon, NetSupport School, Faronics Insight, LanSchool, Impero Education Pro), **Microsoft's own tools** that set PCs up and lock them down for a test, **remote management tools** that look after a fleet of computers (Tactical RMM), and **remote desktop tools** used for help desk work. Classroom Manager sits between them: the teacher's tools for a Windows lab, with the administrator's tools beside them, and deliberately no viewing or recording of student screens.
 

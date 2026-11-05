@@ -1,7 +1,8 @@
 ---
 title: "Support"
 description: "How to ask for help with Classroom Manager, what to send, and where a security problem goes."
-url: "/school/support/"
+url: "/classroom-manager/support/"
+aliases: ["/school/support/"]
 translationKey: "school-support"
 schoolPage: true
 ---

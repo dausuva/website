@@ -1,7 +1,8 @@
 ---
 title: "Demo video: a computer lab from one console"
 description: "Four and a half minutes of Classroom Manager at work: the teacher's Host and three student computers on one screen, with a narrated walk through the everyday actions."
-url: "/school/demo/"
+url: "/classroom-manager/demo/"
+aliases: ["/school/demo/"]
 translationKey: "school-demo"
 schoolPage: true
 ---

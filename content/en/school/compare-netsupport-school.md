@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and NetSupport School, side by side."
 description: "An honest comparison with NetSupport School, the commercial classroom management suite: what each is built for, what is on its feature list, how it is priced, and which fits your school."
-url: "/school/compare-netsupport-school/"
+url: "/classroom-manager/compare-netsupport-school/"
+aliases: ["/school/compare-netsupport-school/"]
 translationKey: "school-compare-netsupport"
 schoolPage: true
 nofollowExternal: true

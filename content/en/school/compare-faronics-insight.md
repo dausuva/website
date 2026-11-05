@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and Faronics Insight, side by side."
 description: "An honest comparison with Faronics Insight, the commercial classroom management suite: what each is built for, what is on its feature list, how it is deployed and priced, and which fits your school."
-url: "/school/compare-faronics-insight/"
+url: "/classroom-manager/compare-faronics-insight/"
+aliases: ["/school/compare-faronics-insight/"]
 translationKey: "school-compare-faronics"
 schoolPage: true
 nofollowExternal: true

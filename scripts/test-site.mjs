@@ -153,10 +153,11 @@ for (const lang of ['en', 'lt']) {
       }
     }
     if (slug === 'faq/') check(tags(html, 'details').length === 9, `${path}: accessible FAQ questions`);
-    // Pages added after the first release of the site have no legacy URLs.
+    // Every English page keeps its old /school/ address as a redirect to /classroom-manager/.
+    if (lang === 'en') check(page(`school/${slug}`, lang).includes(new URL(path, current.origin).href), `${path}: old /school/ address redirects here`);
+    // Pages added after the first release of the site have no other legacy URLs.
     if (slugs.indexOf(slug) < 11) {
-      const alias = page(`${prefix}classroom-manager/${slug}`, lang);
-      check(alias.includes(new URL(path, current.origin).href), `${path}: legacy alias`);
+      if (lang === 'lt') check(page(`${prefix}classroom-manager/${slug}`, lang).includes(new URL(path, current.origin).href), `${path}: legacy alias`);
       if (lang === 'lt') check(page(`${prefix}school/${slug}`, lang).includes(new URL(path, current.origin).href), `${path}: old English-slug bookmark`);
       if (domains && lang === 'lt') {
         const old = page(`lt/school/${slug}`, 'en');

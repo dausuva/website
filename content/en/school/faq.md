@@ -1,10 +1,10 @@
 ---
 title: "A few useful answers."
 description: "Common questions about Windows support, internet access, screen privacy, access keys and getting a test package."
-url: "/school/faq/"
+url: "/classroom-manager/faq/"
+aliases: ["/school/faq/"]
 translationKey: "school-faq"
 schoolPage: true
-aliases: ["/classroom-manager/faq/"]
 ---
 <details><summary>Does it need a cloud account or an internet connection?</summary><p>No cloud account or cloud control server is required. Host-to-Client control uses your school network. Optional release checks, software installers, Windows Update and runtime downloads may need internet access.</p></details>
 <details><summary>Can a teacher watch students' screens?</summary><p>No. The product does not view, capture or record student screens. It does handle administrative information and the files you choose to send or collect.</p></details>

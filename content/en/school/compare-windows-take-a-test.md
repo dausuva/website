@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and Microsoft's school PC tools, side by side."
 description: "An honest comparison with Microsoft's Set up School PCs app and the Take a Test secure assessment app for Windows: what each does, what it needs, and how a lock-down approach differs from block lists."
-url: "/school/compare-windows-take-a-test/"
+url: "/classroom-manager/compare-windows-take-a-test/"
+aliases: ["/school/compare-windows-take-a-test/"]
 translationKey: "school-compare-microsoft"
 schoolPage: true
 nofollowExternal: true

@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and remote desktop tools, side by side."
 description: "An honest comparison with general remote access tools that schools already use for help desk work: TeamViewer, AnyDesk, RustDesk and DWService. What they do, how they are run and priced, and why they are not classroom tools."
-url: "/school/compare-remote-tools/"
+url: "/classroom-manager/compare-remote-tools/"
+aliases: ["/school/compare-remote-tools/"]
 translationKey: "school-compare-remote"
 schoolPage: true
 nofollowExternal: true

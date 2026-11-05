@@ -1,10 +1,10 @@
 ---
 title: "The tools to run the room."
 description: "Classroom actions for teachers, administration tools for school IT, and clear limits on what the app does."
-url: "/school/features/"
+url: "/classroom-manager/features/"
+aliases: ["/school/features/"]
 translationKey: "school-features"
 schoolPage: true
-aliases: ["/classroom-manager/features/"]
 ---
 ## Prepare a Windows lab
 

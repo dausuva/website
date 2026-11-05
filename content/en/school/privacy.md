@@ -1,10 +1,10 @@
 ---
 title: "Privacy in the classroom, and the apps' privacy policy."
 description: "No student-screen viewing or recording. A practical explanation of the administrative data the app still handles."
-url: "/school/privacy/"
+url: "/classroom-manager/privacy/"
+aliases: ["/school/privacy/"]
 translationKey: "school-privacy"
 schoolPage: true
-aliases: ["/classroom-manager/privacy/"]
 ---
 ## What Classroom Manager does not do
 

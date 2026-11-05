@@ -28,7 +28,7 @@ Names that must never appear on the pages (lab PCs, internal hosts) are checked 
 ## Build locally
 
 On Windows, double-click **`run.bat`**. It finds Hugo on PATH or in the WinGet installation,
-starts a localhost-only preview and opens `/school/` in your default browser once ready.
+starts a localhost-only preview and opens `/classroom-manager/` in your default browser once ready.
 Keep the terminal open; press Ctrl+C to stop. Nothing is published.
 Use `run.bat -Port 1314` for another port, `run.bat -NoBrowser` to skip opening a browser,
 or `run.bat -Check` to build without starting the preview.
@@ -53,7 +53,7 @@ node scripts/test-site.mjs public https://dausuva.com/
 - `assets/images/demo-*.png`: reviewed app screenshots with synthetic demo data, copied from the
   product's help screenshot suite. The page captions identify them as illustrative, not a capture of
   the latest release.
-- `/classroom-manager/` redirects to `/school/` through Hugo `aliases` (GitHub Pages has no server
+- `/school/` redirects to `/classroom-manager/` through Hugo `aliases` (GitHub Pages has no server
   redirects).
 
 ## Product pages and review

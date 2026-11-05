@@ -1,7 +1,8 @@
 ---
 title: "The same job, done differently."
 description: "How classroom management products approach the same everyday jobs: watching screens, getting attention, sharing files, restricting the web, testing, hosting and price. Which combination of features a school lab needs, from the vendors' own pages."
-url: "/school/compare-approaches/"
+url: "/classroom-manager/compare-approaches/"
+aliases: ["/school/compare-approaches/"]
 translationKey: "school-compare-approaches"
 schoolPage: true
 nofollowExternal: true

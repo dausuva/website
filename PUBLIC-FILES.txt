@@ -110,3 +110,4 @@ content/en/school/compare-remote-tools.md
 content/lt/school/compare-remote-tools.md
 content/en/school/compare-approaches.md
 content/lt/school/compare-approaches.md
+layouts/_markup/render-table.html

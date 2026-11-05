@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and Impero Education Pro, side by side."
 description: "An honest comparison with Impero Education Pro, the classroom management and safeguarding product now sold under the Ativion name: what is stated on its page, what is not, and which fits your school."
-url: "/school/compare-impero-education-pro/"
+url: "/classroom-manager/compare-impero-education-pro/"
+aliases: ["/school/compare-impero-education-pro/"]
 translationKey: "school-compare-impero"
 schoolPage: true
 nofollowExternal: true

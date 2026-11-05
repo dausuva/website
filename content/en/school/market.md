@@ -1,10 +1,10 @@
 ---
 title: "What a lab costs to run, and what changes."
 description: "Market research and product economics for school computer labs: the options schools use today, the time a lab takes, and what Classroom Manager costs per computer."
-url: "/school/market/"
+url: "/classroom-manager/market/"
+aliases: ["/school/market/"]
 translationKey: "school-market"
 schoolPage: true
-aliases: ["/classroom-manager/market/"]
 ---
 Classroom Manager started in a school computer lab, where one person teaches informatics and also keeps twenty Windows PCs working. This page sets out what we found about how schools run their labs, what that costs, and where a flat-price tool pays for itself. **Figures marked "estimate" are our own working assumptions, not published statistics**; replace them with your school's numbers.
 

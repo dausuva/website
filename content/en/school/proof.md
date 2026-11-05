@@ -1,10 +1,10 @@
 ---
 title: "Facts you can check."
 description: "What is proven about Classroom Manager, how it was tested, what it does not claim, and how to check each point yourself before you buy."
-url: "/school/proof/"
+url: "/classroom-manager/proof/"
+aliases: ["/school/proof/"]
 translationKey: "school-proof"
 schoolPage: true
-aliases: ["/classroom-manager/proof/"]
 ---
 A school buying software for its lab should not have to take our word for it. This page lists what Classroom Manager does, how each point was shown, and how you can check it. We keep a fact-check record for every sentence on this site and update it with each release; anything that was not shown stays off the page.
 

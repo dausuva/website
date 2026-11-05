@@ -1,10 +1,10 @@
 ---
 title: "Start with one PC. Then a room."
 description: "A demo, a school-specific test package and an agreed pilot before a wider deployment."
-url: "/school/getting-started/"
+url: "/classroom-manager/getting-started/"
+aliases: ["/school/getting-started/"]
 translationKey: "school-getting-started"
 schoolPage: true
-aliases: ["/classroom-manager/getting-started/"]
 ---
 ## 1. Tell us about your school
 

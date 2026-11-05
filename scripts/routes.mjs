@@ -4,6 +4,6 @@ const lithuanian = ['', 'funkcijos/', 'saugumas/', 'privatumas/', 'pradzia/', 'k
 export function productPath(lang, slug = '') {
   const index = productSlugs.indexOf(slug);
   if (index < 0 || !['en', 'lt'].includes(lang)) throw new Error('Unknown product route');
-  return lang === 'lt' ? `mokykloms/${lithuanian[index]}` : `school/${slug}`;
+  return lang === 'lt' ? `mokykloms/${lithuanian[index]}` : `classroom-manager/${slug}`;
 }
 export const privacyPath = lang => lang === 'lt' ? 'privatumas/' : 'privacy/';

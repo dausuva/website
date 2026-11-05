@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and Veyon, side by side."
 description: "An honest feature comparison with Veyon, the free open-source classroom tool: where each one leads, what costs extra, and which fits your school."
-url: "/school/compare-veyon/"
+url: "/classroom-manager/compare-veyon/"
+aliases: ["/school/compare-veyon/"]
 translationKey: "school-compare-veyon"
 schoolPage: true
 nofollowExternal: true

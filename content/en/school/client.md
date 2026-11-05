@@ -1,7 +1,8 @@
 ---
 title: "Installing the Client on student computers"
 description: "What the school's administrator does: the lab key, the installer, silent installation, winget, and deploying it with Intune or Configuration Manager."
-url: "/school/client/"
+url: "/classroom-manager/client/"
+aliases: ["/school/client/"]
 translationKey: "school-client"
 schoolPage: true
 ---

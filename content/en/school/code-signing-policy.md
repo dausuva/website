@@ -1,7 +1,8 @@
 ---
 title: "Code signing policy"
 description: "How Classroom Manager releases are built, who approves them, what is signed, and what the programs do and do not send."
-url: "/school/code-signing-policy/"
+url: "/classroom-manager/code-signing-policy/"
+aliases: ["/school/code-signing-policy/"]
 translationKey: "school-code-signing-policy"
 schoolPage: true
 ---

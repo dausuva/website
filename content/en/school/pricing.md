@@ -2,10 +2,10 @@
 title: "Support that fits a school."
 description: "A flat first-year deployment price, optional annual support renewal, and no per-PC pricing. Start with a free demo."
 showPricing: true
-url: "/school/pricing/"
+url: "/classroom-manager/pricing/"
+aliases: ["/school/pricing/"]
 translationKey: "school-pricing"
 schoolPage: true
-aliases: ["/classroom-manager/pricing/"]
 ---
 Start with a free demonstration and, afterwards, a school-specific test package. Supported deployment includes a signed package, setup and rollout help, onboarding, and one year of updates and email/phone support.
 

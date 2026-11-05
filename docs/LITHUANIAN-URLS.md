@@ -1,17 +1,17 @@
 # Lithuanian public URLs
 
-English URLs stay unchanged. Lithuanian pages use ASCII Lithuanian slugs:
+English product pages live under `/classroom-manager/` (the old `/school/` addresses redirect there). Lithuanian pages use ASCII Lithuanian slugs:
 
-| English / old Lithuanian path | New Lithuanian path |
+| English path | Lithuanian path |
 | --- | --- |
-| `/school/` | `/mokykloms/` |
-| `/school/features/` | `/mokykloms/funkcijos/` |
-| `/school/security/` | `/mokykloms/saugumas/` |
-| `/school/privacy/` | `/mokykloms/privatumas/` |
-| `/school/getting-started/` | `/mokykloms/pradzia/` |
-| `/school/pricing/` | `/mokykloms/kainos/` |
-| `/school/faq/` | `/mokykloms/duk/` |
-| `/school/request/` | `/mokykloms/kontaktai/` |
+| `/classroom-manager/` | `/mokykloms/` |
+| `/classroom-manager/features/` | `/mokykloms/funkcijos/` |
+| `/classroom-manager/security/` | `/mokykloms/saugumas/` |
+| `/classroom-manager/privacy/` | `/mokykloms/privatumas/` |
+| `/classroom-manager/getting-started/` | `/mokykloms/pradzia/` |
+| `/classroom-manager/pricing/` | `/mokykloms/kainos/` |
+| `/classroom-manager/faq/` | `/mokykloms/duk/` |
+| `/classroom-manager/request/` | `/mokykloms/kontaktai/` |
 | `/privacy/` | `/privatumas/` |
 
 On the split domains these are native `https://dausuva.lt/` URLs. The legacy

@@ -1,0 +1,25 @@
+{{- /*
+  Markdown tables, drawn as comparison tables: a scrolling frame, a header row, the first column as row labels, the "Classroom Manager" column highlighted,
+  and a colour mark on each cell that starts with a plain answer (Yes / No / Not stated), so a long table can be scanned. The text of a cell is never changed.
+*/ -}}
+{{- $cols := 0 -}}
+{{- $ours := -1 -}}
+{{- range .THead }}{{ range $i, $c := . }}{{ $cols = add $i 1 }}{{ if and (lt $ours 0) (findRE `Classroom Manager` (plainify $c.Text)) }}{{ $ours = $i }}{{ end }}{{ end }}{{ end -}}
+<div class="table-wrap{{ if gt $cols 6 }} wide{{ end }}" role="region" tabindex="0" aria-label="{{ with .Page.Title }}{{ . }}{{ end }}">
+<table class="compare" style="--cols:{{ $cols }}">
+<thead>
+{{- range .THead }}<tr>{{ range $i, $c := . }}<th scope="col"{{ if eq $i $ours }} class="ours"{{ end }}{{ with $c.Alignment }} style="text-align:{{ . }}"{{ end }}>{{ $c.Text }}</th>{{ end }}</tr>{{ end -}}
+</thead>
+<tbody>
+{{- range .TBody }}<tr>{{ range $i, $c := . }}
+{{- $t := trim (plainify $c.Text) " " -}}
+{{- $v := "" -}}
+{{- if findRE `^(Yes|Taip|Included|Įskaičiuota|Built in|Įtaisyta)([,;:.( ]|$)` $t }}{{ $v = "yes" }}
+{{- else if findRE `^(No|Ne|Deliberately|Sąmoningai)([,;:.( ]|$)` $t }}{{ $v = "no" }}
+{{- else if findRE `^(Not |Nėra |Nenurodyta|Perskaityt|—|Nenustatyta)` $t }}{{ $v = "unknown" }}{{ end -}}
+{{- if eq $i 0 }}<th scope="row"{{ if eq $i $ours }} class="ours"{{ end }}>{{ $c.Text }}</th>
+{{- else }}<td{{ with $v }} data-v="{{ . }}"{{ end }}{{ if eq $i $ours }} class="ours"{{ end }}{{ with $c.Alignment }} style="text-align:{{ . }}"{{ end }}>{{ $c.Text }}</td>{{ end -}}
+{{ end }}</tr>{{ end -}}
+</tbody>
+</table>
+</div>

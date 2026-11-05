@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and Tactical RMM, side by side."
 description: "An honest comparison with Tactical RMM, the free self-hosted remote monitoring and management tool: what each is built for, what it takes to run, what costs extra, and which fits a school lab."
-url: "/school/compare-tactical-rmm/"
+url: "/classroom-manager/compare-tactical-rmm/"
+aliases: ["/school/compare-tactical-rmm/"]
 translationKey: "school-compare-rmm"
 schoolPage: true
 nofollowExternal: true

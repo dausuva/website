@@ -1,7 +1,8 @@
 ---
 title: "Classroom Manager and LanSchool, side by side."
 description: "An honest comparison with LanSchool, the classroom management software backed by Lenovo: its locally hosted Classic and cloud Air editions, what is on its feature list, how it is priced, and which fits your school."
-url: "/school/compare-lanschool/"
+url: "/classroom-manager/compare-lanschool/"
+aliases: ["/school/compare-lanschool/"]
 translationKey: "school-compare-lanschool"
 schoolPage: true
 nofollowExternal: true

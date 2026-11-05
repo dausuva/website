@@ -1,7 +1,8 @@
 ---
 title: "Download Classroom Manager"
 description: "The teacher console and the student-PC Client for Windows 10 and 11: where to get them, how to check them, and how the Client is installed."
-url: "/school/download/"
+url: "/classroom-manager/download/"
+aliases: ["/school/download/"]
 translationKey: "school-download"
 schoolPage: true
 ---

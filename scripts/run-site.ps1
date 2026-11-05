@@ -34,7 +34,7 @@ try {
         $websiteExitCode = $LASTEXITCODE
     }
     else {
-        $url = "http://localhost:$Port/school/"
+        $url = "http://localhost:$Port/classroom-manager/"
         Write-Host "Local website: $url"
         Write-Host "Lithuanian: http://localhost:$Port/lt/mokykloms/"
         Write-Host 'Keep this window open. Press Ctrl+C to stop. Changes reload automatically.'
