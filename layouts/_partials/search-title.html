@@ -4,6 +4,8 @@
   {{- $title = $copy.titles.home -}}
 {{- else if .Params.htmlTitle -}}
   {{- $title = .Params.htmlTitle -}}
+{{- else if eq .Layout "tutorial-lesson" -}}
+  {{- $title = printf "%s | Classroom Manager | %s" .Title site.Title -}}
 {{- else if index $copy.titles .TranslationKey -}}
   {{- $title = index $copy.titles .TranslationKey -}}
 {{- else -}}

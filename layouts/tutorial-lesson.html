@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ $chapter := index hugo.Data.tutorial.chapters (int .Params.tutorialChapter) }}
+{{ $copy := index $chapter site.Language.Lang }}
+<article class="wrap section prose tutorial-lesson" data-tutorial-chapter="{{ int $chapter.number }}">
+  <p class="breadcrumbs"><a href="{{ partial "page-url.html" "/school/" }}">Classroom Manager</a> / <a href="{{ partial "page-url.html" "/school/tutorial" }}">{{ T "tutorial" }}</a> / {{ T "chapter" }} {{ int $chapter.number }}</p>
+  <p class="eyebrow">{{ T "chapter" }} {{ printf "%02d" (int $chapter.number) }} · {{ partial "tutorial-time.html" $chapter.durationSeconds }} · {{ T "englishVoice" }}</p>
+  <h1>{{ .Title }}</h1>
+  <p class="lead">{{ .Description }}</p>
+  {{ if $chapter.youtubeId }}
+    {{ partial "video-player.html" (dict "id" $chapter.youtubeId "title" $copy.title "poster" (printf "images/social-%s.png" site.Language.Lang)) }}
+  {{ else }}
+    <div class="tutorial-video-pending" role="status"><strong>{{ T "videoComingSoon" }}</strong><p>{{ T "videoPendingNote" }}</p></div>
+  {{ end }}
+  <h2>{{ T "aboutLesson" }}</h2>
+  {{ range $copy.paragraphs }}<p>{{ . }}</p>{{ end }}
+  <h2>{{ T "youWillLearn" }}</h2>
+  <ul>{{ range $copy.outcomes }}<li>{{ . }}</li>{{ end }}</ul>
+  <h2>{{ T "lessonTimestamps" }}</h2>
+  <ol class="video-chapters tutorial-timestamps">
+  {{ range $chapter.timestamps }}
+    <li id="moment-{{ int .seconds }}">{{ if $chapter.youtubeId }}<a href="https://youtu.be/{{ $chapter.youtubeId }}?t={{ int .seconds }}" data-start="{{ int .seconds }}"><span class="time">{{ partial "tutorial-time.html" .seconds }}</span>{{ index . site.Language.Lang }}</a>{{ else }}<span class="time">{{ partial "tutorial-time.html" .seconds }}</span>{{ index . site.Language.Lang }}{{ end }}</li>
+  {{ end }}
+  </ol>
+  <p class="note">{{ T "tutorialRecordingNote" }}</p>
+  {{ partial "tutorial-nav.html" . }}
+  <details class="tutorial-outline"><summary>{{ T "allLessons" }}</summary><ol start="0">
+    {{ range hugo.Data.tutorial.chapters }}{{ $item := index . site.Language.Lang }}<li><a href="{{ partial "page-url.html" (printf "/school/tutorial/%s" .slug) }}"{{ if eq (int .number) (int $chapter.number) }} aria-current="page"{{ end }}>{{ $item.title }}</a></li>{{ end }}
+  </ol></details>
+</article>
+{{ end }}

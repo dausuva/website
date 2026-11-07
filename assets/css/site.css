@@ -797,3 +797,26 @@ table.compare{width:100%;min-width:calc(var(--cols,3) * 9.5rem);border-collapse:
 .faq-list summary::after{content:"+";color:var(--green);font-size:1.3rem;line-height:1}
 .faq-list details[open] summary::after{content:"\2212"}
 .faq-list p{margin:.7rem 0 .2rem;color:var(--muted);max-width:46rem}
+/* Tutorial course and linked lessons */
+.tutorial-intro{max-width:850px;margin:0 0 3rem}
+.tutorial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;list-style:none;padding:0;margin:1.5rem 0 2rem}
+.tutorial-grid>li{min-width:0}
+.tutorial-card{display:flex;flex-direction:column;height:100%;padding:26px;background:var(--paper);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);box-shadow:0 8px 24px #182c3506}
+.tutorial-card:hover,.tutorial-card:focus-visible{border-color:var(--green);background:#f1f6ef}
+.tutorial-card-meta{display:flex;justify-content:space-between;gap:1rem;color:var(--green);font-size:.8rem;font-weight:700;font-variant-numeric:tabular-nums;text-transform:uppercase;letter-spacing:.06em}
+.tutorial-card h3{font-size:1.25rem;line-height:1.35;margin:.8rem 0 .5rem}
+.tutorial-card p{font-size:.95rem;color:var(--muted);margin:0 0 1.2rem}
+.tutorial-card-action{margin-top:auto;font-weight:600;color:var(--green)}
+.tutorial-lesson{max-width:960px}
+.tutorial-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:2.4rem 0}
+.tutorial-nav a{display:flex;flex-direction:column;gap:8px;padding:22px;border:1px solid var(--line);border-radius:10px;background:var(--paper);text-decoration:none}
+.tutorial-nav a:hover{background:var(--pale)}
+.tutorial-nav small{color:var(--muted)}
+.tutorial-nav strong{line-height:1.4}
+.tutorial-video-pending{display:flex;flex-direction:column;justify-content:center;aspect-ratio:16/9;padding:2rem;background:linear-gradient(130deg,#17463c,#226456);color:#fff;border-radius:10px;text-align:center}
+.tutorial-video-pending strong{font:400 clamp(1.5rem,3vw,2.4rem)/1.2 Georgia,serif}
+.tutorial-video-pending p{max-width:35rem;margin:1rem auto 0;color:#e3efe9}
+.tutorial-timestamps li{padding:.45rem 0;scroll-margin-top:6rem}
+.tutorial-outline{margin:1.5rem 0}
+.tutorial-outline [aria-current=page]{font-weight:700}
+@media(max-width:700px){.tutorial-grid,.tutorial-nav{grid-template-columns:1fr}.tutorial-card{padding:22px}.tutorial-video-pending{aspect-ratio:auto;min-height:220px}}

@@ -1,0 +1,983 @@
+{
+  "version": 1,
+  "chapters": [
+    {
+      "number": 0,
+      "slug": "welcome",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 123.171,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "What Classroom Manager is",
+          "lt": "Kas yra Classroom Manager"
+        },
+        {
+          "seconds": 35,
+          "en": "The pieces, and how they talk",
+          "lt": "Programos dalys ir jų ryšys"
+        },
+        {
+          "seconds": 73,
+          "en": "What it does, and what it deliberately does not",
+          "lt": "Galimybės ir ribos"
+        },
+        {
+          "seconds": 101,
+          "en": "How this course works",
+          "lt": "Kaip naudotis kursu"
+        }
+      ],
+      "en": {
+        "title": "Welcome: how Classroom Manager works",
+        "description": "Start the Classroom Manager course: understand the teacher’s Host, the student Client and the everyday jobs they handle on a Windows computer lab.",
+        "paragraphs": [
+          "Classroom Manager brings common lesson and computer-lab tasks into the teacher’s Host window. This opening lesson explains the relationship between the Host and the Client installed on each managed Windows computer, before you follow the practical chapters.",
+          "See which jobs belong to teaching, files, restrictions and administration, and how the rest of the course is organized. The student screens visible in these training videos were captured separately for the demonstration; screen viewing and recording are not Classroom Manager features."
+        ],
+        "outcomes": [
+          "Recognize the Host and Client roles",
+          "Understand the local-network connection",
+          "Choose a chapter for your teaching or IT task"
+        ],
+        "url": "/classroom-manager/tutorial/welcome/"
+      },
+      "lt": {
+        "title": "Įvadas: kaip veikia Classroom Manager",
+        "description": "Pradėkite Classroom Manager kursą: susipažinkite su mokytojo Host, mokinio Client ir kasdienėmis Windows kompiuterių klasės užduotimis.",
+        "paragraphs": [
+          "Classroom Manager leidžia mokytojui atlikti įprastas pamokos ir kompiuterių klasės užduotis viename Host lange. Pirmojoje pamokoje paaiškinamas Host ryšys su kiekviename valdomame Windows kompiuteryje įdiegta Client programa.",
+          "Sužinosite, kurie skyriai skirti mokymui, failams, ribojimams ir administravimui, ir kaip naudotis likusiu kursu. Mokinių ekranai šiems mokomiesiems vaizdo įrašams užfiksuoti atskirai; Classroom Manager neturi ekranų peržiūros ar įrašymo funkcijos."
+        ],
+        "outcomes": [
+          "Atskirti Host ir Client paskirtį",
+          "Suprasti ryšį vietiniame tinkle",
+          "Pasirinkti skyrių mokymo arba IT užduočiai"
+        ],
+        "url": "/mokykloms/pamokos/ivadas/"
+      }
+    },
+    {
+      "number": 1,
+      "slug": "first-connection",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 249.848,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "The first start",
+          "lt": "Pirmasis paleidimas"
+        },
+        {
+          "seconds": 39,
+          "en": "The Setup assistant, step 1: the key",
+          "lt": "Sąrankos vedlys: raktas"
+        },
+        {
+          "seconds": 68,
+          "en": "Step 2: find the computers",
+          "lt": "Kompiuterių paieška"
+        },
+        {
+          "seconds": 98,
+          "en": "Keep the key you have, and the ready message",
+          "lt": "Esamas raktas ir parengties pranešimas"
+        },
+        {
+          "seconds": 119,
+          "en": "Scan network and Add computer",
+          "lt": "Paieška tinkle ir kompiuterio pridėjimas"
+        },
+        {
+          "seconds": 141,
+          "en": "Approve certificate",
+          "lt": "Sertifikato informacija"
+        },
+        {
+          "seconds": 165,
+          "en": "Rooms and names",
+          "lt": "Klasės ir pavadinimai"
+        },
+        {
+          "seconds": 210,
+          "en": "Tidy the list: remove, export, import, refresh",
+          "lt": "Sąrašo tvarkymas, eksportas ir importas"
+        }
+      ],
+      "en": {
+        "title": "First connection: setup, computers and rooms",
+        "description": "Walk through first-start setup, lab keys, discovery, certificate information and rooms before using Classroom Manager with your computers.",
+        "paragraphs": [
+          "Follow the first-start assistant and see where the Host keeps the lab key and computer list. This lesson covers network discovery, adding a computer by name, organizing rooms and keeping the list useful as your lab changes.",
+          "The recording uses already paired test computers. Key entry and certificate approval are explained through previews and existing trust information; the lesson does not replace keys or approve a new computer. Export and import dialogs show where list maintenance fits into the workflow."
+        ],
+        "outcomes": [
+          "Find the setup assistant and connection settings",
+          "Add and organize computers by room",
+          "Understand certificate checks and computer-list maintenance"
+        ],
+        "url": "/classroom-manager/tutorial/first-connection/"
+      },
+      "lt": {
+        "title": "Pirmasis prisijungimas: sąranka, kompiuteriai ir klasės",
+        "description": "Peržiūrėkite pradinę sąranką, klasės raktus, paiešką tinkle, sertifikato informaciją ir kompiuterių grupavimą Classroom Manager programoje.",
+        "paragraphs": [
+          "Sekite pradinės sąrankos vedlį ir sužinokite, kur Host saugo klasės raktą bei kompiuterių sąrašą. Pamokoje rodoma paieška tinkle, kompiuterio pridėjimas pagal vardą, grupavimas į klases ir sąrašo priežiūra.",
+          "Įraše naudojami jau susieti bandomieji kompiuteriai. Rakto įvedimas ir sertifikato patvirtinimas paaiškinami peržiūrint dialogus ir esamą pasitikėjimo informaciją; raktai nekeičiami, naujas kompiuteris nepatvirtinamas. Taip pat parodomi sąrašo eksporto ir importo dialogai."
+        ],
+        "outcomes": [
+          "Rasti sąrankos vedlį ir ryšio nuostatas",
+          "Pridėti kompiuterius ir grupuoti juos į klases",
+          "Suprasti sertifikato tikrinimą ir sąrašo priežiūrą"
+        ],
+        "url": "/mokykloms/pamokos/pirmasis-prisijungimas/"
+      }
+    },
+    {
+      "number": 2,
+      "slug": "main-window",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 142.2,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Host overview and room selection",
+          "lt": "Host apžvalga ir klasės pasirinkimas"
+        },
+        {
+          "seconds": 21,
+          "en": "Toolbar sections",
+          "lt": "Įrankių skyriai"
+        },
+        {
+          "seconds": 66,
+          "en": "Computer list and selection",
+          "lt": "Kompiuterių sąrašas ir pasirinkimas"
+        },
+        {
+          "seconds": 90,
+          "en": "Filters and columns",
+          "lt": "Filtrai ir stulpeliai"
+        },
+        {
+          "seconds": 109,
+          "en": "Operations and activity log",
+          "lt": "Operacijos ir veiklos žurnalas"
+        },
+        {
+          "seconds": 125,
+          "en": "Command search",
+          "lt": "Komandų paieška"
+        }
+      ],
+      "en": {
+        "title": "The main window: tabs, selection and operations",
+        "description": "Find your way around the Classroom Manager Host: rooms, toolbar tabs, computer selection, filters, operations and the activity log.",
+        "paragraphs": [
+          "Take a guided tour of the Host window before sending actions to student computers. Follow the room selector and the main toolbar sections, then see how the computer table, selection buttons and filters determine the targets of an action.",
+          "The lesson also points out table columns, operation progress, the activity log and command search. These are the places to return to when you need to confirm which computers were selected and what happened after a command."
+        ],
+        "outcomes": [
+          "Navigate the Host toolbar and room selector",
+          "Select and filter the computers you want to manage",
+          "Read operation progress and find the activity log"
+        ],
+        "url": "/classroom-manager/tutorial/main-window/"
+      },
+      "lt": {
+        "title": "Pagrindinis langas: skirtukai, pasirinkimas ir operacijos",
+        "description": "Susipažinkite su Classroom Manager Host langu: klasėmis, įrankių skirtukais, kompiuterių pasirinkimu, filtrais, operacijomis ir veiklos žurnalu.",
+        "paragraphs": [
+          "Prieš siųsdami veiksmus mokinių kompiuteriams apžiūrėkite Host langą. Pamokoje pristatomas klasės pasirinkimas ir pagrindiniai įrankių skyriai, tada paaiškinama, kaip kompiuterių lentelė, pasirinkimo mygtukai ir filtrai nustato veiksmo gavėjus.",
+          "Taip pat parodomi lentelės stulpeliai, operacijų eiga, veiklos žurnalas ir komandų paieška. Čia galite patikrinti, kurie kompiuteriai buvo pasirinkti ir koks buvo išsiųstos komandos rezultatas."
+        ],
+        "outcomes": [
+          "Naudotis Host skirtukais ir klasės pasirinkimu",
+          "Pasirinkti ir filtruoti valdomus kompiuterius",
+          "Stebėti operacijų eigą ir rasti veiklos žurnalą"
+        ],
+        "url": "/mokykloms/pamokos/pagrindinis-langas/"
+      }
+    },
+    {
+      "number": 3,
+      "slug": "teaching",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 280.44,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "The quick message",
+          "lt": "Greitoji žinutė"
+        },
+        {
+          "seconds": 53,
+          "en": "A message you write",
+          "lt": "Pasirinktinė ir laikina žinutė"
+        },
+        {
+          "seconds": 96,
+          "en": "Lock and unlock",
+          "lt": "Užrakinimas ir atrakinimas"
+        },
+        {
+          "seconds": 139,
+          "en": "Open a website on every screen",
+          "lt": "Tinklalapio atvėrimas"
+        },
+        {
+          "seconds": 173,
+          "en": "Open a program",
+          "lt": "Programos paleidimas"
+        },
+        {
+          "seconds": 201,
+          "en": "Custom quick actions",
+          "lt": "Pasirinktiniai greitieji veiksmai"
+        },
+        {
+          "seconds": 233,
+          "en": "Arrange the toolbar",
+          "lt": "Įrankių juostos tvarkymas"
+        }
+      ],
+      "en": {
+        "title": "Teaching: messages, screen locks and quick actions",
+        "description": "Send lesson messages, lock and unlock student screens, open a website or program, and organize quick actions in Classroom Manager.",
+        "paragraphs": [
+          "See everyday teaching actions from the Host alongside their effects on student computers. Start with a saved quick message, write a custom message with an optional timeout, and use a temporary screen lock to bring attention back to the lesson.",
+          "Continue with opening a class website and a program, then build a reusable quick action and arrange the toolbar. The recording returns the student computers from the temporary lesson effects so you can see both the action and its reversal."
+        ],
+        "outcomes": [
+          "Send saved, custom and timed messages",
+          "Lock and unlock student screens",
+          "Open lesson resources and customize quick actions"
+        ],
+        "url": "/classroom-manager/tutorial/teaching/"
+      },
+      "lt": {
+        "title": "Pamokos valdymas: žinutės, užrakinimas ir greitieji veiksmai",
+        "description": "Siųskite pamokos žinutes, užrakinkite ir atrakinkite mokinių ekranus, atverkite tinklalapį ar programą ir tvarkykite greituosius veiksmus.",
+        "paragraphs": [
+          "Stebėkite kasdienius mokytojo veiksmus Host lange ir jų poveikį mokinių kompiuteriams. Pradedama išsaugota žinute, tada rašoma pasirinktinė žinutė su užvėrimo laiku ir laikinai užrakinami ekranai, kad mokiniai sutelktų dėmesį į pamoką.",
+          "Toliau atveriamas pamokos tinklalapis bei programa, sukuriamas pakartotinai naudojamas greitasis veiksmas ir sutvarkoma įrankių juosta. Laikini pamokos veiksmai atšaukiami, todėl matote ir jų poveikį, ir grįžimą į įprastą darbą."
+        ],
+        "outcomes": [
+          "Siųsti išsaugotas, pasirinktines ir laikinas žinutes",
+          "Užrakinti ir atrakinti mokinių ekranus",
+          "Atverti pamokos išteklius ir tvarkyti greituosius veiksmus"
+        ],
+        "url": "/mokykloms/pamokos/pamokos-valdymas/"
+      }
+    },
+    {
+      "number": 4,
+      "slug": "files",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 279.629,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Send a file",
+          "lt": "Failo siuntimas"
+        },
+        {
+          "seconds": 58,
+          "en": "A subfolder, and overwriting",
+          "lt": "Poaplankiai ir failų perrašymas"
+        },
+        {
+          "seconds": 99,
+          "en": "Transfer history and undo",
+          "lt": "Siuntimų istorija ir atšaukimas"
+        },
+        {
+          "seconds": 127,
+          "en": "Collect files",
+          "lt": "Failų surinkimas"
+        },
+        {
+          "seconds": 164,
+          "en": "Recent files",
+          "lt": "Naujausi failai"
+        },
+        {
+          "seconds": 209,
+          "en": "Browse files",
+          "lt": "Failų ir aplankų naršymas"
+        }
+      ],
+      "en": {
+        "title": "Files: send, collect, find recent work and undo transfers",
+        "description": "Learn Classroom Manager file workflows: send lesson material, collect student answers, inspect recent files, browse folders and undo a transfer.",
+        "paragraphs": [
+          "Follow a lesson file from the teacher’s computer to the selected student computers, then see how destination subfolders and overwrite options affect delivery. Transfer history shows the results and the undo workflow for the known demonstration file.",
+          "The second half collects an answer file, explores Recent files and opens the remote file browser. You will see how watched folders and file types help find work, and how folder creation, renaming and removal fit together. Examples use dedicated course files and empty folders."
+        ],
+        "outcomes": [
+          "Send materials and inspect transfer history",
+          "Collect answers and search recent files",
+          "Browse student folders and understand transfer undo"
+        ],
+        "url": "/classroom-manager/tutorial/files/"
+      },
+      "lt": {
+        "title": "Failai: siuntimas, surinkimas, naujausi darbai ir atšaukimas",
+        "description": "Išmokite siųsti pamokos medžiagą, surinkti mokinių atsakymus, rasti naujausius failus, naršyti aplankus ir atšaukti siuntimą.",
+        "paragraphs": [
+          "Sekite pamokos failo kelią iš mokytojo kompiuterio į pasirinktus mokinių kompiuterius. Sužinokite, kaip siuntimą keičia poaplankiai ir perrašymo nuostatos. Siuntimų istorijoje peržiūrimi rezultatai ir atšaukiamas žinomo demonstracinio failo siuntimas.",
+          "Antroje dalyje surenkamas atsakymo failas, atveriami naujausi failai ir nuotolinė failų naršyklė. Rodoma, kaip stebimi aplankai ir failų tipai padeda rasti darbus, taip pat aplankų kūrimas, pervadinimas ir šalinimas. Naudojami atskiri kurso failai ir tušti aplankai."
+        ],
+        "outcomes": [
+          "Siųsti medžiagą ir peržiūrėti siuntimų istoriją",
+          "Surinkti atsakymus ir rasti naujausius failus",
+          "Naršyti mokinių aplankus ir suprasti siuntimo atšaukimą"
+        ],
+        "url": "/mokykloms/pamokos/failai/"
+      }
+    },
+    {
+      "number": 5,
+      "slug": "restrictions-exams",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 219.043,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "The exam list",
+          "lt": "Egzamino nuostatos"
+        },
+        {
+          "seconds": 46,
+          "en": "Turn Exam mode on and off",
+          "lt": "Exam mode įjungimas ir išjungimas"
+        },
+        {
+          "seconds": 81,
+          "en": "Block websites",
+          "lt": "Svetainių blokavimas"
+        },
+        {
+          "seconds": 127,
+          "en": "Websites in use",
+          "lt": "Naudojamos svetainės"
+        },
+        {
+          "seconds": 144,
+          "en": "Website drafts and blocklist sync",
+          "lt": "Juodraščiai ir blokavimo sąrašo sinchronizavimas"
+        },
+        {
+          "seconds": 191,
+          "en": "Block apps",
+          "lt": "Programų blokavimo peržiūra"
+        }
+      ],
+      "en": {
+        "title": "Restrictions and exams: Exam mode, websites and apps",
+        "description": "Explore Exam mode, website blocking, websites in use, draft blocklists and application restrictions in Classroom Manager.",
+        "paragraphs": [
+          "Review the Exam mode settings and watch a temporary exam session switch on and off on the student computers. The lesson separates the exam overlay from permanent website entries so you can understand which setting you are changing.",
+          "Next, inspect website blocking, Websites in use and draft entries before previewing blocklist synchronization and application blocking. These controls support a supervised lesson; they are not a locked-down operating-system security boundary. The examples use temporary fixtures and restore the lesson state."
+        ],
+        "outcomes": [
+          "Review and toggle Exam mode",
+          "Inspect website activity and prepare blocklist drafts",
+          "Find application blocking and distinguish preview from apply"
+        ],
+        "url": "/classroom-manager/tutorial/restrictions-exams/"
+      },
+      "lt": {
+        "title": "Ribojimai ir egzaminai: Exam mode, svetainės ir programos",
+        "description": "Susipažinkite su Exam mode, svetainių blokavimu, naudojamomis svetainėmis, juodraščiais ir programų ribojimais.",
+        "paragraphs": [
+          "Peržiūrėkite Exam mode nuostatas ir stebėkite, kaip mokinių kompiuteriuose įjungiamas bei išjungiamas laikinas egzamino režimas. Pamokoje atskiriami egzamino ribojimai ir nuolatiniai svetainių sąrašo įrašai.",
+          "Toliau peržiūrimas svetainių blokavimas, naudojamos svetainės ir juodraščiai, o blokavimo sąrašo sinchronizavimas bei programų ribojimas parodomi kaip peržiūra. Šios priemonės padeda prižiūrėti pamoką, tačiau nėra griežta operacinės sistemos saugumo riba. Demonstraciniai laikini pakeitimai pašalinami."
+        ],
+        "outcomes": [
+          "Peržiūrėti ir įjungti bei išjungti Exam mode",
+          "Peržiūrėti svetaines ir parengti blokavimo juodraščius",
+          "Rasti programų ribojimus ir atskirti peržiūrą nuo taikymo"
+        ],
+        "url": "/mokykloms/pamokos/ribojimai-ir-egzaminai/"
+      }
+    },
+    {
+      "number": 6,
+      "slug": "software",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 242.168,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "The Install / uninstall dialog",
+          "lt": "Diegimo ir šalinimo dialogas"
+        },
+        {
+          "seconds": 46,
+          "en": "Preview a winget installation",
+          "lt": "winget diegimo peržiūra"
+        },
+        {
+          "seconds": 75,
+          "en": "Programs: see and uninstall",
+          "lt": "Įdiegtos programos ir šalinimo peržiūra"
+        },
+        {
+          "seconds": 110,
+          "en": "Processes",
+          "lt": "Procesai"
+        },
+        {
+          "seconds": 134,
+          "en": "Run a command",
+          "lt": "Tik skaitanti komanda"
+        },
+        {
+          "seconds": 175,
+          "en": "Browsers and profiles",
+          "lt": "Naršyklės ir profiliai"
+        },
+        {
+          "seconds": 210,
+          "en": "Registry file and MSI, in short",
+          "lt": "Registro failo ir MSI peržiūra"
+        }
+      ],
+      "en": {
+        "title": "Software: installation options, programs and processes",
+        "description": "Review installation options, installed programs, running processes, browser profiles and a read-only command in Classroom Manager.",
+        "paragraphs": [
+          "Tour the software tools without installing or removing a package. The installer dialog introduces file-based and winget options, while Programs and Processes show the difference between software inventory and what is running right now.",
+          "A read-only hostname command demonstrates command output on the selected computers. The lesson then opens browser profiles for one computer and previews registry-file and MSI workflows. Installation, removal and registry changes are shown as dialog previews and cancelled."
+        ],
+        "outcomes": [
+          "Distinguish installed programs from running processes",
+          "Understand installer and winget options",
+          "Read command output and inspect a single computer’s browser profiles"
+        ],
+        "url": "/classroom-manager/tutorial/software/"
+      },
+      "lt": {
+        "title": "Programinė įranga: diegimas, programos ir procesai",
+        "description": "Peržiūrėkite diegimo parinktis, įdiegtas programas, veikiančius procesus, naršyklių profilius ir tik skaitančią komandą.",
+        "paragraphs": [
+          "Apžiūrėkite programinės įrangos priemones nieko neįdiegdami ir nešalindami. Diegimo dialoge pristatomi failų ir winget variantai, o programų bei procesų sąrašai padeda atskirti įdiegtą programinę įrangą nuo šiuo metu veikiančių procesų.",
+          "Tik skaitanti hostname komanda parodo pasirinktų kompiuterių atsakymus. Toliau atveriami vieno kompiuterio naršyklės profiliai ir peržiūrimi registro failo bei MSI dialogai. Diegimas, šalinimas ir registro keitimas nevykdomi."
+        ],
+        "outcomes": [
+          "Atskirti įdiegtas programas ir veikiančius procesus",
+          "Suprasti diegimo failų ir winget parinktis",
+          "Skaityti komandos atsakymą ir peržiūrėti naršyklės profilius"
+        ],
+        "url": "/mokykloms/pamokos/programine-iranga/"
+      }
+    },
+    {
+      "number": 7,
+      "slug": "power-time-accounts",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 240.675,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Wake up",
+          "lt": "Kompiuterių pažadinimas"
+        },
+        {
+          "seconds": 36,
+          "en": "Preview delayed restart; cancel before sending",
+          "lt": "Atidėto paleidimo iš naujo peržiūra"
+        },
+        {
+          "seconds": 67,
+          "en": "Sync time",
+          "lt": "Laiko sinchronizavimas"
+        },
+        {
+          "seconds": 87,
+          "en": "Windows Update",
+          "lt": "Windows Update"
+        },
+        {
+          "seconds": 137,
+          "en": "Automatic sign-in: explanation only",
+          "lt": "Automatinio prisijungimo paaiškinimas"
+        },
+        {
+          "seconds": 155,
+          "en": "Accounts: local, signed-in and app accounts",
+          "lt": "Paskyrų peržiūra"
+        },
+        {
+          "seconds": 219,
+          "en": "Export inventory",
+          "lt": "Inventoriaus eksportas"
+        }
+      ],
+      "en": {
+        "title": "Power, time and accounts: Windows lab maintenance",
+        "description": "Find wake, restart, time, update and account tools, then export hardware and software inventory from Classroom Manager.",
+        "paragraphs": [
+          "This lesson brings together the Windows maintenance tasks that sit around the teaching workflow. Find Wake-on-LAN, review the delayed restart dialog, and inspect time synchronization and Windows Update tools.",
+          "Automatic sign-in is explained without entering credentials. Account views and account-creation options are inspected, and the lesson finishes with a real hardware and software inventory export to CSV. Restart, update installation and account creation are not executed in this recording."
+        ],
+        "outcomes": [
+          "Locate power, time and Windows Update controls",
+          "Recognize local, signed-in and application account views",
+          "Export hardware and software inventory as CSV"
+        ],
+        "url": "/classroom-manager/tutorial/power-time-accounts/"
+      },
+      "lt": {
+        "title": "Maitinimas, laikas ir paskyros: Windows klasės priežiūra",
+        "description": "Raskite pažadinimo, paleidimo iš naujo, laiko, naujinimo ir paskyrų priemones bei eksportuokite įrangos ir programų inventorių.",
+        "paragraphs": [
+          "Pamokoje pristatomos Windows priežiūros užduotys, papildančios mokytojo darbą. Raskite Wake-on-LAN, peržiūrėkite atidėto paleidimo iš naujo dialogą, laiko sinchronizavimą ir Windows Update priemones.",
+          "Automatinis prisijungimas paaiškinamas neįvedant prisijungimo duomenų. Peržiūrimos paskyros ir jų kūrimo parinktys, o pabaigoje iš tikrųjų eksportuojamas aparatinės bei programinės įrangos inventorius į CSV. Kompiuteriai nepaleidžiami iš naujo, naujinimai nediegiami, paskyros nekuriamos."
+        ],
+        "outcomes": [
+          "Rasti maitinimo, laiko ir Windows Update priemones",
+          "Atskirti vietines, prisijungusias ir programų paskyras",
+          "Eksportuoti aparatinės ir programinės įrangos inventorių į CSV"
+        ],
+        "url": "/mokykloms/pamokos/maitinimas-laikas-paskyros/"
+      }
+    },
+    {
+      "number": 8,
+      "slug": "desktop-appearance",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 259.235,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Set a wallpaper",
+          "lt": "Darbalaukio fono pasirinkimas"
+        },
+        {
+          "seconds": 57,
+          "en": "Managed and recent wallpapers",
+          "lt": "Valdomi ir naujausi fonai"
+        },
+        {
+          "seconds": 85,
+          "en": "Appearance settings and presets",
+          "lt": "Išvaizdos nuostatos ir rinkiniai"
+        },
+        {
+          "seconds": 110,
+          "en": "Windows themes",
+          "lt": "Windows temos"
+        },
+        {
+          "seconds": 139,
+          "en": "Windows appearance and language",
+          "lt": "Windows išvaizda ir kalba"
+        },
+        {
+          "seconds": 159,
+          "en": "Screen saver",
+          "lt": "Ekrano užsklanda"
+        },
+        {
+          "seconds": 184,
+          "en": "Keyboard layouts, mouse and reset",
+          "lt": "Klaviatūra, pelė ir atkūrimas"
+        },
+        {
+          "seconds": 225,
+          "en": "Recycle Bin and desktop layout",
+          "lt": "Šiukšlinė ir darbalaukio išdėstymas"
+        }
+      ],
+      "en": {
+        "title": "Desktop and appearance: wallpapers, themes and presets",
+        "description": "Explore wallpaper management, appearance presets, Windows themes, language, screen savers, keyboard layouts and desktop organization.",
+        "paragraphs": [
+          "Tour the desktop and appearance dialogs to see which settings can be prepared for student computers. Start with wallpaper selection, managed images and recent wallpapers, then inspect appearance presets and Windows themes.",
+          "Continue through language and Windows appearance options, screen savers, keyboard and mouse settings, reset options, the Recycle Bin and desktop layout. This chapter previews the dialogs and cancels them; the student-perspective chapter later shows an actual wallpaper change."
+        ],
+        "outcomes": [
+          "Locate managed wallpapers and appearance presets",
+          "Find themes, language and screen-saver options",
+          "Review input settings, reset controls and desktop layout"
+        ],
+        "url": "/classroom-manager/tutorial/desktop-appearance/"
+      },
+      "lt": {
+        "title": "Darbalaukis ir išvaizda: fonai, temos ir rinkiniai",
+        "description": "Peržiūrėkite darbalaukio fonus, išvaizdos rinkinius, Windows temas, kalbą, ekrano užsklandas, klaviatūrą ir darbalaukio tvarkymą.",
+        "paragraphs": [
+          "Apžiūrėkite darbalaukio ir išvaizdos dialogus bei sužinokite, kokias nuostatas galima parengti mokinių kompiuteriams. Pradedama fono pasirinkimu, valdomais ir naujausiais paveikslais, tada pereinama prie išvaizdos rinkinių ir Windows temų.",
+          "Toliau pristatomos kalbos ir Windows išvaizdos parinktys, užsklandos, klaviatūra ir pelė, atkūrimas, šiukšlinė bei darbalaukio išdėstymas. Šiame skyriuje dialogai peržiūrimi ir atšaukiami; tikras fono pakeitimas rodomas mokinio kompiuterio skyriuje."
+        ],
+        "outcomes": [
+          "Rasti valdomus fonus ir išvaizdos rinkinius",
+          "Rasti temų, kalbos ir užsklandų parinktis",
+          "Peržiūrėti įvesties, atkūrimo ir darbalaukio priemones"
+        ],
+        "url": "/mokykloms/pamokos/darbalaukis-ir-isvaizda/"
+      }
+    },
+    {
+      "number": 9,
+      "slug": "remote-administration",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 208.205,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Temporary uploads",
+          "lt": "Laikini įkėlimai"
+        },
+        {
+          "seconds": 43,
+          "en": "Update the Client",
+          "lt": "Client naujinimo parinktys"
+        },
+        {
+          "seconds": 63,
+          "en": "Terminal",
+          "lt": "Terminalas"
+        },
+        {
+          "seconds": 88,
+          "en": "Registry",
+          "lt": "Registro peržiūra"
+        },
+        {
+          "seconds": 128,
+          "en": "Scheduled tasks",
+          "lt": "Suplanuotos užduotys"
+        },
+        {
+          "seconds": 147,
+          "en": "Autoruns",
+          "lt": "Automatinė paleistis"
+        },
+        {
+          "seconds": 166,
+          "en": "Remove the Client",
+          "lt": "Client šalinimo peržiūra"
+        },
+        {
+          "seconds": 184,
+          "en": "Computer information",
+          "lt": "Kompiuterio informacija"
+        }
+      ],
+      "en": {
+        "title": "Remote administration: terminal, tasks and computer details",
+        "description": "Explore Client maintenance, a read-only terminal, registry previews, scheduled tasks, autoruns and computer information.",
+        "paragraphs": [
+          "Find the tools used to maintain a managed Windows computer, starting with temporary uploads and Client update options. A terminal session runs hostname so you can see a real response without changing the machine.",
+          "The lesson then inspects the registry dialog, scheduled task and autorun inventories, Client removal options and the computer information view. Registry changes and Client removal are cancelled previews. Use the computer information refresh to inspect the selected endpoint’s current details."
+        ],
+        "outcomes": [
+          "Find Client maintenance and temporary-upload controls",
+          "Read terminal output from a selected computer",
+          "Inspect task, startup and computer-information inventories"
+        ],
+        "url": "/classroom-manager/tutorial/remote-administration/"
+      },
+      "lt": {
+        "title": "Nuotolinis administravimas: terminalas, užduotys ir informacija",
+        "description": "Susipažinkite su Client priežiūra, terminalu, registro peržiūra, suplanuotomis užduotimis, paleistimi ir kompiuterio informacija.",
+        "paragraphs": [
+          "Raskite valdomo Windows kompiuterio priežiūros priemones, pradėdami laikinais įkėlimais ir Client naujinimo parinktimis. Terminale paleidžiama hostname komanda, todėl matote tikrą atsakymą nekeisdami kompiuterio.",
+          "Toliau peržiūrimas registro dialogas, suplanuotų užduočių bei automatinės paleisties sąrašai, Client šalinimo parinktys ir kompiuterio informacija. Registro pakeitimai ir Client šalinimas atšaukiami. Informacijos lange atnaujinami pasirinkto kompiuterio duomenys."
+        ],
+        "outcomes": [
+          "Rasti Client priežiūros ir laikinų įkėlimų priemones",
+          "Skaityti pasirinkto kompiuterio terminalo atsakymą",
+          "Peržiūrėti užduotis, paleistį ir kompiuterio informaciją"
+        ],
+        "url": "/mokykloms/pamokos/nuotolinis-administravimas/"
+      }
+    },
+    {
+      "number": 10,
+      "slug": "automation",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 189.816,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Schedules",
+          "lt": "Tvarkaraščiai"
+        },
+        {
+          "seconds": 73,
+          "en": "Schedules that run when the Host is closed",
+          "lt": "Tvarkaraščiai užvėrus Host"
+        },
+        {
+          "seconds": 111,
+          "en": "The command line",
+          "lt": "Komandų eilutė"
+        },
+        {
+          "seconds": 142,
+          "en": "Command favourites",
+          "lt": "Parankinės komandos"
+        },
+        {
+          "seconds": 172,
+          "en": "Custom quick actions, again",
+          "lt": "Pakartotiniai greitieji veiksmai"
+        }
+      ],
+      "en": {
+        "title": "Automation: schedules, command line and favourites",
+        "description": "Learn where Classroom Manager keeps schedules, how background scheduling works, and how to reuse commands and quick actions.",
+        "paragraphs": [
+          "Build a demonstration schedule, inspect its target and timing options, then remove it without running it. See how Windows Task Scheduler relates to actions that need to run while the Host window is closed.",
+          "The command-line example checks status on explicitly named test computers. The lesson then prepares a read-only command favourite and revisits reusable quick actions. It separates creating a reusable instruction from actually executing that instruction on a lab."
+        ],
+        "outcomes": [
+          "Review schedule targets and timing",
+          "Understand scheduling with the Host closed",
+          "Use explicit CLI targets and prepare command favourites"
+        ],
+        "url": "/classroom-manager/tutorial/automation/"
+      },
+      "lt": {
+        "title": "Automatizavimas: tvarkaraščiai, komandų eilutė ir parankiniai",
+        "description": "Sužinokite, kur saugomi Classroom Manager tvarkaraščiai, kaip veikia foninis vykdymas ir kaip pakartotinai naudoti komandas.",
+        "paragraphs": [
+          "Sukurkite demonstracinį tvarkaraštį, peržiūrėkite gavėjus ir laiką, tada pašalinkite jo nevykdydami. Sužinokite, kaip Windows užduočių planuoklis susijęs su veiksmais, vykdomais užvėrus Host langą.",
+          "Komandų eilutės pavyzdyje tikrinama aiškiai įvardytų bandomųjų kompiuterių būsena. Toliau parengiama tik skaitanti parankinė komanda ir grįžtama prie greitųjų veiksmų. Pamokoje atskiriamas pakartotinai naudojamos instrukcijos kūrimas ir jos vykdymas klasėje."
+        ],
+        "outcomes": [
+          "Peržiūrėti tvarkaraščio gavėjus ir laiką",
+          "Suprasti vykdymą užvėrus Host",
+          "Nurodyti CLI gavėjus ir parengti parankines komandas"
+        ],
+        "url": "/mokykloms/pamokos/automatizavimas/"
+      }
+    },
+    {
+      "number": 11,
+      "slug": "keys-roles-trust",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 250.829,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Lab keys",
+          "lt": "Klasės raktai"
+        },
+        {
+          "seconds": 52,
+          "en": "Roles",
+          "lt": "Teisės"
+        },
+        {
+          "seconds": 83,
+          "en": "Access keys",
+          "lt": "Prieigos raktai"
+        },
+        {
+          "seconds": 111,
+          "en": "Secure this lab",
+          "lt": "Klasės saugumo nuostatos"
+        },
+        {
+          "seconds": 137,
+          "en": "Rotate the shared key",
+          "lt": "Bendro rakto keitimo peržiūra"
+        },
+        {
+          "seconds": 165,
+          "en": "Certificates and trust",
+          "lt": "Sertifikatai ir pasitikėjimas"
+        },
+        {
+          "seconds": 207,
+          "en": "Teacher mode, teacher files and messages from teachers",
+          "lt": "Mokytojo režimas, failai ir žinutės"
+        }
+      ],
+      "en": {
+        "title": "Keys, roles and trust: understand lab access",
+        "description": "Understand lab keys, Teacher and Admin roles, access-key metadata, certificate trust and key rotation options in Classroom Manager.",
+        "paragraphs": [
+          "Review the controls that determine which Host can communicate with a Client and which actions its role allows. The lesson introduces lab keys, role differences and access-key metadata before opening the lab security and shared-key rotation dialogs.",
+          "Certificate information and a read-only CLI check show the existing trust state. The recording preserves the current keys and approvals; key rotation and trust changes are explained without applying them. Teacher mode, teacher files and messages complete the access-management tour."
+        ],
+        "outcomes": [
+          "Distinguish keys, roles and certificate trust",
+          "Locate access metadata and rotation controls",
+          "Recognize Teacher mode and teacher-file workflows"
+        ],
+        "url": "/classroom-manager/tutorial/keys-roles-trust/"
+      },
+      "lt": {
+        "title": "Raktai, teisės ir pasitikėjimas: prieiga prie klasės",
+        "description": "Supraskite klasės raktus, Teacher ir Admin teises, prieigos raktų duomenis, sertifikatų pasitikėjimą ir raktų keitimą.",
+        "paragraphs": [
+          "Peržiūrėkite priemones, nustatančias, kuris Host gali susisiekti su Client ir kokius veiksmus leidžia jo teisės. Pristatomi klasės raktai, teisių skirtumai bei prieigos rakto duomenys, tada atveriami klasės saugumo ir bendro rakto keitimo dialogai.",
+          "Sertifikato informacija ir tik skaitanti CLI patikra parodo esamą pasitikėjimo būseną. Raktai ir patvirtinimai išsaugomi; keitimas paaiškinamas jo netaikant. Apžvalgą papildo mokytojo režimas, mokytojų failai ir žinutės."
+        ],
+        "outcomes": [
+          "Atskirti raktus, teises ir sertifikatų pasitikėjimą",
+          "Rasti prieigos duomenis ir raktų keitimo priemones",
+          "Atpažinti mokytojo režimą ir failų darbą"
+        ],
+        "url": "/mokykloms/pamokos/raktai-teises-pasitikejimas/"
+      }
+    },
+    {
+      "number": 12,
+      "slug": "settings-support",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 374.819,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "Host settings",
+          "lt": "Host nuostatos"
+        },
+        {
+          "seconds": 43,
+          "en": "Interface settings and languages",
+          "lt": "Sąsajos nuostatos ir kalbos"
+        },
+        {
+          "seconds": 69,
+          "en": "Export and import the configuration, and backups",
+          "lt": "Konfigūracijos eksportas, importas ir kopijos"
+        },
+        {
+          "seconds": 112,
+          "en": "Logs and crash logs",
+          "lt": "Veiklos ir strigčių žurnalai"
+        },
+        {
+          "seconds": 150,
+          "en": "Message to the administrator, feedback and the guide",
+          "lt": "Žinutė administratoriui, atsiliepimai ir vadovas"
+        },
+        {
+          "seconds": 214,
+          "en": "Classroom Health",
+          "lt": "Classroom Health"
+        },
+        {
+          "seconds": 312,
+          "en": "Client Health on a student PC",
+          "lt": "Client Health mokinio kompiuteryje"
+        },
+        {
+          "seconds": 344,
+          "en": "Error codes",
+          "lt": "Klaidų kodai"
+        }
+      ],
+      "en": {
+        "title": "Settings and support: backups, logs and Health checks",
+        "description": "Find Host settings, configuration backups, logs, the guide, error codes and the Classroom Health and Client Health tools.",
+        "paragraphs": [
+          "Start with Host and interface settings, then locate configuration export, import and backups. The lesson shows where logs and crash reports live and how to reach administrator messages, feedback and the user guide.",
+          "The longer diagnostic section runs Classroom Health from the Host side and opens Client Health on a student computer. Follow the results before looking at error-code guidance, including connection failures. Diagnostics help narrow down a problem; a passed check does not guarantee every future command will succeed."
+        ],
+        "outcomes": [
+          "Find configuration backups, logs and help",
+          "Read Host-side and Client-side Health results",
+          "Use error codes to guide the next troubleshooting step"
+        ],
+        "url": "/classroom-manager/tutorial/settings-support/"
+      },
+      "lt": {
+        "title": "Nuostatos ir pagalba: kopijos, žurnalai ir Health patikros",
+        "description": "Raskite Host nuostatas, konfigūracijos kopijas, žurnalus, vadovą, klaidų kodus bei Classroom Health ir Client Health priemones.",
+        "paragraphs": [
+          "Pradėkite nuo Host ir sąsajos nuostatų, tada raskite konfigūracijos eksportą, importą ir atsargines kopijas. Pamokoje parodomi veiklos ir strigčių žurnalai, žinutės administratoriui, atsiliepimai ir naudotojo vadovas.",
+          "Išsamesnėje diagnostikos dalyje paleidžiama Classroom Health patikra Host pusėje ir atveriama Client Health mokinio kompiuteryje. Po rezultatų aptariamos klaidų kodų gairės, įskaitant ryšio sutrikimus. Patikros padeda susiaurinti problemą, tačiau negarantuoja visų būsimų komandų sėkmės."
+        ],
+        "outcomes": [
+          "Rasti konfigūracijos kopijas, žurnalus ir pagalbą",
+          "Skaityti Host ir Client Health rezultatus",
+          "Pasirinkti kitą diagnostikos žingsnį pagal klaidos kodą"
+        ],
+        "url": "/mokykloms/pamokos/nuostatos-ir-pagalba/"
+      }
+    },
+    {
+      "number": 13,
+      "slug": "student-computer",
+      "youtubeId": "",
+      "youtubeUploadDate": "",
+      "durationSeconds": 221.688,
+      "timestamps": [
+        {
+          "seconds": 0,
+          "en": "The notification-area icon and the status window",
+          "lt": "Pranešimų srities piktograma ir būsena"
+        },
+        {
+          "seconds": 50,
+          "en": "A message",
+          "lt": "Žinutė"
+        },
+        {
+          "seconds": 70,
+          "en": "A lock",
+          "lt": "Ekrano užrakinimas"
+        },
+        {
+          "seconds": 97,
+          "en": "An exam",
+          "lt": "Egzamino režimas"
+        },
+        {
+          "seconds": 152,
+          "en": "Files, wallpaper and the Client's care",
+          "lt": "Failai, fonas ir Client priežiūra"
+        }
+      ],
+      "en": {
+        "title": "The student computer: Client status and lesson actions",
+        "description": "See the student side of Classroom Manager: Client status, messages, screen locks, Exam mode, delivered files and wallpaper.",
+        "paragraphs": [
+          "Switch perspective to a student computer while keeping the teacher’s Host in view. Begin with the Client’s notification-area icon and status window, then follow what happens when a teacher sends a message, locks the screen or toggles Exam mode.",
+          "The final sequence shows a delivered file and a real wallpaper change. This lesson connects the teacher controls from earlier chapters with the student’s experience. The training capture is separate from Classroom Manager, which does not provide student-screen viewing or recording."
+        ],
+        "outcomes": [
+          "Recognize Client connection and service status",
+          "Understand messages, locks and Exam mode from the student side",
+          "Find a delivered file and see a wallpaper update"
+        ],
+        "url": "/classroom-manager/tutorial/student-computer/"
+      },
+      "lt": {
+        "title": "Mokinio kompiuteris: Client būsena ir pamokos veiksmai",
+        "description": "Pamatykite mokinio pusę: Client būseną, žinutes, ekrano užrakinimą, Exam mode, gautus failus ir darbalaukio foną.",
+        "paragraphs": [
+          "Pereikite į mokinio kompiuterį kartu matydami mokytojo Host. Pradėkite nuo Client piktogramos pranešimų srityje ir būsenos lango, tada stebėkite mokytojo žinutę, ekrano užrakinimą bei Exam mode įjungimą ir išjungimą.",
+          "Pabaigoje parodomas gautas failas ir tikras darbalaukio fono pakeitimas. Pamoka susieja ankstesnių skyrių mokytojo priemones su mokinio patirtimi. Mokomasis vaizdas užfiksuotas atskirai; Classroom Manager neturi mokinių ekranų peržiūros ar įrašymo funkcijos."
+        ],
+        "outcomes": [
+          "Atpažinti Client ryšio ir tarnybos būseną",
+          "Suprasti žinutes, užrakinimą ir Exam mode mokinio pusėje",
+          "Rasti gautą failą ir pamatyti fono pakeitimą"
+        ],
+        "url": "/mokykloms/pamokos/mokinio-kompiuteris/"
+      }
+    }
+  ]
+}

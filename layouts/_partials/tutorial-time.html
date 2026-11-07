@@ -1,0 +1,2 @@
+{{- $seconds := int . -}}
+{{- return (printf "%02d:%02d" (int (div $seconds 60)) (mod $seconds 60)) -}}

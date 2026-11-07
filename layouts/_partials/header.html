@@ -3,6 +3,7 @@
   <nav aria-label="{{ T "navigation" }}">
     {{ $current := . }}
     {{ range slice (dict "path" "school/features/" "key" "features") (dict "path" "school/security/" "key" "security") (dict "path" "school/compare/" "key" "compare") (dict "path" "school/pricing/" "key" "pricing") (dict "path" "school/faq/" "key" "faq") }}<a href="{{ partial "page-url.html" .path }}"{{ if eq $current.RelPermalink (partial "page-url.html" .path) }} aria-current="page"{{ end }}>{{ T .key }}</a>{{ end }}
+    <a href="{{ partial "page-url.html" "/school/tutorial" }}"{{ if or (eq .Layout "tutorial-index") (eq .Layout "tutorial-lesson") }} aria-current="page"{{ end }}>{{ T "tutorial" }}</a>
     {{ range .Translations }}<a class="lang" href="{{ if hugo.IsMultihost }}{{ .Permalink }}{{ else }}{{ .RelPermalink }}{{ end }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}">{{ upper .Language.Lang }}</a>{{ end }}
     <a class="nav-cta" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "contact" }} ↗</a>
   </nav>

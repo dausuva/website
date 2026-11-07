@@ -17,6 +17,10 @@
 {{- end -}}
 {{- if .Params.schoolPage -}}
   {{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" site.Params.product "item" $product.Permalink) (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+  {{- if eq .Layout "tutorial-lesson" -}}
+    {{- $course := site.GetPage "/school/tutorial" -}}
+    {{- $crumbs = slice (dict "@type" "ListItem" "position" 1 "name" site.Params.product "item" $product.Permalink) (dict "@type" "ListItem" "position" 2 "name" $course.Title "item" $course.Permalink) (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink) -}}
+  {{- end -}}
   {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumbs" .Permalink) "itemListElement" $crumbs) -}}
 {{- end -}}
 {{- if and site.Params.video (or (eq .TranslationKey "school") (eq .TranslationKey "school-demo")) -}}
@@ -25,6 +29,29 @@
   {{- $graph = $graph | append $video -}}
 {{- end -}}
 {{- $questions := slice -}}
+{{- if eq .Layout "tutorial-index" -}}
+  {{- $items := slice -}}
+  {{- range hugo.Data.tutorial.chapters -}}
+    {{- $lesson := site.GetPage (printf "/school/tutorial/%s" .slug) -}}
+    {{- $copy := index . site.Language.Lang -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" (add (int .number) 1) "name" $copy.title "url" $lesson.Permalink) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "ItemList" "name" .Title "numberOfItems" (len $items) "itemListElement" $items) -}}
+{{- else if eq .Layout "tutorial-lesson" -}}
+  {{- $chapter := index hugo.Data.tutorial.chapters (int .Params.tutorialChapter) -}}
+  {{- if and $chapter.youtubeId $chapter.youtubeUploadDate -}}
+    {{- $copy := index $chapter site.Language.Lang -}}
+    {{- $thumb := resources.Get (printf "images/social-%s.png" site.Language.Lang) -}}
+    {{- $clips := slice -}}
+    {{- range $index, $stamp := $chapter.timestamps -}}
+      {{- $end := int $chapter.durationSeconds -}}
+      {{- if lt (add $index 1) (len $chapter.timestamps) }}{{ $end = int (index $chapter.timestamps (add $index 1)).seconds }}{{ end -}}
+      {{- $clips = $clips | append (dict "@type" "Clip" "name" (index $stamp site.Language.Lang) "startOffset" (int $stamp.seconds) "endOffset" $end "url" (printf "https://youtu.be/%s?t=%d" $chapter.youtubeId (int $stamp.seconds))) -}}
+    {{- end -}}
+    {{- $video := dict "@type" "VideoObject" "@id" (printf "%s#video" .Permalink) "name" $copy.title "description" $copy.description "thumbnailUrl" (slice $thumb.Permalink) "uploadDate" $chapter.youtubeUploadDate "duration" (printf "PT%dS" (int $chapter.durationSeconds)) "contentUrl" (printf "https://youtu.be/%s" $chapter.youtubeId) "embedUrl" (printf "https://www.youtube-nocookie.com/embed/%s" $chapter.youtubeId) "inLanguage" "en" "hasPart" $clips -}}
+    {{- $graph = $graph | append $video -}}
+  {{- end -}}
+{{- end -}}
 {{- if or (eq .TranslationKey "school-faq") (eq .TranslationKey "school-feature-requests") -}}
   {{- range findRESubmatch `(?s)<details><summary>(.*?)</summary><p>(.*?)</p></details>` .RawContent -}}
     {{- $questions = $questions | append (dict "@type" "Question" "name" (plainify (index . 1)) "acceptedAnswer" (dict "@type" "Answer" "text" (plainify (index . 2)))) -}}

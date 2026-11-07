@@ -96,6 +96,29 @@ Pushing `main` triggers public GitHub Pages publication. A private Sites preview
 that push or a DNS change. The private preview is a sanitized build-output copy, not a second canonical
 source tree; keep maintaining this Hugo repository.
 
+## Video tutorials
+
+The course index is `/classroom-manager/tutorial/` in English and `/mokykloms/pamokos/`
+in Lithuanian. Each has fourteen linked lesson pages with descriptions, timestamps and
+previous/next navigation. `data/tutorial.json` holds the shared bilingual lesson copy,
+durations, scene timestamps and YouTube IDs. The page front matter under
+`content/{en,lt}/school/tutorial/` supplies translated page identities and metadata.
+Keep its title and description consistent with the catalog.
+
+After uploading a chapter, put its actual eleven-character `youtubeId` and actual
+`youtubeUploadDate` in the matching catalog entry. Both languages use that one video.
+Do not insert a demonstration ID or invent an upload date. Until an ID exists, the
+page shows a pending-video notice; once configured, it uses the same click-to-play
+privacy-enhanced player as the demo. Timestamp links seek in the player and remain
+ordinary YouTube links without JavaScript. Video structured data is emitted only
+when both the ID and upload date exist.
+
+Tutorial front-matter URLs omit the leading slash so single-host previews preserve
+the language prefix. Production builds retain their separate language domains.
+Validate both output modes with `scripts/test-site.mjs` and `scripts/test-tutorial.mjs`;
+`node --test scripts/video.test.mjs` checks playback URL handling. No third-party
+JavaScript or thumbnail request is made before the visitor presses play.
+
 ## Publishing (once)
 
 For the small search-visibility feature set and owner-side verification/sitemap

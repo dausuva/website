@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="wrap section tutorial-index">
+  <p class="breadcrumbs"><a href="{{ partial "page-url.html" "/school/" }}">Classroom Manager</a> / {{ T "tutorial" }}</p>
+  <div class="tutorial-intro prose">
+    <p class="eyebrow">{{ T "courseFormat" }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Description }}</p>
+    {{ .Content }}
+    <p><a class="button primary" href="{{ partial "page-url.html" "/school/tutorial/welcome" }}">{{ T "startCourse" }} →</a> <a class="button" href="{{ partial "page-url.html" "/school/demo" }}">{{ T "demoShort" }}</a></p>
+  </div>
+  <h2>{{ T "allLessons" }}</h2>
+  <ol class="tutorial-grid" start="0">
+  {{ range hugo.Data.tutorial.chapters }}{{ $copy := index . site.Language.Lang }}
+    <li><a class="tutorial-card" href="{{ partial "page-url.html" (printf "/school/tutorial/%s" .slug) }}">
+      <span class="tutorial-card-meta"><span>{{ T "chapter" }} {{ printf "%02d" (int .number) }}</span><span>{{ partial "tutorial-time.html" .durationSeconds }}</span></span>
+      <h3>{{ $copy.title }}</h3><p>{{ $copy.description }}</p><span class="tutorial-card-action">{{ T "openLesson" }} →</span>
+    </a></li>
+  {{ end }}
+  </ol>
+  <p class="note">{{ T "tutorialRecordingNote" }}</p>
+</article>
+{{ end }}

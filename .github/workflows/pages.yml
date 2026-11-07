@@ -42,7 +42,7 @@ jobs:
           curl -fsSL -o hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
           sudo dpkg -i hugo.deb
       - name: Test deployment helpers
-        run: node --test scripts/domains.test.mjs scripts/contacts.test.mjs
+        run: node --test scripts/domains.test.mjs scripts/contacts.test.mjs scripts/video.test.mjs
       - name: Build and check both language domains
         env:
           SITE_PRIVATE_TERMS: ${{ secrets.SITE_PRIVATE_TERMS }}
@@ -50,6 +50,7 @@ jobs:
           hugo --config hugo.toml,config/domains/hugo.toml --minify --panicOnWarning --destination public/domains
           node scripts/prepare-domains.mjs public/domains
           node scripts/test-site.mjs public/domains --domains
+          node scripts/test-tutorial.mjs public/domains --domains
       - name: Preserve current single-host site until cutover is enabled
         if: vars.LANGUAGE_DOMAINS_ENABLED != 'true'
         env:
@@ -57,6 +58,7 @@ jobs:
         run: |
           hugo --minify --panicOnWarning --destination public/legacy
           node scripts/test-site.mjs public/legacy https://dausuva.com/
+          node scripts/test-tutorial.mjs public/legacy
       - uses: actions/upload-artifact@v7
         with:
           name: lithuanian-pages

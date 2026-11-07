@@ -1,0 +1,10 @@
+{{- $chapters := hugo.Data.tutorial.chapters -}}
+{{- $number := int .Params.tutorialChapter -}}
+<nav class="tutorial-nav" aria-label="{{ T "lessonNavigation" }}">
+  {{ if gt $number 0 }}{{ $previous := index $chapters (sub $number 1) }}{{ $copy := index $previous site.Language.Lang }}
+  <a rel="prev" href="{{ partial "page-url.html" (printf "/school/tutorial/%s" $previous.slug) }}"><small>← {{ T "previousLesson" }}</small><strong>{{ $copy.title }}</strong></a>
+  {{ else }}<a href="{{ partial "page-url.html" "/school/tutorial" }}"><small>← {{ T "allLessons" }}</small><strong>{{ T "tutorial" }}</strong></a>{{ end }}
+  {{ if lt $number (sub (len $chapters) 1) }}{{ $next := index $chapters (add $number 1) }}{{ $copy := index $next site.Language.Lang }}
+  <a rel="next" href="{{ partial "page-url.html" (printf "/school/tutorial/%s" $next.slug) }}"><small>{{ T "nextLesson" }} →</small><strong>{{ $copy.title }}</strong></a>
+  {{ else }}<a href="{{ partial "page-url.html" "/school/tutorial" }}"><small>{{ T "courseComplete" }}</small><strong>{{ T "backToLessons" }} →</strong></a>{{ end }}
+</nav>
