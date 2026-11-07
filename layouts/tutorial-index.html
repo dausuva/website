@@ -13,6 +13,7 @@
   {{ range hugo.Data.tutorial.chapters }}{{ $copy := index . site.Language.Lang }}
     <li><a class="tutorial-card" href="{{ partial "page-url.html" (printf "/school/tutorial/%s" .slug) }}">
       <span class="tutorial-card-meta"><span>{{ T "chapter" }} {{ printf "%02d" (int .number) }}</span><span>{{ partial "tutorial-time.html" .durationSeconds }}</span></span>
+      {{ with resources.Get .thumbnail }}{{ $image := .Resize "640x webp q80" }}<img class="tutorial-card-image" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $copy.title }}" loading="lazy">{{ end }}
       <h3>{{ $copy.title }}</h3><p>{{ $copy.description }}</p><span class="tutorial-card-action">{{ T "openLesson" }} →</span>
     </a></li>
   {{ end }}

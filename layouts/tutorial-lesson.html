@@ -7,7 +7,7 @@
   <h1>{{ .Title }}</h1>
   <p class="lead">{{ .Description }}</p>
   {{ if $chapter.youtubeId }}
-    {{ partial "video-player.html" (dict "id" $chapter.youtubeId "title" $copy.title "poster" (printf "images/social-%s.png" site.Language.Lang)) }}
+    {{ partial "video-player.html" (dict "id" $chapter.youtubeId "title" $copy.title "poster" ($chapter.thumbnail | default (printf "images/social-%s.png" site.Language.Lang))) }}
   {{ else }}
     <div class="tutorial-video-pending" role="status"><strong>{{ T "videoComingSoon" }}</strong><p>{{ T "videoPendingNote" }}</p></div>
   {{ end }}

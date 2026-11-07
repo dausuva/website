@@ -4,8 +4,8 @@
     {
       "number": 0,
       "slug": "welcome",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "XEJ-qVubjis",
+      "youtubeUploadDate": "2026-11-07T08:45:32Z",
       "durationSeconds": 123.171,
       "timestamps": [
         {
@@ -56,13 +56,27 @@
           "Pasirinkti skyrių mokymo arba IT užduočiai"
         ],
         "url": "/mokykloms/pamokos/ivadas/"
-      }
+      },
+      "youtubeTitle": "Manage a Windows Computer Lab | Dausuva Classroom Manager #00",
+      "thumbnail": "images/tutorial/chapter-00.png",
+      "youtubeTitleLt": "Kompiuterių klasės valdymas | Dausuva Classroom Manager #00",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "welcome",
+        "Windows classroom management"
+      ]
     },
     {
       "number": 1,
       "slug": "first-connection",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "PO0KWIY1cKk",
+      "youtubeUploadDate": "2026-11-07T09:15:12Z",
       "durationSeconds": 249.848,
       "timestamps": [
         {
@@ -133,13 +147,28 @@
           "Suprasti sertifikato tikrinimą ir sąrašo priežiūrą"
         ],
         "url": "/mokykloms/pamokos/pirmasis-prisijungimas/"
-      }
+      },
+      "youtubeTitle": "Connect Your First Student PC | Dausuva Classroom Manager #01",
+      "thumbnail": "images/tutorial/chapter-01.png",
+      "youtubeTitleLt": "Pirmojo mokinio kompiuterio prijungimas | Dausuva Classroom Manager #01",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "first connection",
+        "connect student computers",
+        "classroom setup"
+      ]
     },
     {
       "number": 2,
       "slug": "main-window",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "ccmL9xOQhmo",
+      "youtubeUploadDate": "2026-11-07T09:15:32Z",
       "durationSeconds": 142.2,
       "timestamps": [
         {
@@ -200,13 +229,29 @@
           "Stebėti operacijų eigą ir rasti veiklos žurnalą"
         ],
         "url": "/mokykloms/pamokos/pagrindinis-langas/"
-      }
+      },
+      "youtubeTitle": "Find Your Way Around the Host | Dausuva Classroom Manager #02",
+      "thumbnail": "images/tutorial/chapter-02.png",
+      "youtubeTitleLt": "Pažintis su Host langu | Dausuva Classroom Manager #02",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "The main window",
+        "main window",
+        "Host interface",
+        "computer selection"
+      ]
     },
     {
       "number": 3,
       "slug": "teaching",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "ZNzDlr0pPRY",
+      "youtubeUploadDate": "2026-11-07T09:16:00Z",
       "durationSeconds": 280.44,
       "timestamps": [
         {
@@ -272,13 +317,28 @@
           "Atverti pamokos išteklius ir tvarkyti greituosius veiksmus"
         ],
         "url": "/mokykloms/pamokos/pamokos-valdymas/"
-      }
+      },
+      "youtubeTitle": "Message and Lock Student Screens | Dausuva Classroom Manager #03",
+      "thumbnail": "images/tutorial/chapter-03.png",
+      "youtubeTitleLt": "Žinutės ir mokinių ekranų užrakinimas | Dausuva Classroom Manager #03",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "teaching",
+        "student screen lock",
+        "classroom messages"
+      ]
     },
     {
       "number": 4,
       "slug": "files",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "MCAK8uCvGUA",
+      "youtubeUploadDate": "2026-11-07T09:16:18Z",
       "durationSeconds": 279.629,
       "timestamps": [
         {
@@ -339,13 +399,28 @@
           "Naršyti mokinių aplankus ir suprasti siuntimo atšaukimą"
         ],
         "url": "/mokykloms/pamokos/failai/"
-      }
+      },
+      "youtubeTitle": "Send and Collect Student Files | Dausuva Classroom Manager #04",
+      "thumbnail": "images/tutorial/chapter-04.png",
+      "youtubeTitleLt": "Failų siuntimas ir mokinių darbų surinkimas | Dausuva Classroom Manager #04",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "files",
+        "send files to student PCs",
+        "collect student work"
+      ]
     },
     {
       "number": 5,
       "slug": "restrictions-exams",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "OKPrXmX6HDY",
+      "youtubeUploadDate": "2026-11-07T09:16:39Z",
       "durationSeconds": 219.043,
       "timestamps": [
         {
@@ -406,13 +481,29 @@
           "Rasti programų ribojimus ir atskirti peržiūrą nuo taikymo"
         ],
         "url": "/mokykloms/pamokos/ribojimai-ir-egzaminai/"
-      }
+      },
+      "youtubeTitle": "Set Up Exam Mode and Website Blocking | Dausuva Classroom Manager #05",
+      "thumbnail": "images/tutorial/chapter-05.png",
+      "youtubeTitleLt": "Egzamino režimas ir svetainių ribojimai | Dausuva Classroom Manager #05",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "Restrictions and exams",
+        "restrictions exams",
+        "exam mode",
+        "block websites in classroom"
+      ]
     },
     {
       "number": 6,
       "slug": "software",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "enUN9Y8WhD8",
+      "youtubeUploadDate": "2026-11-07T09:16:55Z",
       "durationSeconds": 242.168,
       "timestamps": [
         {
@@ -478,13 +569,29 @@
           "Skaityti komandos atsakymą ir peržiūrėti naršyklės profilius"
         ],
         "url": "/mokykloms/pamokos/programine-iranga/"
-      }
+      },
+      "youtubeTitle": "Manage Software and Running Processes | Dausuva Classroom Manager #06",
+      "thumbnail": "images/tutorial/chapter-06.png",
+      "youtubeTitleLt": "Programų ir procesų valdymas | Dausuva Classroom Manager #06",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "software",
+        "software inventory",
+        "running processes",
+        "winget"
+      ]
     },
     {
       "number": 7,
       "slug": "power-time-accounts",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "UEBm1TMsCPs",
+      "youtubeUploadDate": "2026-11-07T09:17:14Z",
       "durationSeconds": 240.675,
       "timestamps": [
         {
@@ -550,13 +657,29 @@
           "Eksportuoti aparatinės ir programinės įrangos inventorių į CSV"
         ],
         "url": "/mokykloms/pamokos/maitinimas-laikas-paskyros/"
-      }
+      },
+      "youtubeTitle": "Manage PC Power, Accounts and Inventory | Dausuva Classroom Manager #07",
+      "thumbnail": "images/tutorial/chapter-07.png",
+      "youtubeTitleLt": "Maitinimas, paskyros ir inventorius | Dausuva Classroom Manager #07",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "Power, time and accounts",
+        "power time accounts",
+        "Wake-on-LAN",
+        "computer inventory CSV"
+      ]
     },
     {
       "number": 8,
       "slug": "desktop-appearance",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "UJQWsYdOedg",
+      "youtubeUploadDate": "2026-11-07T09:17:35Z",
       "durationSeconds": 259.235,
       "timestamps": [
         {
@@ -627,13 +750,29 @@
           "Peržiūrėti įvesties, atkūrimo ir darbalaukio priemones"
         ],
         "url": "/mokykloms/pamokos/darbalaukis-ir-isvaizda/"
-      }
+      },
+      "youtubeTitle": "Manage Wallpapers and Windows Appearance | Dausuva Classroom Manager #08",
+      "thumbnail": "images/tutorial/chapter-08.png",
+      "youtubeTitleLt": "Darbalaukio fonai ir Windows išvaizda | Dausuva Classroom Manager #08",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "Desktop and appearance",
+        "desktop appearance",
+        "classroom wallpapers",
+        "Windows appearance"
+      ]
     },
     {
       "number": 9,
       "slug": "remote-administration",
-      "youtubeId": "",
-      "youtubeUploadDate": "",
+      "youtubeId": "QXQTReR0_Bc",
+      "youtubeUploadDate": "2026-11-07T09:17:53Z",
       "durationSeconds": 208.205,
       "timestamps": [
         {
@@ -704,7 +843,22 @@
           "Peržiūrėti užduotis, paleistį ir kompiuterio informaciją"
         ],
         "url": "/mokykloms/pamokos/nuotolinis-administravimas/"
-      }
+      },
+      "youtubeTitle": "Use Remote Terminal and PC Tools | Dausuva Classroom Manager #09",
+      "thumbnail": "images/tutorial/chapter-09.png",
+      "youtubeTitleLt": "Nuotolinis terminalas ir PC priežiūra | Dausuva Classroom Manager #09",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "remote administration",
+        "remote terminal",
+        "Windows administration"
+      ]
     },
     {
       "number": 10,
@@ -766,7 +920,22 @@
           "Nurodyti CLI gavėjus ir parengti parankines komandas"
         ],
         "url": "/mokykloms/pamokos/automatizavimas/"
-      }
+      },
+      "youtubeTitle": "Automate Your Computer Lab | Dausuva Classroom Manager #10",
+      "thumbnail": "images/tutorial/chapter-10.png",
+      "youtubeTitleLt": "Kompiuterių klasės automatizavimas | Dausuva Classroom Manager #10",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "automation",
+        "classroom automation",
+        "scheduled tasks"
+      ]
     },
     {
       "number": 11,
@@ -838,7 +1007,23 @@
           "Atpažinti mokytojo režimą ir failų darbą"
         ],
         "url": "/mokykloms/pamokos/raktai-teises-pasitikejimas/"
-      }
+      },
+      "youtubeTitle": "Understand Lab Keys, Roles and Trust | Dausuva Classroom Manager #11",
+      "thumbnail": "images/tutorial/chapter-11.png",
+      "youtubeTitleLt": "Klasės raktai, teisės ir pasitikėjimas | Dausuva Classroom Manager #11",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "Keys, roles and trust",
+        "keys roles trust",
+        "classroom access control",
+        "certificate trust"
+      ]
     },
     {
       "number": 12,
@@ -915,7 +1100,23 @@
           "Pasirinkti kitą diagnostikos žingsnį pagal klaidos kodą"
         ],
         "url": "/mokykloms/pamokos/nuostatos-ir-pagalba/"
-      }
+      },
+      "youtubeTitle": "Troubleshoot Connections with Health Checks | Dausuva Classroom Manager #12",
+      "thumbnail": "images/tutorial/chapter-12.png",
+      "youtubeTitleLt": "Ryšio diagnostika ir Health patikros | Dausuva Classroom Manager #12",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "Settings and support",
+        "settings support",
+        "connection troubleshooting",
+        "Classroom Health"
+      ]
     },
     {
       "number": 13,
@@ -977,7 +1178,23 @@
           "Rasti gautą failą ir pamatyti fono pakeitimą"
         ],
         "url": "/mokykloms/pamokos/mokinio-kompiuteris/"
-      }
+      },
+      "youtubeTitle": "See Classroom Manager on a Student PC | Dausuva Classroom Manager #13",
+      "thumbnail": "images/tutorial/chapter-13.png",
+      "youtubeTitleLt": "Classroom Manager mokinio kompiuteryje | Dausuva Classroom Manager #13",
+      "youtubeTags": [
+        "Classroom Manager",
+        "Dausuva",
+        "Classroom Manager tutorial",
+        "classroom management",
+        "Windows computer lab",
+        "teacher tools",
+        "school IT",
+        "The student computer",
+        "student computer",
+        "student Client",
+        "classroom management Client"
+      ]
     }
   ]
 }

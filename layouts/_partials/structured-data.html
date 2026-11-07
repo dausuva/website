@@ -41,7 +41,7 @@
   {{- $chapter := index hugo.Data.tutorial.chapters (int .Params.tutorialChapter) -}}
   {{- if and $chapter.youtubeId $chapter.youtubeUploadDate -}}
     {{- $copy := index $chapter site.Language.Lang -}}
-    {{- $thumb := resources.Get (printf "images/social-%s.png" site.Language.Lang) -}}
+    {{- $thumb := resources.Get ($chapter.thumbnail | default (printf "images/social-%s.png" site.Language.Lang)) -}}
     {{- $clips := slice -}}
     {{- range $index, $stamp := $chapter.timestamps -}}
       {{- $end := int $chapter.durationSeconds -}}

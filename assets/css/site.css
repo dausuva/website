@@ -820,3 +820,4 @@ table.compare{width:100%;min-width:calc(var(--cols,3) * 9.5rem);border-collapse:
 .tutorial-outline{margin:1.5rem 0}
 .tutorial-outline [aria-current=page]{font-weight:700}
 @media(max-width:700px){.tutorial-grid,.tutorial-nav{grid-template-columns:1fr}.tutorial-card{padding:22px}.tutorial-video-pending{aspect-ratio:auto;min-height:220px}}
+.tutorial-card-image{display:block;width:100%;height:auto;border-radius:7px;margin-top:16px;border:1px solid var(--line)}

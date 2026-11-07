@@ -159,3 +159,17 @@ layouts/tutorial-index.html
 layouts/tutorial-lesson.html
 scripts/test-tutorial.mjs
 scripts/video.test.mjs
+assets/images/tutorial/chapter-00.png
+assets/images/tutorial/chapter-01.png
+assets/images/tutorial/chapter-02.png
+assets/images/tutorial/chapter-03.png
+assets/images/tutorial/chapter-04.png
+assets/images/tutorial/chapter-05.png
+assets/images/tutorial/chapter-06.png
+assets/images/tutorial/chapter-07.png
+assets/images/tutorial/chapter-08.png
+assets/images/tutorial/chapter-09.png
+assets/images/tutorial/chapter-10.png
+assets/images/tutorial/chapter-11.png
+assets/images/tutorial/chapter-12.png
+assets/images/tutorial/chapter-13.png
