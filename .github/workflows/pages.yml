@@ -33,6 +33,10 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
+      - name: Install JavaScript lint tools
+        run: npm ci --ignore-scripts
+      - name: Lint website JavaScript
+        run: npm run lint
       - name: Only files listed in PUBLIC-FILES.txt
         run: |
           node --test scripts/check-public-files.test.mjs

@@ -173,3 +173,6 @@ assets/images/tutorial/chapter-10.png
 assets/images/tutorial/chapter-11.png
 assets/images/tutorial/chapter-12.png
 assets/images/tutorial/chapter-13.png
+package.json
+package-lock.json
+eslint.config.mjs

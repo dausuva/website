@@ -4,3 +4,6 @@ resources/
 .idea/
 # Private names the site test looks for; never committed.
 .private-terms
+
+# Local JavaScript tooling dependencies
+node_modules/

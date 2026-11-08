@@ -1,0 +1,16 @@
+{
+  "name": "dausuva-website-checks",
+  "private": true,
+  "scripts": {
+    "lint": "eslint assets/js scripts eslint.config.mjs --max-warnings 0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "overrides": { "minimatch": "11.0.1" },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0",
+    "globals": "17.14.0"
+  }
+}

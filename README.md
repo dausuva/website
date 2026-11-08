@@ -42,6 +42,20 @@ hugo --minify --panicOnWarning
 node scripts/test-site.mjs public https://dausuva.com/
 ```
 
+## JavaScript checks
+
+JavaScript checks use Node 24 and pinned ESLint dependencies:
+
+```powershell
+npm ci --ignore-scripts
+npm run lint
+node --test scripts/check-public-files.test.mjs scripts/domains.test.mjs scripts/contacts.test.mjs scripts/video.test.mjs
+```
+
+CI runs lint with zero warnings allowed before building. Browser scripts and Node
+helpers use separate globals. The dependency override pins patched `minimatch`
+11.0.1 for the ESLint dependency tree; `npm audit` is clean with the checked-in lockfile.
+
 ## Where things are
 
 - `hugo.toml`: company details, prices, contact addresses. Change them here only.
