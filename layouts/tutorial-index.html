@@ -6,7 +6,7 @@
     <h1>{{ .Title }}</h1>
     <p class="lead">{{ .Description }}</p>
     {{ .Content }}
-    <p><a class="button primary" href="{{ partial "page-url.html" "/school/tutorial/welcome" }}">{{ T "startCourse" }} →</a> <a class="button" href="{{ partial "page-url.html" "/school/demo" }}">{{ T "demoShort" }}</a></p>
+    <p><a class="button primary" href="{{ partial "page-url.html" "/school/tutorial/welcome" }}">{{ T "startCourse" }} →</a> <a class="button" href="{{ partial "page-url.html" "/school/demo" }}">{{ T "demoShort" }}</a>{{ with hugo.Data.tutorial.youtubePlaylistId }} <a class="button" href="https://www.youtube.com/playlist?list={{ . }}">{{ T "watchOnYoutube" }} ↗</a>{{ end }}</p>
   </div>
   <h2>{{ T "allLessons" }}</h2>
   <ol class="tutorial-grid" start="0">

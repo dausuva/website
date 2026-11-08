@@ -25,6 +25,7 @@ for (const lang of ['en', 'lt']) {
   check(!/data-video-id|<iframe/.test(indexHtml), `${lang}: index links to lessons rather than loading fourteen players`);
   const cards = tags(indexHtml, 'a').filter(a => a.class === 'tutorial-card');
   check(cards.length === 14, `${lang}: fourteen lesson cards`);
+  if (catalog.youtubePlaylistId) check(tags(indexHtml, 'a').some(a => a.href === `https://www.youtube.com/playlist?list=${catalog.youtubePlaylistId}`), `${lang}: full-course playlist link`);
   const metadata = html => {
     const script = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)].find(m => attrs(m[1]).type === 'application/ld+json');
     return JSON.parse(script[2])['@graph'];
