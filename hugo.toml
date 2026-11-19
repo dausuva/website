@@ -42,7 +42,7 @@ enableGitInfo = true      # real lastmod dates in the sitemap (the workflow chec
   phone = "+370 648 45767"
   phoneLink = "+37064845767"
   product = "Classroom Manager"
-  version = "1.2.1"
+  version = "1.2.2"
   # AQAF checks the source code (the link and name are used on the landing page, the proof page and the download page).
   aqafUrl = "https://aqaf.focsd.com/"
   aqafName = "AQAF"

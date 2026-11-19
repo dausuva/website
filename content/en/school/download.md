@@ -8,7 +8,7 @@ schoolPage: true
 ---
 Classroom Manager has two programs: the **Host**, which the teacher runs, and the **Client**, which a school administrator installs once on each student computer. Both are **free to use and try**, and the source code is available if you want to build them yourself (Apache License 2.0). The source code is checked with [{{< product "aqafName" >}}]({{< product "aqafUrl" >}}), an architecture assessment framework.
 
-The downloads are unsigned, so Windows shows security messages when you start them: that is expected, and you see what you run before you trust it. The Host from the Microsoft Store works with up to **3 computers online at the same time**, and the Host downloads from GitHub apply the same limit from release 1.2.2; the Client has no limit. A Host you build yourself from the source has no computer limit. A school license adds more computers, signed builds, updates and support: see [Pricing]({{< relref "/school/pricing" >}}).
+The downloads are unsigned, so Windows shows security messages when you start them: that is expected, and you see what you run before you trust it. The Host works with up to **3 computers online at the same time**; the Client has no limit. A Host you build yourself from the source has no computer limit. A school license adds more computers, signed builds, updates and support: see [Pricing]({{< relref "/school/pricing" >}}).
 
 {{< shot src="images/moments/en/message.png" alt="The teacher's Host and three student computers, each showing the same message from the teacher." caption="What you get: one console for the teacher, and the Client on each student computer. Recorded in a real classroom test." >}}
 
@@ -32,7 +32,7 @@ Every release has a `SHA256SUMS.txt`. In PowerShell: `Get-FileHash .\file.exe -A
 
 ## Signing
 
-Releases are built by GitHub Actions from a tagged, public commit. A release that is signed says so on its release page; one that is not is named "(unsigned)" and Windows will warn before it runs. How releases are signed, and who approves them, is on the [code signing policy]({{< relref "/school/code-signing-policy" >}}) page. The first release, 1.2.1, is unsigned.
+Releases are built by GitHub Actions from a tagged, public commit. A release that is signed says so on its release page; one that is not is named "(unsigned)" and Windows will warn before it runs. How releases are signed, and who approves them, is on the [code signing policy]({{< relref "/school/code-signing-policy" >}}) page. The current release, {{< product "version" >}}, is unsigned.
 
 ## Windows and privacy
 
