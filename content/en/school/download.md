@@ -8,6 +8,8 @@ schoolPage: true
 ---
 Classroom Manager has two programs: the **Host**, which the teacher runs, and the **Client**, which a school administrator installs once on each student computer. Both are free, open source (Apache License 2.0) and have no limit on the number of computers.
 
+{{< shot src="images/moments/en/message.png" alt="The teacher's Host and three student computers, each showing the same message from the teacher." caption="What you get: one console for the teacher, and the Client on each student computer. Recorded in a real classroom test." >}}
+
 ## Teacher computer: the Host
 
 - **Microsoft Store:** [Get the Host from the Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it looks and works. It is free and needs no account; with no Client on your network it starts with an empty computer list, so every window can be opened and looked at.

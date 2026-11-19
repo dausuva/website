@@ -8,6 +8,8 @@ schoolPage: true
 ---
 The **Client** is a small Windows service with a helper that shows a notification-area icon. The teacher's Host connects to it over the school network. It is installed once on each student computer by someone with administrator rights, and it is not in the Microsoft Store (a Store app is installed per user, and a student could remove it).
 
+{{< shot src="images/moments/en/lock.png" alt="The teacher locks the screens of three student computers from the Host; each shows a Screen locked message." caption="What the Client does on a student computer: the teacher locks the screen, and the student sees the teacher's words. Recorded in a real classroom test." >}}
+
 > **The ready-made Client installer is coming soon.** Until it is public you can install the unsigned Client program from GitHub with the setup script (under step 2), or the Client comes in an individual package prepared for your school: [arrange a demo]({{< relref "/school/request" >}}) and we send it with your lab key. The teacher's Host is already free in the [Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it looks and works.
 
 Students see the icon in the notification area; opening it shows that the computer is managed and what is active. The programs do not view, capture or record student screens.

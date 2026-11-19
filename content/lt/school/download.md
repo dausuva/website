@@ -7,6 +7,8 @@ schoolPage: true
 ---
 Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir **Client**, kurį mokyklos administratorius vieną kartą įdiegia kiekviename mokinių kompiuteryje. Abi nemokamos, atvirojo kodo (Apache License 2.0) ir be kompiuterių skaičiaus ribos.
 
+{{< shot src="images/moments/lt/message.png" alt="Mokytojo Host ir trys mokinių kompiuteriai, kuriuose rodoma ta pati mokytojo žinutė." caption="Ką gaunate: vieną valdymo programą mokytojui ir Client kiekviename mokinio kompiuteryje. Įrašyta tikrame klasės bandyme." >}}
+
 ## Mokytojo kompiuteris: Host
 
 - **„Microsoft Store“:** [Gaukite Host iš „Microsoft Store“](https://apps.microsoft.com/detail/9P5BW5W79G41), kad pamatytumėte, kaip jis atrodo ir veikia. Programa nemokama, paskyros nereikia; jei tinkle nėra Client, ji paleidžiama su tuščiu kompiuterių sąrašu, todėl galima atidaryti ir apžiūrėti visus langus.

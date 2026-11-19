@@ -7,6 +7,8 @@ schoolPage: true
 ---
 **Client** yra nedidelė „Windows“ paslauga su pagalbine programa, rodančia piktogramą pranešimų srityje. Mokytojo Host prisijungia prie jo mokyklos tinklu. Jį vieną kartą kiekviename mokinio kompiuteryje įdiegia asmuo su administratoriaus teisėmis. Jo nėra „Microsoft Store“ (parduotuvės programa diegiama kiekvienam naudotojui atskirai, o mokinys galėtų ją pašalinti).
 
+{{< shot src="images/moments/lt/lock.png" alt="Mokytojas užrakina trijų mokinių kompiuterių ekranus iš Host; kiekviename rodomas užrakto ekranas." caption="Ką Client daro mokinio kompiuteryje: mokytojas užrakina ekraną, o mokinys mato mokytojo žodžius. Įrašyta tikrame klasės bandyme." >}}
+
 > **Paruošta Client diegimo programa bus prieinama netrukus.** Kol ji nėra vieša, nepasirašytą Client programą iš „GitHub“ galima įdiegti diegimo scenarijumi (žr. 2 žingsnį) arba Client pateikiamas mokyklai paruoštame individualiame pakete: [užsisakykite demonstraciją]({{< relref "/school/request" >}}) ir atsiųsime jį su jūsų laboratorijos raktu. Mokytojo programą Host jau galima nemokamai gauti [„Microsoft Store“](https://apps.microsoft.com/detail/9P5BW5W79G41), kad pamatytumėte, kaip ji atrodo ir veikia.
 
 Mokiniai mato piktogramą pranešimų srityje; ją atidarius matoma, kad kompiuteris valdomas ir kas šiuo metu aktyvu. Programos neperžiūri, nefiksuoja ir neįrašo mokinių ekranų.
