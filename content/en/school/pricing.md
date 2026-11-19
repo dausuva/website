@@ -18,7 +18,7 @@ If you do not renew, existing installations keep working. Renewal is for updates
 | | Build it yourself | Download and try | School license |
 |---|---|---|---|
 | What it is | You build it from the public source code | The Microsoft Store and the unsigned downloads on GitHub, with no license file | The official build with the school's license file |
-| Computers | No limit | Up to **3 online at the same time** (for example a small lab at home) | The number in the license (fewer than 50) |
+| Computers | No limit | Up to **3 online at the same time** (for example a small lab at home); for the GitHub downloads from release 1.2.2 | The number in the license (fewer than 50) |
 | Signed | No | The Store package is signed by the Store; the GitHub downloads are not, so Windows shows security messages | Yes, for the school's license year |
 | Support | None, no warranty; problems on GitHub, answered when someone can | None promised | Setup, onboarding, a year of updates and email and phone support |
 | Price | Free | Free | {{< product "priceFirstYear" >}} the first year, then {{< product "priceRenewal" >}} a year, per school |

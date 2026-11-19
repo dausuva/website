@@ -7,7 +7,7 @@ schoolPage: true
 ---
 Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir **Client**, kurį mokyklos administratorius vieną kartą įdiegia kiekviename mokinių kompiuteryje. Abi **nemokamai naudojamos ir išbandomos**, o pirminis kodas prieinamas, jei norite jas susikurti patys (Apache License 2.0). Pirminis kodas tikrinamas su [{{< product "aqafName" >}}]({{< product "aqafUrl" >}}), architektūros vertinimo sistema.
 
-Atsisiuntimai nepasirašyti, todėl paleidžiant „Windows“ rodo saugos pranešimus: tai tikėtina, ir matote, ką paleidžiate, prieš tuo pasitikėdami. Host veikia su iki **3 vienu metu prisijungusių kompiuterių**; Client neribojamas. Pačių sukurtas Host kompiuterių skaičiaus neriboja. Mokyklos licencija suteikia daugiau kompiuterių, pasirašytas versijas, naujinimus ir pagalbą: žr. [Kainos]({{< relref "/school/pricing" >}}).
+Atsisiuntimai nepasirašyti, todėl paleidžiant „Windows“ rodo saugos pranešimus: tai tikėtina, ir matote, ką paleidžiate, prieš tuo pasitikėdami. Host iš „Microsoft Store“ veikia su iki **3 vienu metu prisijungusių kompiuterių**, o „GitHub“ atsisiuntimuose ta pati riba taikoma nuo 1.2.2 leidimo; Client neribojamas. Pačių sukurtas Host kompiuterių skaičiaus neriboja. Mokyklos licencija suteikia daugiau kompiuterių, pasirašytas versijas, naujinimus ir pagalbą: žr. [Kainos]({{< relref "/school/pricing" >}}).
 
 {{< shot src="images/moments/lt/message.png" alt="Mokytojo Host ir trys mokinių kompiuteriai, kuriuose rodoma ta pati mokytojo žinutė." caption="Ką gaunate: vieną valdymo programą mokytojui ir Client kiekviename mokinio kompiuteryje. Įrašyta tikrame klasės bandyme." >}}
 

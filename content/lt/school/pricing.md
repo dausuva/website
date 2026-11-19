@@ -18,7 +18,7 @@ Nepratęsus esama įdiegta programa veikia toliau. Pratęsimas skirtas naujinima
 | | Susikurkite patys | Atsisiųskite ir išbandykite | Mokyklos licencija |
 |---|---|---|---|
 | Kas tai | Kuriate iš viešojo šaltinio kodo | „Microsoft Store“ ir nepasirašyti atsisiuntimai „GitHub“, be licencijos failo | Oficiali versija su mokyklos licencijos failu |
-| Kompiuteriai | Be apribojimų | Iki **3 vienu metu prisijungusių** (namų laboratorija) | Licencijoje nurodytas skaičius (mažiau nei 50) |
+| Kompiuteriai | Be apribojimų | Iki **3 vienu metu prisijungusių** (namų laboratorija); „GitHub“ atsisiuntimams nuo 1.2.2 leidimo | Licencijoje nurodytas skaičius (mažiau nei 50) |
 | Pasirašyta | Ne | „Store“ paketą pasirašo „Store“; „GitHub“ atsisiuntimai nepasirašyti, todėl „Windows“ rodo saugos pranešimus | Taip, mokyklos licencijos metams |
 | Pagalba | Jokios, be garantijos; problemos „GitHub“, atsakoma, kai kas nors gali | Nežadama | Diegimas, įvadas, metai naujinimų ir pagalba el. paštu bei telefonu |
 | Kaina | Nemokama | Nemokama | {{< product "priceFirstYear" >}} pirmais metais, toliau {{< product "priceRenewal" >}} per metus, mokyklai |
