@@ -35,6 +35,10 @@ Programos nesiunčia informacijos kitoms tinklo sistemoms, nebent to paprašo ja
 
 Abi programos turi pašalinimo programą skiltyje Nustatymai > Programos. Host taip pat pašalina Client iš mokinio kompiuterio, kai mokytojas to paprašo.
 
+## Pavadinimai ir logotipai
+
+„Classroom Manager“ ir „Dausuva Labs“, „Dausuva Labs“ logotipas ir „Classroom Manager“ piktograma yra „Dausuva Labs“ naudojami pavadinimai ir ženklai. Programos kodas licencijuotas pagal „Apache License 2.0“, kuri nesuteikia teisės naudoti šių pavadinimų ar logotipų (licencijos 6 skirsnis). Galite teisingai nurodyti, kuo remiasi jūsų programa, pavyzdžiui, „sukurta remiantis „Classroom Manager““. Pačių sukurta ar pakeista versija negali būti pateikiama kaip oficialus „Classroom Manager“ ar kaip „Dausuva Labs“ sukurta, pasirašyta ar palaikoma. Oficialios versijos yra pasirašytos leidėjo, nurodyto „Microsoft Store“ ir šioje politikoje. Dėl kitokio naudojimo rašykite {{< contact >}}.
+
 ## Pranešti apie problemą
 
 Apie programų ar leidimų proceso silpnybę rašykite {{< contact >}} (žr. [Saugumas]({{< relref "/school/security" >}})). Dėl jos neatidarykite viešo pranešimo.

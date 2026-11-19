@@ -24,7 +24,8 @@
       <a href="{{ partial "page-url.html" "/school/code-signing-policy/" }}">{{ T "codeSigning" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/support/" }}">{{ T "supportPage" }}</a><br>
       {{ with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ T "privacy" }}</a><br>{{ end }}
-      © {{ now.Year }} {{ site.Params.brand }}
+      {{- $from := int site.Params.founded -}}
+      © {{ if eq $from now.Year }}{{ $from }}{{ else }}{{ $from }}–{{ now.Year }}{{ end }} {{ site.Params.brand }}
     </div>
   </div>
   <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">{{ site.Params.brand }}</a><a href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }}</a><span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span></div>

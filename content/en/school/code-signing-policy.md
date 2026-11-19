@@ -36,6 +36,10 @@ The programs send no information to other networked systems unless the person us
 
 Both programs have an uninstaller in Settings > Apps. The Host also removes the Client from a student computer when the teacher asks.
 
+## Names and logos
+
+"Classroom Manager" and "Dausuva Labs", the Dausuva Labs logo and the Classroom Manager icon are names and marks used by Dausuva Labs. The source code is licensed under the Apache License 2.0, which does not grant the right to use these names or logos (section 6 of the licence). You may say truthfully what your software is based on, for example "based on Classroom Manager". A version you build or change yourself must not be presented as the official Classroom Manager or as made, signed or supported by Dausuva Labs. Official builds are the ones signed by the publisher named in the Microsoft Store and in this policy. For other uses, write to {{< contact >}}.
+
 ## Reporting a problem
 
 A weakness in the programs or the release process: write to {{< contact >}} (see [Security]({{< relref "/school/security" >}})). Do not open a public issue for it.
