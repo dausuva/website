@@ -13,7 +13,7 @@ Classroom Manager has two programs: the **Host**, which the teacher runs, and th
 ## Teacher computer: the Host
 
 - **Microsoft Store:** [Get the Host from the Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it looks and works. It is free and needs no account; with no Client on your network it starts with an empty computer list, so every window can be opened and looked at.
-- **Direct download (unsigned):** [the Host program](https://github.com/dausuva/classroom-manager/releases/latest/download/Dausuva-Classroom-Host-win-x64.exe), one file you can run from anywhere. It offers **Help > Install on this computer**, which adds it to your Start menu without administrator rights. This first release is not signed, so Windows will warn before it runs: check the file against `SHA256SUMS.txt` first (see below).
+- **Direct download (unsigned):** [the Host program](https://github.com/dausuva/classroom-manager/releases/download/v{{< product "version" >}}/Dausuva-Classroom-Host-{{< product "version" >}}-win-x64.exe), one file you can run from anywhere. It offers **Help > Install on this computer**, which adds it to your Start menu without administrator rights. This first release is not signed, so Windows will warn before it runs: check the file against `SHA256SUMS.txt` first (see below).
 - **winget (the Microsoft Store version):** `winget install 9P5BW5W79G41 --source msstore`
 - **All versions, checksums and the software bill of materials:** [GitHub releases](https://github.com/dausuva/classroom-manager/releases)
 
@@ -21,7 +21,7 @@ Classroom Manager has two programs: the **Host**, which the teacher runs, and th
 
 An administrator installs the Client once on each computer, with administrator rights. It is not in the Microsoft Store: a Store app is installed per user and a student could remove it. See [Installing the Client]({{< relref "/school/client" >}}) for the lab key, the silent installation and the Windows tools you can deploy it with.
 
-- **Direct download (unsigned):** [the Client program](https://github.com/dausuva/classroom-manager/releases/latest/download/Dausuva-Classroom-Client-win-x64.exe), one file. An administrator installs it on each student computer with the setup script from the source: the steps are in [Installing the Client]({{< relref "/school/client" >}}). This first release is not signed, so Windows will warn before it runs; check the file against `SHA256SUMS.txt` first.
+- **Direct download (unsigned):** [the Client program](https://github.com/dausuva/classroom-manager/releases/download/v{{< product "version" >}}/Dausuva-Classroom-Client-{{< product "version" >}}-win-x64.exe), one file. An administrator installs it on each student computer with the setup script from the source: the steps are in [Installing the Client]({{< relref "/school/client" >}}). This first release is not signed, so Windows will warn before it runs; check the file against `SHA256SUMS.txt` first.
 - The Client installer (a Setup program that takes the lab key): **coming soon.** [Arrange a demo]({{< relref "/school/request" >}}) and we prepare an individual package for your school, with the Client installer and your lab key. The Client's source code and build steps are in the [public repository](https://github.com/dausuva/classroom-manager).
 
 ## Check what you downloaded

@@ -153,6 +153,14 @@ for (const lang of ['en', 'lt']) {
       check(tags(html, 'img').length === 8, `${path}: the hero and seven showcase pictures`);
       check(tags(html, 'img')[0].loading === 'eager', `${path}: hero loads eagerly`);
     }
+    if (slug === 'download/') {
+      // The releases carry the files under their versioned names only: the tag and the version in the file name must agree, and no link may use a name without the version.
+      for (const kind of ['Host', 'Client']) {
+        const link = new RegExp(`/releases/download/v(\\d+\\.\\d+\\.\\d+)/Dausuva-Classroom-${kind}-(\\d+\\.\\d+\\.\\d+)-win-x64\\.exe`).exec(html);
+        check(link && link[1] === link[2], `${path}: the ${kind} download links the versioned file of its own release`);
+      }
+      check(!html.includes('/releases/latest/download/'), `${path}: no download link without the version in the file name`);
+    }
     if (slug === 'request/') {
       const drafts = tags(html, 'button').filter(t => t['data-contact']).map(t => decodeContact(t['data-contact'])).filter(payload => payload.kind === 'compose');
       check(drafts.length === 2, `${path}: demo and deployment draft`);
