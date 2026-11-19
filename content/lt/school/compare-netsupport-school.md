@@ -18,7 +18,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties NetSupport School svetaine (
 |---|---|---|
 | Skirta | Mokymui ir stebėjimui per pamoką, su konsole IT darbuotojams | „Windows“ klasei paruošti, vesti joje pamoką ir ją prižiūrėti |
 | Mokinių ekranai | Gyvi ekranų vaizdai, įskaitant du monitorius, su programų, svetainių ir klaviatūros veikla | Sąmoningai jokių: nei peržiūros, nei fiksavimo, nei įrašymo |
-| Platformos | „Windows“, „Mac“, iOS/Android ir „Chrome“, kaip nurodo jos svetainės meniu; „Linux“ neminimas | „Windows 10/11“, 64 ir 32 bitų |
+| Platformos | „Windows“, „Mac“, iOS/Android ir „Chrome“, kaip nurodo jos svetainės meniu; „Linux“ neminimas | „Windows 10/11“, 64 bitų (32 bitų versijos pagal užklausą) |
 | Kaina | Pasiūlymas pagal įrenginių skaičių; „nusipirk vieną kartą ir turėk visam laikui“ galimybė; kainoraščio svetainėje nėra | Skelbiama: nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus; be mokesčio už kompiuterį |
 | Pagalba | Nemokama pagalba pirmadieniais–penktadieniais ir nemokami mokymai internetu, pagal jos kainų puslapį; be diegimo mokesčių | Paruošimas, įvadinė pagalba ir metai naujinimų bei pagalbos įskaičiuoti |
 | Kalbos | Perskaitytuose puslapiuose nenurodyta | Anglų ir lietuvių, kiekvienas tekstas |

@@ -19,7 +19,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis Ativion Education Pro puslapiu ir �
 | Skirta | Mokinių gerovei, įrenginių valdymui ir vaikų apsaugai, su klasės įrankiais | „Windows“ klasei paruošti, vesti joje pamoką ir ją prižiūrėti |
 | Mokinių ekranai | „Kiekvieno mokinio ekrano matomumas realiu laiku“ | Sąmoningai jokių: nei peržiūros, nei fiksavimo, nei įrašymo |
 | Vaikų apsauga | „Realaus laiko žymos, aktyvus stebėjimas ir raktinių žodžių aptikimas“ apsaugos incidentams pažymėti; „sukurta pagal Ofsted ir ISI“ | Neteikiama: nestebima, ką mokiniai renka ar žiūri |
-| Platformos | „Windows“, „Chrome OS“, „macOS“ ir iOS | „Windows 10/11“, 64 ir 32 bitų |
+| Platformos | „Windows“, „Chrome OS“, „macOS“ ir iOS | „Windows 10/11“, 64 bitų (32 bitų versijos pagal užklausą) |
 | Prieglobos | „Įvairūs prieglobos variantai“; puslapyje neaprašyta | Serverio ir debesies paskyros nėra: mokytojo Host jungiasi tiesiai prie kiekvieno Client mokyklos tinklu |
 | Kaina | Perskaitytame puslapyje nenurodyta | Skelbiama: nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus; be mokesčio už kompiuterį |
 | Susiję produktai | StudentKeeper (klasės gerovė) ir ContentKeeper (žiniatinklio filtras) iš tos pačios įmonės | Jokių: viena programa su Host ir Client |

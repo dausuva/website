@@ -19,7 +19,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties LanSchool puslapiais: pagrin
 | Skirta | Mokymuisi, bendradarbiavimui ir dėmesiui pamokoje vadovauti, su stebėjimo ir saugos įrankiais | „Windows“ klasei paruošti, vesti joje pamoką ir ją prižiūrėti |
 | Mokinių ekranai | Visų mokinių ekranų miniatiūros realiu laiku arba vienas visu dydžiu; momentinės nuotraukos | Sąmoningai jokių: nei peržiūros, nei fiksavimo, nei įrašymo |
 | Versijos | Classic: „talpinama vietoje … jūsų mokyklos ar apskrities serveriuose“, „Mac“, „Windows“ ir mišriems įrenginiams. Air: debesyje, „Mac“, „Windows“, „Chromebook“ ir mišriems įrenginiams | Viena programa: serverio ir debesies paskyros nėra |
-| Platformos | „Mac“, „Windows“, „Chromebook“; iOS ir „Android“ neminimi | „Windows 10/11“, 64 ir 32 bitų |
+| Platformos | „Mac“, „Windows“, „Chromebook“; iOS ir „Android“ neminimi | „Windows 10/11“, 64 bitų (32 bitų versijos pagal užklausą) |
 | Kaina | „Single SKU pricing“: dvi licencijų galimybės už vieną kainą ir jokio papildomo mokesčio, jei pasikeičia talpinimo planai; pasiūlymas ar pirkimo užsakymas tiesiogiai arba per partnerius; nemokamas bandymas; metai LanSchool nemokamai su tinkamais „Lenovo“ švietimo įrenginiais. Kainų neskelbiama | Skelbiama: nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus; be mokesčio už kompiuterį |
 | Kalbos | Programos kalbos nenurodytos (svetainė turi daug regioninių versijų) | Anglų ir lietuvių, kiekvienas tekstas |
 | Integracijos | Air sinchronizuoja klasių sąrašus su „Google Classroom“, ClassLink ir Clever | Įtaisytas kompiuterių sąrašas su klasėmis |

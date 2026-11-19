@@ -18,7 +18,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis paties „Faronics“ Insight pusla
 |---|---|---|
 | Skirta | Mokymui ir vertinimui per pamoką, valdoma „iš vieno centrinio kompiuterio“ | „Windows“ klasei paruošti, vesti joje pamoką ir ją prižiūrėti |
 | Mokinių ekranai | Kiekvieno mokinio įrenginio miniatiūros, su įspėjimais dėl uždraustų žodžių, žinučių ir pakeltų rankų | Sąmoningai jokių: nei peržiūros, nei fiksavimo, nei įrašymo |
-| Platformos | „Windows, macOS, iOS, Android ir Chrome OS“ | „Windows 10/11“, 64 ir 32 bitų |
+| Platformos | „Windows, macOS, iOS, Android ir Chrome OS“ | „Windows 10/11“, 64 bitų (32 bitų versijos pagal užklausą) |
 | Kur veikia | Svetainės meniu nurodyta kaip „On-premise“ (vietinė); prieglobos puslapis neaprašo | Serverio ir debesies paskyros nėra: mokytojo Host jungiasi tiesiai prie kiekvieno Client mokyklos tinklu |
 | Kaina | Neskelbiama: apimties ir švietimo kainos „nepasiekiamos internete“; pasiūlymas per pardavimus; siūlomas nemokamas bandymas | Skelbiama: nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus; be mokesčio už kompiuterį |
 | Kalbos | Programos kalbos nenurodytos (kalbos pasirinkimas apima tik svetainę) | Anglų ir lietuvių, kiekvienas tekstas |

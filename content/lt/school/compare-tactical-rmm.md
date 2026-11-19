@@ -19,7 +19,7 @@ Palyginta 2026 m. lapkričio 5 d., remiantis Tactical RMM dokumentacija (pagrind
 | Skirta | Daugelio kompiuterių nuotoliniam stebėjimui ir valdymui IT darbuotojų | Windows klasei paruošti, vesti joje pamoką ir ją prižiūrėti mokytojo ar mokyklos IT |
 | Kaip sudaryta | Centrinis serveris, kurį patys įdiegiate ir prižiūrite, ir agentas kiekviename kompiuteryje | Serverio nėra: mokytojo Host jungiasi tiesiai prie Client kiekviename kompiuteryje mokyklos tinklu |
 | Ką reikia paleisti | „Linux“ serverį („Debian 13“ ar „Ubuntu 26.04 LTS“, bent 4 GB RAM) su trimis DNS vardais, TLS sertifikatais ir TCP prievadu 443 | Vieną Host mokytojo kompiuteryje ir Client kiekviename mokinio kompiuteryje; jokio serverio, jokių DNS vardų |
-| Kompiuteriai | „Windows 7“–11 ir „Windows Server“; „Linux“ ir „Mac“ agentai — rėmėjų galimybė | „Windows 10/11“, 64 ir 32 bitų |
+| Kompiuteriai | „Windows 7“–11 ir „Windows Server“; „Linux“ ir „Mac“ agentai — rėmėjų galimybė | „Windows 10/11“, 64 bitų (32 bitų versijos pagal užklausą) |
 | Kaina | Nemokama savo organizacijos sistemoms; žr. licenciją žemiau | Nemokama iki 3 vienu metu prisijungusių kompiuterių; mokyklai €499 pirmiems metams, vėliau €299 per metus; be mokesčio už kompiuterį |
 | Pagalba | Dokumentacija ir bendruomenė | Paruošimas, įvadinė pagalba ir metai naujinimų bei pagalbos įskaičiuoti |
 | Kalbos | Nepatikrinta | Anglų ir lietuvių, kiekvienas tekstas |
