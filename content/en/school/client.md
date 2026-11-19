@@ -8,7 +8,7 @@ schoolPage: true
 ---
 The **Client** is a small Windows service with a helper that shows a notification-area icon. The teacher's Host connects to it over the school network. It is installed once on each student computer by someone with administrator rights, and it is not in the Microsoft Store (a Store app is installed per user, and a student could remove it).
 
-> **The Client installer is coming soon.** Until it is public, the Client comes in an individual package prepared for your school: [arrange a demo]({{< relref "/school/request" >}}) and we send it with your lab key. The teacher's Host is already free in the [Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it looks and works.
+> **The ready-made Client installer is coming soon.** Until it is public you can install the unsigned Client program from GitHub with the setup script (under step 2), or the Client comes in an individual package prepared for your school: [arrange a demo]({{< relref "/school/request" >}}) and we send it with your lab key. The teacher's Host is already free in the [Microsoft Store](https://apps.microsoft.com/detail/9P5BW5W79G41) to see how it looks and works.
 
 Students see the icon in the notification area; opening it shows that the computer is managed and what is active. The programs do not view, capture or record student screens.
 
@@ -42,6 +42,18 @@ Dausuva-Classroom-Client-Setup-win-x64.exe /VERYSILENT /KIT=C:\path\to\classroom
 ```
 
 Setup adds three firewall rules (TCP 5050 for the Host, UDP 5051 for discovery, and ping, on Domain and Private networks), registers the service and an entry in Settings > Apps.
+
+### Until the installer is public: the unsigned program from GitHub
+
+1. From the [latest release](https://github.com/dausuva/classroom-manager/releases/latest) download `Dausuva-Classroom-Client-win-x64.exe` and `SHA256SUMS.txt`, and check the file (`Get-FileHash .\Dausuva-Classroom-Client-win-x64.exe -Algorithm SHA256`). Also download the release's **Source code (zip)** and unpack it: the setup scripts are in its `deploy` folder.
+2. Make a folder, for example `client`, and put the program in it named `ClassroomClient.exe`.
+3. In an administrator PowerShell, in the unpacked source folder:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\deploy\Install-Client.ps1 -Key "your-lab-key-here" -SourceDir .\client
+```
+
+This release is not signed, so Windows warns before the program runs, and the script treats it as an unsigned build. It adds the same firewall rules and service as the installer. [BUILDING.md](https://github.com/dausuva/classroom-manager/blob/main/BUILDING.md) in the source has the details.
 
 ## 3. Deploy to many computers
 

@@ -7,7 +7,7 @@ schoolPage: true
 ---
 **Client** yra nedidelė „Windows“ paslauga su pagalbine programa, rodančia piktogramą pranešimų srityje. Mokytojo Host prisijungia prie jo mokyklos tinklu. Jį vieną kartą kiekviename mokinio kompiuteryje įdiegia asmuo su administratoriaus teisėmis. Jo nėra „Microsoft Store“ (parduotuvės programa diegiama kiekvienam naudotojui atskirai, o mokinys galėtų ją pašalinti).
 
-> **Client diegimo programa bus prieinama netrukus.** Kol ji nėra vieša, Client pateikiamas mokyklai paruoštame individualiame pakete: [užsisakykite demonstraciją]({{< relref "/school/request" >}}) ir atsiųsime jį su jūsų laboratorijos raktu. Mokytojo programą Host jau galima nemokamai gauti [„Microsoft Store“](https://apps.microsoft.com/detail/9P5BW5W79G41), kad pamatytumėte, kaip ji atrodo ir veikia.
+> **Paruošta Client diegimo programa bus prieinama netrukus.** Kol ji nėra vieša, nepasirašytą Client programą iš „GitHub“ galima įdiegti diegimo scenarijumi (žr. 2 žingsnį) arba Client pateikiamas mokyklai paruoštame individualiame pakete: [užsisakykite demonstraciją]({{< relref "/school/request" >}}) ir atsiųsime jį su jūsų laboratorijos raktu. Mokytojo programą Host jau galima nemokamai gauti [„Microsoft Store“](https://apps.microsoft.com/detail/9P5BW5W79G41), kad pamatytumėte, kaip ji atrodo ir veikia.
 
 Mokiniai mato piktogramą pranešimų srityje; ją atidarius matoma, kad kompiuteris valdomas ir kas šiuo metu aktyvu. Programos neperžiūri, nefiksuoja ir neįrašo mokinių ekranų.
 
@@ -41,6 +41,18 @@ Dausuva-Classroom-Client-Setup-win-x64.exe /VERYSILENT /KIT=C:\kelias\iki\classr
 ```
 
 Diegimas prideda tris užkardos taisykles (TCP 5050 Host ryšiui, UDP 5051 aptikimui ir ping, domeno ir privačiuose tinkluose), užregistruoja paslaugą ir įrašą skiltyje Nustatymai > Programos.
+
+### Kol diegimo programa nėra vieša: nepasirašyta programa iš „GitHub“
+
+1. Iš [naujausio leidimo](https://github.com/dausuva/classroom-manager/releases/latest) atsisiųskite `Dausuva-Classroom-Client-win-x64.exe` ir `SHA256SUMS.txt` ir patikrinkite failą (`Get-FileHash .\Dausuva-Classroom-Client-win-x64.exe -Algorithm SHA256`). Taip pat atsisiųskite leidimo **Source code (zip)** ir išpakuokite: diegimo scenarijai yra aplanke `deploy`.
+2. Sukurkite aplanką, pavyzdžiui, `client`, ir įdėkite programą pavadinimu `ClassroomClient.exe`.
+3. Administratoriaus „PowerShell“, išpakuoto pirminio kodo aplanke:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\deploy\Install-Client.ps1 -Key "jūsų-laboratorijos-raktas" -SourceDir .\client
+```
+
+Šis leidimas nepasirašytas, todėl prieš paleidžiant programą „Windows“ perspės, o scenarijus ją laiko nepasirašyta versija. Jis prideda tas pačias užkardos taisykles ir paslaugą kaip diegimo programa. Daugiau: [BUILDING.md](https://github.com/dausuva/classroom-manager/blob/main/BUILDING.md) pirminiame kode.
 
 ## 3. Diekite daugeliui kompiuterių
 

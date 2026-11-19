@@ -18,7 +18,8 @@ Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir *
 
 Administratorius Client įdiegia vieną kartą kiekviename kompiuteryje, su administratoriaus teisėmis. Jo nėra „Microsoft Store“: parduotuvės programa diegiama kiekvienam naudotojui atskirai, o mokinys galėtų ją pašalinti. Apie laboratorijos raktą, tylųjį diegimą ir „Windows“ įrankius, kuriais galima diegti, žr. [Client diegimas]({{< relref "/school/client" >}}).
 
-- Client diegimo programa: **netrukus.** [Užsisakykite demonstraciją]({{< relref "/school/request" >}}) ir paruošime mokyklai individualų paketą su Client diegimo programa ir jūsų laboratorijos raktu. Client pirminis kodas ir kūrimo žingsniai yra [viešoje saugykloje](https://github.com/dausuva/classroom-manager).
+- **Tiesioginis atsisiuntimas (nepasirašytas):** [Client programa](https://github.com/dausuva/classroom-manager/releases/latest/download/Dausuva-Classroom-Client-win-x64.exe), vienas failas. Administratorius ją įdiegia kiekviename mokinio kompiuteryje diegimo scenarijumi iš pirminio kodo: žingsniai yra puslapyje [Client diegimas]({{< relref "/school/client" >}}). Šis pirmasis leidimas nepasirašytas, todėl prieš paleidžiant „Windows“ perspės: pirmiausia patikrinkite failą pagal `SHA256SUMS.txt`.
+- Client diegimo programa (Setup programa, kuriai nurodomas laboratorijos raktas): **netrukus.** [Užsisakykite demonstraciją]({{< relref "/school/request" >}}) ir paruošime mokyklai individualų paketą su Client diegimo programa ir jūsų laboratorijos raktu. Client pirminis kodas ir kūrimo žingsniai yra [viešoje saugykloje](https://github.com/dausuva/classroom-manager).
 
 ## Patikrinkite, ką atsisiuntėte
 
