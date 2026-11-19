@@ -72,6 +72,6 @@ Kai kurios mokyklos galėtų naudoti abi: Tactical RMM — savivaldybės kompiut
 
 - [Tactical RMM dokumentacija](https://docs.tacticalrmm.com/), jos [serverio diegimo vadovas](https://docs.tacticalrmm.com/install_server/) ir [licencija](https://docs.tacticalrmm.com/license/)
 - [Tactical RMM „GitHub“](https://github.com/amidaware/tacticalrmm)
-- <span class="soon" title="bus prieinama, kai viešoji saugykla bus atverta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
+- [Classroom Manager pirminis kodas](https://github.com/dausuva/classroom-manager) ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
 
 [Užsisakyti demonstraciją]({{< relref "/school/request" >}}) · [Žiūrėti kainas]({{< relref "/school/pricing" >}}) · [Kiek kainuoja kompiuteriui]({{< relref "/school/market" >}})

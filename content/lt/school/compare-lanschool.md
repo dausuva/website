@@ -59,6 +59,6 @@ Kai kurios mokyklos galėtų naudoti abi: LanSchool — ekranų darbui per pamok
 ## Šaltiniai (perskaityti 2026 m. lapkričio 5 d.)
 
 - [LanSchool pagrindinis puslapis](https://lanschool.com/), [LanSchool Classic](https://lanschool.com/solutions/classic), [LanSchool Air](https://lanschool.com/solutions/lanschool-air) ir [pirkimas](https://lanschool.com/purchasing)
-- <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
+- [Classroom Manager pirminis kodas](https://github.com/dausuva/classroom-manager) ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
 
 [Užsisakyti demonstraciją]({{< relref "/school/request" >}}) · [Žiūrėti kainas]({{< relref "/school/pricing" >}}) · [Kiek kainuoja kompiuteriui]({{< relref "/school/market" >}})

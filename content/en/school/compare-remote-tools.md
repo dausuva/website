@@ -46,6 +46,6 @@ Checked on 5 November 2026 against each vendor's own pages (listed below). None 
 - AnyDesk: [home page](https://anydesk.com/en) and [pricing](https://anydesk.com/en/pricing)
 - RustDesk: [home page](https://rustdesk.com/)
 - DWService: [overview](https://www.dwservice.net/en/overview.html), [applications](https://www.dwservice.net/en/applications.html) and [security](https://www.dwservice.net/en/security.html)
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you]({{< relref "/school/proof" >}})
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

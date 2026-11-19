@@ -84,7 +84,7 @@ Kai kurios mokyklos galėtų naudoti abi: Veyon — ekranų darbui per pamoką, 
 - [Veyon](https://veyon.io/en/), [jos galimybės](https://veyon.io/en/features/) ir [priedai](https://veyon.io/en/addons/)
 - [Veyon leidimai „GitHub“](https://github.com/veyon/veyon/releases) ir [naujienos](https://veyon.io/blog/)
 - [Veyon 4.11.0 pranešimas](https://veyon.io/blog/2026/07/10/veyon-4-11-0-released/) ir [versijų pastabos](https://docs.veyon.io/en/latest/admin/release-notes.html)
-- <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti](../faktai/)
+- [Classroom Manager pirminis kodas](https://github.com/dausuva/classroom-manager) ir [faktai, kuriuos galime parodyti](../faktai/)
 
 Žr. [visus palyginimus]({{< relref "/school/compare" >}}), įskaitant [Tactical RMM]({{< relref "/school/compare-tactical-rmm" >}}) ir [NetSupport School]({{< relref "/school/compare-netsupport-school" >}}).
 

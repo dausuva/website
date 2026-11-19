@@ -73,6 +73,6 @@ Some schools could use both: Tactical RMM for the district's fleet and alerts, C
 
 - [Tactical RMM documentation](https://docs.tacticalrmm.com/), its [server installation guide](https://docs.tacticalrmm.com/install_server/) and [license](https://docs.tacticalrmm.com/license/)
 - [Tactical RMM on GitHub](https://github.com/amidaware/tacticalrmm)
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you]({{< relref "/school/proof" >}})
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

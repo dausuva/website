@@ -61,6 +61,6 @@ Some schools could use both: Insight for screen work in the lesson, Classroom Ma
 ## Sources (read on 5 November 2026)
 
 - [Faronics Insight](https://www.faronics.com/en-uk/products/insight): features, platforms, pricing statement, version
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you]({{< relref "/school/proof" >}})
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

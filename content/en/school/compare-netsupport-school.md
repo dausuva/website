@@ -70,6 +70,6 @@ Some schools could use both: NetSupport School for screen work in the lesson, Cl
 ## Sources (read on 5 November 2026)
 
 - [NetSupport School](https://www.netsupportschool.com/), its [features page](https://www.netsupportschool.com/features.asp) and [pricing page](https://www.netsupportschool.com/pricing/)
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you]({{< relref "/school/proof" >}})
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

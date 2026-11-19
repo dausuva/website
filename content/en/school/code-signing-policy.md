@@ -15,7 +15,7 @@ This page says how Classroom Manager releases are made and approved. The same te
 ## What is built and signed
 
 - Two programs: the **Host** (`ClassroomHost.exe`, the teacher console) and the **Client** (`ClassroomClient.exe`, the service and helper on student computers), and the installers that contain them.
-- Every release is built by GitHub Actions from a tagged commit in the public repository, <span class="soon" title="available once the public repository is open">github.com/dausuva/classroom-manager</span>. The build scripts and the workflow are in the repository and are reviewed like the code.
+- Every release is built by GitHub Actions from a tagged commit in the public repository, [github.com/dausuva/classroom-manager](https://github.com/dausuva/classroom-manager). The build scripts and the workflow are in the repository and are reviewed like the code.
 - Only programs built from this repository's own source are signed. Packages the programs use are listed, with their versions and hashes, in the software bill of materials of each release.
 
 ## Who decides

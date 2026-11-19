@@ -60,6 +60,6 @@ Some schools could use both: LanSchool for screen work in the lesson, Classroom 
 ## Sources (read on 5 November 2026)
 
 - [LanSchool home page](https://lanschool.com/), [LanSchool Classic](https://lanschool.com/solutions/classic), [LanSchool Air](https://lanschool.com/solutions/lanschool-air) and [purchasing](https://lanschool.com/purchasing)
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you]({{< relref "/school/proof" >}})
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

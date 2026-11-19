@@ -45,6 +45,6 @@ Palyginta 2026 m. lapkričio 5 d., remiantis kiekvieno tiekėjo puslapiais (išv
 - AnyDesk: [pagrindinis puslapis](https://anydesk.com/en) ir [kainos](https://anydesk.com/en/pricing)
 - RustDesk: [pagrindinis puslapis](https://rustdesk.com/)
 - DWService: [apžvalga](https://www.dwservice.net/en/overview.html), [programos](https://www.dwservice.net/en/applications.html) ir [sauga](https://www.dwservice.net/en/security.html)
-- <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
+- [Classroom Manager pirminis kodas](https://github.com/dausuva/classroom-manager) ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
 
 [Užsisakyti demonstraciją]({{< relref "/school/request" >}}) · [Žiūrėti kainas]({{< relref "/school/pricing" >}}) · [Kiek kainuoja kompiuteriui]({{< relref "/school/market" >}})

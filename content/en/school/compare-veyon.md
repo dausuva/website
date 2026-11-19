@@ -85,7 +85,7 @@ Some schools could use both: Veyon for screen work in the lesson, Classroom Mana
 - [Veyon](https://veyon.io/en/), [its features](https://veyon.io/en/features/) and [add-ons](https://veyon.io/en/addons/)
 - [Veyon releases on GitHub](https://github.com/veyon/veyon/releases) and [news](https://veyon.io/blog/)
 - [Veyon 4.11.0 announcement](https://veyon.io/blog/2026/07/10/veyon-4-11-0-released/) and [release notes](https://docs.veyon.io/en/latest/admin/release-notes.html)
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you](../proof/)
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you](../proof/)
 
 See [all comparisons]({{< relref "/school/compare" >}}), including [Tactical RMM]({{< relref "/school/compare-tactical-rmm" >}}) and [NetSupport School]({{< relref "/school/compare-netsupport-school" >}}).
 

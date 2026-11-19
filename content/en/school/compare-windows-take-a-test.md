@@ -53,6 +53,6 @@ Checked on 5 November 2026 against Microsoft Learn's pages on Set up School PCs 
 
 - [Set up School PCs technical reference](https://learn.microsoft.com/en-us/education/windows/suspcs/reference) (page dated 29 October 2024)
 - [Take tests and assessments in Windows](https://learn.microsoft.com/en-us/education/windows/take-tests-in-windows) (updated 11 December 2025) and the [Take a Test technical reference](https://learn.microsoft.com/en-us/education/windows/take-a-test-app-technical) (updated 4 June 2025)
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you]({{< relref "/school/proof" >}})
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

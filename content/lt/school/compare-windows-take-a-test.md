@@ -52,6 +52,6 @@ Palyginta 2026 m. lapkričio 5 d., remiantis „Microsoft Learn“ puslapiais ap
 
 - [Set up School PCs techninė nuoroda](https://learn.microsoft.com/en-us/education/windows/suspcs/reference) (puslapis datuotas 2024 m. spalio 29 d.)
 - [Take tests and assessments in Windows](https://learn.microsoft.com/en-us/education/windows/take-tests-in-windows) (atnaujinta 2025 m. gruodžio 11 d.) ir [Take a Test techninė nuoroda](https://learn.microsoft.com/en-us/education/windows/take-a-test-app-technical) (atnaujinta 2025 m. birželio 4 d.)
-- <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
+- [Classroom Manager pirminis kodas](https://github.com/dausuva/classroom-manager) ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
 
 [Užsisakyti demonstraciją]({{< relref "/school/request" >}}) · [Žiūrėti kainas]({{< relref "/school/pricing" >}}) · [Kiek kainuoja kompiuteriui]({{< relref "/school/market" >}})

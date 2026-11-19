@@ -46,6 +46,6 @@ Tai skirtingų problemų sprendimai, o mokykla, kuriai reikia apsaugos stebėjim
 ## Šaltiniai (perskaityti 2026 m. lapkričio 5 d.)
 
 - [Ativion Education Pro](https://www.ativion.com/education-pro/) ir [Ativion švietimo produktai](https://www.ativion.com/edtech/); senas adresas imperosoftware.com nukreipia į ativion.com
-- <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">Classroom Manager pirminis kodas</span> ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
+- [Classroom Manager pirminis kodas](https://github.com/dausuva/classroom-manager) ir [faktai, kuriuos galime parodyti]({{< relref "/school/proof" >}})
 
 [Užsisakyti demonstraciją]({{< relref "/school/request" >}}) · [Žiūrėti kainas]({{< relref "/school/pricing" >}}) · [Kiek kainuoja kompiuteriui]({{< relref "/school/market" >}})

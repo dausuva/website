@@ -47,6 +47,6 @@ These solve different problems, and a school that needs safeguarding monitoring 
 ## Sources (read on 5 November 2026)
 
 - [Ativion Education Pro](https://www.ativion.com/education-pro/) and [Ativion education products](https://www.ativion.com/edtech/); the old address imperosoftware.com redirects to ativion.com
-- <span class="soon" title="available once the public repository is open">Classroom Manager source code</span> and the [facts we can show you]({{< relref "/school/proof" >}})
+- [Classroom Manager source code](https://github.com/dausuva/classroom-manager) and the [facts we can show you]({{< relref "/school/proof" >}})
 
 [Request a demo]({{< relref "/school/request" >}}) · [See the pricing]({{< relref "/school/pricing" >}}) · [What it costs per computer]({{< relref "/school/market" >}})

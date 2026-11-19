@@ -12,7 +12,7 @@ schoolPage: true
 
 - Which program: the Host (teacher) or the Client (student computer), and its version (Host: Help > About; Client: the status window opened from its notification-area icon).
 - The Windows version of both computers, and whether they are on the same network.
-- What you expected and what happened, with the **error code** if the message ends with one (for example "error code 020001"); the <span class="soon" title="available once the public repository is open">error list</span> explains each code.
+- What you expected and what happened, with the **error code** if the message ends with one (for example "error code 020001"); the [error list](https://github.com/dausuva/classroom-manager/blob/main/docs/ERROR-CODES.md) explains each code.
 - A report from the stand-alone **Classroom Health** program, if you have it: it checks the connection and the commands step by step and never writes a key into its report.
 
 ## Please do not send
@@ -25,4 +25,4 @@ A weakness in the programs is not a support question: see [Security]({{< relref 
 
 ## Everything else
 
-Questions about getting started and pilots: [Getting started]({{< relref "/school/getting-started" >}}). Installing the Client: [Installing the Client]({{< relref "/school/client" >}}). The project's source and issue tracker are at <span class="soon" title="available once the public repository is open">github.com/dausuva/classroom-manager</span>.
+Questions about getting started and pilots: [Getting started]({{< relref "/school/getting-started" >}}). Installing the Client: [Installing the Client]({{< relref "/school/client" >}}). The project's source and issue tracker are at [github.com/dausuva/classroom-manager](https://github.com/dausuva/classroom-manager).

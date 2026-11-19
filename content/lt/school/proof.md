@@ -18,7 +18,7 @@ Mokykla, perkanti programą savo kompiuterių klasei, neturėtų tikėti vien m�
 
 | Faktas | Kaip parodyta | Patikrinkite patys |
 |---|---|---|
-| Daugiau nei 3 800 automatinių testų po kiekvieno pakeitimo | Testai pirminiame kode; versija nesukuriama, jei bent vienas nepavyksta | Testus rasite <span class="soon" title="bus prieinama, kai viešoji saugykla bus atidaryta">pirminiame kode</span> |
+| Daugiau nei 3 800 automatinių testų po kiekvieno pakeitimo | Testai pirminiame kode; versija nesukuriama, jei bent vienas nepavyksta | Testus rasite [pirminiame kode](https://github.com/dausuva/classroom-manager) |
 | 89 sveikatos patikros išbando kiekvieną veiksmą tarp mokytojo ir mokinio kompiuterio | Classroom Health jas vykdo tikrame kompiuteryje | Paprašykite parodyti sveikatos ataskaitą per demonstraciją |
 | Kiekviena kliento komanda arba patikrinta, arba įrašyta į niekada nesiunčiamų sąrašą su priežastimi | Kitaip testas sustabdo versijos kūrimą | Sąrašas yra pirminiame kode |
 | 25 aprašyti klaidų kodai su priežastimi ir sprendimu | Kiekvienas klaidos pranešimas baigiasi kodu | Klaidų kodai paaiškinti vadove |
