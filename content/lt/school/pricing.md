@@ -13,17 +13,17 @@ Pirmų metų kaina — **{{< product "priceFirstYear" >}} fiksuota**, ne už kom
 
 Nepratęsus esama įdiegta programa veikia toliau. Pratęsimas skirtas naujinimams ir pagalbai, o ne programai išjungti. Kiekvienos mokyklos diegimo paketas pasirašomas licencijos metams; jiems pasibaigus, nauji diegimai ir naujinimai rodo Windows „nežinomo leidėjo“ įspėjimą, kol pratęsimas atneša naują pasitikėjimo atnaujinimą ir kliento naujinimą.
 
-## Nemokamas naudojimas ir trys būdai
+## Nemokamas išbandymas ir trys būdai
 
-| | Susikurkite patys | Oficiali, nemokama | Mokyklos licencija |
+| | Susikurkite patys | Atsisiųskite ir išbandykite | Mokyklos licencija |
 |---|---|---|---|
-| Kas tai | Kuriate iš viešojo šaltinio kodo | „Microsoft Store“ ir pasirašyti atsisiuntimai be licencijos failo | Oficiali versija su mokyklos licencijos failu |
+| Kas tai | Kuriate iš viešojo šaltinio kodo | „Microsoft Store“ ir nepasirašyti atsisiuntimai „GitHub“, be licencijos failo | Oficiali versija su mokyklos licencijos failu |
 | Kompiuteriai | Be apribojimų | Iki **3 vienu metu prisijungusių** (namų laboratorija) | Licencijoje nurodytas skaičius (mažiau nei 50) |
-| Pasirašyta | Ne | Taip | Taip, mokyklos licencijos metams |
+| Pasirašyta | Ne | „Store“ paketą pasirašo „Store“; „GitHub“ atsisiuntimai nepasirašyti, todėl „Windows“ rodo saugos pranešimus | Taip, mokyklos licencijos metams |
 | Pagalba | Jokios, be garantijos; problemos „GitHub“, atsakoma, kai kas nors gali | Nežadama | Diegimas, įvadas, metai naujinimų ir pagalba el. paštu bei telefonu |
 | Kaina | Nemokama | Nemokama | {{< product "priceFirstYear" >}} pirmais metais, toliau {{< product "priceRenewal" >}} per metus, mokyklai |
 
-Client mokinių kompiuteriuose nemokamas ir be apribojimų; riba yra mokytojo programoje, kuri aiškiai pasako mokytojui, kurie kompiuteriai laukia licencijos, ir niekada neatšaukia jau veikiančio užrakinimo ar egzamino. 50 ir daugiau kompiuterių mokyklos sutaria sąlygas atskirai. Ankstyvoji prieiga: oficiali nemokama versija ir „Store“ puslapis atsiras kartu su pirmuoju leidimu.
+Client mokinių kompiuteriuose nemokamas ir be apribojimų; riba yra mokytojo programoje, kuri aiškiai pasako mokytojui, kurie kompiuteriai laukia licencijos, ir niekada neatšaukia jau veikiančio užrakinimo ar egzamino. 50 ir daugiau kompiuterių mokyklos sutaria sąlygas atskirai. „Microsoft Store“ puslapis ir pirmasis viešas leidimas jau prieinami.
 
 ## Kiek kainuoja vienam kompiuteriui
 

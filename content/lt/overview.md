@@ -8,7 +8,7 @@ translationKey: "school"
 slug: "mokykloms"
 eyebrow: "Windows klasės valdymas · Ankstyvoji prieiga"
 lead: "Paruoškite klasę. Nusiųskite pamokos failus. Surinkite mokinių darbus. Classroom Manager sujungia kasdienes Windows klasės užduotis vienoje programoje, jūsų mokyklos tinkle."
-heroNote: "Atsisiųskite Host iš „Microsoft Store“ ir pamatykite, kaip jis veikia. Užsisakykite demonstraciją ir gaukite Client mokyklai paruoštu individualiu paketu."
+heroNote: "Išbandykite: atsisiųskite Host iš „Microsoft Store“ ar „GitHub“ ir naudokite iki 3 kompiuterių; Client taip pat yra „GitHub“. Užsisakykite demonstraciją ir gaukite mokyklai paruoštą paketą."
 shot: {"src":"images/moments/lt/message.png","alt":"Mokytojo Host valdymo langas ir trys mokinių kompiuteriai, kuriuose rodoma ta pati mokytojo žinutė.","caption":"Iš tikro klasės bandymo: mokytojo Host ir trys mokinių kompiuteriai. Adresai ir „Windows“ naudotojų vardai užtušuoti."}
 facts: ["Windows 10 / 11 kompiuteriai","Tiesioginis valdymas mokyklos tinkle","Mokinių ekranai neįrašomi","Lietuvių ir anglų kalbos"]
 workflowLabel: "Nuo pasiruošimo iki paskutinio paleidimo iš naujo"
@@ -27,7 +27,7 @@ trustLabel: "Žinokite, ką diegiate"
 trustHeading: "Aiški informacija prieš diegimą."
 proofLabel: "Įrodymai, ne pažadai"
 proofHeading: "Sukurta tikroje klasėje. Išbandoma po kiekvieno pakeitimo."
-proofs: [{"figure":"20 kompiuterių","text":"Veikianti mokyklos kompiuterių klasė dirba su Classroom Manager; ją prižiūri klasės administratorius."},{"figure":"3 800+ testų","text":"Automatiniai testai po kiekvieno pakeitimo; vienas nepavykęs sustabdo versijos kūrimą."},{"figure":"89 sveikatos patikros","text":"Kiekvieną veiksmą tarp mokytojo ir mokinio kompiuterio galima išbandyti tikrame kompiuteryje."},{"figure":"25 klaidų kodai","text":"Kiekviena klaida baigiasi kodu, kurį vadovas paaiškina su priežastimi ir sprendimu."},{"figure":"0 ekrano įrašų","text":"Mokinių ekranai neperžiūrimi, nefiksuojami ir neįrašomi — taip sukurta."},{"figure":"2 kalbos","text":"Kiekvienas langas anglų ir lietuvių kalba, daugiau nei 3 700 tekstų."}]
+proofs: [{"figure":"20 kompiuterių","text":"Veikianti mokyklos kompiuterių klasė dirba su Classroom Manager; ją prižiūri klasės administratorius."},{"figure":"3 800+ testų","text":"Automatiniai testai po kiekvieno pakeitimo; vienas nepavykęs sustabdo versijos kūrimą."},{"figure":"89 sveikatos patikros","text":"Kiekvieną veiksmą tarp mokytojo ir mokinio kompiuterio galima išbandyti tikrame kompiuteryje."},{"figure":"25 klaidų kodai","text":"Kiekviena klaida baigiasi kodu, kurį vadovas paaiškina su priežastimi ir sprendimu."},{"figure":"0 ekrano įrašų","text":"Mokinių ekranai neperžiūrimi, nefiksuojami ir neįrašomi — taip sukurta."},{"figure":"2 kalbos","text":"Kiekvienas langas anglų ir lietuvių kalba, daugiau nei 3 700 tekstų."},{"figure":"AQAF","icon":"icons/aqaf.svg","urlParam":"aqafUrl","text":"Pirminis kodas tikrinamas su AQAF, architektūros vertinimo sistema: vietine, tik skaitančia euristine patikra, o ne sertifikatu."}]
 compareLabel: "Prieš renkantis"
 compareHeading: "Kaip ji atrodo šalia kitų ir kiek kainuoja."
 compareLead: "Norime, kad rinktumėtės matydami visą vaizdą. Palyginkite Classroom Manager su alternatyvomis ir apskaičiuokite, kiek klasė kainuoja dabar."

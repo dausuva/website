@@ -20,7 +20,7 @@ Checked on 5 November 2026 against LanSchool's own pages: the home page, the Cla
 | Built for | Guiding learning, collaboration and focus in a lesson, with monitoring and safety tools | Preparing, running a lesson in, and maintaining a Windows lab |
 | Student screens | Real-time thumbnails of every student screen, or one at full size; snapshots | Deliberately none: no viewing, capture or recording |
 | Editions | Classic: "locally hosted … on your school or district's servers", for Mac, Windows and mixed devices. Air: cloud-based, for Mac, Windows, Chromebooks and mixed devices | One program: no server, no cloud account |
-| Platforms | Mac, Windows, Chromebooks; iOS and Android are not mentioned | Windows 10/11, 64-bit and 32-bit |
+| Platforms | Mac, Windows, Chromebooks; iOS and Android are not mentioned | Windows 10/11, 64-bit (32-bit builds on request) |
 | Price | "Single SKU pricing": two license options for one price, and no extra fee if your hosting plans change; a quote or purchase order, directly or through partners; a free trial; a free year of LanSchool with eligible Lenovo education devices. No prices are published | Published: free for up to 3 computers online at once; for a school, €499 the first year, then €299 a year; no per-PC charge |
 | Languages | Software languages not stated (the website has many regional versions) | English and Lithuanian, every text |
 | Integrations | Air syncs class lists with Google Classroom, ClassLink and Clever | The built-in list of computers with rooms |

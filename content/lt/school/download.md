@@ -5,7 +5,9 @@ translationKey: "school-download"
 slug: "atsisiuntimas"
 schoolPage: true
 ---
-Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir **Client**, kurį mokyklos administratorius vieną kartą įdiegia kiekviename mokinių kompiuteryje. Abi nemokamos, atvirojo kodo (Apache License 2.0) ir be kompiuterių skaičiaus ribos.
+Classroom Manager sudaro dvi programos: **Host**, kurią naudoja mokytojas, ir **Client**, kurį mokyklos administratorius vieną kartą įdiegia kiekviename mokinių kompiuteryje. Abi **nemokamai naudojamos ir išbandomos**, o pirminis kodas prieinamas, jei norite jas susikurti patys (Apache License 2.0). Pirminis kodas tikrinamas su [{{< product "aqafName" >}}]({{< product "aqafUrl" >}}), architektūros vertinimo sistema.
+
+Atsisiuntimai nepasirašyti, todėl paleidžiant „Windows“ rodo saugos pranešimus: tai tikėtina, ir matote, ką paleidžiate, prieš tuo pasitikėdami. Host veikia su iki **3 vienu metu prisijungusių kompiuterių**; Client neribojamas. Pačių sukurtas Host kompiuterių skaičiaus neriboja. Mokyklos licencija suteikia daugiau kompiuterių, pasirašytas versijas, naujinimus ir pagalbą: žr. [Kainos]({{< relref "/school/pricing" >}}).
 
 {{< shot src="images/moments/lt/message.png" alt="Mokytojo Host ir trys mokinių kompiuteriai, kuriuose rodoma ta pati mokytojo žinutė." caption="Ką gaunate: vieną valdymo programą mokytojui ir Client kiekviename mokinio kompiuteryje. Įrašyta tikrame klasės bandyme." >}}
 
@@ -33,6 +35,6 @@ Leidimus sukuria „GitHub Actions“ iš pažymėtos viešos versijos. Pasiraš
 
 ## Windows ir privatumas
 
-Windows 10 ir Windows 11, 64 arba 32 bitų. Client diegimo programa išbandyta su Windows 10 1903 ir 22H2 versijomis bei Windows 11; mokytojo Host reikalauja Windows 10 2004 ar naujesnės versijos. Client, pateiktas kaip MSIX paketas (Intune ar Configuration Manager), reikalauja Windows 10 2004 (darinys 19041) ar naujesnės versijos, 64 bitų; senesniame Windows 10 naudokite diegimo programą. Programos nieko nesiunčia Dausuva Labs: debesijos paslaugos nėra. Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija; pirmą kartą paleidus jis paklausia, ir tai galima išjungti. Žr. [Privatumas]({{< relref "/school/privacy" >}}).
+Windows 10 ir Windows 11, 64 bitų; 32 bitų versijos kuriamos pagal užklausą. Client diegimo programa išbandyta su Windows 10 1903 ir 22H2 versijomis bei Windows 11; mokytojo Host reikalauja Windows 10 2004 ar naujesnės versijos. Client, pateiktas kaip MSIX paketas (Intune ar Configuration Manager), reikalauja Windows 10 2004 (darinys 19041) ar naujesnės versijos, 64 bitų; senesniame Windows 10 naudokite diegimo programą. Programos nieko nesiunčia Dausuva Labs: debesijos paslaugos nėra. Host gali kartą per parą pažiūrėti github.com, ar yra naujesnė versija; pirmą kartą paleidus jis paklausia, ir tai galima išjungti. Žr. [Privatumas]({{< relref "/school/privacy" >}}).
 
 Kažkas negerai su atsisiuntimu? [Pagalba]({{< relref "/school/support" >}}).

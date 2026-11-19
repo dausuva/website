@@ -19,7 +19,7 @@ Checked on 5 November 2026 against Faronics' own Insight page. Insight was not i
 |---|---|---|
 | Built for | Teaching and assessment during a lesson, controlled "from one central computer" | Preparing, running a lesson in, and maintaining a Windows lab |
 | Student screens | Thumbnails of every student device, with alerts for banned words, messages and raised hands | Deliberately none: no viewing, capture or recording |
-| Platforms | "Windows, macOS, iOS, Android and Chrome OS" | Windows 10/11, 64-bit and 32-bit |
+| Platforms | "Windows, macOS, iOS, Android and Chrome OS" | Windows 10/11, 64-bit (32-bit builds on request) |
 | Where it runs | Listed under "On-premise" in its site navigation; hosting is not described on the page | No server and no cloud account: the teacher's Host connects straight to each Client over the school network |
 | Price | Not published: volume and education pricing are "not available online"; a quote through sales; a free trial is offered | Published: free for up to 3 computers online at once; for a school, €499 the first year, then €299 a year; no per-PC charge |
 | Languages | Software languages not stated (the language selector covers the website) | English and Lithuanian, every text |

@@ -150,7 +150,7 @@ for (const lang of ['en', 'lt']) {
       check(software.applicationCategory === 'EducationalApplication' && visibleHtml.includes(software.description), `${path}: visible software description`);
       check(software.publisher?.['@id'] === organization['@id'] && visibleHtml.includes(`Classroom Manager ${software.softwareVersion}`), `${path}: real publisher and displayed version`);
       check(html.includes('id=product-facts') || html.includes('id="product-facts"'), `${path}: answer-first product facts`);
-      check(tags(html, 'img').length === 8, `${path}: the hero and seven showcase pictures`);
+      check(tags(html, 'img').length === 9, `${path}: the hero, seven showcase pictures and the AQAF icon`);
       check(tags(html, 'img')[0].loading === 'eager', `${path}: hero loads eagerly`);
     }
     if (slug === 'download/') {

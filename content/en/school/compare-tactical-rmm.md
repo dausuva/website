@@ -20,7 +20,7 @@ Checked on 5 November 2026 against the Tactical RMM documentation (home page, se
 | Built for | Remote monitoring and management of many computers by IT staff | Preparing, running a lesson in, and maintaining a Windows lab, by a teacher or school IT |
 | How it is arranged | A central server you install and run, and an agent on every computer | No server: the teacher's Host connects straight to a Client on each computer over the school network |
 | What you must run | A Linux server (Debian 13 or Ubuntu 26.04 LTS, at least 4 GB of RAM) with three DNS names, TLS certificates and TCP port 443 | One Host on the teacher's PC and a Client on each student PC; no server, no DNS names |
-| Computers | Windows 7 to 11 and Windows Server; Linux and Mac agents are a sponsor feature | Windows 10/11, 64-bit and 32-bit |
+| Computers | Windows 7 to 11 and Windows Server; Linux and Mac agents are a sponsor feature | Windows 10/11, 64-bit (32-bit builds on request) |
 | Price | Free to use for your own in-house systems; see the license below | Free for up to 3 computers online at once; for a school, €499 the first year, then €299 a year; no per-PC charge |
 | Support | Documentation and community | Setup, onboarding and a year of updates and support included |
 | Languages | Not checked | English and Lithuanian, every text |

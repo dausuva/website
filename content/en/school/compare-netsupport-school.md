@@ -19,7 +19,7 @@ Checked on 5 November 2026 against NetSupport School's own website (home page, f
 |---|---|---|
 | Built for | Teaching and monitoring during a lesson, with a console for IT staff | Preparing, running a lesson in, and maintaining a Windows lab |
 | Student screens | Live views of screens, including dual monitors, with app, website and keyboard activity | Deliberately none: no viewing, capture or recording |
-| Platforms | Windows, Mac, iOS/Android and Chrome, as its site navigation lists them; Linux is not mentioned | Windows 10/11, 64-bit and 32-bit |
+| Platforms | Windows, Mac, iOS/Android and Chrome, as its site navigation lists them; Linux is not mentioned | Windows 10/11, 64-bit (32-bit builds on request) |
 | Price | A quote based on the number of devices; a "buy once and own forever" option; no list prices on its site | Published: free for up to 3 computers online at once; for a school, €499 the first year, then €299 a year; no per-PC charge |
 | Support | Free support Monday to Friday and free online training, according to its pricing page; no implementation fees | Setup, onboarding and a year of updates and support included |
 | Languages | Not stated on the pages read | English and Lithuanian, every text |

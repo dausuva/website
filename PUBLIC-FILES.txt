@@ -191,3 +191,4 @@ assets/images/moments/lt/message.png
 assets/images/moments/lt/open-website.png
 assets/images/moments/lt/processes.png
 assets/images/moments/lt/send-files.png
+assets/icons/aqaf.svg

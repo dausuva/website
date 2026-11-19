@@ -18,6 +18,7 @@ A school buying software for its lab should not have to take our word for it. Th
 
 | Fact | How it was shown | Check it yourself |
 |---|---|---|
+| The source code is checked with [AQAF]({{< product "aqafUrl" >}}), an architecture assessment framework | A local, read-only heuristic scan of the source; its own report says it is not a certification | Install AQAF and run it on the [source code](https://github.com/dausuva/classroom-manager) |
 | More than 3,800 automated tests run on every change | The test suite in the source code; the build fails when one fails | Read the tests in the [source code](https://github.com/dausuva/classroom-manager) |
 | 89 health checks test every action between the teacher's PC and a student PC | Classroom Health runs them against a real PC | Ask to see a health report in the demo |
 | Every client command is either health-checked or listed as never sent, with the reason | A test fails the build otherwise | The list is in the source code |

@@ -20,7 +20,7 @@ Checked on 5 November 2026 against Ativion's Education Pro page and its educatio
 | Built for | Learner well-being, device management and safeguarding, with classroom tools | Preparing, running a lesson in, and maintaining a Windows lab |
 | Student screens | "Real-time visibility of every student's screen" | Deliberately none: no viewing, capture or recording |
 | Safeguarding | "Real-time flags, active monitoring, and keyword detection" to highlight safeguarding incidents; "developed in line with Ofsted and ISI" | Not offered: no monitoring of what students type or view |
-| Platforms | Windows, Chrome OS, macOS and iOS | Windows 10/11, 64-bit and 32-bit |
+| Platforms | Windows, Chrome OS, macOS and iOS | Windows 10/11, 64-bit (32-bit builds on request) |
 | Hosting | "Various hosting options"; not detailed on the page | No server and no cloud account: the teacher's Host connects straight to each Client over the school network |
 | Price | Not stated on the page read | Published: free for up to 3 computers online at once; for a school, €499 the first year, then €299 a year; no per-PC charge |
 | Related products | StudentKeeper (classroom wellbeing) and ContentKeeper (web filter), from the same company | None: one program with a Host and a Client |
