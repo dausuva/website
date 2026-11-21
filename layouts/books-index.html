@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="wrap section tutorial-index">
+  <p class="breadcrumbs"><a href="{{ site.Home.RelPermalink }}">Dausuva</a> / Books for inspiration</p>
+  <div class="tutorial-intro prose">
+    <p class="eyebrow">Reading list</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Description }}</p>
+    {{ .Content }}
+  </div>
+  <ol class="tutorial-grid">
+  {{ range where site.RegularPages "Params.bookPage" true }}
+    <li><a class="tutorial-card" href="{{ .RelPermalink }}">
+      <span class="tutorial-card-meta"><span>{{ .Params.author }}</span></span>
+      <h3>{{ .Title }}</h3><p>{{ .Description }}</p><span class="tutorial-card-action">Why it matters →</span>
+    </a></li>
+  {{ end }}
+  </ol>
+  {{ partial "affiliate-note.html" . }}
+</article>
+{{ end }}

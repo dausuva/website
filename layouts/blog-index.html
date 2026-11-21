@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="wrap section tutorial-index">
+  <p class="breadcrumbs"><a href="{{ site.Home.RelPermalink }}">Dausuva</a> / Blog</p>
+  <div class="tutorial-intro prose">
+    <p class="eyebrow">Blog</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Description }}</p>
+    {{ .Content }}
+  </div>
+  <ol class="tutorial-grid">
+  {{ range where site.RegularPages "Params.blogPost" true }}
+    <li><a class="tutorial-card" href="{{ .RelPermalink }}">
+      <span class="tutorial-card-meta"><span>{{ .Date.Format "2 January 2006" }}</span></span>
+      <h3>{{ .Title }}</h3><p>{{ .Description }}</p><span class="tutorial-card-action">Read →</span>
+    </a></li>
+  {{ end }}
+  </ol>
+</article>
+{{ end }}

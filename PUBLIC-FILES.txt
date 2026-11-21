@@ -192,3 +192,15 @@ assets/images/moments/lt/open-website.png
 assets/images/moments/lt/processes.png
 assets/images/moments/lt/send-files.png
 assets/icons/aqaf.svg
+content/en/blog.md
+content/en/blog/design-lessons-for-classroom-software.md
+content/en/books-for-inspiration.md
+content/en/books-for-inspiration/design-of-everyday-things.md
+content/en/books-for-inspiration/philosophy-of-software-design.md
+content/en/books-for-inspiration/pragmatic-programmer.md
+layouts/blog-index.html
+layouts/blog-post.html
+layouts/books-index.html
+layouts/book.html
+layouts/_partials/book-link.html
+layouts/_partials/affiliate-note.html

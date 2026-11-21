@@ -50,6 +50,11 @@ enableGitInfo = true      # real lastmod dates in the sitemap (the workflow chec
   priceFirstYear = "€499"
   priceRenewal = "€299"
 
+# Book links. amazonTag empty = neutral links and no disclosure; set it to the Associates tracking ID (name-20) once approved.
+[params.affiliate]
+  amazonTag = ""
+  amazonDomain = "www.amazon.com"
+
 [markup.goldmark.renderer]
   unsafe = true
 

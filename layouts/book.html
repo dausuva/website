@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="wrap section prose">
+  <p class="breadcrumbs"><a href="{{ site.Home.RelPermalink }}">Dausuva</a> / <a href="{{ (site.GetPage "/books-for-inspiration").RelPermalink }}">Books for inspiration</a></p>
+  <p class="eyebrow">{{ .Params.author }}</p>
+  <h1>{{ .Title }}</h1>
+  <p class="lead">{{ .Description }}</p>
+  {{ .Content }}
+  <p>{{ partial "book-link.html" (dict "isbn" .Params.isbn) }}</p>
+  {{ partial "affiliate-note.html" . }}
+</article>
+{{ end }}

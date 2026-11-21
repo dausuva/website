@@ -12,17 +12,26 @@
       <a href="https://www.youtube.com/@dausuva" rel="noopener">{{ T "youtube" }}</a>
     </div>
     <div>
+      <strong>{{ T "footerProduct" }}</strong><br>
       <a href="{{ partial "page-url.html" "/school/security/" }}">{{ T "security" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/privacy/" }}">{{ T "productPrivacy" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/proof/" }}">{{ T "proof" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/market/" }}">{{ T "market" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/tutorial" }}">{{ T "tutorial" }}</a><br>
-      <a href="{{ partial "page-url.html" "/school/demo/" }}">{{ T "demoVideo" }}</a><br>
+      <a href="{{ partial "page-url.html" "/school/demo/" }}">{{ T "demoVideo" }}</a>
+    </div>
+    <div>
+      <strong>{{ T "footerGet" }}</strong><br>
       <a href="{{ partial "page-url.html" "/school/download/" }}">{{ T "download" }}</a><br>
       {{ if site.Params.storeLive }}<a href="{{ site.Params.storeUrl }}" rel="noopener">{{ T "microsoftStore" }}</a>{{ else }}<span class="soon" title="{{ T "storeSoon" }}">{{ T "microsoftStore" }}</span>{{ end }}<br>
       <a href="{{ partial "page-url.html" "/school/client/" }}">{{ T "clientInstall" }}</a><br>
       <a href="{{ partial "page-url.html" "/school/code-signing-policy/" }}">{{ T "codeSigning" }}</a><br>
-      <a href="{{ partial "page-url.html" "/school/support/" }}">{{ T "supportPage" }}</a><br>
+      <a href="{{ partial "page-url.html" "/school/support/" }}">{{ T "supportPage" }}</a>
+    </div>
+    <div>
+      <strong>{{ T "footerRead" }}</strong><br>
+      {{ with site.GetPage "/blog" }}<a href="{{ .RelPermalink }}">Blog</a><br>{{ end }}
+      {{ with site.GetPage "/books-for-inspiration" }}<a href="{{ .RelPermalink }}">Books for inspiration</a><br>{{ end }}
       {{ with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ T "privacy" }}</a><br>{{ end }}
       {{- $from := int site.Params.founded -}}
       © {{ if eq $from now.Year }}{{ $from }}{{ else }}{{ $from }}–{{ now.Year }}{{ end }} {{ site.Params.brand }}
