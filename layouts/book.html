@@ -7,5 +7,6 @@
   {{ .Content }}
   <p>{{ partial "book-link.html" (dict "isbn" .Params.isbn) }}</p>
   {{ partial "affiliate-note.html" . }}
+  <p class="note">Notice: the title, the author's name and any related marks, names and trade dress of the book discussed on this page are the property of their respective owners and are referred to for the purposes of identification, criticism and review only. Dausuva is not affiliated with, sponsored by or endorsed by the author or the publisher. The summary above is original text written by Dausuva, does not reproduce the book, and does not replace it. All rights in the book are reserved by their respective owners.</p>
 </article>
 {{ end }}

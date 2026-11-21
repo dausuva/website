@@ -823,3 +823,5 @@ table.compare{width:100%;min-width:calc(var(--cols,3) * 9.5rem);border-collapse:
 .tutorial-card-image{display:block;width:100%;height:auto;border-radius:7px;margin-top:16px;border:1px solid var(--line)}
 
 .proof-icon{display:block;margin:0 0 .6rem;border-radius:9px}
+
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

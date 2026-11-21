@@ -1,8 +1,8 @@
-{{- /* A shop link for a book (ISBN-13). With an Amazon tag in hugo.toml it is an affiliate link; without it, a neutral Open Library link. */ -}}
+{{- /* A shop link for a book (ISBN-13), opening in a new tab. With an Amazon tag in hugo.toml it is an affiliate link; without it, a neutral Open Library link. */ -}}
 {{- $isbn := .isbn -}}
 {{- $tag := site.Params.affiliate.amazonTag -}}
 {{- if $tag -}}
-<a class="button primary" href="https://{{ site.Params.affiliate.amazonDomain }}/s?k={{ $isbn }}&amp;tag={{ $tag }}" rel="sponsored nofollow noopener">Find on Amazon ↗</a>
+<a class="button primary" href="https://{{ site.Params.affiliate.amazonDomain }}/s?k={{ $isbn }}&amp;tag={{ $tag }}" target="_blank" rel="sponsored nofollow noopener noreferrer">Find on Amazon ↗<span class="visually-hidden"> (opens in a new tab)</span></a>
 {{- else -}}
-<a class="button" href="https://openlibrary.org/isbn/{{ $isbn }}" rel="nofollow noopener">Find the book (Open Library) ↗</a>
+<a class="button" href="https://openlibrary.org/isbn/{{ $isbn }}" target="_blank" rel="nofollow noopener noreferrer">Find the book (Open Library) ↗<span class="visually-hidden"> (opens in a new tab)</span></a>
 {{- end -}}
