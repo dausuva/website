@@ -32,11 +32,8 @@
       <strong>{{ T "footerRead" }}</strong><br>
       {{ with site.GetPage "/blog" }}<a href="{{ .RelPermalink }}">Blog</a><br>{{ end }}
       {{ with site.GetPage "/books-for-inspiration" }}<a href="{{ .RelPermalink }}">Books for inspiration</a><br>{{ end }}
-      {{ with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ T "privacy" }}</a><br>{{ end }}
-      {{- $from := int site.Params.founded -}}
-      © {{ if eq $from now.Year }}{{ $from }}{{ else }}{{ $from }}–{{ now.Year }}{{ end }} {{ site.Params.brand }}
     </div>
   </div>
-  <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">{{ site.Params.brand }}</a><a href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }}</a><span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span></div>
+  <div class="wrap footer-links"><a href="{{ site.Home.RelPermalink }}">{{ site.Params.brand }}</a><a href="{{ partial "page-url.html" "/school/getting-started/" }}">{{ T "gettingStarted" }}</a>{{ with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ T "privacy" }}</a>{{ end }}<span>Classroom Manager {{ site.Params.version }} · {{ T "earlyAccess" }}</span>{{- $from := int site.Params.founded -}}<span>© {{ if eq $from now.Year }}{{ $from }}{{ else }}{{ $from }}–{{ now.Year }}{{ end }} {{ site.Params.brand }}</span></div>
 </footer>
 <noscript><p class="wrap note">{{ T "contactNoScript" }}</p></noscript>
