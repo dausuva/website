@@ -5,6 +5,8 @@ url: "/books-for-inspiration/refactoring/"
 author: "Martin Fowler"
 isbn: "9780134757599"
 bookPage: true
+category: "programming"
+weight: 7
 layout: "book"
 ---
 **The argument.** Refactoring means changing the structure of code without changing what it does, in steps small enough that each one is safe and each one is checked by tests. Fowler presents it as the way a design improves continuously, instead of through risky rewrites. The second edition uses JavaScript for its examples and organises a catalogue of named moves you can apply by name.

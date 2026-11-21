@@ -5,6 +5,8 @@ url: "/books-for-inspiration/code-complete/"
 author: "Steve McConnell"
 isbn: "9780735619678"
 bookPage: true
+category: "programming"
+weight: 6
 layout: "book"
 ---
 **The argument.** Construction, the part of the work where code is written, tested and debugged, is where most of the quality of a program is decided. McConnell collects the practices that research and experience support into one handbook: how to name and organise code, how to write routines, control structures and data, how to check quality, and how to keep complexity manageable. His underlying claim is that managing complexity is the main technical job, and every practice is judged by how it helps.

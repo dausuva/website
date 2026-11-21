@@ -5,6 +5,8 @@ url: "/books-for-inspiration/domain-driven-design/"
 author: "Eric Evans"
 isbn: "9780321125217"
 bookPage: true
+category: "architecture"
+weight: 3
 layout: "book"
 ---
 **The argument.** In software for a complicated field, the hard part is understanding the field, not the technology. Evans argues that you should build a model of the domain together with the people who know it, use that model's words everywhere, and keep the code shaped like the model. Where a large system must hold more than one model, say where each applies and how they meet.

@@ -5,6 +5,8 @@ url: "/books-for-inspiration/clean-architecture/"
 author: "Robert C. Martin"
 isbn: "9780134494166"
 bookPage: true
+category: "architecture"
+weight: 2
 layout: "book"
 ---
 **The argument.** Source-code dependencies should point toward policy, the rules of the business, and away from detail: the interface, the database, the framework, the devices. The core must not know how it is shown or stored, and the details plug into it. A system built that way can swap its details, and its rules can be tested without them.

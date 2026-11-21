@@ -5,6 +5,8 @@ url: "/books-for-inspiration/working-effectively-with-legacy-code/"
 author: "Michael Feathers"
 isbn: "9780131177055"
 bookPage: true
+category: "programming"
+weight: 9
 layout: "book"
 ---
 **The argument.** Legacy code, in Feathers' sense, is code without tests. To change it safely you first get it under test, using the smallest changes that make that possible, and only then make your real change. The book is a catalogue of ways to break the dependencies that stop a piece of code from being tested.

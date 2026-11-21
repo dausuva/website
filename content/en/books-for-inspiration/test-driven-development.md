@@ -5,6 +5,8 @@ url: "/books-for-inspiration/test-driven-development/"
 author: "Kent Beck"
 isbn: "9780321146533"
 bookPage: true
+category: "programming"
+weight: 8
 layout: "book"
 ---
 **The argument.** Write a failing test, make it pass in the simplest way, then clean up. Repeat in very small steps. Beck, who popularised the practice, shows it by building working examples live in the book. The rhythm gives steady progress, a working system at every moment, and a design shaped by how it is used.

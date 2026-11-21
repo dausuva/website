@@ -1,4 +1,11 @@
 {{ define "main" }}
+{{ $sections := slice
+  (dict "key" "ib" "title" "IB Computer Science" "intro" "Course books for the IB Diploma Computer Science course: a first map of the whole subject.")
+  (dict "key" "programming" "title" "Programming and craft" "intro" "From your first program to the habits of professional developers.")
+  (dict "key" "architecture" "title" "Architecture and design" "intro" "How to structure a system so that it stays understandable, reliable and easy for people to use.")
+  (dict "key" "security" "title" "Windows and security" "intro" "How Windows works inside, and how to build software that handles other people's computers safely.")
+  (dict "key" "startup" "title" "Starting a software business" "intro" "How to find out whether people want what you are building, before you build all of it.")
+}}
 <article class="wrap section tutorial-index">
   <p class="breadcrumbs"><a href="{{ site.Home.RelPermalink }}">Dausuva</a> / Books for inspiration</p>
   <div class="tutorial-intro prose">
@@ -7,14 +14,22 @@
     <p class="lead">{{ .Description }}</p>
     {{ .Content }}
   </div>
-  <ol class="tutorial-grid">
-  {{ range where site.RegularPages "Params.bookPage" true }}
-    <li><a class="tutorial-card" href="{{ .RelPermalink }}">
-      <span class="tutorial-card-meta"><span>{{ .Params.author }}</span></span>
-      <h3>{{ .Title }}</h3><p>{{ .Description }}</p><span class="tutorial-card-action">Why it matters →</span>
-    </a></li>
+  <nav class="note" aria-label="Sections">Jump to: {{ range $i, $s := $sections }}{{ if $i }} · {{ end }}<a href="#{{ $s.key }}">{{ $s.title }}</a>{{ end }}</nav>
+  {{ range $sections }}
+  {{ $key := .key }}
+  <section id="{{ $key }}">
+    <h2>{{ .title }}</h2>
+    <p>{{ .intro }}</p>
+    <ol class="tutorial-grid">
+    {{ range sort (where site.RegularPages "Params.category" $key) "Params.weight" }}
+      <li><a class="tutorial-card" href="{{ .RelPermalink }}">
+        <span class="tutorial-card-meta"><span>{{ .Params.author }}</span></span>
+        <h3>{{ .Title }}</h3><p>{{ .Description }}</p><span class="tutorial-card-action">Why it matters →</span>
+      </a></li>
+    {{ end }}
+    </ol>
+  </section>
   {{ end }}
-  </ol>
   {{ partial "affiliate-note.html" . }}
 </article>
 {{ end }}

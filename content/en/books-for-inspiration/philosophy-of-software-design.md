@@ -5,6 +5,8 @@ url: "/books-for-inspiration/philosophy-of-software-design/"
 author: "John Ousterhout"
 isbn: "9781732102217"
 bookPage: true
+category: "architecture"
+weight: 1
 layout: "book"
 ---
 **The argument.** Complexity is the enemy of software, and it arrives in small steps: one exception here, one special case there, until nobody can hold the whole system in their head. Ousterhout, a professor at Stanford, argues that the main job of design is to reduce it. His central picture is the deep module, a part that hides a lot of work behind a small, simple interface, as opposed to a shallow one whose interface is nearly as complicated as its inside.

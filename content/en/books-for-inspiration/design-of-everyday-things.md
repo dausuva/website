@@ -5,6 +5,8 @@ url: "/books-for-inspiration/design-of-everyday-things/"
 author: "Don Norman"
 isbn: "9780465050659"
 bookPage: true
+category: "architecture"
+weight: 5
 layout: "book"
 ---
 **The argument.** When people use something wrongly, the design is at fault, not the person. Norman builds his case on doors that must be pushed but look like they should be pulled, stoves whose knobs do not match the burners, and switches nobody can label from memory. From these small failures he draws a vocabulary that applies to any interface, including software: good design makes it plain what can be done, shows what is happening, and forgives mistakes.

@@ -5,6 +5,8 @@ url: "/books-for-inspiration/pragmatic-programmer/"
 author: "David Thomas and Andrew Hunt"
 isbn: "9780135957059"
 bookPage: true
+category: "programming"
+weight: 5
 layout: "book"
 ---
 **The argument.** Good software comes from craft: care for details, small reversible steps, and tools that remove repetition. The book is a collection of short tips, each about a habit of mind rather than a technology, which is why it has stayed useful through several languages and fashions. The anniversary edition updates the examples and keeps the advice.

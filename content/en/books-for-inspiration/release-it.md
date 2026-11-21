@@ -5,6 +5,8 @@ url: "/books-for-inspiration/release-it/"
 author: "Michael T. Nygard"
 isbn: "9781680502398"
 bookPage: true
+category: "architecture"
+weight: 4
 layout: "book"
 ---
 **The argument.** A system that passes its tests can still fail in production, because production brings load, slow dependencies and partial failure. Nygard collects real stories of outages and turns them into patterns. His advice is to assume that every call to another system can hang, fail or lie, and to make sure one failure cannot spread.

@@ -214,3 +214,14 @@ content/en/books-for-inspiration/test-driven-development.md
 content/en/books-for-inspiration/threat-modeling.md
 content/en/books-for-inspiration/working-effectively-with-legacy-code.md
 content/en/books-for-inspiration/writing-secure-code.md
+content/en/books-for-inspiration/code-petzold.md
+content/en/books-for-inspiration/csharp-in-depth.md
+content/en/books-for-inspiration/ib-computer-science-hodder.md
+content/en/books-for-inspiration/ib-computer-science-oxford.md
+content/en/books-for-inspiration/lean-startup.md
+content/en/books-for-inspiration/mom-test.md
+content/en/books-for-inspiration/python-crash-course.md
+content/en/books-for-inspiration/sicp.md
+content/en/books-for-inspiration/windows-internals.md
+content/en/books-for-inspiration/windows-security-internals.md
+content/en/blog/learn-to-build-software-like-classroom-manager.md

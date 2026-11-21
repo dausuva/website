@@ -5,6 +5,8 @@ url: "/books-for-inspiration/writing-secure-code/"
 author: "Michael Howard and David LeBlanc"
 isbn: "9780735617223"
 bookPage: true
+category: "security"
+weight: 2
 layout: "book"
 ---
 **The argument.** Security flaws are mostly ordinary bugs in code that handles untrusted input or too much privilege. The cure is habits: assume input is hostile, give code the least privilege it needs, fail closed, and review for known classes of flaw. The book is written around Windows by two Microsoft security engineers, which makes it a close match for software like ours.

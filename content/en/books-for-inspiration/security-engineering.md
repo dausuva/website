@@ -5,6 +5,8 @@ url: "/books-for-inspiration/security-engineering/"
 author: "Ross Anderson"
 isbn: "9781119642787"
 bookPage: true
+category: "security"
+weight: 1
 layout: "book"
 ---
 **The argument.** Security is about people, incentives and failure as much as about cryptography. Anderson, a professor at Cambridge, surveys real systems, from banks and locks to phones and medical devices, and shows how they were attacked and why. The lesson is to design for the attacker you will actually meet and for the honest user who makes mistakes.

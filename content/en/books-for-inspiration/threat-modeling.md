@@ -5,6 +5,8 @@ url: "/books-for-inspiration/threat-modeling/"
 author: "Adam Shostack"
 isbn: "9781118809990"
 bookPage: true
+category: "security"
+weight: 3
 layout: "book"
 ---
 **The argument.** Do security design before the code exists, in a repeatable way. Draw the system, find the places where trust changes, and for each part ask what can go wrong. Then decide what to do about each threat and check that you did it. Shostack worked on this at Microsoft, and the book turns a vague worry into a routine anyone on a team can follow.
