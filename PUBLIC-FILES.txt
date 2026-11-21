@@ -225,3 +225,8 @@ content/en/books-for-inspiration/sicp.md
 content/en/books-for-inspiration/windows-internals.md
 content/en/books-for-inspiration/windows-security-internals.md
 content/en/blog/learn-to-build-software-like-classroom-manager.md
+content/en/books-for-inspiration/classroom-management-that-works.md
+content/en/books-for-inspiration/make-it-stick.md
+content/en/books-for-inspiration/teach-like-a-champion.md
+content/en/books-for-inspiration/understanding-by-design.md
+content/en/books-for-inspiration/why-dont-students-like-school.md
