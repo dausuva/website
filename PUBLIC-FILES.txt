@@ -204,3 +204,13 @@ layouts/books-index.html
 layouts/book.html
 layouts/_partials/book-link.html
 layouts/_partials/affiliate-note.html
+content/en/books-for-inspiration/clean-architecture.md
+content/en/books-for-inspiration/code-complete.md
+content/en/books-for-inspiration/domain-driven-design.md
+content/en/books-for-inspiration/refactoring.md
+content/en/books-for-inspiration/release-it.md
+content/en/books-for-inspiration/security-engineering.md
+content/en/books-for-inspiration/test-driven-development.md
+content/en/books-for-inspiration/threat-modeling.md
+content/en/books-for-inspiration/working-effectively-with-legacy-code.md
+content/en/books-for-inspiration/writing-secure-code.md
