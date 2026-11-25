@@ -1,3 +1,15 @@
+{{ if or .Params.backupPage (eq .Layout "backup") }}
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="{{ (site.GetPage "/backup").RelPermalink }}"><span class="brand-mark" aria-hidden="true">d.</span><span>Dausuva<small>Backup</small></span></a>
+  <nav aria-label="{{ T "navigation" }}">
+    {{ $current := . }}
+    {{ range slice (dict "path" "/backup" "key" "backupOverview") (dict "path" "/backup/privacy" "key" "backupPrivacyNav") (dict "path" "/backup/support" "key" "supportPage") }}{{ $key := .key }}{{ with site.GetPage .path }}<a href="{{ .RelPermalink }}"{{ if eq $current.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ T $key }}</a>{{ end }}{{ end }}
+    <a href="{{ partial "page-url.html" "/school/" }}">{{ site.Params.product }}</a>
+    {{ with site.GetPage "/blog" }}<a href="{{ .RelPermalink }}">Blog</a>{{ end }}
+    {{ if site.Params.backupStoreLive }}<a class="nav-cta" href="{{ site.Params.backupStoreUrl }}" rel="noopener">{{ T "microsoftStore" }} ↗</a>{{ else }}<a class="nav-cta" href="{{ (site.GetPage "/backup/support").RelPermalink }}">{{ T "contact" }} ↗</a>{{ end }}
+  </nav>
+</div></header>
+{{ else }}
 <header class="site-header"><div class="wrap bar">
   <a class="brand" href="{{ partial "page-url.html" "/school/" }}"><span class="brand-mark" aria-hidden="true">d.</span><span>Dausuva<small>Classroom Manager</small></span></a>
   <nav aria-label="{{ T "navigation" }}">
@@ -10,3 +22,4 @@
     <a class="nav-cta" href="{{ partial "page-url.html" "/school/request/" }}">{{ T "contact" }} ↗</a>
   </nav>
 </div></header>
+{{ end }}

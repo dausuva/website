@@ -15,6 +15,13 @@
     <span class="more">{{ $.Params.productMore }} →</span>
   </a>
   {{ end }}
+  {{ with $.Params.backupLine }}{{ with site.GetPage "/backup" }}
+  <a class="card product" href="{{ .RelPermalink }}">
+    <span class="card-title">{{ site.Params.backupName }}</span>
+    <span>{{ $.Params.backupLine }}</span>
+    <span class="more">{{ $.Params.productMore }} →</span>
+  </a>
+  {{ end }}{{ end }}
 </section>
 
 <section class="wrap section" id="contact">

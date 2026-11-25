@@ -15,6 +15,12 @@
   {{- $software := dict "@type" "SoftwareApplication" "@id" $softwareID "name" site.Params.product "url" .Permalink "description" $copy.description "operatingSystem" (delimit site.Params.operatingSystems ", ") "applicationCategory" "EducationalApplication" "softwareVersion" site.Params.version "inLanguage" site.Language.Locale "publisher" (dict "@id" $organizationID) -}}
   {{- $graph = $graph | append $software -}}
 {{- end -}}
+{{- if or .Params.backupPage (eq .Layout "backup") -}}
+  {{- $backupHome := site.GetPage "/backup" -}}
+  {{- $backupID := printf "%s#software" $backupHome.Permalink -}}
+  {{- $webpage = merge $webpage (dict "about" (dict "@id" $backupID)) -}}
+  {{- $graph = slice $organization $website $webpage (dict "@type" "SoftwareApplication" "@id" $backupID "name" site.Params.backupName "url" $backupHome.Permalink "description" $backupHome.Description "operatingSystem" "Windows 10, Windows 11" "applicationCategory" "UtilitiesApplication" "softwareVersion" site.Params.backupVersion "inLanguage" site.Language.Locale "publisher" (dict "@id" $organizationID)) -}}
+{{- end -}}
 {{- if .Params.schoolPage -}}
   {{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" site.Params.product "item" $product.Permalink) (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
   {{- if eq .Layout "tutorial-lesson" -}}
@@ -56,7 +62,7 @@
   {{- range findRESubmatch `(?s)<details><summary>(.*?)</summary><p>(.*?)</p></details>` .RawContent -}}
     {{- $questions = $questions | append (dict "@type" "Question" "name" (plainify (index . 1)) "acceptedAnswer" (dict "@type" "Answer" "text" (plainify (index . 2)))) -}}
   {{- end -}}
-{{- else if and (eq .TranslationKey "school") .Params.faq -}}
+{{- else if and (or (eq .TranslationKey "school") (eq .TranslationKey "backup")) .Params.faq -}}
   {{- range .Params.faq -}}
     {{- $questions = $questions | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) -}}
   {{- end -}}

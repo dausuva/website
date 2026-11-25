@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{ $p := .Params }}
+{{ $privacy := (site.GetPage "/backup/privacy").RelPermalink }}
+{{ $support := (site.GetPage "/backup/support").RelPermalink }}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><span class="status-dot"></span> {{ $p.eyebrow }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ $p.lead }}</p>
+      <div class="actions">
+        {{ if site.Params.backupStoreLive }}<a class="button primary" href="{{ site.Params.backupStoreUrl }}" rel="noopener"><span aria-hidden="true">↓</span> {{ T "getBackupStore" }}</a>{{ else }}<span class="button primary" aria-disabled="true">{{ T "backupStoreSoon" }}</span>{{ end }}
+        <a class="button" href="{{ site.Params.companionPlayUrl }}" rel="noopener"><span aria-hidden="true">▶</span> {{ T "getCompanion" }}</a>
+        <a class="button ghost" href="{{ $privacy }}">{{ T "backupPrivacyShort" }}</a>
+      </div>
+      <p class="note">{{ $p.heroNote }}</p>
+    </div>
+    <div class="product-stage">
+      <div class="stage-label"><span>DAUSUVA BACKUP</span><span>WINDOWS · USB</span></div>
+      {{ partial "shot.html" (dict "src" $p.shot.src "alt" $p.shot.alt "caption" $p.shot.caption "eager" true) }}
+    </div>
+  </div>
+  <ul class="wrap facts">{{ range $p.facts }}<li>{{ . }}</li>{{ end }}<li>{{ site.Params.backupPrice }} {{ $p.priceFact }}</li></ul>
+</section>
+
+<section class="wrap section" id="how-it-works">
+  <p class="eyebrow">{{ $p.stepsLabel }}</p>
+  <h2>{{ $p.stepsHeading }}</h2>
+  <div class="workflows">{{ range $i, $item := $p.steps }}<article><span class="step">0{{ add $i 1 }}</span><h3>{{ .title }}</h3><p>{{ .text }}</p><ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul></article>{{ end }}</div>
+</section>
+
+<section class="wrap section" id="features">
+  <p class="eyebrow">{{ $p.featuresLabel }}</p>
+  <h2>{{ $p.featuresHeading }}</h2>
+  <div class="workflows">{{ range $p.features }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>{{ end }}</div>
+</section>
+
+<section class="wrap section">
+  <p class="eyebrow">{{ $p.detailLabel }}</p>
+  <h2>{{ $p.detailHeading }}</h2>
+  {{ range $p.showcases }}<article class="showcase"><div><h3>{{ .title }}</h3><p>{{ .text }}</p><p class="note">{{ .note }}</p></div><div>{{ partial "shot.html" (dict "src" .src "alt" .alt) }}</div></article>{{ end }}
+</section>
+
+<section class="trust-section" id="privacy">
+  <div class="wrap section">
+    <p class="eyebrow">{{ $p.privacyLabel }}</p>
+    <h2>{{ $p.privacyHeading }}</h2>
+    <div class="workflows">{{ range $p.privacy }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>{{ end }}</div>
+    <p class="section-lead"><a href="{{ $privacy }}">{{ $p.privacyLink }} →</a></p>
+  </div>
+</section>
+
+<section class="wrap section" id="limits">
+  <p class="eyebrow">{{ $p.limitsLabel }}</p>
+  <h2>{{ $p.limitsHeading }}</h2>
+  <p class="section-lead">{{ $p.limitsLead }}</p>
+  <div class="workflows">{{ range $p.limits }}<article><h3>{{ .title }}</h3><p>{{ .text }}</p></article>{{ end }}</div>
+</section>
+
+<section class="wrap section" id="requirements">
+  <p class="eyebrow">{{ $p.requirementsLabel }}</p>
+  <h2>{{ $p.requirementsHeading }}</h2>
+  <dl class="details">{{ range $p.requirements }}<dt>{{ .label }}</dt><dd>{{ .text }}</dd>{{ end }}</dl>
+</section>
+
+<section class="wrap section" id="price">
+  <p class="eyebrow">{{ T "pricing" }}</p>
+  <h2>{{ $p.priceHeading }}</h2>
+  <p class="section-lead">{{ $p.priceLead }}</p>
+  <div class="grid plans"><article class="card plan featured"><p class="eyebrow">{{ $p.priceBadge }}</p><h3>{{ site.Params.backupName }}</h3><p class="price">{{ site.Params.backupPrice }} <span>{{ $p.pricePer }}</span></p><ul>{{ range $p.priceItems }}<li>{{ . }}</li>{{ end }}</ul>{{ if site.Params.backupStoreLive }}<a class="button primary" href="{{ site.Params.backupStoreUrl }}" rel="noopener">{{ T "getBackupStore" }} →</a>{{ else }}<span class="button primary" aria-disabled="true">{{ T "backupStoreSoon" }}</span>{{ end }}</article></div>
+  <p class="note">{{ $p.priceNote }}</p>
+</section>
+
+{{ with $p.faq }}<section class="wrap section quick-answers" id="faq"><p class="eyebrow">{{ T "quickAnswers" }}</p><h2>{{ $p.faqHeading }}</h2><div class="faq-list">{{ range . }}<details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}</div></section>{{ end }}
+
+{{ with $p.cta }}{{ partial "cta-band.html" (dict "heading" .heading "text" .text "primary" (dict "label" (T "getCompanion") "url" site.Params.companionPlayUrl) "secondary" (dict "label" .secondary "url" $support)) }}{{ end }}
+{{ end }}

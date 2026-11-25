@@ -825,3 +825,6 @@ table.compare{width:100%;min-width:calc(var(--cols,3) * 9.5rem);border-collapse:
 .proof-icon{display:block;margin:0 0 .6rem;border-radius:9px}
 
 .visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* A button that is not a link yet (for example "coming soon to the Microsoft Store"). */
+.button[aria-disabled=true]{opacity:.72;cursor:default;pointer-events:none}

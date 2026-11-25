@@ -230,3 +230,12 @@ content/en/books-for-inspiration/make-it-stick.md
 content/en/books-for-inspiration/teach-like-a-champion.md
 content/en/books-for-inspiration/understanding-by-design.md
 content/en/books-for-inspiration/why-dont-students-like-school.md
+assets/images/backup/social-backup.png
+assets/images/backup/window-finished.png
+assets/images/backup/window-play.png
+assets/images/backup/window-ready.png
+assets/images/backup/window-running.png
+content/en/backup.md
+content/en/backup/privacy.md
+content/en/backup/support.md
+layouts/backup.html

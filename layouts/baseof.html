@@ -17,6 +17,7 @@
   <meta property="og:type" content="website">
   {{ partial "structured-data.html" . }}
   {{ $shareImage := resources.Get (printf "images/social-%s.png" site.Language.Lang) }}
+  {{ with .Params.shareImage }}{{ with resources.Get . }}{{ $shareImage = . }}{{ end }}{{ end }}
   {{ if eq .Layout "tutorial-lesson" }}{{ $chapter := index hugo.Data.tutorial.chapters (int .Params.tutorialChapter) }}{{ with $chapter.thumbnail }}{{ $shareImage = resources.Get . }}{{ end }}{{ end }}
   {{ with $shareImage }}<meta property="og:image" content="{{ .Permalink }}">
   <meta property="og:image:width" content="{{ .Width }}">

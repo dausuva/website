@@ -20,7 +20,12 @@
 {{ with site.GetPage . }}- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
 {{ end -}}
 {{ end }}
-## {{ if $lt }}Palyginimai su kitais produktais{{ else }}Comparisons with other products{{ end }}
+{{ with site.GetPage "/backup" }}## Dausuva Backup
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+- [Privacy policy]({{ (site.GetPage "/backup/privacy").Permalink }})
+- [Support]({{ (site.GetPage "/backup/support").Permalink }})
+
+{{ end }}## {{ if $lt }}Palyginimai su kitais produktais{{ else }}Comparisons with other products{{ end }}
 {{ range (slice "/school/compare/" "/school/compare-approaches/" "/school/compare-faronics-insight/" "/school/compare-impero-education-pro/" "/school/compare-lanschool/" "/school/compare-windows-take-a-test/" "/school/compare-netsupport-school/" "/school/compare-remote-tools/" "/school/compare-tactical-rmm/" "/school/compare-veyon/") -}}
 {{ with site.GetPage . }}- [{{ .Title }}]({{ .Permalink }})
 {{ end -}}

@@ -49,6 +49,15 @@ enableGitInfo = true      # real lastmod dates in the sitemap (the workflow chec
   operatingSystems = ["Windows 10", "Windows 11"]
   priceFirstYear = "€499"
   priceRenewal = "€299"
+  # Dausuva Backup (Windows app, Microsoft Store ID 9P42FJ0BN3RZ) and Backup Companion (Android app on Google Play).
+  # backupStoreLive = false: the Store listing is not published yet, so the page says "coming soon" instead of linking to it. Set it to true on release day.
+  backupName = "Dausuva Backup"
+  backupVersion = "0.8.0"
+  backupPrice = "US$1.99"
+  backupStoreUrl = "https://apps.microsoft.com/detail/9P42FJ0BN3RZ"
+  backupStoreLive = false
+  companionName = "Backup Companion"
+  companionPlayUrl = "https://play.google.com/store/apps/details?id=com.focsd.backup"
 
 # Book links. amazonTag empty = neutral links and no disclosure; set it to the Associates tracking ID (name-20) once approved.
 [params.affiliate]
