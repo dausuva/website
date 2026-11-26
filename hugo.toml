@@ -58,6 +58,9 @@ enableGitInfo = true      # real lastmod dates in the sitemap (the workflow chec
   backupStoreLive = false
   companionName = "Backup Companion"
   companionPlayUrl = "https://play.google.com/store/apps/details?id=com.focsd.backup"
+  companionPrice = "US$1.99"
+  # companionPlayLive = false: the Play listing is not published yet, so the page says "coming soon" instead of linking to it. Set it to true on release day.
+  companionPlayLive = false
 
 # Book links. amazonTag empty = neutral links and no disclosure; set it to the Associates tracking ID (name-20) once approved.
 [params.affiliate]

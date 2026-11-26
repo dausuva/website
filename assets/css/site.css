@@ -396,6 +396,18 @@ small {
   max-width:420px;
   margin:auto
 }
+.phones {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:26px;
+  margin:34px 0 26px;
+  align-items:start
+}
+.phones .shot img {
+  width:100%;
+  height:auto;
+  border-radius:22px
+}
 .showcase:nth-of-type(even)>div:first-child {
   order:2
 }

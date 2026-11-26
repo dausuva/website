@@ -10,7 +10,7 @@
       <p class="lead">{{ $p.lead }}</p>
       <div class="actions">
         {{ if site.Params.backupStoreLive }}<a class="button primary" href="{{ site.Params.backupStoreUrl }}" rel="noopener"><span aria-hidden="true">↓</span> {{ T "getBackupStore" }}</a>{{ else }}<span class="button primary" aria-disabled="true">{{ T "backupStoreSoon" }}</span>{{ end }}
-        <a class="button" href="{{ site.Params.companionPlayUrl }}" rel="noopener"><span aria-hidden="true">▶</span> {{ T "getCompanion" }}</a>
+        {{ if site.Params.companionPlayLive }}<a class="button" href="{{ site.Params.companionPlayUrl }}" rel="noopener"><span aria-hidden="true">▶</span> {{ T "getCompanion" }} · {{ site.Params.companionPrice }}</a>{{ else }}<span class="button" aria-disabled="true">{{ T "companionSoon" }}</span>{{ end }}
         <a class="button ghost" href="{{ $privacy }}">{{ T "backupPrivacyShort" }}</a>
       </div>
       <p class="note">{{ $p.heroNote }}</p>
@@ -41,6 +41,15 @@
   {{ range $p.showcases }}<article class="showcase"><div><h3>{{ .title }}</h3><p>{{ .text }}</p><p class="note">{{ .note }}</p></div><div>{{ partial "shot.html" (dict "src" .src "alt" .alt) }}</div></article>{{ end }}
 </section>
 
+{{ with $p.companionShots }}<section class="wrap section" id="companion">
+  <p class="eyebrow">{{ $p.companionLabel }}</p>
+  <h2>{{ $p.companionHeading }}</h2>
+  <p class="section-lead">{{ $p.companionLead }}</p>
+  <div class="phones">{{ range . }}{{ partial "shot.html" (dict "src" .src "alt" .alt "caption" .caption) }}{{ end }}</div>
+  <p class="note">{{ $p.companionNote }}</p>
+  <p>{{ if site.Params.companionPlayLive }}<a class="button" href="{{ site.Params.companionPlayUrl }}" rel="noopener"><span aria-hidden="true">▶</span> {{ T "getCompanion" }} · {{ site.Params.companionPrice }}</a>{{ else }}<span class="button" aria-disabled="true">{{ T "companionSoon" }}</span>{{ end }}</p>
+</section>{{ end }}
+
 <section class="trust-section" id="privacy">
   <div class="wrap section">
     <p class="eyebrow">{{ $p.privacyLabel }}</p>
@@ -67,11 +76,11 @@
   <p class="eyebrow">{{ T "pricing" }}</p>
   <h2>{{ $p.priceHeading }}</h2>
   <p class="section-lead">{{ $p.priceLead }}</p>
-  <div class="grid plans"><article class="card plan featured"><p class="eyebrow">{{ $p.priceBadge }}</p><h3>{{ site.Params.backupName }}</h3><p class="price">{{ site.Params.backupPrice }} <span>{{ $p.pricePer }}</span></p><ul>{{ range $p.priceItems }}<li>{{ . }}</li>{{ end }}</ul>{{ if site.Params.backupStoreLive }}<a class="button primary" href="{{ site.Params.backupStoreUrl }}" rel="noopener">{{ T "getBackupStore" }} →</a>{{ else }}<span class="button primary" aria-disabled="true">{{ T "backupStoreSoon" }}</span>{{ end }}</article></div>
+  <div class="grid plans">{{ range $p.plans }}<article class="card plan{{ if eq .link "store" }} featured{{ end }}"><p class="eyebrow">{{ .badge }}</p><h3>{{ .name }}</h3><p class="price">{{ .price }} <span>{{ .per }}</span></p><ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>{{ if eq .link "store" }}{{ if site.Params.backupStoreLive }}<a class="button primary" href="{{ site.Params.backupStoreUrl }}" rel="noopener">{{ T "getBackupStore" }} →</a>{{ else }}<span class="button primary" aria-disabled="true">{{ T "backupStoreSoon" }}</span>{{ end }}{{ else }}{{ if site.Params.companionPlayLive }}<a class="button" href="{{ site.Params.companionPlayUrl }}" rel="noopener">{{ T "getCompanion" }} →</a>{{ else }}<span class="button" aria-disabled="true">{{ T "companionSoon" }}</span>{{ end }}{{ end }}</article>{{ end }}</div>
   <p class="note">{{ $p.priceNote }}</p>
 </section>
 
 {{ with $p.faq }}<section class="wrap section quick-answers" id="faq"><p class="eyebrow">{{ T "quickAnswers" }}</p><h2>{{ $p.faqHeading }}</h2><div class="faq-list">{{ range . }}<details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}</div></section>{{ end }}
 
-{{ with $p.cta }}{{ partial "cta-band.html" (dict "heading" .heading "text" .text "primary" (dict "label" (T "getCompanion") "url" site.Params.companionPlayUrl) "secondary" (dict "label" .secondary "url" $support)) }}{{ end }}
+{{ with $p.cta }}{{ partial "cta-band.html" (dict "heading" .heading "text" .text "primary" (cond site.Params.backupStoreLive (dict "label" (T "getBackupStore") "url" site.Params.backupStoreUrl) (cond site.Params.companionPlayLive (dict "label" (T "getCompanion") "url" site.Params.companionPlayUrl) (dict "label" (T "backupStoreSoon") "url" "#price"))) "secondary" (dict "label" .secondary "url" $support)) }}{{ end }}
 {{ end }}

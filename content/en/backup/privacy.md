@@ -35,7 +35,7 @@ Dausuva Backup and Backup Companion are published by Dausuva Labs, the name unde
 
 **Where it goes.** The export is made on the phone, in the app's private storage, to be pulled by Dausuva Backup over the USB cable (or by the macOS tool). The app declares no internet permission, so it has no way to send the export over the network itself. We do not receive it.
 
-**Retention.** The latest temporary export stays in the app's private storage until it is replaced, until you clear the app's cache or storage in Android settings, or until you uninstall the app. The copy on your PC is under your control and has to be deleted there separately.
+**Retention.** A prepared export stays in the app's private storage for at most 15 minutes. Dausuva Backup deletes it from the phone after pulling it; if it asks for it within 15 minutes of it being prepared, the app hands it over as it is, and an older one is deleted when the app is opened or the next export starts. You can also clear the app's cache or storage in Android settings, or uninstall the app. The copy on your PC is under your control and has to be deleted there separately.
 
 **Special access.** Optional access such as *All files access* is used only for the backup you start, to list the files on shared storage. It does not give the app access to other apps' private data or to Android's keystore. Optional links to Shizuku open your browser; those pages have their own privacy practices.
 
