@@ -24,6 +24,7 @@
 - [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
 - [Privacy policy]({{ (site.GetPage "/backup/privacy").Permalink }})
 - [Support]({{ (site.GetPage "/backup/support").Permalink }})
+- Prices: {{ site.Params.backupPrice }} one-time for Dausuva Backup (Windows 10 and 11, Microsoft Store); {{ site.Params.companionPrice }} one-time for Backup Companion (Android, Google Play, optional)
 
 {{ end }}## {{ if $lt }}Palyginimai su kitais produktais{{ else }}Comparisons with other products{{ end }}
 {{ range (slice "/school/compare/" "/school/compare-approaches/" "/school/compare-faronics-insight/" "/school/compare-impero-education-pro/" "/school/compare-lanschool/" "/school/compare-windows-take-a-test/" "/school/compare-netsupport-school/" "/school/compare-remote-tools/" "/school/compare-tactical-rmm/" "/school/compare-veyon/") -}}

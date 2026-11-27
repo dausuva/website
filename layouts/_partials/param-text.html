@@ -1,0 +1,17 @@
+{{- /*
+  Fills {token} placeholders in a text from [params] in hugo.toml, so that a price, a name or a list of systems is changed in one place only.
+  The token is the parameter's key in lower case, for example {pricefirstyear} or {backupprice}. A text parameter is inserted as it is; a list is joined with ", " and the language's word for "and" (i18n key listAnd).
+  An unknown token is left as it is (the site tests would show it). Context: the text.
+*/ -}}
+{{- $s := . -}}
+{{- range $key, $value := site.Params -}}
+  {{- $token := printf "{%s}" $key -}}
+  {{- if strings.Contains $s $token -}}
+    {{- if reflect.IsSlice $value -}}
+      {{- $s = replace $s $token (delimit $value ", " (printf " %s " (T "listAnd"))) -}}
+    {{- else if eq (printf "%T" $value) "string" -}}
+      {{- $s = replace $s $token $value -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $s -}}

@@ -61,6 +61,7 @@ layouts/_partials/footer.html
 layouts/_partials/header.html
 layouts/_partials/highlight.html
 layouts/_partials/page-url.html
+layouts/_partials/param-text.html
 layouts/_partials/plans.html
 layouts/_partials/product-page.html
 layouts/_partials/product-summary.html

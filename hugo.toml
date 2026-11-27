@@ -53,14 +53,56 @@ enableGitInfo = true      # real lastmod dates in the sitemap (the workflow chec
   # backupStoreLive = false: the Store listing is not published yet, so the page says "coming soon" instead of linking to it. Set it to true on release day.
   backupName = "Dausuva Backup"
   backupVersion = "0.8.0"
-  backupPrice = "US$1.99"
+  backupPrice = "€1.99"
   backupStoreUrl = "https://apps.microsoft.com/detail/9P42FJ0BN3RZ"
   backupStoreLive = false
   companionName = "Backup Companion"
   companionPlayUrl = "https://play.google.com/store/apps/details?id=com.dausuva.backup"
-  companionPrice = "US$1.99"
+  companionPrice = "€1.99"
   # companionPlayLive = false: the Play listing is not published yet, so the page says "coming soon" instead of linking to it. Set it to true on release day.
   companionPlayLive = false
+
+# The product index: the homepage lists these products in this order; each language lists its own.
+# A text may contain {token} placeholders. They are filled from [params] above with the lower-case parameter key, for example {pricefirstyear}, {backupprice} or {operatingsystems},
+# so that a price, a name or a list of systems is changed in one place only.
+# translationkey = the product page's translationKey, path = a page's path, anchor = a section of that page.
+# liveparam / urlparam = the [params] switch and link of the product's store listing; getkey / soonkey = the i18n texts of the live button and of the "coming soon" label.
+[[languages.en.params.products]]
+  name = "{product}"
+  translationkey = "school"
+  kicker = "For schools · Windows"
+  line = "Manage a Windows computer lab from one console: software, files, lock screens, exams, updates."
+  facts = ["{operatingsystems}", "From {pricefirstyear} for the first year, then {pricerenewal} a year", "No per-PC charge"]
+
+[[languages.en.params.products]]
+  name = "{backupname}"
+  path = "/backup"
+  kicker = "Windows app · Microsoft Store"
+  line = "Back up an Android phone to your Windows PC over USB: apps, photos, videos and files. Check the copy and restore it. No account, no cloud."
+  facts = ["{operatingsystems}", "{backupprice} one-time purchase", "One phone, or several at once"]
+  liveparam = "backupstorelive"
+  urlparam = "backupstoreurl"
+  getkey = "getBackupStore"
+  soonkey = "backupStoreSoon"
+
+[[languages.en.params.products]]
+  name = "{companionname}"
+  path = "/backup"
+  anchor = "companion"
+  kicker = "Android app · Google Play"
+  line = "The optional phone side of Dausuva Backup: it prepares contacts, calendars, messages and call records for the backup, each only after you allow it."
+  facts = ["Android 7 or later", "{companionprice} one-time purchase", "No network permission"]
+  liveparam = "companionplaylive"
+  urlparam = "companionplayurl"
+  getkey = "getCompanion"
+  soonkey = "companionSoon"
+
+[[languages.lt.params.products]]
+  name = "{product}"
+  translationkey = "school"
+  kicker = "Mokykloms · Windows"
+  line = "Visa Windows kompiuterių klasė iš vieno pulto: programos, failai, ekranų užrakinimas, egzaminai, atnaujinimai."
+  facts = ["{operatingsystems}", "Pirmiems metams {pricefirstyear}, vėliau {pricerenewal} per metus", "Be mokesčio už kompiuterį"]
 
 # Book links. amazonTag empty = neutral links and no disclosure; set it to the Associates tracking ID (name-20) once approved.
 [params.affiliate]

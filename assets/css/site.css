@@ -567,10 +567,76 @@ details p {
   margin:0
 }
 .product {
-  display:block;
+  display:flex;
+  flex-direction:column;
   text-decoration:none;
-  color:var(--ink);
-  max-width:600px
+  color:var(--ink)
+}
+.products {
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));
+  align-items:stretch;
+  margin-top:26px
+}
+.product .eyebrow {
+  margin-bottom:12px
+}
+.product .card-title a {
+  color:inherit;
+  text-decoration:none
+}
+.product .card-title a:hover {
+  text-decoration:underline
+}
+.product-line {
+  display:block;
+  color:var(--muted);
+  margin:10px 0 0
+}
+.product-facts {
+  list-style:none;
+  padding:0;
+  margin:16px 0 0;
+  font-size:.88rem;
+  color:var(--muted)
+}
+.product-facts li {
+  padding:3px 0 3px 20px;
+  position:relative
+}
+.product-facts li::before {
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:var(--green)
+}
+.product-actions {
+  margin-top:auto;
+  padding-top:22px;
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:flex-start;
+  gap:14px
+}
+.product-actions .more,
+.linkcard .more {
+  margin-top:0
+}
+.linkcard .more {
+  margin-top:auto;
+  padding-top:22px
+}
+.pill {
+  display:inline-block;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:5px 13px;
+  font-size:.78rem;
+  color:var(--muted);
+  text-decoration:none
+}
+.pill.live {
+  border-color:var(--green);
+  color:var(--green)
 }
 .card-title {
   display:block;
@@ -604,6 +670,9 @@ details p {
   }
   .grid {
     grid-template-columns:1fr
+  }
+  .grid.products {
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))
   }
   .plan .price span {
     display:inline

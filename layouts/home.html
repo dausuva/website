@@ -1,28 +1,56 @@
 {{ define "main" }}
+{{ $p := .Params }}
 <section class="hero">
   <div class="wrap">
-    <h1>{{ .Params.heading }}</h1>
-    <p class="lead">{{ .Params.lead }}</p>
+    <h1>{{ $p.heading }}</h1>
+    <p class="lead">{{ $p.lead }}</p>
+  </div>
+  {{ with $p.facts }}<ul class="wrap facts">{{ range . }}<li>{{ partial "param-text.html" . }}</li>{{ end }}</ul>{{ end }}
+</section>
+
+{{- /* The product index: the products are defined in hugo.toml ([[languages.<lang>.params.products]]), in the order shown here. */ -}}
+<section class="wrap section" id="products">
+  <h2>{{ $p.productsHeading }}</h2>
+  {{ with $p.productsLead }}<p class="section-lead">{{ . }}</p>{{ end }}
+  <div class="grid products">
+    {{ range site.Params.products }}
+    {{- $item := . -}}
+    {{- $page := false -}}
+    {{- with $item.translationkey }}{{ with first 1 (where site.RegularPages "TranslationKey" .) }}{{ $page = index . 0 }}{{ end }}{{ else }}{{ with $item.path }}{{ with site.GetPage . }}{{ $page = . }}{{ end }}{{ end }}{{ end -}}
+    {{- with $page }}
+    {{- $href := .RelPermalink -}}
+    {{- with $item.anchor }}{{ $href = printf "%s#%s" $href . }}{{ end -}}
+    <article class="card product">
+      {{ with $item.kicker }}<p class="eyebrow">{{ partial "param-text.html" . }}</p>{{ end }}
+      <h3 class="card-title"><a href="{{ $href }}">{{ partial "param-text.html" $item.name }}</a></h3>
+      <p class="product-line">{{ partial "param-text.html" $item.line }}</p>
+      {{ with $item.facts }}<ul class="product-facts">{{ range . }}<li>{{ partial "param-text.html" . }}</li>{{ end }}</ul>{{ end }}
+      <div class="product-actions">
+        <a class="more" href="{{ $href }}">{{ $p.productMore }} →</a>
+        {{- with $item.liveparam }}
+        {{- if index site.Params . }}<a class="pill live" href="{{ index site.Params $item.urlparam }}" rel="noopener">{{ T $item.getkey }}</a>{{ else }}<span class="pill">{{ T $item.soonkey }}</span>{{ end }}
+        {{- end }}
+      </div>
+    </article>
+    {{- end }}
+    {{ end }}
   </div>
 </section>
 
-<section class="wrap section">
-  <h2>{{ .Params.productsHeading }}</h2>
-  {{ with partial "product-page.html" . }}
-  <a class="card product" href="{{ .RelPermalink }}">
-    <span class="card-title">{{ $.Site.Params.product }}</span>
-    <span>{{ $.Params.productLine }}</span>
-    <span class="more">{{ $.Params.productMore }} →</span>
-  </a>
-  {{ end }}
-  {{ with $.Params.backupLine }}{{ with site.GetPage "/backup" }}
-  <a class="card product" href="{{ .RelPermalink }}">
-    <span class="card-title">{{ site.Params.backupName }}</span>
-    <span>{{ $.Params.backupLine }}</span>
-    <span class="more">{{ $.Params.productMore }} →</span>
-  </a>
-  {{ end }}{{ end }}
+{{ with $p.morePages }}
+<section class="wrap section" id="more">
+  <h2>{{ $p.moreHeading }}</h2>
+  <div class="grid products">
+    {{ range . }}{{ with site.GetPage . }}
+    <a class="card product linkcard" href="{{ .RelPermalink }}">
+      <span class="card-title">{{ .Title }}</span>
+      <span class="product-line">{{ .Description }}</span>
+      <span class="more">{{ $p.productMore }} →</span>
+    </a>
+    {{ end }}{{ end }}
+  </div>
 </section>
+{{ end }}
 
 <section class="wrap section" id="contact">
   <h2>{{ T "contact" }}</h2>
